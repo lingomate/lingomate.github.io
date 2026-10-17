@@ -12,6 +12,9 @@ the textbook content**. Read the [Disclaimer](#disclaimer) before using or redis
 
 </div>
 
+> 🌐 **Try it online**: the project is deployed to GitHub Pages — no local server needed, just open
+> <https://lingomate.github.io/> (works in both phone and desktop browsers).
+
 > The Chinese README is the primary one; this file mirrors it. Section anchors: [What is this](#what-is-this) · [Three modes](#three-modes) · [Quick start](#quick-start) · [Project layout](#project-layout) · [Data format](#data-format) · [Technical notes](#technical-notes) · [Troubleshooting](#troubleshooting)
 
 ## What is this

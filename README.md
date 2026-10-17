@@ -12,6 +12,8 @@ A **zero-dependency, pure-frontend, locally served** companion app for primary-s
 
 </div>
 
+> 🌐 **在线体验**：项目已部署到 GitHub Pages，无需本地起服务，直接打开 <https://lingomate.github.io/> 即可使用（手机、电脑浏览器均可）。
+
 ## 这是什么
 
 给孩子做日常英语伴学的本地网页应用。课本（沪教版 / 上海教育出版社）以 **JSON 题库** 的形式描述，程序本身不含任何具体题目——代码、关卡、题库三层分离，加一本新课本只需加一个 JSON 文件。

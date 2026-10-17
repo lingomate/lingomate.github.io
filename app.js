@@ -154,6 +154,22 @@ let state = {
 let enVoice = null;
 let enVoices = [];   // 全部英文音色池（跟读时按角色分配）
 let _voiceTimer = null;
+let _voiceWarnShown = false;  // 无英文 voice 的提示只弹一次
+
+// 华为/鸿蒙：系统 WebView（Chromium 内核）常不向页面暴露英文 TTS 引擎，
+// 且 pause/resume 续命会掐断朗读，故单独标记以走兜底路径。
+const _isHuawei = /Huawei|HUAWEI|HarmonyOS|HarmonyOS/i.test(navigator.userAgent || '');
+
+// 无可用英文语音包时，非阻塞提示一次（不打断学习流）
+function showVoiceWarn() {
+  if (document.getElementById('voice-warn')) return;
+  const d = document.createElement('div');
+  d.id = 'voice-warn';
+  d.textContent = '当前浏览器无可用英文语音包，朗读可能无声。可在系统“设置→辅助功能/语言→文字转语音”安装英文包，或改用 Chrome 打开。';
+  d.style.cssText = 'position:fixed;left:50%;bottom:18px;transform:translateX(-50%);max-width:90%;background:rgba(0,0,0,.82);color:#fff;padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.5;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,.3)';
+  document.body.appendChild(d);
+  setTimeout(() => { d.style.transition = 'opacity .4s'; d.style.opacity = '0'; setTimeout(() => d.remove(), 400); }, 5000);
+}
 
 function initVoices() {
   if (!('speechSynthesis' in window)) return;
@@ -172,7 +188,10 @@ function ensureVoices() {
   let tries = 0;
   const iv = setInterval(() => {
     initVoices();
-    if (enVoice || ++tries > 20) clearInterval(iv);
+    if (enVoice || ++tries > 20) {
+      clearInterval(iv);
+      if (!enVoice) showVoiceWarn(); // 轮询耗尽仍无英文 voice（华为/鸿蒙常见）
+    }
   }, 200);
 }
 
@@ -195,14 +214,19 @@ function makeUtterance(en, voice, rate) {
 }
 
 // 朗读一段文本中的英文（传原始文本即可，内部自动提取英文；onend：朗读结束回调；voice/rate：指定音色）
-function speakText(raw, onend, voice, rate) {
+function speakText(raw, onend, voice, rate, _tries) {
+  _tries = _tries || 0;
   const text = raw ? decodeURIComponent(raw) : '';
   if (!('speechSynthesis' in window)) { alert('当前浏览器不支持语音朗读，请使用 Safari 或 Chrome 打开。'); return; }
   const en = extractEn(text);
   if (!en) { if (onend) onend(); return; } // 无英文可读：立即回调，不拖到 4.5 秒兜底
   ensureVoices();
   speechSynthesis.cancel();
-  if (!enVoice) { setTimeout(() => speakText(raw, onend, voice, rate), 300); return; } // iOS 音色未就绪，稍后重试
+  // 音色未就绪时最多重试约 9 秒；超时后兜底用浏览器默认引擎朗读一次（华为/鸿蒙可能无声但至少不静默死循环）
+  if (!enVoice) {
+    if (_tries < 30) { setTimeout(() => speakText(raw, onend, voice, rate, _tries + 1), 300); return; }
+    showVoiceWarn();
+  }
   const u = makeUtterance(en, voice, rate);
   if (onend) { u.onend = onend; u.onerror = onend; }
   speechSynthesis.speak(u);
@@ -216,16 +240,27 @@ function speakSequence(texts) {
   if (!ens.length) return;
   ensureVoices();
   speechSynthesis.cancel();
-  // iOS 上音色可能还没就绪，等一小会儿再读
-  if (!enVoice) { setTimeout(() => speakSequence(texts), 300); return; }
+  // iOS 上音色可能还没就绪，等一小会儿再读；华为等无英文语音包则兜底朗读
+  if (!enVoice) {
+    if (!speakSequence._tries || speakSequence._tries < 30) {
+      speakSequence._tries = (speakSequence._tries || 0) + 1;
+      setTimeout(() => speakSequence(texts), 300); return;
+    }
+    showVoiceWarn();
+    speakSequence._tries = 0;
+  } else {
+    speakSequence._tries = 0;
+  }
   ens.forEach(en => speechSynthesis.speak(makeUtterance(en)));
   startKeepAlive();
 }
 
 // iOS Safari 有个 bug：长朗读约15秒后会自动停止。
 // 用一个低频 resume 定时器"续命"，只在有朗读在进行时开启。
+// 华为/鸿蒙内核上 pause()+resume() 反而会掐断朗读，故这类设备直接跳过。
 function startKeepAlive() {
   stopKeepAlive();
+  if (_isHuawei) return;
   _voiceTimer = setInterval(() => {
     if ('speechSynthesis' in window && speechSynthesis.speaking) {
       speechSynthesis.pause();
