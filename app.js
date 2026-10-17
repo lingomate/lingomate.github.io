@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: MIT
+// SPDX-FileCopyrightText: 2026 xiegengcai <xiegengcai@foxmail.com>
+// Note: MIT applies to this source file only. Question-bank content under data/ and textbook
+// material under 英语/ are third-party copyrighted and are NOT licensed by this project.
+
 // ===================== 英语伴学引擎（代码 / 关卡 / 题库 分离） =====================
 // 目录结构：
 //   index.html        页面骨架（样式）
@@ -11,6 +16,121 @@
 //   1. 复制 data/5A.json 为 data/5B.json，修改里面的题目内容（格式完全一样）
 //   2. 在 data/books.json 里加一行 {"id":"5B","file":"data/5B.json"}
 //   3. 刷新页面即可，本文件不用改
+//
+// ----------------------------------------------------------------------------
+// 法律提示 / Legal notice
+//   本文件是「英语伴学 LingoMate」的一部分。免责声明与版权说明全文见
+//   README.md / README-en.md 的「免责声明」章节，页面内亦可通过底部「📜 免责声明」
+//   入口查看（渲染本文件下方的 DISCLAIMER_HTML）。要点：
+//     · 仅供个人 / 家庭学习参考；按「现状」提供，不含任何明示或默示担保。
+//     · 题库中照抄教材的词表、课文句与释义，著作权归原出版社及权利人所有；
+//       本项目不授予任何使用许可，请勿分发、公开、售卖或改编发布这些内容。
+//     · 源代码采用 MIT 许可证授权（见仓库根目录 LICENSE）；该许可证明确不覆盖
+//       data/*.json 题库与 英语/ 教材内容——删除或替换数据后可自由复用本代码。
+//     · 应用不上传数据；进度与听写记录仅存于浏览器 localStorage，清缓存即永久丢失。
+//     · 本文件自身不发起任何网络请求；语音由浏览器 / 系统内置 TTS 现场合成。
+//       （唯一的第三方请求出现在 serve_qr.py 的在线二维码图片服务，见该文件说明。）
+// ----------------------------------------------------------------------------
+
+// ===================== 免责声明（页面内展示） =====================
+// 首次打开应用时以"需确认"模式弹出；之后可随时从底部入口以"查看"模式打开。
+// 文案与 README 的「免责声明」章节保持一致，改动请同步两处。
+// 重要：条款文案有任何实质改动时，请把 DISCLAIMER_VERSION 递增，
+// 已确认过的用户会重新看到一次确认（旧版本键不影响新版本判定）。
+const DISCLAIMER_VERSION = '2';                 // 文案版本：升级后老用户会重新看到一次确认
+const DISCLAIMER_KEY = 'english_quiz_disclaimer_ack_';   // + 版本号
+const DISCLAIMER_HTML = `
+  <div class="warn">⚠️ 请务必完整阅读本节，尤其是打算把本项目分享给他人或公开部署时。</div>
+
+  <h4>1. 用途定位</h4>
+  <p>本项目是为自家孩子做的本地英语学习辅助工具，<b>仅用于个人及家庭范围内的学习参考</b>。它不是学校、培训机构或任何官方教学产品的一部分，与上海教育出版社及各教材编写者、出版方<b>没有任何隶属、授权、赞助或背书关系</b>。请勿用于商业授课、牟利性培训或对外提供服务。</p>
+
+  <h4>2. 不提供任何担保（AS IS）</h4>
+  <p>本软件与题库数据按「现状」提供，<b>不附带任何形式的明示或默示担保</b>，包括但不限于对可商用性、特定用途适用性、准确性、完整性、及时性、稳定性的担保。</p>
+  <ul>
+    <li>题库内容为按教材逐句精读整理而成，<b>可能存在错漏、歧义或与最新版纸质教材不一致之处</b>。请以学校发放的纸质课本和老师讲解为准，不要将本应用作为作业、考试或升学备考的唯一依据。</li>
+    <li>语音朗读依赖浏览器与操作系统的内置 TTS，<b>不同设备、不同语音包的发音质量差异较大</b>（尤其对专有名词与句子的重音断句）。朗读结果不应被视为标准发音示范，请配合教材配套音频使用。</li>
+    <li>因使用或无法使用本项目导致的任何直接、间接、附带或后果性损失（含学习成绩、时间投入、数据丢失），作者<b>不承担责任</b>。</li>
+  </ul>
+
+  <h4>3. 教材内容的版权归属</h4>
+  <p>教材 PDF 与知识点笔记，以及题库 JSON 中照抄教材的课文句、词表与中文释义，其<b>著作权均属于原出版社及相应权利人</b>，本项目<b>不授予你使用这些内容的任何许可</b>。</p>
+  <ul>
+    <li>请勿把教材 PDF、题库 JSON 上传到公开仓库、网盘、社群或任何可被他人获取的地方；请勿二次分发、售卖、改编后发布。</li>
+    <li>请确保你持有的教材副本本身来源合法。</li>
+    <li>如权利人认为本项目涉及的内容侵犯了您的权益，请联系作者，将配合删除或更正。</li>
+  </ul>
+
+  <h4>4. 代码许可：MIT（教材内容除外）</h4>
+  <p>本项目<b>原创的源代码与文档</b>（app.js / index.html / serve_qr.py / stop_server.ps1 / 两个 .bat / README* / 教材转题库-技能提示词.md / .claude/）采用仓库根目录 <b>LICENSE 文件中的 MIT 许可证</b>授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。</p>
+  <p>但 <b>MIT 许可证不覆盖任何教材内容</b>：data/*.json 题库（课文句、词表与释义均照抄自上海教育出版社出版的教材）以及 英语/ 内的 PDF 与笔记，著作权归原出版社及相应权利人所有，本项目<b>不授予你使用这些内容的任何许可</b>。LICENSE 中的排除<b>跟随内容而非文件名</b>——把题库句子复制进别的文件，它仍是出版社的作品。你可以在<b>删除或替换全部 data/ 与 英语/ 内容</b>后自由复用纯代码，这完全合规；若题库为你原创（未抄教材），则该部分由你自行授权。</p>
+
+  <h4>5. 数据与隐私</h4>
+  <ul>
+    <li>本应用<b>没有账号系统、不上传任何数据</b>。闯关进度与听写记录只以明文保存在浏览器的 localStorage 中（键名 english_quiz_progress_课本id、english_quiz_dict_records_课本id）。</li>
+    <li>因此：<b>清理浏览器缓存、换设备、换浏览器或使用无痕模式，进度与记录都会丢失且无法找回</b>。重要成绩请自行截图或导出保存。</li>
+    <li>本项目<b>不收集、也无法查看</b>任何使用者的学习数据；不存在云端同步、排行榜、老师端之类的功能。</li>
+    <li class="warn" style="list-style:none;margin-left:-18px">⚠️ <b>唯一的第三方网络请求</b>：本地启动脚本 serve_qr.py 生成二维码时，会把你的<b>本机局域网 IP 与访问地址</b>发送给第三方图片服务 api.qrserver.com。介意请把「启动手机伴学.bat」里 <code>py serve_qr.py</code> 换成 <code>python -m http.server 8000</code>（零外联，手机手动输网址），或注释掉 serve_qr.py 中的 webbrowser.open(qr) 一行。</li>
+  </ul>
+
+  <h4>6. 使用与安全注意事项</h4>
+  <ul>
+    <li><b>局域网暴露</b>：serve_qr.py 监听 0.0.0.0:8000 且为静态文件服务——同一局域网内的其他设备不仅能访问页面，<b>还能按路径下载本目录下的任意文件</b>（包括教材 PDF 与题库 JSON）。请勿在机场、咖啡厅等公共或不受信网络下开启；用完请及时关闭命令行窗口或双击「停止服务.bat」。</li>
+    <li><b>题库按本地可信内容处理</b>：引擎只对少数动态字符串做了转义，JSON 中的文本会被当作 HTML 渲染。请不要加载来源不明的题库文件，也不要在其中写入不可信内容。</li>
+    <li><b>儿童使用需家长陪同</b>：请家长控制屏幕使用时间，并把系统语音、浏览器权限与网络设置交由家长管理。</li>
+  </ul>
+
+  <h4>7. 其它</h4>
+  <ul>
+    <li>界面文案（标签、提示、评语）为中文且硬编码在 app.js 中；数据格式本身与界面语言无关。</li>
+    <li>项目仍在按家庭使用需求迭代，数据结构可能调整；不承诺向后兼容。</li>
+    <li>完整条款见仓库内 README.md（中文）/ README-en.md（English）的「免责声明」章节。</li>
+  </ul>
+`;
+
+// 打开免责声明弹窗。mode = 'ack'（首次使用，需点确认）| 'view'（随时查看，点关闭）
+function openDisclaimer(mode) {
+  const mask = document.getElementById('dlgMask');
+  const body = document.getElementById('dlgBody');
+  const foot = document.getElementById('dlgFoot');
+  if (!mask || !body || !foot) return;
+  body.innerHTML = DISCLAIMER_HTML;
+  body.scrollTop = 0;
+  const ack = mode === 'ack';
+  foot.innerHTML = ack
+    ? `<button class="btn btn-primary" onclick="ackDisclaimer()">我已阅读并理解，开始学习</button>
+       <button class="dlg-alt" onclick="disagreeDisclaimer()">不同意，退出使用</button>`
+    : `<button class="btn btn-next" onclick="closeDisclaimer()">关闭</button>`;
+  mask.classList.add('show');
+  // 查看模式下点遮罩可关；首次确认模式下必须点按钮，避免误触跳过
+  mask.onclick = e => { if (!ack && e.target === mask) closeDisclaimer(); };
+}
+
+// 不同意：保持弹窗并提示（页面数据含受版权内容，无法在不同意的前提下继续使用）
+function disagreeDisclaimer() {
+  const body = document.getElementById('dlgBody');
+  if (body) body.scrollTop = 0;
+  alert('本应用仅供个人 / 家庭学习参考，题库含照抄教材的受版权内容，不提供任何保证。\n\n若不能接受上述条件，请关闭页面并删除本项目文件。');
+}
+
+function closeDisclaimer() {
+  const mask = document.getElementById('dlgMask');
+  if (mask) mask.classList.remove('show');
+}
+
+// 记录"已确认当前版本文案"
+function ackDisclaimer() {
+  try { localStorage.setItem(DISCLAIMER_KEY + DISCLAIMER_VERSION, '1'); } catch (e) {}
+  closeDisclaimer();
+}
+
+// 首次打开（或文案版本升级后）弹出确认；已确认过则不打扰
+function maybeShowDisclaimer() {
+  let acked = false;
+  try { acked = !!localStorage.getItem(DISCLAIMER_KEY + DISCLAIMER_VERSION); } catch (e) {}
+  if (!acked) openDisclaimer('ack');
+}
+
 
 let BOOK = null;      // 当前课本数据 {id,title,subtitle,units,questions}
 let books = [];       // 课本清单（books.json）
@@ -1283,3 +1403,4 @@ if ('speechSynthesis' in window) {
   speechSynthesis.onvoiceschanged = initVoices;
 }
 boot();
+maybeShowDisclaimer();   // 首次打开（或免责声明文案升级后）弹出确认

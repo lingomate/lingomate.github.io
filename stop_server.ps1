@@ -1,3 +1,6 @@
+﻿# SPDX-License-Identifier: MIT
+# SPDX-FileCopyrightText: 2026 xiegengcai <xiegengcai@foxmail.com>
+# MIT covers this script only; data/ banks and the textbook folder stay third-party copyrighted.
 $ErrorActionPreference = 'SilentlyContinue'
 $pids = Get-NetTCPConnection -LocalPort 8000 -State Listen |
     Select-Object -ExpandProperty OwningProcess -Unique

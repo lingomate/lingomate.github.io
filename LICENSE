@@ -1,0 +1,61 @@
+MIT License
+
+Copyright (c) 2026 xiegengcai <xiegengcai@foxmail.com>
+
+SCOPE OF THIS LICENSE — READ FIRST / 本许可证的适用范围（请先阅读）
+------------------------------------------------------------------------
+This license applies ONLY to the original work authored in this repository:
+
+    app.js  index.html  serve_qr.py  stop_server.ps1
+    启动手机伴学.bat  停止服务.bat  README.md  README-en.md
+    教材转题库-技能提示词.md  .claude/  this LICENSE
+
+It does NOT apply to, and grants NO rights in, any third-party copyrighted
+teaching material or content derived from a textbook — wherever that content
+appears, including without limitation:
+
+    data/*.json      question banks, unit word lists, textbook sentences and
+                     their Chinese definitions, transcribed from textbooks
+                     published by Shanghai Education Press (上海教育出版社)
+    英语/            textbook PDFs and study notes (not part of the licensed
+                     work; should not be committed or redistributed)
+
+Put differently: the exclusion follows the CONTENT, not the filename. Any
+sentence, word-list entry or definition copied from a textbook stays with its
+rightsholder even if you move it into another file.
+
+Permission to use, copy, modify, merge, and distribute the CODE above is
+granted as stated below. It is NOT a licence to publish, sell, or redistribute
+the textbook content; that content belongs to its respective rights holders
+and is included in this project for personal / family study reference only.
+Deleting or replacing the data files and keeping the code is fully permitted
+under this license.
+
+本许可证仅适用于上述本项目原创的源代码与文档。它不适用于、也不授予任何权利于
+任何第三方教材或照抄教材的内容（无论出现在哪个文件中）：data/*.json 题库（课文句、
+词表、释义均照抄自上海教育出版社出版的教材）与 英语/ 目录内的 PDF 及笔记，著作权归
+原出版社及相应权利人所有。删除或替换数据文件后使用本代码，完全符合本许可证。
+
+------------------------------------------------------------------------
+
+For the avoidance of doubt, "the Software" as used in the permission notice
+below means only the original works listed in the first paragraph of this
+SCOPE section, and excludes any third-party textbook content as described.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

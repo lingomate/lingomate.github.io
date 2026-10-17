@@ -1,0 +1,36 @@
+# 行尾策略：仓库内统一存 LF，签出时按类型转换。
+#
+# 背景：cmd.exe 批处理解析器遇到「LF 行尾 + rem 行」会错位，把注释当命令执行 ——
+# 这正是「启动手机伴学.bat 启动不了」的成因。没有本文件时，clone 到 macOS/Linux
+# （core.autocrlf=input 或 false）会得到 LF 版 .bat，这个坑会被原样复现。
+# 规则顺序：后面的更具体规则覆盖前面的 * text=auto。
+
+# 兜底：自动识别文本，入库归一化为 LF
+* text=auto
+
+# Windows 批处理必须以 CRLF 签出，且不受调用方 core.autocrlf 影响
+*.bat  text eol=crlf
+*.cmd  text eol=crlf
+
+# PowerShell 靠 UTF-8 BOM 解决中文乱码（见 stop_server.ps1），行尾保持 LF，
+# 与工作区现状一致，避免 git 反复提示「LF will be replaced by CRLF」
+*.ps1  text eol=lf
+
+# 源码 / 文档统一 LF
+*.js   text eol=lf
+*.html text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# 无扩展名 / 配置类文件：显式钉住 LF，否则 core.autocrlf=true 签出成 CRLF 会反复提示
+LICENSE        text eol=lf
+.gitattributes text eol=lf
+.gitignore     text eol=lf
+
+# 二进制兜底（英语/ 已被 .gitignore 排除，此处防止误加后内容被换行转换破坏）
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.mp3  binary
