@@ -490,7 +490,7 @@ function renderBookSelect() {
   });
   html += '</div>';
   content.innerHTML = html;
-  setCrumb([{ t: '🏠 选择教材' }]);
+  setCrumb([{ t: '🏠 选择课本' }]);
 }
 
 function loadBookById(id) {
@@ -612,7 +612,10 @@ const GENDER_NAMES = {
   youyou: 'm', huihui: 'm', xiaorong: 'f', xiaoyuan: 'f', 'wu wei': 'm',
   shasha: 'm', jinjin: 'm', libo: 'm', 'li bo': 'm', 'wu yan': 'f', amy: 'f',
   kitty: 'f', sam: 'm', ann: 'f', bill: 'm', ben: 'm', bobby: 'm',
-  may: 'f', mary: 'f', helen: 'f', nancy: 'f', simon: 'm', cindy: 'f', millie: 'f'
+  may: 'f', mary: 'f', helen: 'f', nancy: 'f', simon: 'm', cindy: 'f', millie: 'f',
+  // 三年级上册常见人名（沪教版 3A）
+  junjun: 'm', lanlan: 'f', dangdang: 'm', wenwen: 'm', chenchen: 'm',
+  taotao: 'm', lele: 'm', 'zhong yu': 'f'
 };
 function guessGender(sp) {
   if (!sp) return null;
@@ -712,7 +715,7 @@ function pickAutoInterval(btn) {
   rd.interval = Number(btn.getAttribute('data-ms'));
 }
 
-// 面包屑：固定顶部导航（首页=选教材 → 教材=关卡地图 → 单元=模式选择 → 类别=当前模式）
+// 面包屑：固定顶部导航（首页=选课本 → 课本=关卡地图 → 单元=模式选择 → 类别=当前模式）
 // trail: [{t:'🏠 首页', go:'renderBookSelect'}, {t:'四年级下册', go:'renderMap'}, {t:'Unit 1', go:"openUnit(1)"}, {t:'🗣️ 跟读', go:null}]
 function setCrumb(trail) {
   const el = document.getElementById('crumb');

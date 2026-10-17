@@ -16,10 +16,10 @@ the textbook content**. Read the [Disclaimer](#disclaimer) before using or redis
 
 ## What is this
 
-A local web app for day-to-day English practice with a primary-school child. Textbook content
+A local web app for day-to-day English practice with a primary-school child. Book content
 (Shanghai Education Press edition) lives entirely in **JSON question banks** — the program itself
 contains no specific questions. Code, levels and data are three separate layers, so adding a new
-textbook means adding one JSON file.
+book means adding one JSON file.
 
 Everything runs in the browser: text-to-speech uses the built-in **Web Speech API** (no network,
 nothing uploaded), and progress / dictation results are stored in `localStorage`. Start a local HTTP
@@ -36,7 +36,7 @@ Home Screen" and it feels like a native mini-app.
 
 Also included:
 
-- **Multiple textbooks**: the home screen lists everything in `data/books.json`, sorted by grade and
+- **Multiple books**: the home screen lists everything in `data/books.json`, sorted by grade and
   volume; progress is saved per book.
 - **Auto speech**: the English part of each new stem is read aloud automatically; after answering,
   only the **correct option** is spoken (cloze items are never pre-read, so they can't give the answer
@@ -97,7 +97,8 @@ LingoMate/
 ├── index.html              Page skeleton + all CSS (mobile-first, safe-area aware)
 ├── app.js                  Engine: book select / level map / quiz & scoring / speech / dictation / read-aloud
 ├── data/
-│   ├── books.json          Book manifest (add one line per textbook)
+│   ├── books.json          Book manifest (add one line per book)
+│   ├── 3A.json             Grade 3 Vol.1 · 8 units
 │   ├── 4A.json             Grade 4 Vol.1 · 8 units
 │   ├── 4B.json             Grade 4 Vol.2 · 8 units
 │   └── 5A.json             Grade 5 Vol.1 · 8 units
@@ -113,17 +114,18 @@ LingoMate/
 └── 英语/                   Textbook PDFs and notes (~697 MB, ignored via .gitignore)
 ```
 
-## Bundled textbooks
+## Bundled books
 
 | id | Book | Units | Words | Read-aloud sentences | Questions |
 |---|---|---|---|---|---|
+| 3A | 📔 Grade 3 Vol.1 | 8 | 144 | 166 | 240 |
 | 4A | 📕 Grade 4 Vol.1 | 8 | 124 | 204 | 246 |
 | 4B | 📘 Grade 4 Vol.2 (2024) | 8 | 301 | 255 | 247 |
 | 5A | 📗 Grade 5 Vol.1 | 8 | 120 | 269 | 347 |
-| **Total** | | **24** | **545** | **728** | **840** |
+| **Total** | | **32** | **689** | **894** | **1080** |
 
-Question types across the three books: vocabulary 391 · sentence patterns 234 · dictation 104 ·
-phonics 46 · communication 48 (+ 17 legacy `拓展` items in 5A).
+Question types across the four books: vocabulary 502 · sentence patterns 313 · dictation 136 ·
+phonics 48 · communication 64 (+ 17 legacy `拓展` items in 5A).
 
 ## Data format
 
@@ -131,6 +133,7 @@ phonics 46 · communication 48 (+ 17 legacy `拓展` items in 5A).
 
 ```json
 [
+  { "id": "3A", "file": "data/3A.json" },
   { "id": "4A", "file": "data/4A.json" },
   { "id": "4B", "file": "data/4B.json" }
 ]
@@ -192,12 +195,12 @@ Notes:
   speech and grading), and its `q` must always be the fixed string `仔细听单词，拼写出它的英文`.
 - `vocab` drives dictation, `read` drives read-aloud; a unit without them shows those cards greyed out.
 
-## Adding a textbook (three steps, no code changes)
+## Adding a book (three steps, no code changes)
 
-1. Copy `data/5A.json` to `data/5B.json` and edit `id` / `title` / `icon` plus the content (the shape
+1. Copy `data/3A.json` to `data/5B.json` and edit `id` / `title` / `icon` plus the content (the shape
    stays identical).
 2. Add `{ "id": "5B", "file": "data/5B.json" }` to `data/books.json`.
-3. Reload the page. Books are sorted by grade/volume automatically, and the "choose a textbook"
+3. Reload the page. Books are sorted by grade/volume automatically, and the "choose a book"
    screen appears as soon as there is more than one.
 
 To generate a bank straight from a scanned PDF textbook (page-by-page image reading, page-offset

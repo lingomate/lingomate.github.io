@@ -1,0 +1,4206 @@
+{
+  "id": "3A",
+  "title": "三年级上册",
+  "subtitle": "上海教育出版社 · 沪教版",
+  "icon": "📔",
+  "units": [
+    {
+      "name": "Unit 1",
+      "title": "我们感觉如何",
+      "icon": "😊",
+      "color": "#ff9800",
+      "en": "How do we feel?",
+      "vocab": [
+        {
+          "en": "happy",
+          "cn": "开心的"
+        },
+        {
+          "en": "sad",
+          "cn": "伤心的"
+        },
+        {
+          "en": "angry",
+          "cn": "生气的"
+        },
+        {
+          "en": "tired",
+          "cn": "疲倦的"
+        },
+        {
+          "en": "boy",
+          "cn": "男孩"
+        },
+        {
+          "en": "girl",
+          "cn": "女孩"
+        },
+        {
+          "en": "I",
+          "cn": "我"
+        },
+        {
+          "en": "am",
+          "cn": "是"
+        },
+        {
+          "en": "cold",
+          "cn": "冷的"
+        },
+        {
+          "en": "OK",
+          "cn": "对；好；行"
+        },
+        {
+          "en": "find",
+          "cn": "找到"
+        },
+        {
+          "en": "pencil",
+          "cn": "铅笔"
+        },
+        {
+          "en": "too",
+          "cn": "也；太"
+        },
+        {
+          "en": "well",
+          "cn": "好；就这样；好啦"
+        },
+        {
+          "en": "now",
+          "cn": "现在"
+        }
+      ],
+      "read": [
+        {
+          "en": "Good morning, boys and girls!",
+          "cn": "早上好，孩子们！",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "How are you?",
+          "cn": "你好吗？",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "Not so good.",
+          "cn": "不太好。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "I'm cold.",
+          "cn": "我冷。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "OK, Wen Jie.",
+          "cn": "好的，文洁。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "Let's close the window.",
+          "cn": "我们关上窗户吧。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "I'm sad.",
+          "cn": "我很伤心。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "I can't find my pencil.",
+          "cn": "我找不到我的铅笔。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "Look, Jia Li.",
+          "cn": "看，佳丽。",
+          "st": "课文 · How are you?",
+          "sp": "p.8"
+        },
+        {
+          "en": "I'm happy.",
+          "cn": "我很开心。",
+          "st": "课文 · How are you?",
+          "sp": "p.9"
+        },
+        {
+          "en": "I'm happy too!",
+          "cn": "我也很开心！",
+          "st": "课文 · How are you?",
+          "sp": "p.9"
+        },
+        {
+          "en": "Well, how are you now?",
+          "cn": "好啦，你现在感觉怎么样？",
+          "st": "课文 · How are you?",
+          "sp": "p.9"
+        },
+        {
+          "en": "Fine, thank you.",
+          "cn": "很好，谢谢。",
+          "st": "课文 · How are you?",
+          "sp": "p.9"
+        },
+        {
+          "en": "I'm thirsty.",
+          "cn": "我渴了。",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Water!",
+          "cn": "水！",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I can't drink the water.",
+          "cn": "我喝不到水。",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "The bird is sad.",
+          "cn": "小鸟很伤心。",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I have a good idea!",
+          "cn": "我有一个好主意！",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I can drink the water now!",
+          "cn": "现在我能喝到水了！",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Look! The bird is happy.",
+          "cn": "看！小鸟很开心。",
+          "st": "拓展阅读 · A thirsty bird",
+          "sp": "p.14",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 2",
+      "title": "有趣的家庭",
+      "icon": "👪",
+      "color": "#4caf50",
+      "en": "What's interesting about families?",
+      "vocab": [
+        {
+          "en": "grandfather",
+          "cn": "（外）祖父；爷爷；外公"
+        },
+        {
+          "en": "grandmother",
+          "cn": "（外）祖母；奶奶；外婆"
+        },
+        {
+          "en": "father",
+          "cn": "爸爸"
+        },
+        {
+          "en": "mother",
+          "cn": "妈妈"
+        },
+        {
+          "en": "sister",
+          "cn": "姐姐；妹妹"
+        },
+        {
+          "en": "brother",
+          "cn": "哥哥；弟弟"
+        },
+        {
+          "en": "me",
+          "cn": "我"
+        },
+        {
+          "en": "family",
+          "cn": "家庭"
+        },
+        {
+          "en": "my",
+          "cn": "我的"
+        },
+        {
+          "en": "name",
+          "cn": "名字"
+        },
+        {
+          "en": "is",
+          "cn": "是"
+        },
+        {
+          "en": "this",
+          "cn": "这；这个"
+        },
+        {
+          "en": "and",
+          "cn": "和"
+        },
+        {
+          "en": "she",
+          "cn": "她"
+        },
+        {
+          "en": "he",
+          "cn": "他"
+        },
+        {
+          "en": "who",
+          "cn": "谁"
+        },
+        {
+          "en": "twin",
+          "cn": "双胞胎之一"
+        },
+        {
+          "en": "big",
+          "cn": "大的"
+        }
+      ],
+      "read": [
+        {
+          "en": "My name is Yangyang.",
+          "cn": "我叫阳阳。",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "This is my family.",
+          "cn": "这是我的家人。",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "She's my mother.",
+          "cn": "她是我的妈妈。",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "And he's my father.",
+          "cn": "而他是我的爸爸。",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "Who is he?",
+          "cn": "他是谁？",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "He's Pengpeng, my twin brother.",
+          "cn": "他是鹏鹏，我的双胞胎兄弟。",
+          "st": "课文 · Families",
+          "sp": "p.18"
+        },
+        {
+          "en": "My name is Xiaojie.",
+          "cn": "我叫小杰。",
+          "st": "课文 · Families",
+          "sp": "p.19"
+        },
+        {
+          "en": "This is my family: my grandfather, grandmother, father, mother and sister.",
+          "cn": "这是我的家人：爷爷、奶奶、爸爸、妈妈和姐姐。",
+          "st": "课文 · Families",
+          "sp": "p.19"
+        },
+        {
+          "en": "Xiaojie's family is big.",
+          "cn": "小杰的家庭很大。",
+          "st": "课文 · What is your family like?",
+          "sp": "p.20"
+        },
+        {
+          "en": "My family is big too.",
+          "cn": "我的家庭也很大。",
+          "st": "课文 · What is your family like?",
+          "sp": "p.20"
+        },
+        {
+          "en": "Who is he? He is my father.",
+          "cn": "他是谁？他是我的爸爸。",
+          "st": "课文 · Grammar in use",
+          "sp": "p.21"
+        },
+        {
+          "en": "Who is she? She is my mother.",
+          "cn": "她是谁？她是我的妈妈。",
+          "st": "课文 · Grammar in use",
+          "sp": "p.21"
+        },
+        {
+          "en": "Look at our photos. We're happy.",
+          "cn": "看我们的照片。我们很开心。",
+          "st": "课文 · Communicate",
+          "sp": "p.23"
+        },
+        {
+          "en": "He's my brother.",
+          "cn": "他是我的哥哥。",
+          "st": "课文 · Communicate",
+          "sp": "p.23"
+        },
+        {
+          "en": "It is the Mid-Autumn Festival.",
+          "cn": "今天是中秋节。",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Junjun: Who is he?",
+          "cn": "君君：他是谁？",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Lanlan: He's our grandpa.",
+          "cn": "兰兰：他是我们的爷爷。",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Junjun: Who is she?",
+          "cn": "君君：她是谁？",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Lanlan: She's our grandma.",
+          "cn": "兰兰：她是我们的奶奶。",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Dad: Hey, let's take a photo together.",
+          "cn": "爸爸：嘿，我们一起拍张合照吧。",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Lanlan: Good idea!",
+          "cn": "兰兰：好主意！",
+          "st": "拓展阅读 · At the Mid-Autumn Festival",
+          "sp": "p.24",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 3",
+      "title": "我们长什么样",
+      "icon": "🪞",
+      "color": "#2196f3",
+      "en": "What do we look like?",
+      "vocab": [
+        {
+          "en": "head",
+          "cn": "头"
+        },
+        {
+          "en": "eye",
+          "cn": "眼睛"
+        },
+        {
+          "en": "ear",
+          "cn": "耳朵"
+        },
+        {
+          "en": "mouth",
+          "cn": "嘴巴"
+        },
+        {
+          "en": "hair",
+          "cn": "头发"
+        },
+        {
+          "en": "nose",
+          "cn": "鼻子"
+        },
+        {
+          "en": "face",
+          "cn": "脸"
+        },
+        {
+          "en": "haircut",
+          "cn": "理发；发型"
+        },
+        {
+          "en": "your",
+          "cn": "你的；你们的"
+        },
+        {
+          "en": "long",
+          "cn": "长的"
+        },
+        {
+          "en": "but",
+          "cn": "但是"
+        },
+        {
+          "en": "like",
+          "cn": "喜欢"
+        },
+        {
+          "en": "see",
+          "cn": "看见"
+        },
+        {
+          "en": "sit",
+          "cn": "坐"
+        },
+        {
+          "en": "on",
+          "cn": "在……上"
+        },
+        {
+          "en": "chair",
+          "cn": "椅子"
+        },
+        {
+          "en": "please",
+          "cn": "请"
+        },
+        {
+          "en": "you",
+          "cn": "你；你们"
+        },
+        {
+          "en": "have",
+          "cn": "有"
+        },
+        {
+          "en": "short",
+          "cn": "短的；个子矮的"
+        },
+        {
+          "en": "mum",
+          "cn": "妈妈"
+        }
+      ],
+      "read": [
+        {
+          "en": "Look at your hair, Minmin.",
+          "cn": "看你的头发，敏敏。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.28"
+        },
+        {
+          "en": "It's too long.",
+          "cn": "它太长了。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.28"
+        },
+        {
+          "en": "Minmin, I can't see your eyes.",
+          "cn": "敏敏，我看不见你的眼睛。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.28"
+        },
+        {
+          "en": "Now sit on this chair, please!",
+          "cn": "现在请坐在这把椅子上！",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.28"
+        },
+        {
+          "en": "But I like it!",
+          "cn": "但是我喜欢它！",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.28"
+        },
+        {
+          "en": "Thanks, Mum.",
+          "cn": "谢谢，妈妈。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.29"
+        },
+        {
+          "en": "You look great!",
+          "cn": "你看起来棒极了！",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.29"
+        },
+        {
+          "en": "Oh! I have short hair.",
+          "cn": "哦！我留着短发。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.29"
+        },
+        {
+          "en": "I like my haircut, Mum.",
+          "cn": "我喜欢我的发型，妈妈。",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.29"
+        },
+        {
+          "en": "Look! Do you like your haircut?",
+          "cn": "看！你喜欢你的发型吗？",
+          "st": "课文 · Snip! Snip!",
+          "sp": "p.29"
+        },
+        {
+          "en": "I can see your big eyes.",
+          "cn": "我能看见你的大眼睛。",
+          "st": "课文 · What do you look like?",
+          "sp": "p.30"
+        },
+        {
+          "en": "Your hair is too long.",
+          "cn": "你的头发太长了。",
+          "st": "课文 · What do you look like?",
+          "sp": "p.30"
+        },
+        {
+          "en": "I can't see your eyes.",
+          "cn": "我看不见你的眼睛。",
+          "st": "课文 · What do you look like?",
+          "sp": "p.30"
+        },
+        {
+          "en": "I like my haircut.",
+          "cn": "我喜欢我的发型。",
+          "st": "课文 · What do you look like?",
+          "sp": "p.30"
+        },
+        {
+          "en": "People look different.",
+          "cn": "人们看起来各不相同。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Some people have brown eyes.",
+          "cn": "有些人长着棕色的眼睛。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Some have blue eyes.",
+          "cn": "有些人长着蓝色的眼睛。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Some people have black hair.",
+          "cn": "有些人长着黑色的头发。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Some have brown hair.",
+          "cn": "有些人长着棕色的头发。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It is okay to be different.",
+          "cn": "与众不同也没关系。",
+          "st": "拓展阅读 · People look different",
+          "sp": "p.34",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 4",
+      "title": "我们怎么玩",
+      "icon": "🎈",
+      "color": "#9c27b0",
+      "en": "How do we have fun?",
+      "vocab": [
+        {
+          "en": "skip",
+          "cn": "跳绳"
+        },
+        {
+          "en": "run",
+          "cn": "跑"
+        },
+        {
+          "en": "fly a kite",
+          "cn": "放风筝"
+        },
+        {
+          "en": "skateboard",
+          "cn": "滑滑板"
+        },
+        {
+          "en": "ride a bike",
+          "cn": "骑自行车"
+        },
+        {
+          "en": "child",
+          "cn": "孩子（复数 children）"
+        },
+        {
+          "en": "in",
+          "cn": "在……里面"
+        },
+        {
+          "en": "the",
+          "cn": "（表示特指）"
+        },
+        {
+          "en": "park",
+          "cn": "公园"
+        },
+        {
+          "en": "are",
+          "cn": "是"
+        },
+        {
+          "en": "can",
+          "cn": "能够"
+        },
+        {
+          "en": "fun",
+          "cn": "有趣的；乐趣"
+        },
+        {
+          "en": "fast",
+          "cn": "快的；快；快速"
+        },
+        {
+          "en": "help",
+          "cn": "帮助"
+        },
+        {
+          "en": "together",
+          "cn": "一起"
+        },
+        {
+          "en": "get",
+          "cn": "去取；得到；获得"
+        },
+        {
+          "en": "bring",
+          "cn": "带来"
+        },
+        {
+          "en": "jump",
+          "cn": "跳"
+        }
+      ],
+      "read": [
+        {
+          "en": "The children are in a park.",
+          "cn": "孩子们在公园里。",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Children: Hello, Tingting.",
+          "cn": "你好，婷婷。",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Tingting: Hello.",
+          "cn": "你好。",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Yaoyao can fly a kite!",
+          "cn": "瑶瑶会放风筝！",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "She is happy!",
+          "cn": "她很开心！",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Chenchen can ride a bike.",
+          "cn": "晨晨会骑自行车。",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Chenchen: It's fun. Woo-hoo!",
+          "cn": "很有趣。呜呼！",
+          "st": "课文 · In the park",
+          "sp": "p.38"
+        },
+        {
+          "en": "Chenchen: Oh no!",
+          "cn": "哦，不！",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Huihui can run fast and help Chenchen.",
+          "cn": "辉辉能跑得快，还能帮助晨晨。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "The children skip together.",
+          "cn": "孩子们一起跳绳。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "But Tingting can't skip.",
+          "cn": "但是婷婷不会跳绳。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Chenchen: Hey! Let's skip together.",
+          "cn": "嘿！我们一起来跳绳吧。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Children: OK!",
+          "cn": "好的！",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Tingting: I can't skip. But I can get some juice. Are you thirsty?",
+          "cn": "我不会跳绳。但是我能去拿些果汁。你渴吗？",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Tingting can skateboard.",
+          "cn": "婷婷会滑滑板。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "She brings some juice.",
+          "cn": "她带来一些果汁。",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        },
+        {
+          "en": "Dangdang: Wow, Tingting! Thank you!",
+          "cn": "哇，婷婷！谢谢你！",
+          "st": "课文 · In the park",
+          "sp": "p.39"
+        }
+      ]
+    },
+    {
+      "name": "Unit 5",
+      "title": "我们吃什么",
+      "icon": "🍜",
+      "color": "#8bc34a",
+      "en": "What do we eat?",
+      "vocab": [
+        {
+          "en": "milk",
+          "cn": "牛奶"
+        },
+        {
+          "en": "juice",
+          "cn": "果汁"
+        },
+        {
+          "en": "tomato",
+          "cn": "西红柿"
+        },
+        {
+          "en": "carrot",
+          "cn": "胡萝卜"
+        },
+        {
+          "en": "apple",
+          "cn": "苹果"
+        },
+        {
+          "en": "banana",
+          "cn": "香蕉"
+        },
+        {
+          "en": "grape",
+          "cn": "葡萄"
+        },
+        {
+          "en": "meat",
+          "cn": "肉"
+        },
+        {
+          "en": "fish",
+          "cn": "鱼；鱼肉"
+        },
+        {
+          "en": "funny",
+          "cn": "有趣的"
+        },
+        {
+          "en": "food",
+          "cn": "食物"
+        },
+        {
+          "en": "what",
+          "cn": "什么"
+        },
+        {
+          "en": "some",
+          "cn": "一些"
+        },
+        {
+          "en": "fruit",
+          "cn": "水果"
+        },
+        {
+          "en": "vegetable",
+          "cn": "蔬菜"
+        },
+        {
+          "en": "cut",
+          "cn": "切"
+        },
+        {
+          "en": "we",
+          "cn": "我们"
+        },
+        {
+          "en": "no",
+          "cn": "不；不是"
+        },
+        {
+          "en": "for",
+          "cn": "（表示对象、用途等）给；对"
+        },
+        {
+          "en": "yes",
+          "cn": "是的"
+        },
+        {
+          "en": "chicken",
+          "cn": "鸡肉"
+        },
+        {
+          "en": "soup",
+          "cn": "汤"
+        }
+      ],
+      "read": [
+        {
+          "en": "Wenwen: What do you have, Mum?",
+          "cn": "雯雯：妈妈，您有什么？",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Mum: Let's see.",
+          "cn": "妈妈：让我看看。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Chenchen: Some fruit and vegetables.",
+          "cn": "晨晨：一些水果和蔬菜。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Wenwen: Oh no! I don't like carrots.",
+          "cn": "雯雯：哦，不！我不喜欢胡萝卜。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Mum: Let's cut the fruit and vegetables. We can have some fun.",
+          "cn": "妈妈：我们把水果和蔬菜切一切吧。我们能玩得开心。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Huihui: Do you like carrots, Chenchen?",
+          "cn": "慧慧：晨晨，你喜欢胡萝卜吗？",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Chenchen: No, I don't.",
+          "cn": "晨晨：不，我不喜欢。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Mum: Carrots are good for you.",
+          "cn": "妈妈：胡萝卜对你有好处。",
+          "st": "课文 · A funny food face",
+          "sp": "p.48"
+        },
+        {
+          "en": "Mum: What do you like, Huihui?",
+          "cn": "妈妈：慧慧，你喜欢什么？",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Huihui: I like carrots!",
+          "cn": "慧慧：我喜欢胡萝卜！",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Mum: OK ... Carrots for the \"eyes\".",
+          "cn": "妈妈：好的……胡萝卜做\"眼睛\"。",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Chenchen: I like apples.",
+          "cn": "晨晨：我喜欢苹果。",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Wenwen: I like bananas.",
+          "cn": "雯雯：我喜欢香蕉。",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Huihui: Ha ha! This is fun!",
+          "cn": "慧慧：哈哈！这真有趣！",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Chenchen: We like the food face, Mum.",
+          "cn": "晨晨：妈妈，我们喜欢这个食物脸。",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "Mum: That's great.",
+          "cn": "妈妈：太棒了。",
+          "st": "课文 · A funny food face",
+          "sp": "p.49"
+        },
+        {
+          "en": "I have carrots and bananas.",
+          "cn": "我有胡萝卜和香蕉。",
+          "st": "课文 · A funny food face",
+          "sp": "p.47"
+        },
+        {
+          "en": "What do you like, Wenwen / Chenchen / Huihui?",
+          "cn": "雯雯/晨晨/慧慧，你们喜欢什么？",
+          "st": "课文 · A funny food face",
+          "sp": "p.50"
+        },
+        {
+          "en": "We eat different parts of plants.",
+          "cn": "我们吃植物的不同部位。",
+          "st": "拓展阅读 · We eat different parts of plants",
+          "sp": "p.54",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Some of the parts are roots, fruit or leaves.",
+          "cn": "其中一些部位是根、果实或叶子。",
+          "st": "拓展阅读 · We eat different parts of plants",
+          "sp": "p.54",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Lettuce is big and green.",
+          "cn": "生菜又大又绿。",
+          "st": "拓展阅读 · We eat different parts of plants",
+          "sp": "p.54",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tomatoes are round and red.",
+          "cn": "西红柿又圆又红。",
+          "st": "拓展阅读 · We eat different parts of plants",
+          "sp": "p.54",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Carrots are long and orange.",
+          "cn": "胡萝卜又长又橙色。",
+          "st": "拓展阅读 · We eat different parts of plants",
+          "sp": "p.54",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 6",
+      "title": "可爱的小动物",
+      "icon": "🐾",
+      "color": "#03a9f4",
+      "en": "What do we like about small animals?",
+      "vocab": [
+        {
+          "en": "squirrel",
+          "cn": "松鼠"
+        },
+        {
+          "en": "rabbit",
+          "cn": "兔子"
+        },
+        {
+          "en": "cat",
+          "cn": "猫"
+        },
+        {
+          "en": "mouse",
+          "cn": "老鼠（复数 mice）"
+        },
+        {
+          "en": "dog",
+          "cn": "狗"
+        },
+        {
+          "en": "frog",
+          "cn": "青蛙"
+        },
+        {
+          "en": "day",
+          "cn": "白天；一天"
+        },
+        {
+          "en": "it",
+          "cn": "它"
+        },
+        {
+          "en": "nice",
+          "cn": "美好的"
+        },
+        {
+          "en": "has",
+          "cn": "有（have 的第三人称单数）"
+        },
+        {
+          "en": "small",
+          "cn": "小的"
+        },
+        {
+          "en": "cute",
+          "cn": "可爱的"
+        },
+        {
+          "en": "that",
+          "cn": "那；那个"
+        },
+        {
+          "en": "they",
+          "cn": "他们；她们；它们"
+        },
+        {
+          "en": "tail",
+          "cn": "尾巴"
+        },
+        {
+          "en": "two",
+          "cn": "二；二个（人或物）"
+        },
+        {
+          "en": "animal",
+          "cn": "动物"
+        },
+        {
+          "en": "eat",
+          "cn": "吃"
+        },
+        {
+          "en": "bad",
+          "cn": "坏的"
+        },
+        {
+          "en": "bug",
+          "cn": "虫子"
+        }
+      ],
+      "read": [
+        {
+          "en": "It's a nice day today.",
+          "cn": "今天是美好的一天。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.58"
+        },
+        {
+          "en": "What is it, Coco?",
+          "cn": "那是什么，可可？",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.58"
+        },
+        {
+          "en": "Oh! It's a cat! Look!",
+          "cn": "哦！是一只猫！看！",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.58"
+        },
+        {
+          "en": "It has small ears.",
+          "cn": "它有小耳朵。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.58"
+        },
+        {
+          "en": "It's cute. It has big eyes.",
+          "cn": "它很可爱。它有大眼睛。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.58"
+        },
+        {
+          "en": "I see two small animals.",
+          "cn": "我看见两只小动物。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "What are they?",
+          "cn": "它们是什么？",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "Look! That's a squirrel!",
+          "cn": "看！那是一只松鼠！",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "Is this a squirrel too?",
+          "cn": "这也是一只松鼠吗？",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "Yes. They have big long tails.",
+          "cn": "是的。它们有又大又长的尾巴。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "Oh! They're frogs! They're small.",
+          "cn": "哦！它们是青蛙！它们很小。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "I like frogs. They eat bad bugs.",
+          "cn": "我喜欢青蛙。它们吃坏虫子。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.59"
+        },
+        {
+          "en": "They see a cat.",
+          "cn": "它们看见一只猫。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.60"
+        },
+        {
+          "en": "They see squirrels.",
+          "cn": "它们看见松鼠。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.60"
+        },
+        {
+          "en": "They see frogs.",
+          "cn": "它们看见青蛙。",
+          "st": "课文 · Coco's day in the park",
+          "sp": "p.60"
+        },
+        {
+          "en": "It is a small egg. It can't swim or jump.",
+          "cn": "它是一只小小的卵。它不会游泳，也不会跳。",
+          "st": "拓展阅读 · A frog's life",
+          "sp": "p.64",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It is a baby frog. Its tail is long. It can swim.",
+          "cn": "它是一只小青蛙。它的尾巴很长。它会游泳。",
+          "st": "拓展阅读 · A frog's life",
+          "sp": "p.64",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It is still a baby frog. It has four legs. Its tail is small and short. It can swim and jump.",
+          "cn": "它还是一只小青蛙。它有四条腿。它的尾巴又小又短。它会游泳和跳跃。",
+          "st": "拓展阅读 · A frog's life",
+          "sp": "p.64",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It is a frog! It has four legs. It has no tail. Its mouth is big. It can swim and jump.",
+          "cn": "它是一只青蛙！它有四条腿。它没有尾巴。它的嘴巴很大。它会游泳和跳跃。",
+          "st": "拓展阅读 · A frog's life",
+          "sp": "p.64",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Is a frog's life amazing?",
+          "cn": "青蛙的一生奇妙吗？",
+          "st": "拓展阅读 · A frog's life",
+          "sp": "p.64",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 7",
+      "title": "认识天气",
+      "icon": "🌦️",
+      "color": "#f44336",
+      "en": "What do we know about weather?",
+      "vocab": [
+        {
+          "en": "sunny",
+          "cn": "晴朗的"
+        },
+        {
+          "en": "sun",
+          "cn": "太阳"
+        },
+        {
+          "en": "windy",
+          "cn": "刮风的"
+        },
+        {
+          "en": "wind",
+          "cn": "风"
+        },
+        {
+          "en": "rainy",
+          "cn": "下雨的"
+        },
+        {
+          "en": "rain",
+          "cn": "雨；下雨"
+        },
+        {
+          "en": "cloudy",
+          "cn": "多云的"
+        },
+        {
+          "en": "cloud",
+          "cn": "云"
+        },
+        {
+          "en": "different",
+          "cn": "不同的"
+        },
+        {
+          "en": "weather",
+          "cn": "天气"
+        },
+        {
+          "en": "how",
+          "cn": "怎样；如何"
+        },
+        {
+          "en": "today",
+          "cn": "今天"
+        },
+        {
+          "en": "hat",
+          "cn": "帽子"
+        },
+        {
+          "en": "plant",
+          "cn": "植物"
+        },
+        {
+          "en": "hot",
+          "cn": "热的"
+        },
+        {
+          "en": "very",
+          "cn": "非常"
+        }
+      ],
+      "read": [
+        {
+          "en": "How's the weather today?",
+          "cn": "今天天气怎么样？",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "Oh, dear!",
+          "cn": "哦，天哪！",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "It's windy today.",
+          "cn": "今天刮风。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "I like the wind.",
+          "cn": "我喜欢风。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "I can fly my kite.",
+          "cn": "我可以放风筝。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "It's rainy.",
+          "cn": "下雨了。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "Let's go to the park.",
+          "cn": "我们去公园吧。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "Hooray!",
+          "cn": "好哇！",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "It's hot today.",
+          "cn": "今天很热。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "I don't like the sun.",
+          "cn": "我不喜欢太阳。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "I don't like the rain.",
+          "cn": "我不喜欢雨。",
+          "st": "课文 · We like different weather",
+          "sp": "p.68"
+        },
+        {
+          "en": "I like the rain.",
+          "cn": "我喜欢雨。",
+          "st": "课文 · We like different weather",
+          "sp": "p.69"
+        },
+        {
+          "en": "Oh no, my hat and my plants!",
+          "cn": "哦，不！我的帽子和我的植物！",
+          "st": "课文 · We like different weather",
+          "sp": "p.69"
+        },
+        {
+          "en": "I don't like the wind.",
+          "cn": "我不喜欢风。",
+          "st": "课文 · We like different weather",
+          "sp": "p.69"
+        },
+        {
+          "en": "I'm very happy.",
+          "cn": "我非常开心。",
+          "st": "课文 · We like different weather",
+          "sp": "p.69"
+        },
+        {
+          "en": "I like the sun.",
+          "cn": "我喜欢太阳。",
+          "st": "课文 · We like different weather",
+          "sp": "p.69"
+        },
+        {
+          "en": "Hi! How are you and your mum?",
+          "cn": "嗨！你和你妈妈好吗？",
+          "st": "课文 · Communicate",
+          "sp": "p.73"
+        },
+        {
+          "en": "We're good. How's the weather in Shenyang, Dad?",
+          "cn": "我们很好。沈阳天气怎么样，爸爸？",
+          "st": "课文 · Communicate",
+          "sp": "p.73"
+        },
+        {
+          "en": "How's the weather in Sanya?",
+          "cn": "三亚天气怎么样？",
+          "st": "课文 · Communicate",
+          "sp": "p.73"
+        },
+        {
+          "en": "It's sunny and hot.",
+          "cn": "天气晴朗而且热。",
+          "st": "课文 · Communicate",
+          "sp": "p.73"
+        }
+      ]
+    },
+    {
+      "name": "Unit 8",
+      "title": "我们的生日",
+      "icon": "🎂",
+      "color": "#673ab7",
+      "en": "Why do we like birthdays?",
+      "vocab": [
+        {
+          "en": "cake",
+          "cn": "蛋糕"
+        },
+        {
+          "en": "candle",
+          "cn": "蜡烛"
+        },
+        {
+          "en": "gift",
+          "cn": "礼物"
+        },
+        {
+          "en": "toy plane",
+          "cn": "玩具飞机"
+        },
+        {
+          "en": "doll",
+          "cn": "玩具娃娃"
+        },
+        {
+          "en": "card",
+          "cn": "卡片"
+        },
+        {
+          "en": "noodles",
+          "cn": "面条"
+        },
+        {
+          "en": "come",
+          "cn": "来"
+        },
+        {
+          "en": "love",
+          "cn": "爱"
+        },
+        {
+          "en": "dad",
+          "cn": "爸爸"
+        },
+        {
+          "en": "afternoon",
+          "cn": "下午"
+        },
+        {
+          "en": "share",
+          "cn": "分享"
+        },
+        {
+          "en": "his",
+          "cn": "他的"
+        },
+        {
+          "en": "evening",
+          "cn": "傍晚；晚上"
+        }
+      ],
+      "read": [
+        {
+          "en": "Taotao is 10 years old today.",
+          "cn": "涛涛今天十岁了。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "Happy birthday, Taotao!",
+          "cn": "生日快乐，涛涛！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "Come and see your gifts!",
+          "cn": "过来看看你的礼物！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "I have a gift for you.",
+          "cn": "我有一份礼物给你。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "Do you like it?",
+          "cn": "你喜欢它吗？",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "Yes. What a lovely picture!",
+          "cn": "喜欢。多漂亮的一幅画啊！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "Thank you, Lele!",
+          "cn": "谢谢你，乐乐！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.78"
+        },
+        {
+          "en": "The family are in a park.",
+          "cn": "这一家人在公园里。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Let's go out!",
+          "cn": "我们出去吧！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Yeah! I like noodles.",
+          "cn": "好哇！我喜欢面条。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "What a great birthday!",
+          "cn": "多棒的一个生日啊！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "It's windy. Let's fly a kite.",
+          "cn": "今天有风。我们去放风筝吧。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Wow! I love this toy plane!",
+          "cn": "哇！我喜欢这个玩具飞机！",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Taotao shares his toys.",
+          "cn": "涛涛分享他的玩具。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Thank you, Mum and Dad.",
+          "cn": "谢谢你们，妈妈和爸爸。",
+          "st": "课文 · Taotao's birthday",
+          "sp": "p.79"
+        },
+        {
+          "en": "Today is a special day at our school.",
+          "cn": "今天是我们学校的一个特别的日子。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We are ten years old this year.",
+          "cn": "我们今年十岁了。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We put on a show!",
+          "cn": "我们上演了一场演出！",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We sing and dance.",
+          "cn": "我们唱歌跳舞。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We have a big cake!",
+          "cn": "我们有一个大蛋糕！",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We light the candles.",
+          "cn": "我们点燃蜡烛。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We make wishes.",
+          "cn": "我们许愿。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "What a special birthday!",
+          "cn": "多么特别的一个生日啊！",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Our parents write us letters.",
+          "cn": "我们的父母给我们写信。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We read the letters.",
+          "cn": "我们读这些信。",
+          "st": "拓展阅读 · A special birthday",
+          "sp": "p.84",
+          "sec": "拓展阅读"
+        }
+      ]
+    }
+  ],
+  "questions": {
+    "1": [
+      {
+        "type": "单词",
+        "q": "\"happy\" 的中文意思是？",
+        "options": [
+          "开心的",
+          "伤心的",
+          "生气的",
+          "疲倦的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"sad\" 的中文意思是？",
+        "options": [
+          "开心的",
+          "伤心的",
+          "冷的",
+          "疲倦的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"angry\" 的中文意思是？",
+        "options": [
+          "冷的",
+          "开心的",
+          "生气的",
+          "伤心的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"tired\" 的中文意思是？",
+        "options": [
+          "疲倦的",
+          "伤心的",
+          "开心的",
+          "冷的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"boy\" 的中文意思是？",
+        "options": [
+          "女孩",
+          "孩子",
+          "男孩",
+          "老师"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"girl\" 的中文意思是？",
+        "options": [
+          "女孩",
+          "男孩",
+          "姐妹",
+          "老师"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"cold\" 的中文意思是？",
+        "options": [
+          "热的",
+          "冷的",
+          "饿的",
+          "累的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"find\" 的中文意思是？",
+        "options": [
+          "看见",
+          "关上",
+          "帮助",
+          "找到"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“也；太” 是哪个单词？",
+        "options": [
+          "now",
+          "too",
+          "well",
+          "OK"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“现在” 是哪个单词？",
+        "options": [
+          "too",
+          "well",
+          "now",
+          "OK"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“好；就这样；好啦” 是哪个单词？",
+        "options": [
+          "OK",
+          "now",
+          "well",
+          "too"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“我” 的英文是？",
+        "options": [
+          "I",
+          "me",
+          "my",
+          "you"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"am\" 的中文意思是？",
+        "options": [
+          "在",
+          "有",
+          "不",
+          "是"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "I ____ happy.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "I'm sad. I can't ____ my pencil.",
+        "options": [
+          "close",
+          "find",
+          "look",
+          "help"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“你好吗？” 用英语怎么说？",
+        "options": [
+          "How old are you?",
+          "How are you?",
+          "Where are you?",
+          "What's this?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“Not so good.” 的意思是？",
+        "options": [
+          "很好。",
+          "不太好。",
+          "太棒了。",
+          "好的。"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“让我们关上窗户吧。” 用英语怎么说？",
+        "options": [
+          "Let's open the window.",
+          "Let's look at the window.",
+          "Let's close the window.",
+          "Let's close the door."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "下列哪句是正确的？",
+        "options": [
+          "I is fine.",
+          "I are fine.",
+          "I am fine.",
+          "Me am fine."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“这些孩子感觉怎么样？” 用英语怎么说？",
+        "options": [
+          "How old are the children?",
+          "Where are the children?",
+          "Who are the children?",
+          "How do the children feel?"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“我也很开心。” 用英语怎么说？",
+        "options": [
+          "I'm happy too!",
+          "I'm too happy!",
+          "Too I'm happy!",
+          "I'm happy now!"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“我们感觉怎么样？” 用英语怎么说？",
+        "options": [
+          "How do we feel?",
+          "How do you feel?",
+          "How do they feel?",
+          "How do the children feel?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "pencil",
+        "cn": "铅笔"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "OK",
+        "cn": "对；好；行"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "sad",
+        "cn": "伤心的"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "now",
+        "cn": "现在"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 a 的发音与 sad 相同？",
+        "options": [
+          "name",
+          "cake",
+          "make",
+          "happy"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母组合 oo 的发音与 too 相同？",
+        "options": [
+          "look",
+          "good",
+          "book",
+          "food"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "同学对你说 \"How are you?\"，你应回答：",
+        "options": [
+          "My name is Jia Li.",
+          "I'm ten years old.",
+          "It's a pencil.",
+          "I'm fine, thank you."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "早上老师对你说 \"Good morning, boys and girls!\"，你应回答：",
+        "options": [
+          "Good morning!",
+          "Good night!",
+          "Good afternoon!",
+          "How are you?"
+        ],
+        "answer": 0
+      }
+    ],
+    "2": [
+      {
+        "type": "单词",
+        "q": "\"grandmother\" 的中文意思是？",
+        "options": [
+          "（外）祖母；奶奶；外婆",
+          "妈妈",
+          "姐姐；妹妹",
+          "（外）祖父；爷爷；外公"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"father\" 的中文意思是？",
+        "options": [
+          "家庭",
+          "爸爸",
+          "名字",
+          "妈妈"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"mother\" 的中文意思是？",
+        "options": [
+          "姐姐；妹妹",
+          "家庭",
+          "妈妈",
+          "爸爸"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"sister\" 的中文意思是？",
+        "options": [
+          "哥哥；弟弟",
+          "妈妈",
+          "（外）祖母；奶奶；外婆",
+          "姐姐；妹妹"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"brother\" 的中文意思是？",
+        "options": [
+          "双胞胎之一",
+          "哥哥；弟弟",
+          "（外）祖父；爷爷；外公",
+          "爸爸"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"me\" 的中文意思是？",
+        "options": [
+          "她",
+          "他",
+          "我",
+          "谁"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“我的” 的英文是？",
+        "options": [
+          "my",
+          "me",
+          "she",
+          "he"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"name\" 的中文意思是？",
+        "options": [
+          "家庭",
+          "爸爸",
+          "双胞胎之一",
+          "名字"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"is\" 的中文意思是？",
+        "options": [
+          "和",
+          "这；这个",
+          "是",
+          "谁"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“这；这个” 的英文是？",
+        "options": [
+          "this",
+          "she",
+          "who",
+          "and"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"and\" 的中文意思是？",
+        "options": [
+          "是",
+          "谁",
+          "这；这个",
+          "和"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“她” 的英文是？",
+        "options": [
+          "he",
+          "she",
+          "me",
+          "who"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"he\" 的中文意思是？",
+        "options": [
+          "他",
+          "她",
+          "谁",
+          "我"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“谁” 的英文是？",
+        "options": [
+          "this",
+          "and",
+          "who",
+          "she"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“她是我的妈妈。” 用英语怎么说？",
+        "options": [
+          "She is my father.",
+          "He is my mother.",
+          "She is my mother.",
+          "He is my father."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“He's Pengpeng, my twin brother.” 的意思是？",
+        "options": [
+          "他是我的爸爸鹏鹏。",
+          "这是我的兄弟鹏鹏。",
+          "他是鹏鹏，我的双胞胎兄弟。",
+          "她是鹏鹏，我的姐姐。"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "This is ____ family.",
+        "options": [
+          "me",
+          "I",
+          "we",
+          "my"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Who ____ he? ____ is my brother.",
+        "options": [
+          "am; She",
+          "is; He",
+          "is; She",
+          "are; He"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“我的家很大。” 用英语怎么说？",
+        "options": [
+          "My family is big.",
+          "My family are big.",
+          "I am big.",
+          "My family is small."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“他是谁？” 用英语怎么说？",
+        "options": [
+          "Who is she?",
+          "He is who?",
+          "Who are they?",
+          "Who is he?"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "下列哪句是正确的？",
+        "options": [
+          "This is I family.",
+          "This is my family.",
+          "This is me family.",
+          "This my family."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“你家里都有谁？” 用英语怎么说？",
+        "options": [
+          "Who is your family?",
+          "Where is your family?",
+          "Who is in your family?",
+          "Who are in your family?"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“She's” 是下面哪个的缩写？",
+        "options": [
+          "She is",
+          "She am",
+          "She are",
+          "She was"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“我们一起拍张照片吧。” 用英语怎么说？",
+        "options": [
+          "Let's see the photo.",
+          "Let's take a photo together.",
+          "Let's take a photo now.",
+          "Let's look at the photos."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "family",
+        "cn": "家庭"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "grandfather",
+        "cn": "（外）祖父；爷爷；外公"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "twin",
+        "cn": "双胞胎之一"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "big",
+        "cn": "大的"
+      },
+      {
+        "type": "交际",
+        "q": "同学指着你照片里的男孩问 \"Who is he?\"，你应回答：",
+        "options": [
+          "She's my mother.",
+          "This is my family.",
+          "He's my brother.",
+          "I am Li Wen."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "交际",
+        "q": "在 Family Day 上，你想对大家说“看我们的照片，我们很开心”，应说：",
+        "options": [
+          "Who is he?",
+          "This is my family.",
+          "I am Li Wen.",
+          "Look at our photos. We're happy."
+        ],
+        "answer": 3
+      }
+    ],
+    "3": [
+      {
+        "type": "单词",
+        "q": "\"head\" 的中文意思是？",
+        "options": [
+          "头",
+          "头发",
+          "脸",
+          "耳朵"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“眼睛” 的英文是？",
+        "options": [
+          "ear",
+          "eye",
+          "mouth",
+          "face"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"ear\" 的中文意思是？",
+        "options": [
+          "鼻子",
+          "眼睛",
+          "耳朵",
+          "脸"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“嘴巴” 的英文是？",
+        "options": [
+          "mouth",
+          "nose",
+          "face",
+          "hair"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"hair\" 的中文意思是？",
+        "options": [
+          "脸",
+          "头发",
+          "头",
+          "耳朵"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"nose\" 的中文意思是？",
+        "options": [
+          "耳朵",
+          "嘴巴",
+          "脸",
+          "鼻子"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“脸” 的英文是？",
+        "options": [
+          "head",
+          "face",
+          "hair",
+          "eye"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“理发；发型” 是哪个单词？",
+        "options": [
+          "hair",
+          "head",
+          "haircut",
+          "face"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"long\" 的中文意思是？",
+        "options": [
+          "长的",
+          "短的；个子矮的",
+          "大的",
+          "小的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“短的；个子矮的” 是哪个单词？",
+        "options": [
+          "long",
+          "short",
+          "small",
+          "big"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"like\" 的中文意思是？",
+        "options": [
+          "喜欢",
+          "看见",
+          "坐",
+          "有"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“看见” 是哪个单词？",
+        "options": [
+          "sit",
+          "look",
+          "see",
+          "have"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“椅子” 的英文是？",
+        "options": [
+          "chair",
+          "desk",
+          "bed",
+          "door"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"your\" 的中文意思是？",
+        "options": [
+          "你；你们",
+          "你的；你们的",
+          "他；他的",
+          "我；我的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“我有一双大眼睛。” 用英语怎么说？",
+        "options": [
+          "I have big eyes.",
+          "I has big eyes.",
+          "I am big eyes.",
+          "I can see big eyes."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "\"Your hair is too long.\" 的中文意思是？",
+        "options": [
+          "你的眼睛太大了。",
+          "你的头发太长了。",
+          "你的头发很漂亮。",
+          "你的发型很好看。"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“我看不到你的眼睛。” 用英语怎么说？",
+        "options": [
+          "I can see your eyes.",
+          "I can't see your ears.",
+          "I can't see your eyes.",
+          "I don't like your eyes."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "My mother and I ____ big ____.",
+        "options": [
+          "has; eyes",
+          "have; ear",
+          "has; ear",
+          "have; eyes"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“现在请坐在这把椅子上。” 用英语怎么说？",
+        "options": [
+          "Now sit on this chair, please!",
+          "Now sit in this chair, please!",
+          "Now stand on this chair, please!",
+          "Please sit on the chair now."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "\"What does Minmin look like now?\" 的中文意思是？",
+        "options": [
+          "敏敏现在在哪里？",
+          "敏敏现在看起来怎么样？",
+          "敏敏现在多大？",
+          "敏敏是谁？"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“你喜欢你的发型吗？” 用英语怎么说？",
+        "options": [
+          "Do you like my haircut?",
+          "Are you like your haircut?",
+          "Do you like your haircut?",
+          "You like your haircut?"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“我留着短发。” 用英语怎么说？",
+        "options": [
+          "I am short hair.",
+          "I has short hair.",
+          "I have a short hair.",
+          "I have short hair."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "____ I like it!",
+        "options": [
+          "And",
+          "Or",
+          "But",
+          "So"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "\"You look great!\" 的中文意思是？",
+        "options": [
+          "你真好！",
+          "看那边！",
+          "你看起来棒极了！",
+          "你很友善。"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "have",
+        "cn": "有"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "sit",
+        "cn": "坐"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "please",
+        "cn": "请"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "mum",
+        "cn": "妈妈"
+      },
+      {
+        "type": "交际",
+        "q": "新同学问你 \"What do you look like?\"，你应回答：",
+        "options": [
+          "I'm ten years old.",
+          "My name is Lili.",
+          "I'm fine, thank you.",
+          "I have big eyes."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "妈妈给你理完头发，笑着说 \"You look great!\"，你应回答：",
+        "options": [
+          "I'm sorry.",
+          "Good morning!",
+          "Sit down, please.",
+          "Thanks, Mum."
+        ],
+        "answer": 3
+      }
+    ],
+    "4": [
+      {
+        "type": "单词",
+        "q": "\"run\" 的中文意思是？",
+        "options": [
+          "跑",
+          "跳绳",
+          "帮助",
+          "带来"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"fly a kite\" 的中文意思是？",
+        "options": [
+          "骑自行车",
+          "放风筝",
+          "滑滑板",
+          "跳绳"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"skateboard\" 的中文意思是？",
+        "options": [
+          "跑",
+          "放风筝",
+          "滑滑板",
+          "骑自行车"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"ride a bike\" 的中文意思是？",
+        "options": [
+          "放风筝",
+          "滑滑板",
+          "跳",
+          "骑自行车"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"child\" 的中文意思是？",
+        "options": [
+          "公园",
+          "孩子",
+          "乐趣",
+          "快的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"in\" 的中文意思是？",
+        "options": [
+          "在……里面",
+          "在……上",
+          "在……下",
+          "在……后面"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"the\" 的中文意思是？",
+        "options": [
+          "（表示特指）",
+          "一些",
+          "一个",
+          "这个"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"park\" 的中文意思是？",
+        "options": [
+          "花园",
+          "公园",
+          "学校",
+          "商店"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"are\" 的中文意思是？",
+        "options": [
+          "在",
+          "有",
+          "是",
+          "能够"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"can\" 的中文意思是？",
+        "options": [
+          "一起",
+          "快的",
+          "有趣的",
+          "能够"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"fun\" 的中文意思是？",
+        "options": [
+          "帮助",
+          "带来",
+          "去取",
+          "有趣的；乐趣"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"get\" 的中文意思是？",
+        "options": [
+          "带来",
+          "帮助",
+          "去取；得到；获得",
+          "跳"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“带来” 是哪个单词？",
+        "options": [
+          "get",
+          "bring",
+          "help",
+          "jump"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“跳” 是哪个单词？",
+        "options": [
+          "jump",
+          "run",
+          "skip",
+          "fast"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Yaoyao （ ） fly a kite.",
+        "options": [
+          "is",
+          "can",
+          "are",
+          "am"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "Tingting can skateboard. She （ ） skip.",
+        "options": [
+          "can",
+          "not",
+          "can't",
+          "doesn't"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“让我们一起跳绳吧。” 用英语怎么说？",
+        "options": [
+          "Let's run together.",
+          "Let's fly a kite.",
+          "Let's help Chenchen.",
+          "Let's skip together."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“孩子们在公园里怎样玩得开心？” 用英语怎么说？",
+        "options": [
+          "How do the children have fun in the park?",
+          "Where do the children have fun in the park?",
+          "What do the children have in the park?",
+          "When do the children have fun in the park?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Huihui can run fast and ____ Chenchen.",
+        "options": [
+          "brings",
+          "gets",
+          "help",
+          "skips"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "I can't skip. But I can ____ some juice. ____ you thirsty?",
+        "options": [
+          "bring; Are",
+          "get; Are",
+          "get; Is",
+          "bring; Is"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“我不会滑滑板。” 用英语怎么说？",
+        "options": [
+          "I can't skateboard.",
+          "I can't skip.",
+          "I can skateboard.",
+          "I don't skateboard."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“婷婷会滑滑板，但她不会跳绳。” 用英语怎么说？",
+        "options": [
+          "Tingting can skip. She can skateboard.",
+          "Tingting can't skateboard. She can skip.",
+          "Tingting can skateboard. She can skip.",
+          "Tingting can skateboard. She can't skip."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“孩子们在公园里。” 用英语怎么说？",
+        "options": [
+          "The children are in the park.",
+          "The children are in a park.",
+          "The children is in a park.",
+          "The children are on a park."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“她带来一些果汁。” 用英语怎么说？",
+        "options": [
+          "She gets some juice.",
+          "She brings some milk.",
+          "She brings some juice.",
+          "She is some juice."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "skip",
+        "cn": "跳绳"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "fast",
+        "cn": "快的；快；快速"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "together",
+        "cn": "一起"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "help",
+        "cn": "帮助"
+      },
+      {
+        "type": "交际",
+        "q": "体育活动时，同学对你说 \"Let's have fun together!\"，你高兴地答应说：",
+        "options": [
+          "No, thank you.",
+          "I can't skip.",
+          "Where is the park?",
+          "OK!"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 \"How do you have fun with your friends?\"，你回答：",
+        "options": [
+          "We skip together.",
+          "I'm fine, thank you.",
+          "It's in the park.",
+          "She can run fast."
+        ],
+        "answer": 0
+      }
+    ],
+    "5": [
+      {
+        "type": "单词",
+        "q": "\"carrot\" 的中文意思是？",
+        "options": [
+          "西红柿",
+          "胡萝卜",
+          "黄瓜",
+          "土豆"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"tomato\" 的中文意思是？",
+        "options": [
+          "西红柿",
+          "胡萝卜",
+          "土豆",
+          "洋葱"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"apple\" 的中文意思是？",
+        "options": [
+          "梨",
+          "桃子",
+          "橘子",
+          "苹果"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"banana\" 的中文意思是？",
+        "options": [
+          "香蕉",
+          "葡萄",
+          "苹果",
+          "梨"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"grape\" 的中文意思是？",
+        "options": [
+          "香蕉",
+          "葡萄",
+          "西瓜",
+          "桃子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"milk\" 的中文意思是？",
+        "options": [
+          "果汁",
+          "水",
+          "牛奶",
+          "茶"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"juice\" 的中文意思是？",
+        "options": [
+          "牛奶",
+          "水",
+          "果汁",
+          "汤"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"meat\" 的中文意思是？",
+        "options": [
+          "鱼",
+          "蛋",
+          "牛奶",
+          "肉"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"fish\" 的中文意思是？",
+        "options": [
+          "鱼；鱼肉",
+          "肉",
+          "鸡",
+          "蛋"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"chicken\" 的中文意思是？",
+        "options": [
+          "鱼肉",
+          "鸡肉",
+          "牛肉",
+          "蛋"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"food\" 的中文意思是？",
+        "options": [
+          "饮料",
+          "水果",
+          "食物",
+          "蔬菜"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"vegetable\" 的中文意思是？",
+        "options": [
+          "水果",
+          "食物",
+          "肉类",
+          "蔬菜"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"有趣的\" 是哪个单词？",
+        "options": [
+          "funny",
+          "nice",
+          "cute",
+          "good"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"soup\" 的中文意思是？",
+        "options": [
+          "果汁",
+          "米饭",
+          "汤",
+          "牛奶"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "What do you ____?",
+        "options": [
+          "like",
+          "likes",
+          "liking",
+          "is"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Do you like ____? Yes, I ____.",
+        "options": [
+          "fish; do",
+          "fish; are",
+          "carrot; is",
+          "fish; don't"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "\"I like salad.\" 的意思是？",
+        "options": [
+          "我喜欢沙拉。",
+          "我不喜欢沙拉。",
+          "我喜欢汤。",
+          "你喜欢沙拉吗？"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "\"你喜欢西红柿吗？\" 用英语怎么说？",
+        "options": [
+          "What do you like?",
+          "Do you like tomatoes?",
+          "Do you likes tomatoes?",
+          "Are you like tomatoes?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "\"Oh no! I don't like carrots.\" 的意思是？",
+        "options": [
+          "好的！我不喜欢胡萝卜。",
+          "哦，不！我不喜欢胡萝卜。",
+          "哦，不！我喜欢胡萝卜。",
+          "哦，不！我不喜欢苹果。"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "下列哪句是正确的？",
+        "options": [
+          "What do you likes?",
+          "What do you like?",
+          "What you like?",
+          "What do you liking?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "\"tomato\" 的复数形式是？",
+        "options": [
+          "tomato",
+          "tomatos",
+          "tomatoes",
+          "tomatoe"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "\"Carrots are good for you.\" 的意思是？",
+        "options": [
+          "胡萝卜对你不好。",
+          "你喜欢胡萝卜。",
+          "胡萝卜对你有好处。",
+          "胡萝卜是什么？"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "你想作肯定回答 \"Do you like bananas?\"，应说：",
+        "options": [
+          "No, I don't.",
+          "Yes, I am.",
+          "Yes, I can.",
+          "Yes, I do."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "\"I have carrots and bananas.\" 的意思是？",
+        "options": [
+          "我有苹果和香蕉。",
+          "我喜欢胡萝卜和香蕉。",
+          "我想要胡萝卜和香蕉。",
+          "我有胡萝卜和香蕉。"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "carrot",
+        "cn": "胡萝卜"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "tomato",
+        "cn": "西红柿"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "banana",
+        "cn": "香蕉"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "chicken",
+        "cn": "鸡肉"
+      },
+      {
+        "type": "交际",
+        "q": "朋友问你 \"Do you like carrots?\"，你喜欢胡萝卜，应回答：",
+        "options": [
+          "No, I don't.",
+          "Yes, I do.",
+          "Yes, I am.",
+          "I like carrots?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "交际",
+        "q": "妈妈问 \"What do you like, Huihui?\"，慧慧喜欢胡萝卜，应回答：",
+        "options": [
+          "I like bananas!",
+          "No, I don't.",
+          "Yes, I do.",
+          "I like carrots!"
+        ],
+        "answer": 3
+      }
+    ],
+    "6": [
+      {
+        "type": "单词",
+        "q": "“猫” 的英文是哪个单词？",
+        "options": [
+          "cat",
+          "dog",
+          "frog",
+          "mouse"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"mouse\" 的中文意思是？",
+        "options": [
+          "虫子",
+          "尾巴",
+          "老鼠（复数 mice）",
+          "兔子"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“狗” 的英文是哪个单词？",
+        "options": [
+          "cat",
+          "dog",
+          "frog",
+          "squirrel"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"frog\" 的中文意思是？",
+        "options": [
+          "虫子",
+          "尾巴",
+          "狗",
+          "青蛙"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"day\" 的中文意思是？",
+        "options": [
+          "夜晚",
+          "白天；一天",
+          "中午",
+          "早上"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“美好的” 是哪个单词？",
+        "options": [
+          "funny",
+          "cute",
+          "nice",
+          "long"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"has\" 的中文意思是？",
+        "options": [
+          "看见",
+          "有（have 的第三人称单数）",
+          "吃",
+          "帮助"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"small\" 的中文意思是？",
+        "options": [
+          "长的",
+          "大的",
+          "短的",
+          "小的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“可爱的” 是哪个单词？",
+        "options": [
+          "small",
+          "bad",
+          "cute",
+          "happy"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“那；那个” 是哪个单词？",
+        "options": [
+          "that",
+          "this",
+          "it",
+          "they"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"they\" 的中文意思是？",
+        "options": [
+          "它",
+          "他们；她们；它们",
+          "我们",
+          "你"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"animal\" 的中文意思是？",
+        "options": [
+          "公园",
+          "水果",
+          "蔬菜",
+          "动物"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“吃” 是哪个单词？",
+        "options": [
+          "eat",
+          "see",
+          "run",
+          "cut"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“二；二个（人或物）” 是哪个单词？",
+        "options": [
+          "four",
+          "three",
+          "two",
+          "one"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "What ____ it? It's a little frog.",
+        "options": [
+          "am",
+          "are",
+          "is",
+          "be"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "They ____ small. They ____ big long tails.",
+        "options": [
+          "is; has",
+          "are; has",
+          "am; have",
+          "are; have"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“它是什么？” 用英语怎么说？",
+        "options": [
+          "What is it?",
+          "What are they?",
+          "Where is it?",
+          "Who is it?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“它们是什么？” 用英语怎么说？",
+        "options": [
+          "What is it?",
+          "What are they?",
+          "What is that?",
+          "Where are they?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“看！那是一只松鼠！” 用英语怎么说？",
+        "options": [
+          "Look! It's a rabbit!",
+          "Look! That's a frog!",
+          "Look! That's a squirrel!",
+          "Look! They're squirrels!"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "“我喜欢青蛙。” 用英语怎么说？",
+        "options": [
+          "I like dogs.",
+          "I like cats.",
+          "I like rabbits.",
+          "I like frogs."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“它们吃坏虫子。” 用英语怎么说？",
+        "options": [
+          "They eat good bugs.",
+          "It eats bad bugs.",
+          "They eat bad bugs.",
+          "They have big bugs."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "\"It has big eyes and small ears.\" 的意思是？",
+        "options": [
+          "它有大眼睛和小耳朵。",
+          "它有小眼睛和大耳朵。",
+          "它们有大眼睛和小耳朵。",
+          "它有一条长尾巴。"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "下列哪句是正确的？",
+        "options": [
+          "They is rabbits.",
+          "They are rabbits.",
+          "They am rabbits.",
+          "They are rabbit."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“今天是美好的一天。” 用英语怎么说？",
+        "options": [
+          "It's a nice park today.",
+          "They're nice days today.",
+          "It's a big day today.",
+          "It's a nice day today."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "squirrel",
+        "cn": "松鼠"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "rabbit",
+        "cn": "兔子"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "tail",
+        "cn": "尾巴"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "bug",
+        "cn": "虫子"
+      },
+      {
+        "type": "交际",
+        "q": "你想知道对方喜欢什么小动物，可以问：",
+        "options": [
+          "What small animals do you like?",
+          "What do you like about them?",
+          "What is it?",
+          "What are they?"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "交际",
+        "q": "朋友问你 \"What is it?\"，你看到一只小兔子，应回答：",
+        "options": [
+          "It's a rabbit.",
+          "They're rabbits.",
+          "I like rabbits.",
+          "It has long ears."
+        ],
+        "answer": 0
+      }
+    ],
+    "7": [
+      {
+        "type": "单词",
+        "q": "\"sunny\" 的中文意思是？",
+        "options": [
+          "晴朗的",
+          "下雨的",
+          "刮风的",
+          "多云的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"windy\" 的中文意思是？",
+        "options": [
+          "多云的",
+          "刮风的",
+          "晴朗的",
+          "下雨的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"rainy\" 的中文意思是？",
+        "options": [
+          "晴朗的",
+          "热的",
+          "下雨的",
+          "多云的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"cloudy\" 的中文意思是？",
+        "options": [
+          "多云的",
+          "刮风的",
+          "晴朗的",
+          "热的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"sun\" 的中文意思是？",
+        "options": [
+          "风",
+          "太阳",
+          "雨",
+          "云"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"wind\" 的中文意思是？",
+        "options": [
+          "风",
+          "云",
+          "太阳",
+          "雨"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"rain\" 的中文意思是？",
+        "options": [
+          "云",
+          "雨；下雨",
+          "太阳",
+          "风"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"cloud\" 的中文意思是？",
+        "options": [
+          "风",
+          "太阳",
+          "云",
+          "雨"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"weather\" 的中文意思是？",
+        "options": [
+          "天气",
+          "帽子",
+          "植物",
+          "风"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"hot\" 的中文意思是？",
+        "options": [
+          "热的",
+          "刮风的",
+          "晴朗的",
+          "多云的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"今天\" 是哪个单词？",
+        "options": [
+          "today",
+          "very",
+          "how",
+          "different"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"怎样；如何\" 是哪个单词？",
+        "options": [
+          "very",
+          "today",
+          "how",
+          "different"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"帽子\" 的英文是？",
+        "options": [
+          "hot",
+          "hat",
+          "plant",
+          "sun"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"plant\" 的中文意思是？",
+        "options": [
+          "帽子",
+          "植物",
+          "天气",
+          "风"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "How's the ____ today? It's ____.",
+        "options": [
+          "wind; windy",
+          "weather; today",
+          "sunny; weather",
+          "weather; windy"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "It's ____. I can go to the ____.",
+        "options": [
+          "sun; park",
+          "rainy; rain",
+          "sunny; park",
+          "sunny; sun"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "\"今天天气怎么样？\" 用英语怎么说？",
+        "options": [
+          "How old are you today?",
+          "What's in your bag?",
+          "Where are you today?",
+          "How's the weather today?"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "\"天气怎么样？\" 还可以说：",
+        "options": [
+          "How old is the weather?",
+          "What is the weather?",
+          "Who is the weather?",
+          "How is the weather?"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "\"It's sunny and hot.\" 的意思是？",
+        "options": [
+          "天气晴朗而且热。",
+          "天气下雨而且热。",
+          "天气刮风而且冷。",
+          "天气晴朗而且冷。"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "\"我喜欢风。\" 用英语怎么说？",
+        "options": [
+          "I like the rain.",
+          "I like the sun.",
+          "I don't like the wind.",
+          "I like the wind."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "\"我们喜欢不同的天气。\" 用英语怎么说？",
+        "options": [
+          "We like the weather.",
+          "They like different weather.",
+          "We like different weather.",
+          "We don't like the sun."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "\"今天很热。\" 用英语怎么说？",
+        "options": [
+          "It's rainy today.",
+          "It's hot today.",
+          "Today it hot.",
+          "It hot today."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "下列哪句是正确的？",
+        "options": [
+          "How the weather?",
+          "Weather's how?",
+          "How weather is?",
+          "How's the weather?"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "\"我喜欢太阳。\" 用英语怎么说？",
+        "options": [
+          "I like the rain.",
+          "I like the sun.",
+          "I likes the sun.",
+          "I like sun."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "different",
+        "cn": "不同的"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "very",
+        "cn": "非常"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "cloudy",
+        "cn": "多云的"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "wind",
+        "cn": "风"
+      },
+      {
+        "type": "交际",
+        "q": "朋友问你 \"How's the weather in your city today?\"，你应回答：",
+        "options": [
+          "I'm fine, thank you.",
+          "I'm ten years old.",
+          "It's a hat.",
+          "It's rainy."
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "爸爸问你 \"How's the weather in Sanya?\"，你应回答：",
+        "options": [
+          "We're good.",
+          "Nice to meet you.",
+          "It's sunny and hot.",
+          "I like the sun."
+        ],
+        "answer": 2
+      }
+    ],
+    "8": [
+      {
+        "type": "单词",
+        "q": "\"cake\" 的中文意思是？",
+        "options": [
+          "蛋糕",
+          "蜡烛",
+          "礼物",
+          "卡片"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"candle\" 的中文意思是？",
+        "options": [
+          "玩具娃娃",
+          "蜡烛",
+          "面条",
+          "卡片"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"gift\" 的中文意思是？",
+        "options": [
+          "卡片",
+          "玩具飞机",
+          "面条",
+          "礼物"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"toy plane\" 的中文意思是？",
+        "options": [
+          "玩具娃娃",
+          "卡片",
+          "礼物",
+          "玩具飞机"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“玩具娃娃” 是哪个单词？",
+        "options": [
+          "cake",
+          "doll",
+          "gift",
+          "card"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“卡片” 是哪个单词？",
+        "options": [
+          "gift",
+          "cake",
+          "card",
+          "doll"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"noodles\" 的中文意思是？",
+        "options": [
+          "蜡烛",
+          "面条",
+          "玩具飞机",
+          "爸爸"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“来” 是哪个单词？",
+        "options": [
+          "love",
+          "share",
+          "come",
+          "get"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“爱” 是哪个单词？",
+        "options": [
+          "come",
+          "love",
+          "share",
+          "see"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"dad\" 的中文意思是？",
+        "options": [
+          "家人",
+          "孩子",
+          "妈妈",
+          "爸爸"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“下午” 是哪个单词？",
+        "options": [
+          "morning",
+          "evening",
+          "today",
+          "afternoon"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"evening\" 的中文意思是？",
+        "options": [
+          "早上",
+          "今天",
+          "下午",
+          "傍晚；晚上"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"share\" 的中文意思是？",
+        "options": [
+          "来",
+          "看",
+          "分享",
+          "爱"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“他的” 是哪个单词？",
+        "options": [
+          "my",
+          "your",
+          "her",
+          "his"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "“生日快乐！” 用英语怎么说？",
+        "options": [
+          "Happy birthday!",
+          "Do you like it?",
+          "Thank you!",
+          "What a great birthday!"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“我有一份礼物送给你。” 用英语怎么说？",
+        "options": [
+          "I get some gifts.",
+          "I have a gift for you.",
+          "I like this gift.",
+          "It is a gift."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“Do you like it?” 是什么意思？",
+        "options": [
+          "它是什么？",
+          "你喜欢它吗？",
+          "你想要礼物吗？",
+          "它好看吗？"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "“让我们出去吧。” 用英语怎么说？",
+        "options": [
+          "Let's go out!",
+          "Come and see your gifts!",
+          "Let's fly a kite!",
+          "Let's share our toys!"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Taotao ____ 10 years old today.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "She ____ my mother.",
+        "options": [
+          "am",
+          "are",
+          "is",
+          "be"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "My eyes ____ big.",
+        "options": [
+          "is",
+          "am",
+          "are",
+          "be"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Happy birthday! I ____ a gift for you. Do you ____ it?",
+        "options": [
+          "have; like",
+          "get; like",
+          "have; see",
+          "get; see"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "I ____ some gifts. I ____ my toys.",
+        "options": [
+          "get; share",
+          "share; get",
+          "eat; share",
+          "get; eat"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "“你生日那天做什么？” 用英语怎么说？",
+        "options": [
+          "What birthday gifts do you get?",
+          "What does Taotao do on his birthday?",
+          "What do you do on your birthday?",
+          "How old are you?"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "candle",
+        "cn": "蜡烛"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "gift",
+        "cn": "礼物"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "share",
+        "cn": "分享"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "evening",
+        "cn": "傍晚；晚上"
+      },
+      {
+        "type": "交际",
+        "q": "生日聚会上，小伙伴对你说 \"Happy birthday!\"，你应回答：",
+        "options": [
+          "Thank you!",
+          "Do you like it?",
+          "It's a kite.",
+          "What a great birthday!"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 \"What is it?\"，你应回答：",
+        "options": [
+          "I like it.",
+          "It's a kite.",
+          "Thank you.",
+          "It's nice."
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}
