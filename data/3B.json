@@ -1,0 +1,4437 @@
+{
+  "id": "3B",
+  "title": "三年级下册",
+  "subtitle": "上海教育出版社 · 沪教版",
+  "icon": "📓",
+  "units": [
+    {
+      "name": "Unit 1",
+      "title": "我们的课余时光",
+      "icon": "🎨",
+      "color": "#ff7043",
+      "en": "How do we spend our free time?",
+      "vocab": [
+        {
+          "en": "our",
+          "cn": "我们的"
+        },
+        {
+          "en": "read",
+          "cn": "阅读"
+        },
+        {
+          "en": "sing",
+          "cn": "唱歌"
+        },
+        {
+          "en": "paint",
+          "cn": "用颜料画"
+        },
+        {
+          "en": "dance",
+          "cn": "跳舞"
+        },
+        {
+          "en": "swim",
+          "cn": "游泳"
+        },
+        {
+          "en": "play basketball",
+          "cn": "打篮球"
+        },
+        {
+          "en": "play ping-pong",
+          "cn": "打乒乓球"
+        },
+        {
+          "en": "play football",
+          "cn": "踢足球"
+        },
+        {
+          "en": "Ms",
+          "cn": "女士"
+        },
+        {
+          "en": "talk",
+          "cn": "讨论；谈论"
+        },
+        {
+          "en": "hobby",
+          "cn": "业余爱好"
+        },
+        {
+          "en": "do",
+          "cn": "做，干，办（某事）"
+        },
+        {
+          "en": "free",
+          "cn": "空闲的"
+        },
+        {
+          "en": "music",
+          "cn": "音乐"
+        },
+        {
+          "en": "favourite",
+          "cn": "最喜欢的"
+        },
+        {
+          "en": "sport",
+          "cn": "体育运动"
+        },
+        {
+          "en": "play beach volleyball",
+          "cn": "玩沙滩排球"
+        }
+      ],
+      "read": [
+        {
+          "en": "Ms Wu: Hello, children! Let's talk about hobbies! What do you like doing in your free time?",
+          "cn": "吴老师：孩子们，你们好！我们来谈谈爱好吧！你们空闲时喜欢做什么？",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.4"
+        },
+        {
+          "en": "Xiaoyuan: I like singing and dancing.",
+          "cn": "小元：我喜欢唱歌和跳舞。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.4"
+        },
+        {
+          "en": "Xiaoyuan: I like music.",
+          "cn": "小元：我喜欢音乐。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.4"
+        },
+        {
+          "en": "Xiaoyuan: This is me in my dance class.",
+          "cn": "小元：这是我在舞蹈课上。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.4"
+        },
+        {
+          "en": "Xiaoyuan: Look at my purple skirt!",
+          "cn": "小元：看我的紫色短裙！",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.4"
+        },
+        {
+          "en": "Leilei: I like reading.",
+          "cn": "乐乐：我喜欢阅读。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Leilei: I like painting too.",
+          "cn": "乐乐：我也喜欢画画。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Leilei: This is me in my favourite park.",
+          "cn": "乐乐：这是我在我最喜欢的公园里。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Xiaolan: I like playing ping-pong and riding my bike.",
+          "cn": "小兰：我喜欢打乒乓球和骑自行车。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Xiaolan: This is me on my bike.",
+          "cn": "小兰：这是我骑在自行车上。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Congcong: I like swimming!",
+          "cn": "聪聪：我喜欢游泳！",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Congcong: I like playing basketball too.",
+          "cn": "聪聪：我也喜欢打篮球。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Congcong: This is me in a game.",
+          "cn": "聪聪：这是我在一场比赛中。",
+          "st": "课文 · What are your hobbies?",
+          "sp": "p.5"
+        },
+        {
+          "en": "Bob: It's warm and sunny! I like sleeping. What do you like doing, Ben?",
+          "cn": "鲍勃：天气温暖晴朗！我喜欢睡觉。本，你喜欢做什么？",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Ben: I like working.",
+          "cn": "本：我喜欢工作。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Bob: It's hot. I like dancing. Come and dance!",
+          "cn": "鲍勃：天气很热。我喜欢跳舞。来跳舞吧！",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Ben: Sorry, Bob. I have work to do.",
+          "cn": "本：抱歉，鲍勃。我有工作要做。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Bob: The weather is cool. I like singing. Come here, Ben!",
+          "cn": "鲍勃：天气凉爽。我喜欢唱歌。过来吧，本！",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Ben: No. I have to get some food.",
+          "cn": "本：不行。我得去储备些食物。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Ben: It's cold today. I like reading at home. It's nice and warm.",
+          "cn": "本：今天很冷。我喜欢在家读书。又舒适又温暖。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Bob: It's so cold. I have no food. I have no home.",
+          "cn": "鲍勃：太冷了。我没有食物，也没有家。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Ben: Come in! You can share my food.",
+          "cn": "本：快进来！你可以分享我的食物。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Bob: Thank you! I'll get food next year.",
+          "cn": "鲍勃：谢谢你！明年我会去储备食物的。",
+          "st": "拓展阅读 · Ben and Bob",
+          "sp": "p.10",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 2",
+      "title": "我们怎样交朋友",
+      "icon": "🤝",
+      "color": "#26c6da",
+      "en": "How do we make friends?",
+      "vocab": [
+        {
+          "en": "play a game",
+          "cn": "做游戏"
+        },
+        {
+          "en": "take a photo",
+          "cn": "拍照"
+        },
+        {
+          "en": "row a boat",
+          "cn": "划船"
+        },
+        {
+          "en": "tell a story",
+          "cn": "讲故事"
+        },
+        {
+          "en": "boat",
+          "cn": "小船"
+        },
+        {
+          "en": "sandcastle",
+          "cn": "沙堡"
+        },
+        {
+          "en": "great",
+          "cn": "很好的；很棒的"
+        },
+        {
+          "en": "sand",
+          "cn": "沙子"
+        },
+        {
+          "en": "join",
+          "cn": "参加；加入到……之中"
+        },
+        {
+          "en": "meet",
+          "cn": "（与……）见面"
+        },
+        {
+          "en": "her",
+          "cn": "她的"
+        },
+        {
+          "en": "us",
+          "cn": "我们"
+        },
+        {
+          "en": "we",
+          "cn": "我们"
+        },
+        {
+          "en": "play in the sand",
+          "cn": "玩沙子"
+        }
+      ],
+      "read": [
+        {
+          "en": "Dandan: Hi there! My name is Dandan. Your sandcastle is great!",
+          "cn": "丹丹：嗨！我叫丹丹。你的沙堡真棒！",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Lanlan: Thank you. I'm Lanlan. That's my brother, Junjun. Do you like playing in the sand?",
+          "cn": "兰兰：谢谢你。我是兰兰。那是我弟弟军军。你喜欢玩沙子吗？",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Dandan: Yes, I do.",
+          "cn": "丹丹：是的，我喜欢。",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Lanlan: Great! You can join me!",
+          "cn": "兰兰：太好了！你可以加入我！",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Kaikai: Hey there. I'm Kaikai. I'm Dandan's brother.",
+          "cn": "凯凯：嘿，你们好。我是凯凯，丹丹的哥哥。",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Dandan: Come here, Kaikai! Meet my new friend Lanlan and her brother Junjun.",
+          "cn": "丹丹：过来，凯凯！来见见我的新朋友兰兰和她弟弟军军。",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Junjun: Hello, Kaikai.",
+          "cn": "军军：你好，凯凯。",
+          "st": "课文 · At the beach",
+          "sp": "p.14"
+        },
+        {
+          "en": "Kaikai: Do you like playing beach volleyball?",
+          "cn": "凯凯：你喜欢打沙滩排球吗？",
+          "st": "课文 · At the beach",
+          "sp": "p.15"
+        },
+        {
+          "en": "Junjun: Yes, I do!",
+          "cn": "军军：是的，我喜欢！",
+          "st": "课文 · At the beach",
+          "sp": "p.15"
+        },
+        {
+          "en": "Kaikai: Let's play together!",
+          "cn": "凯凯：我们一起玩吧！",
+          "st": "课文 · At the beach",
+          "sp": "p.15"
+        },
+        {
+          "en": "Lanlan and Junjun have new friends. I'm so happy!",
+          "cn": "兰兰和军军有新朋友了。我太高兴了！",
+          "st": "课文 · At the beach",
+          "sp": "p.15"
+        },
+        {
+          "en": "Me too.",
+          "cn": "我也是。",
+          "st": "课文 · At the beach",
+          "sp": "p.15"
+        },
+        {
+          "en": "Elliot is sad. He sees a tortoise.",
+          "cn": "埃利奥特很伤心。他看见了一只乌龟。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: Hello, I'm Tuti.",
+          "cn": "图蒂：你好，我是图蒂。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot: I'm Elliot. I can't find my family.",
+          "cn": "埃利奥特：我是埃利奥特。我找不到我的家人了。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: Let's look.",
+          "cn": "图蒂：我们一起找找吧。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: Look! Is that your family?",
+          "cn": "图蒂：看！那是你的家人吗？",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot: No! Those are zebras.",
+          "cn": "埃利奥特：不！那些是斑马。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot and Tuti eat, play and sleep.",
+          "cn": "埃利奥特和图蒂一起吃饭、玩耍和睡觉。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: Look! Is that your family?",
+          "cn": "图蒂：看！那是你的家人吗？",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot: No! Those are lions.",
+          "cn": "埃利奥特：不！那些是狮子。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot and Tuti are afraid. They run away.",
+          "cn": "埃利奥特和图蒂很害怕。他们逃跑了。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: Look! Elephants.",
+          "cn": "图蒂：看！大象。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot: That's my family.",
+          "cn": "埃利奥特：那是我的家人。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Tuti: YES!",
+          "cn": "图蒂：没错！",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot: Thanks, Tuti.",
+          "cn": "埃利奥特：谢谢你，图蒂。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elliot gets a new friend.",
+          "cn": "埃利奥特交到了一个新朋友。",
+          "st": "拓展阅读 · Elliot's new friend",
+          "sp": "p.20",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 3",
+      "title": "我们穿什么",
+      "icon": "👕",
+      "color": "#ab47bc",
+      "en": "What do we wear?",
+      "vocab": [
+        {
+          "en": "sweater",
+          "cn": "毛衣"
+        },
+        {
+          "en": "T-shirt",
+          "cn": "T恤衫；短袖汗衫"
+        },
+        {
+          "en": "skirt",
+          "cn": "短裙；半身裙"
+        },
+        {
+          "en": "dress",
+          "cn": "连衣裙"
+        },
+        {
+          "en": "shirt",
+          "cn": "衬衫"
+        },
+        {
+          "en": "trousers",
+          "cn": "裤子"
+        },
+        {
+          "en": "shorts",
+          "cn": "短裤"
+        },
+        {
+          "en": "coat",
+          "cn": "外套；外衣；大衣"
+        },
+        {
+          "en": "cap",
+          "cn": "帽子"
+        },
+        {
+          "en": "shoes",
+          "cn": "鞋子"
+        },
+        {
+          "en": "student",
+          "cn": "学生"
+        },
+        {
+          "en": "wear",
+          "cn": "穿；戴；佩戴"
+        },
+        {
+          "en": "school",
+          "cn": "学校"
+        },
+        {
+          "en": "different",
+          "cn": "不同的"
+        },
+        {
+          "en": "clothes",
+          "cn": "衣服；服装"
+        },
+        {
+          "en": "uniform",
+          "cn": "制服；校服"
+        },
+        {
+          "en": "whose",
+          "cn": "谁的"
+        },
+        {
+          "en": "world",
+          "cn": "世界"
+        },
+        {
+          "en": "around the world",
+          "cn": "在世界各地"
+        },
+        {
+          "en": "take a look",
+          "cn": "看一看"
+        },
+        {
+          "en": "a pair of",
+          "cn": "一条；一双；一对"
+        }
+      ],
+      "read": [
+        {
+          "en": "Trousers, shorts, a skirt ... What do you wear at school?",
+          "cn": "长裤、短裤、一条短裙……你在学校穿什么？",
+          "st": "课文 · What do students wear?",
+          "sp": "p.24"
+        },
+        {
+          "en": "Students around the world wear different clothes.",
+          "cn": "世界各地的学生们穿着不同的衣服。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.24"
+        },
+        {
+          "en": "Let's take a look.",
+          "cn": "让我们一起来看一看。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.24"
+        },
+        {
+          "en": "Wu Chen: At my school, we wear a uniform.",
+          "cn": "吴晨：在我的学校，我们穿校服。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Wu Chen: I wear a shirt and a skirt.",
+          "cn": "吴晨：我穿一件衬衫和一条短裙。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Wu Chen: On a sunny day, I wear a cap.",
+          "cn": "吴晨：在晴天，我戴一顶鸭舌帽。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Gary: At my school, we don't wear a uniform.",
+          "cn": "加里：在我的学校，我们不穿校服。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Gary: On a cloudy day, I wear a T-shirt and trousers.",
+          "cn": "加里：在阴天，我穿一件T恤衫和一条长裤。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Gary: But on a sunny day, I wear shorts.",
+          "cn": "加里：但在晴天，我穿短裤。",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Gary: I wear a cap too!",
+          "cn": "加里：我也戴一顶鸭舌帽！",
+          "st": "课文 · What do students wear?",
+          "sp": "p.25"
+        },
+        {
+          "en": "Jingjing: Hi, I'm Jingjing!",
+          "cn": "京京：嗨，我是京京！",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Jingjing: I live in Beijing.",
+          "cn": "京京：我住在北京。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Jingjing: Friday is a busy day.",
+          "cn": "京京：星期五是忙碌的一天。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "In the morning, we start school.",
+          "cn": "早上，我们开始上课。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I wear my school uniform: a shirt and a skirt.",
+          "cn": "我穿着我的校服：一件衬衫和一条短裙。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I bring my schoolbag.",
+          "cn": "我背着我的书包。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "In the afternoon, we have PE.",
+          "cn": "下午，我们上体育课。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I put on a T-shirt, shorts and sports shoes.",
+          "cn": "我穿上T恤衫、短裤和运动鞋。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I can run fast.",
+          "cn": "我能跑得很快。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "After school, I help in the park.",
+          "cn": "放学后，我去公园帮忙。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We wear a white T-shirt.",
+          "cn": "我们穿着白色的T恤衫。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "My busy day is over.",
+          "cn": "我忙碌的一天结束了。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It's time to go to bed.",
+          "cn": "该上床睡觉了。",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I'm tired but happy today!",
+          "cn": "今天我很累但很开心！",
+          "st": "拓展阅读 · Clothes for a busy day",
+          "sp": "p.30",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 4",
+      "title": "我们能听到什么声音",
+      "icon": "🔔",
+      "color": "#ffca28",
+      "en": "What sounds can we hear?",
+      "vocab": [
+        {
+          "en": "grass",
+          "cn": "草"
+        },
+        {
+          "en": "river",
+          "cn": "河；江"
+        },
+        {
+          "en": "hear",
+          "cn": "听见；听到"
+        },
+        {
+          "en": "bird",
+          "cn": "鸟"
+        },
+        {
+          "en": "duck",
+          "cn": "鸭子"
+        },
+        {
+          "en": "bee",
+          "cn": "蜜蜂"
+        },
+        {
+          "en": "lake",
+          "cn": "湖；湖泊"
+        },
+        {
+          "en": "chirp",
+          "cn": "（鸟叫声）"
+        },
+        {
+          "en": "buzz",
+          "cn": "（蜜蜂声）"
+        },
+        {
+          "en": "by",
+          "cn": "在……旁边"
+        },
+        {
+          "en": "swish",
+          "cn": "（风声）"
+        },
+        {
+          "en": "blow",
+          "cn": "吹；吹（鸣叫）"
+        },
+        {
+          "en": "quack",
+          "cn": "（鸭子叫声）"
+        },
+        {
+          "en": "past",
+          "cn": "经过"
+        },
+        {
+          "en": "walk",
+          "cn": "走；行走"
+        },
+        {
+          "en": "along",
+          "cn": "沿着；顺着"
+        },
+        {
+          "en": "path",
+          "cn": "小路；小径"
+        },
+        {
+          "en": "pitter-patter",
+          "cn": "（雨声）"
+        },
+        {
+          "en": "time",
+          "cn": "时间"
+        },
+        {
+          "en": "again",
+          "cn": "再一次；又一次"
+        },
+        {
+          "en": "sound",
+          "cn": "声音"
+        },
+        {
+          "en": "go outside",
+          "cn": "去外面"
+        },
+        {
+          "en": "go home",
+          "cn": "回家"
+        }
+      ],
+      "read": [
+        {
+          "en": "Let's go outside — Just you and me!",
+          "cn": "我们去外面吧——只有你和我！",
+          "st": "课文 · What's outside?",
+          "sp": "p.34"
+        },
+        {
+          "en": "What can you hear? What can you see?",
+          "cn": "你能听见什么？你能看见什么？",
+          "st": "课文 · What's outside?",
+          "sp": "p.34"
+        },
+        {
+          "en": "Chirp, chirp! A nice bird in a tree.",
+          "cn": "叽叽，叽叽！树上有一只漂亮的小鸟。",
+          "st": "课文 · What's outside?",
+          "sp": "p.34"
+        },
+        {
+          "en": "Buzz, buzz! A black and yellow bee.",
+          "cn": "嗡嗡，嗡嗡！一只黑黄相间的蜜蜂。",
+          "st": "课文 · What's outside?",
+          "sp": "p.34"
+        },
+        {
+          "en": "Down by the river — Just you and me! What can you hear? What can you see?",
+          "cn": "来到河边——只有你和我！你能听见什么？你能看见什么？",
+          "st": "课文 · What's outside?",
+          "sp": "p.34"
+        },
+        {
+          "en": "Swish, swish! The wind blows the grass.",
+          "cn": "沙沙，沙沙！风吹拂着草地。",
+          "st": "课文 · What's outside?",
+          "sp": "p.35"
+        },
+        {
+          "en": "Quack, quack! A duck swims past.",
+          "cn": "嘎嘎，嘎嘎！一只鸭子游了过去。",
+          "st": "课文 · What's outside?",
+          "sp": "p.35"
+        },
+        {
+          "en": "Walk along the path — Just you and me! What can you hear? What can you see?",
+          "cn": "沿着小路走——只有你和我！你能听见什么？你能看见什么？",
+          "st": "课文 · What's outside?",
+          "sp": "p.35"
+        },
+        {
+          "en": "Pitter-patter! I can hear the rain.",
+          "cn": "噼里啪啦！我能听见雨声。",
+          "st": "课文 · What's outside?",
+          "sp": "p.35"
+        },
+        {
+          "en": "I think it's time to go home again!",
+          "cn": "我想该是时候回家了！",
+          "st": "课文 · What's outside?",
+          "sp": "p.35"
+        },
+        {
+          "en": "Rabbit 1: Listen! What can you hear?",
+          "cn": "兔子1：听！你们能听见什么？",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Rabbit 2: I can hear \"Gu Dong\"!",
+          "cn": "兔子2：我能听见“咕咚”！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Rabbit 1: Help! Help! Gu Dong is coming!",
+          "cn": "兔子1：救命！救命！咕咚来了！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Rabbit 2: It has green eyes!",
+          "cn": "兔子2：它有绿色的眼睛！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Monkey: Run! Run! Gu Dong is coming!",
+          "cn": "猴子：快跑！快跑！咕咚来了！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Rabbit 1: It has eight legs!",
+          "cn": "兔子1：它有八条腿！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Fox: Help! Gu Dong is coming!",
+          "cn": "狐狸：救命！咕咚来了！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Monkey: It has nine legs!",
+          "cn": "猴子：它有九条腿！",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elephant: What's Gu Dong?",
+          "cn": "大象：咕咚是什么？",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Bear: It has four green eyes and ten legs.",
+          "cn": "熊：它有四只绿眼睛和十条腿。",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elephant: What's Gu Dong?",
+          "cn": "大象：咕咚是什么？",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Fox: It's in the lake.",
+          "cn": "狐狸：它在湖里。",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Elephant: Don't worry. Look! It's a papaya.",
+          "cn": "大象：别担心。看！它是一个木瓜。",
+          "st": "拓展阅读 · GU DONG IS COMING!",
+          "sp": "p.40",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 5",
+      "title": "我们在哪里看见颜色",
+      "icon": "🌈",
+      "color": "#66bb6a",
+      "en": "Where can we see colours?",
+      "vocab": [
+        {
+          "en": "where",
+          "cn": "哪里"
+        },
+        {
+          "en": "colour",
+          "cn": "颜色"
+        },
+        {
+          "en": "pink",
+          "cn": "粉红色；粉红色的"
+        },
+        {
+          "en": "blue",
+          "cn": "蓝色；蓝色的"
+        },
+        {
+          "en": "red",
+          "cn": "红色；红色的"
+        },
+        {
+          "en": "brown",
+          "cn": "棕色；棕色的"
+        },
+        {
+          "en": "black",
+          "cn": "黑色；黑色的"
+        },
+        {
+          "en": "white",
+          "cn": "白色；白色的"
+        },
+        {
+          "en": "purple",
+          "cn": "紫色；紫色的"
+        },
+        {
+          "en": "green",
+          "cn": "绿色；绿色的"
+        },
+        {
+          "en": "orange",
+          "cn": "橘黄色；橘黄色的"
+        },
+        {
+          "en": "yellow",
+          "cn": "黄色；黄色的"
+        },
+        {
+          "en": "snow",
+          "cn": "雪"
+        },
+        {
+          "en": "tree",
+          "cn": "树；树木"
+        },
+        {
+          "en": "out",
+          "cn": "在室外"
+        },
+        {
+          "en": "garden",
+          "cn": "花园"
+        },
+        {
+          "en": "up",
+          "cn": "向上；在上面"
+        },
+        {
+          "en": "there (is, are)",
+          "cn": "（表示存在或发生）"
+        },
+        {
+          "en": "butterfly",
+          "cn": "蝴蝶"
+        }
+      ],
+      "read": [
+        {
+          "en": "Out in the garden, up in the tree, there are six red butterflies. Can you see?",
+          "cn": "在花园外面，在高高的树上，有六只红色的蝴蝶。你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Out in the garden, up in the tree, there are five green lizards. Can you see?",
+          "cn": "在花园外面，在高高的树上，有五只绿色的蜥蜴。你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Out in the garden, up in the tree, there are four brown birds. Can you see?",
+          "cn": "在花园外面，在高高的树上，有四只棕色的鸟。你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Out in the garden, up in the tree, there are three purple cats. Can you see?",
+          "cn": "在花园外面，在高高的树上，有三只紫色的猫。你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Out in the garden, up in the tree, there are two yellow dogs. Can you see?",
+          "cn": "在花园外面，在高高的树上，有两只黄色的狗。你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Now there's a problem.",
+          "cn": "现在有一个问题。",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "Look at the tree!",
+          "cn": "看看这棵树！",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "There are twenty animals! Can you see?",
+          "cn": "有二十只动物！你能看见吗？",
+          "st": "课文 · Who's in the tree?",
+          "sp": "p.44"
+        },
+        {
+          "en": "The sky is blue.",
+          "cn": "天空是蓝色的。",
+          "st": "课文 · Colours of the sky",
+          "sp": "p.45"
+        },
+        {
+          "en": "The clouds are white.",
+          "cn": "云朵是白色的。",
+          "st": "课文 · Colours of the sky",
+          "sp": "p.45"
+        },
+        {
+          "en": "They all look black in the dark, dark night.",
+          "cn": "在漆黑的夜晚，它们看上去都是黑色的。",
+          "st": "课文 · Colours of the sky",
+          "sp": "p.45"
+        },
+        {
+          "en": "Luo Binwang: My name is Luo Binwang.",
+          "cn": "骆宾王：我叫骆宾王。",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Luo Binwang: I'm seven. This is my poem. Do you like it?",
+          "cn": "骆宾王：我七岁了。这是我的诗。你喜欢吗？",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Geese! Geese! Geese!",
+          "cn": "鹅！鹅！鹅！",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Look at their long necks.",
+          "cn": "看它们长长的脖子。",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "They sing songs into the sky.",
+          "cn": "它们向天空引吭高歌。",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "White feathers, green water, red feet.",
+          "cn": "白羽毛，绿海水，红脚掌。",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Nice! Nice! Nice!",
+          "cn": "美！美！美！",
+          "st": "拓展阅读 · Happy geese",
+          "sp": "p.50",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 6",
+      "title": "我们的家是什么样的",
+      "icon": "🏠",
+      "color": "#5c6bc0",
+      "en": "What are our homes like?",
+      "vocab": [
+        {
+          "en": "kitchen",
+          "cn": "厨房"
+        },
+        {
+          "en": "bathroom",
+          "cn": "浴室；盥洗室"
+        },
+        {
+          "en": "bedroom",
+          "cn": "卧室"
+        },
+        {
+          "en": "dining room",
+          "cn": "餐厅"
+        },
+        {
+          "en": "living room",
+          "cn": "客厅；起居室"
+        },
+        {
+          "en": "study",
+          "cn": "书房"
+        },
+        {
+          "en": "desk",
+          "cn": "书桌"
+        },
+        {
+          "en": "chair",
+          "cn": "椅子"
+        },
+        {
+          "en": "sofa",
+          "cn": "长沙发"
+        },
+        {
+          "en": "room",
+          "cn": "房间"
+        },
+        {
+          "en": "from",
+          "cn": "从；来自"
+        },
+        {
+          "en": "new",
+          "cn": "新的"
+        },
+        {
+          "en": "dear",
+          "cn": "亲爱的"
+        },
+        {
+          "en": "show",
+          "cn": "给……看；展示"
+        },
+        {
+          "en": "write",
+          "cn": "写字；写作"
+        },
+        {
+          "en": "window",
+          "cn": "窗；窗户"
+        },
+        {
+          "en": "wish",
+          "cn": "祝愿"
+        },
+        {
+          "en": "in front of",
+          "cn": "在……前面"
+        },
+        {
+          "en": "look out of",
+          "cn": "向……外看"
+        },
+        {
+          "en": "teddy bear",
+          "cn": "泰迪熊"
+        }
+      ],
+      "read": [
+        {
+          "en": "Panpan: I can't wait to show you my new home!",
+          "cn": "我等不及要带你看看我的新家了！",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: There's a kitchen, a dining room, a living room, a bathroom, three bedrooms and a garden.",
+          "cn": "有一个厨房、一个餐厅、一个客厅、一个浴室、三间卧室和一个花园。",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: My bedroom is nice.",
+          "cn": "我的卧室很漂亮。",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: I like reading and writing in it.",
+          "cn": "我喜欢在里面读书和写字。",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: There's a garden in front of my bedroom.",
+          "cn": "我的卧室前面有一个花园。",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: I like looking out of the window.",
+          "cn": "我喜欢向窗外看。",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: How about your home?",
+          "cn": "你的家呢？",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Panpan: What's in your bedroom?",
+          "cn": "你的卧室里有什么？",
+          "st": "课文 · Our homes",
+          "sp": "p.54"
+        },
+        {
+          "en": "Lottie: Thank you for your photos.",
+          "cn": "谢谢你的照片。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: Here are some photos of my home.",
+          "cn": "这是一些我家的照片。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: It's a boat!",
+          "cn": "它是一条船！",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: There's a kitchen, a dining room, a bathroom and two bedrooms.",
+          "cn": "有一个厨房、一个餐厅、一个浴室和两间卧室。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: My bedroom is small.",
+          "cn": "我的卧室很小。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: There's a teddy bear on my bed.",
+          "cn": "我的床上有一只泰迪熊。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: It's my favourite toy.",
+          "cn": "它是我最喜欢的玩具。",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "Lottie: Do you like my home?",
+          "cn": "你喜欢我的家吗？",
+          "st": "课文 · Our homes",
+          "sp": "p.55"
+        },
+        {
+          "en": "I'm from the Arctic.",
+          "cn": "我来自北极。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "My home is made of snow, but it's warm.",
+          "cn": "我的家是雪做的，但是很暖和。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I'm from Mongolia.",
+          "cn": "我来自蒙古。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We move from place to place.",
+          "cn": "我们从一个地方搬到另一个地方。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We like our home!",
+          "cn": "我们喜欢我们的家！",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I'm from the UK.",
+          "cn": "我来自英国。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "My sister and I have a tree house!",
+          "cn": "我和姐姐有一个树屋！",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "We have so much fun there!",
+          "cn": "我们在那里玩得非常开心！",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "I'm from China.",
+          "cn": "我来自中国。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "My home isn't on a street.",
+          "cn": "我的家不在街道上。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It's by the water!",
+          "cn": "它在水边！",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "It's beautiful.",
+          "cn": "它很美。",
+          "st": "拓展阅读 · Special homes around the world",
+          "sp": "p.60",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 7",
+      "title": "我们在学校做什么",
+      "icon": "🏫",
+      "color": "#ef5350",
+      "en": "What do we do at school?",
+      "vocab": [
+        {
+          "en": "welcome",
+          "cn": "欢迎"
+        },
+        {
+          "en": "classroom",
+          "cn": "教室"
+        },
+        {
+          "en": "computer room",
+          "cn": "电脑室"
+        },
+        {
+          "en": "toilet",
+          "cn": "厕所；卫生间；盥洗室"
+        },
+        {
+          "en": "sports ground",
+          "cn": "操场"
+        },
+        {
+          "en": "library",
+          "cn": "图书馆"
+        },
+        {
+          "en": "office",
+          "cn": "办公室"
+        },
+        {
+          "en": "picture",
+          "cn": "图画"
+        },
+        {
+          "en": "tomorrow",
+          "cn": "明天"
+        },
+        {
+          "en": "also",
+          "cn": "也"
+        },
+        {
+          "en": "schoolbag",
+          "cn": "书包"
+        },
+        {
+          "en": "ruler",
+          "cn": "直尺"
+        },
+        {
+          "en": "pencil",
+          "cn": "铅笔"
+        },
+        {
+          "en": "pen",
+          "cn": "钢笔"
+        },
+        {
+          "en": "art room",
+          "cn": "美术教室"
+        },
+        {
+          "en": "swimming pool",
+          "cn": "游泳池"
+        },
+        {
+          "en": "lots of",
+          "cn": "大量的；很多的"
+        }
+      ],
+      "read": [
+        {
+          "en": "Lanlan: Welcome, Nini! My name is Lanlan. Come with me!",
+          "cn": "兰兰：欢迎，妮妮！我叫兰兰。跟我来！",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Lanlan: This is our classroom. Look! This is my picture.",
+          "cn": "兰兰：这是我们的教室。看！这是我的画。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Nini: It's very good.",
+          "cn": "妮妮：它非常好。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Lanlan: I like painting in the art room!",
+          "cn": "兰兰：我喜欢在美术室里画画！",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Nini: I like playing basketball and swimming. Is there a swimming pool in our school?",
+          "cn": "妮妮：我喜欢打篮球和游泳。我们学校有游泳池吗？",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Lanlan: No, there isn't. But there's a sports ground. Let's go!",
+          "cn": "兰兰：不，没有。但是有一个操场。我们走吧！",
+          "st": "课文 · Nini's new school",
+          "sp": "p.64"
+        },
+        {
+          "en": "Lanlan: Hi, Haohao! This is Nini.",
+          "cn": "兰兰：你好，浩浩！这是妮妮。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Haohao: Come and play basketball with us tomorrow.",
+          "cn": "浩浩：明天来和我们一起打篮球吧。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Nini: Thank you! Lanlan, is there also a library?",
+          "cn": "妮妮：谢谢！兰兰，还有图书馆吗？",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Lanlan: Come and see!",
+          "cn": "兰兰：来看看吧！",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Lanlan: Look! There are new books in this box.",
+          "cn": "兰兰：看！这个盒子里有新书。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Nini: Oh! I love this story!",
+          "cn": "妮妮：哦！我喜欢这个故事！",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Lanlan: What is it about?",
+          "cn": "兰兰：它是关于什么的？",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Nini: It's about a girl in her new school.",
+          "cn": "妮妮：它是关于一个女孩在她的新学校里的故事。",
+          "st": "课文 · Nini's new school",
+          "sp": "p.65"
+        },
+        {
+          "en": "Let's meet some students from around the world. What do they do in their schools?",
+          "cn": "让我们来认识一些来自世界各地的学生。他们在学校里做些什么呢？",
+          "st": "拓展阅读 · School life around the world",
+          "sp": "p.70",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Yang Ting is from China. She is in a paper-cutting class. She has lots of fun!",
+          "cn": "杨婷来自中国。她在上剪纸课。她玩得很开心！",
+          "st": "拓展阅读 · School life around the world",
+          "sp": "p.70",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Taylor is from the UK. She is in the school garden. She and her friend like to help in the garden.",
+          "cn": "泰勒来自英国。她在学校花园里。她和她的朋友喜欢在花园里帮忙。",
+          "st": "拓展阅读 · School life around the world",
+          "sp": "p.70",
+          "sec": "拓展阅读"
+        },
+        {
+          "en": "Matthew is from Australia. He is in the Music Club. He and his friends love music.",
+          "cn": "马修来自澳大利亚。他在音乐社。他和他的朋友们热爱音乐。",
+          "st": "拓展阅读 · School life around the world",
+          "sp": "p.70",
+          "sec": "拓展阅读"
+        }
+      ]
+    },
+    {
+      "name": "Unit 8",
+      "title": "你在儿童节做什么",
+      "icon": "🎈",
+      "color": "#ec407a",
+      "en": "What do you do on Children's Day?",
+      "vocab": [
+        {
+          "en": "Children's Day",
+          "cn": "儿童节"
+        },
+        {
+          "en": "go to the beach",
+          "cn": "去海滩"
+        },
+        {
+          "en": "go to the cinema",
+          "cn": "（去电影院）看电影"
+        },
+        {
+          "en": "go to the park",
+          "cn": "去公园"
+        },
+        {
+          "en": "go to the zoo",
+          "cn": "去动物园"
+        },
+        {
+          "en": "go to the museum",
+          "cn": "去博物馆"
+        },
+        {
+          "en": "elephant",
+          "cn": "象"
+        },
+        {
+          "en": "film",
+          "cn": "电影"
+        },
+        {
+          "en": "pizza",
+          "cn": "比萨饼；意大利饼"
+        },
+        {
+          "en": "shop",
+          "cn": "商店"
+        },
+        {
+          "en": "eat",
+          "cn": "吃"
+        },
+        {
+          "en": "classmate",
+          "cn": "同班同学"
+        },
+        {
+          "en": "do a survey",
+          "cn": "做调查"
+        },
+        {
+          "en": "science museum",
+          "cn": "科技馆"
+        }
+      ],
+      "read": [
+        {
+          "en": "Narrator: Haohao is doing a survey about Children's Day.",
+          "cn": "浩浩正在做一项关于儿童节的调查。",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.74"
+        },
+        {
+          "en": "Haohao: What do you do on Children's Day?",
+          "cn": "你儿童节做什么？",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.74"
+        },
+        {
+          "en": "Xuanxuan: I go to the science museum. It's fun!",
+          "cn": "我去科学博物馆。很有趣！",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.74"
+        },
+        {
+          "en": "Haohao: Liangliang, what do you do on Children's Day?",
+          "cn": "亮亮，你儿童节做什么？",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.74"
+        },
+        {
+          "en": "Liangliang: My family go to the zoo. I love elephants.",
+          "cn": "我们全家去动物园。我爱大象。",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.74"
+        },
+        {
+          "en": "Haohao: Xuanxuan, what about you?",
+          "cn": "萱萱，你呢？",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.75"
+        },
+        {
+          "en": "Haohao: Ha ha!",
+          "cn": "哈哈！",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.75"
+        },
+        {
+          "en": "Xuanxuan: My family go to the cinema. I like Monkey King.",
+          "cn": "我们全家去看电影。我喜欢美猴王。",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.75"
+        },
+        {
+          "en": "Xuanxuan: After the film, we go to a pizza shop. Sometimes I eat too much!",
+          "cn": "看完电影后，我们去披萨店。有时我吃得太多啦！",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.75"
+        },
+        {
+          "en": "Haohao: In our class, three classmates go to the zoo on Children's Day. Four classmates go to the cinema. Three classmates go to the museum. Ten classmates go out to eat!",
+          "cn": "在我们班，三个同学儿童节去动物园，四个同学去看电影，三个同学去博物馆，十个同学出去吃饭！",
+          "st": "课文 · Children's Day survey",
+          "sp": "p.75"
+        },
+        {
+          "en": "Zhang Le is from China.",
+          "cn": "张乐来自中国。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "On Children's Day, there are no classes.",
+          "cn": "在儿童节，不用上课。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "He and his classmates can visit museums or go to parks.",
+          "cn": "他和同学们可以去参观博物馆或者去公园。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "Ariya is from Thailand.",
+          "cn": "阿里娅来自泰国。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "On Children's Day, Ariya likes going to the zoo!",
+          "cn": "儿童节那天，阿里娅喜欢去动物园！",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "She has a great time there.",
+          "cn": "她在那里玩得很开心。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "In Japan, there are two Children's Days: one for girls and one for boys.",
+          "cn": "在日本，有两个儿童节：一个属于女孩，一个属于男孩。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "Akio is a boy.",
+          "cn": "秋夫是一个男孩。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "On Children's Day, his family flies paper fish outside their house.",
+          "cn": "儿童节那天，他们全家在屋子外面挂起纸做的鱼。",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        },
+        {
+          "en": "There is one fish for his father, one for his mother, one for his brother and one for Akio!",
+          "cn": "有一条鱼给爸爸，一条给妈妈，一条给哥哥，还有一条给秋夫！",
+          "st": "拓展阅读 · Children's Day around the world",
+          "sec": "拓展阅读",
+          "sp": "p.80"
+        }
+      ]
+    }
+  ],
+  "questions": {
+    "1": [
+      {
+        "type": "单词",
+        "q": "\"sing\" 的中文意思是？",
+        "options": [
+          "跳舞",
+          "画画",
+          "唱歌",
+          "游泳"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"dance\" 的中文意思是？",
+        "options": [
+          "唱歌",
+          "跳舞",
+          "跑步",
+          "游泳"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"paint\" 的中文意思是？",
+        "options": [
+          "唱歌",
+          "跳舞",
+          "读书",
+          "画画"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"swim\" 的中文意思是？",
+        "options": [
+          "跑步",
+          "跳舞",
+          "画画",
+          "游泳"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"read\" 的中文意思是？",
+        "options": [
+          "读书",
+          "写字",
+          "唱歌",
+          "画画"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"hobby\" 的中文意思是？",
+        "options": [
+          "爱好",
+          "习惯",
+          "功课",
+          "游戏"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"bike\" 的中文意思是？",
+        "options": [
+          "汽车",
+          "火车",
+          "自行车",
+          "飞机"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"park\" 的中文意思是？",
+        "options": [
+          "商店",
+          "公园",
+          "动物园",
+          "学校"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"music\" 的中文意思是？",
+        "options": [
+          "美术",
+          "体育",
+          "音乐",
+          "数学"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"skirt\" 的中文意思是？",
+        "options": [
+          "衬衫",
+          "帽子",
+          "短裙",
+          "鞋子"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"food\" 的中文意思是？",
+        "options": [
+          "食物",
+          "饮料",
+          "水果",
+          "水"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"favourite\" 的中文意思是？",
+        "options": [
+          "有趣的",
+          "最喜爱的",
+          "重要的",
+          "困难的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“足球” 是哪个单词？",
+        "options": [
+          "basketball",
+          "football",
+          "ping-pong",
+          "volleyball"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“乒乓球” 是哪个单词？",
+        "options": [
+          "football",
+          "basketball",
+          "volleyball",
+          "ping-pong"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "I like singing and ____.",
+        "options": [
+          "dancing",
+          "dance",
+          "dances",
+          "to dance"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "I like playing ping-pong and ____ my bike.",
+        "options": [
+          "ride",
+          "rides",
+          "riding",
+          "to ride"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "What do you like ____? I like running.",
+        "options": [
+          "do",
+          "doing",
+          "does",
+          "are"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "This is me in my ____ class. Look at my purple ____!",
+        "options": [
+          "dance; bike",
+          "sing; T-shirt",
+          "dance; skirt",
+          "swim; skirt"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "This is me in my favourite ____.",
+        "options": [
+          "game",
+          "class",
+          "park",
+          "book"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "I like swimming! I like playing basketball ____.",
+        "options": [
+          "to",
+          "two",
+          "and",
+          "too"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "It's warm and ____!",
+        "options": [
+          "rainy",
+          "sunny",
+          "windy",
+          "cloudy"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "How do we ____ our free time?",
+        "options": [
+          "take",
+          "play",
+          "make",
+          "spend"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Come in! You can ____ my food.",
+        "options": [
+          "sell",
+          "buy",
+          "draw",
+          "share"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "I have no ____. I have no ____.",
+        "options": [
+          "food; home",
+          "food; book",
+          "bike; home",
+          "food; game"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 p 的发音与 paint 相同？",
+        "options": [
+          "bike",
+          "skirt",
+          "park",
+          "good"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 b 的发音与 bike 相同？",
+        "options": [
+          "paint",
+          "skirt",
+          "game",
+          "basketball"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 \"What do you like doing?\" ，你应回答：",
+        "options": [
+          "I like playing ping-pong.",
+          "I am nine years old.",
+          "Yes, I do.",
+          "It's a bike."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学说 \"I like painting. How about you?\" ，你应回答：",
+        "options": [
+          "You're welcome.",
+          "I like dancing, too.",
+          "I have two books.",
+          "No, it isn't."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "paint",
+        "cn": "画画"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "dance",
+        "cn": "跳舞"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "hobby",
+        "cn": "爱好"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "music",
+        "cn": "音乐"
+      }
+    ],
+    "2": [
+      {
+        "type": "单词",
+        "q": "\"friend\" 的中文意思是？",
+        "options": [
+          "家人",
+          "朋友",
+          "兄弟",
+          "邻居"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"brother\" 的中文意思是？",
+        "options": [
+          "姐妹",
+          "爷爷",
+          "兄弟",
+          "叔叔"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"sandcastle\" 的中文意思是？",
+        "options": [
+          "沙堡",
+          "沙滩排球",
+          "帆船",
+          "沙丘"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"volleyball\" 的中文意思是？",
+        "options": [
+          "足球",
+          "篮球",
+          "网球",
+          "排球"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"beach\" 的中文意思是？",
+        "options": [
+          "海洋",
+          "沙滩",
+          "游泳池",
+          "岛屿"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"photo\" 的中文意思是？",
+        "options": [
+          "故事",
+          "图画",
+          "电影",
+          "照片"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"game\" 的中文意思是？",
+        "options": [
+          "游戏",
+          "歌曲",
+          "故事",
+          "照片"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"boat\" 的中文意思是？",
+        "options": [
+          "火车",
+          "飞机",
+          "自行车",
+          "小船"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"story\" 的中文意思是？",
+        "options": [
+          "歌曲",
+          "游戏",
+          "电影",
+          "故事"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"happy\" 的中文意思是？",
+        "options": [
+          "难过的",
+          "累的",
+          "害怕的",
+          "开心的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"sad\" 的中文意思是？",
+        "options": [
+          "难过的",
+          "开心的",
+          "生气的",
+          "害怕的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“一起” 是哪个单词？",
+        "options": [
+          "too",
+          "together",
+          "again",
+          "quickly"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“家庭” 是哪个单词？",
+        "options": [
+          "friend",
+          "class",
+          "family",
+          "team"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“乌龟” 是哪个单词？",
+        "options": [
+          "tortoise",
+          "rabbit",
+          "elephant",
+          "lion"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Do you like ____ in the sand?",
+        "options": [
+          "play",
+          "plays",
+          "playing",
+          "played"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "____ you like playing beach volleyball?",
+        "options": [
+          "Does",
+          "Are",
+          "Do",
+          "Is"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Come here, Kaikai! Meet my new ____ Lanlan.",
+        "options": [
+          "brother",
+          "teacher",
+          "friend",
+          "family"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Great! You can ____ me!",
+        "options": [
+          "like",
+          "join",
+          "play",
+          "do"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "I'm Elliot. I can't find my ____.",
+        "options": [
+          "school",
+          "friend",
+          "family",
+          "bag"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Do you like ____ a boat? Yes, I ____.",
+        "options": [
+          "rowing; do",
+          "row; does",
+          "rowing; does",
+          "row; do"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Lanlan and Junjun have new ____. I'm so ____!",
+        "options": [
+          "friend; sad",
+          "friends; happy",
+          "friends; sad",
+          "friend; happy"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Do you like ____ stories?",
+        "options": [
+          "tell",
+          "tells",
+          "telling",
+          "told"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "friend",
+        "cn": "朋友"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "photo",
+        "cn": "照片"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "sandcastle",
+        "cn": "沙堡"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "together",
+        "cn": "一起"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 t 的发音与 take 相同？",
+        "options": [
+          "do",
+          "to",
+          "sand",
+          "old"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 d 的发音与 do 相同？",
+        "options": [
+          "toy",
+          "take",
+          "friend",
+          "tell"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "交际",
+        "q": "开学第一天，你想和新同学交朋友，你应该说：",
+        "options": [
+          "Hi! I'm ... What's your name?",
+          "I don't like you.",
+          "Go away!",
+          "Sit down, please."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 \"Do you like swimming?\"，你也喜欢游泳，你应该回答：",
+        "options": [
+          "No, I don't.",
+          "I'm sorry.",
+          "Thank you.",
+          "Yes, I do."
+        ],
+        "answer": 3
+      }
+    ],
+    "3": [
+      {
+        "type": "单词",
+        "q": "\"T-shirt\" 的中文意思是？",
+        "options": [
+          "T恤衫",
+          "衬衫",
+          "毛衣",
+          "连衣裙"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"cap\" 的中文意思是？",
+        "options": [
+          "外套",
+          "短裤",
+          "鸭舌帽",
+          "鞋子"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"sweater\" 的中文意思是？",
+        "options": [
+          "毛衣",
+          "围巾",
+          "短裙",
+          "衬衣"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"trousers\" 的中文意思是？",
+        "options": [
+          "短裤",
+          "长裤",
+          "雨衣",
+          "制服"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"dress\" 的中文意思是？",
+        "options": [
+          "短裙",
+          "衬衫",
+          "外套",
+          "连衣裙"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"raincoat\" 的中文意思是？",
+        "options": [
+          "外套",
+          "雨衣",
+          "短裙",
+          "帽子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"uniform\" 的中文意思是？",
+        "options": [
+          "雨伞",
+          "书包",
+          "运动鞋",
+          "校服"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“毛衣” 是哪个单词？",
+        "options": [
+          "sweater",
+          "shirt",
+          "skirt",
+          "shoes"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“连衣裙” 是哪个单词？",
+        "options": [
+          "coat",
+          "dress",
+          "shorts",
+          "cap"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“长裤” 是哪个单词？",
+        "options": [
+          "shorts",
+          "shoes",
+          "trousers",
+          "shirt"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“外套” 是哪个单词？",
+        "options": [
+          "coat",
+          "cap",
+          "dress",
+          "sweater"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“短裙” 是哪个单词？",
+        "options": [
+          "shirt",
+          "skirt",
+          "T-shirt",
+          "shorts"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“雨衣” 是哪个单词？",
+        "options": [
+          "uniform",
+          "raincoat",
+          "trousers",
+          "sweater"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“短裤” 是哪个单词？",
+        "options": [
+          "trousers",
+          "shoes",
+          "shorts",
+          "shirt"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "On a sunny day, I wear a ____ and a skirt.",
+        "options": [
+          "cap",
+          "shirt",
+          "coat",
+          "shoe"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "In the afternoon, we have ____. I put on a T-shirt, shorts and sports shoes.",
+        "options": [
+          "art",
+          "music",
+          "PE",
+          "maths"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "My busy day is over. It's time to go to ____.",
+        "options": [
+          "park",
+          "beach",
+          "school",
+          "bed"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "On a cloudy day, I wear a T-shirt, but I take a ____.",
+        "options": [
+          "cap",
+          "dress",
+          "sweater",
+          "skirt"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "At my school, we wear a ____.",
+        "options": [
+          "raincoat",
+          "sweater",
+          "uniform",
+          "coat"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Look! It is a ____ day. I can wear my new dress.",
+        "options": [
+          "sunny",
+          "rainy",
+          "cloudy",
+          "snowy"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "On a hot sunny day, I wear a ____ and ____ on the beach.",
+        "options": [
+          "coat; trousers",
+          "T-shirt; shorts",
+          "sweater; shoes",
+          "raincoat; boots"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "I wear my school uniform: a ____ and a ____.",
+        "options": [
+          "coat; dress",
+          "sweater; cap",
+          "raincoat; shoe",
+          "shirt; skirt"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "cap",
+        "cn": "鸭舌帽；便帽"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "dress",
+        "cn": "连衣裙"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "shorts",
+        "cn": "短裤"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "sweater",
+        "cn": "毛衣"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 k 的发音与 skirt 相同？",
+        "options": [
+          "book",
+          "knife",
+          "knee",
+          "know"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 g 的发音与 girl 相同？",
+        "options": [
+          "orange",
+          "page",
+          "giraffe",
+          "go"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "你想问同学在晴天穿什么衣服，应该说：",
+        "options": [
+          "What do you wear on a sunny day?",
+          "What do you have on Sunday?",
+          "Where is my cap?",
+          "What colour is your dress?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "妈妈问：\"How's the weather this weekend?\" 今天天气晴朗，你应该回答：",
+        "options": [
+          "I wear shorts.",
+          "It's a dress.",
+          "Thank you.",
+          "It's sunny."
+        ],
+        "answer": 3
+      }
+    ],
+    "4": [
+      {
+        "type": "单词",
+        "q": "\"bird\" 的中文意思是？",
+        "options": [
+          "鸭子",
+          "蜜蜂",
+          "鸟",
+          "湖"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"duck\" 的中文意思是？",
+        "options": [
+          "母鸡",
+          "鸭子",
+          "兔子",
+          "鸟"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"bee\" 的中文意思是？",
+        "options": [
+          "蚂蚁",
+          "蝴蝶",
+          "蜜蜂",
+          "苍蝇"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"lake\" 的中文意思是？",
+        "options": [
+          "池塘",
+          "河",
+          "海",
+          "湖"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"river\" 的中文意思是？",
+        "options": [
+          "河",
+          "湖",
+          "海",
+          "小溪"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"grass\" 的中文意思是？",
+        "options": [
+          "花",
+          "草",
+          "树",
+          "叶子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"hear\" 的中文意思是？",
+        "options": [
+          "看见",
+          "闻到",
+          "摸到",
+          "听见"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"rain\" 的中文意思是？",
+        "options": [
+          "雪",
+          "雨",
+          "风",
+          "云"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"tree\" 的中文意思是？",
+        "options": [
+          "草",
+          "花",
+          "山",
+          "树"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“听见” 是哪个单词？",
+        "options": [
+          "here",
+          "hair",
+          "hear",
+          "heart"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“鸭子” 是哪个单词？",
+        "options": [
+          "dog",
+          "cat",
+          "hen",
+          "duck"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“声音” 是哪个单词？",
+        "options": [
+          "sound",
+          "round",
+          "found",
+          "ground"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "— What can you ____? — I can hear a bird.",
+        "options": [
+          "hear",
+          "see",
+          "eat",
+          "run"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "I like the ____ of rain. I can hear it on rainy days.",
+        "options": [
+          "colour",
+          "sound",
+          "smell",
+          "taste"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "Listen! I can hear a ____ singing in the tree.",
+        "options": [
+          "duck",
+          "bee",
+          "bird",
+          "fish"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Swish, swish! The ____ blows the grass.",
+        "options": [
+          "rain",
+          "wind",
+          "bee",
+          "duck"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "Quack, quack! A ____ swims past.",
+        "options": [
+          "bird",
+          "bee",
+          "duck",
+          "cat"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "Chirp, chirp! A nice bird in a ____.",
+        "options": [
+          "lake",
+          "river",
+          "home",
+          "tree"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Buzz, buzz! A black and yellow ____.",
+        "options": [
+          "bee",
+          "bird",
+          "duck",
+          "fish"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Pitter-patter! I can hear the ____.",
+        "options": [
+          "wind",
+          "rain",
+          "duck",
+          "bee"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "— What can you hear? — I can ____ a bird ____ the tree.（两空）",
+        "options": [
+          "see; in",
+          "hear; on",
+          "look; at",
+          "hear; in"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Let's go outside — just you and ____! What can you hear? What can you ____?（两空）",
+        "options": [
+          "me; see",
+          "my; see",
+          "I; see",
+          "me; look"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "hear",
+        "cn": "听见"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "river",
+        "cn": "河"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "bird",
+        "cn": "鸟"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "duck",
+        "cn": "鸭子"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母(组合) m 的发音与 me 相同？",
+        "options": [
+          "rain",
+          "home",
+          "nice",
+          "duck"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母(组合) n 的发音与 nice 相同？",
+        "options": [
+          "me",
+          "hear",
+          "duck",
+          "green"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "你想问同桌能听到什么声音，应该问：",
+        "options": [
+          "What can you hear?",
+          "What can you see?",
+          "What do you like?",
+          "Who is there?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 \"What can you hear?\"，你听到了鸟叫，可以回答：",
+        "options": [
+          "I can see a bird.",
+          "I like birds.",
+          "I can hear a bird.",
+          "I can hear a duck."
+        ],
+        "answer": 2
+      }
+    ],
+    "5": [
+      {
+        "type": "单词",
+        "q": "\"butterfly\" 的中文意思是？",
+        "options": [
+          "蝴蝶",
+          "蜥蜴",
+          "兔子",
+          "燕子"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"lizard\" 的中文意思是？",
+        "options": [
+          "小鸟",
+          "蜥蜴",
+          "猫",
+          "白云"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"purple\" 的中文意思是？",
+        "options": [
+          "棕色",
+          "粉色",
+          "紫色",
+          "灰色"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"brown\" 的中文意思是？",
+        "options": [
+          "黑色",
+          "白色",
+          "蓝色",
+          "棕色"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"white\" 的中文意思是？",
+        "options": [
+          "白色",
+          "黑色",
+          "红色",
+          "绿色"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"yellow\" 的中文意思是？",
+        "options": [
+          "橙色",
+          "黄色",
+          "粉色",
+          "紫色"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"orange\" 的中文意思是？",
+        "options": [
+          "黄色的",
+          "绿色的",
+          "紫色的",
+          "橙色的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"fireworks\" 的中文意思是？",
+        "options": [
+          "雪花",
+          "彩虹",
+          "烟花",
+          "气球"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"squirrel\" 的中文意思是？",
+        "options": [
+          "松鼠",
+          "鹅",
+          "兔子",
+          "猫"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"geese\" 的中文意思是？",
+        "options": [
+          "鸭子",
+          "天鹅",
+          "鹅（复数）",
+          "母鸡"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"羽毛\" 是哪个单词？",
+        "options": [
+          "neck",
+          "feather",
+          "foot",
+          "sky"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"雪\" 是哪个单词？",
+        "options": [
+          "rain",
+          "wind",
+          "cloud",
+          "snow"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"黑色\" 是哪个单词？",
+        "options": [
+          "black",
+          "brown",
+          "blue",
+          "pink"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"天空\" 是哪个单词？",
+        "options": [
+          "cloud",
+          "star",
+          "sky",
+          "tree"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "The sky is ____.",
+        "options": [
+          "green",
+          "blue",
+          "red",
+          "black"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "The clouds are ____.",
+        "options": [
+          "black",
+          "purple",
+          "green",
+          "white"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "Out in the garden, up in the tree, there are six red ____.",
+        "options": [
+          "lizards",
+          "dogs",
+          "butterflies",
+          "cats"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "There are five green ____ in the tree.",
+        "options": [
+          "birds",
+          "cats",
+          "dogs",
+          "lizards"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "— ____ your favourite colour? — White.",
+        "options": [
+          "What",
+          "What's",
+          "How",
+          "Who's"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "My favourite ____ is blue.",
+        "options": [
+          "colour",
+          "animal",
+          "food",
+          "toy"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "— I can see the colour white. ____ is it? — It's a rabbit.",
+        "options": [
+          "Where",
+          "Who",
+          "What",
+          "How"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "There's a white cat ____ the park today.",
+        "options": [
+          "in",
+          "on",
+          "at",
+          "of"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "There ____ a black cat. There ____ two white cats.",
+        "options": [
+          "are;is",
+          "is;is",
+          "are;are",
+          "is;are"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "White ____, green water, red ____.",
+        "options": [
+          "feet;feathers",
+          "necks;feet",
+          "feathers;feet",
+          "feathers;necks"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "white",
+        "cn": "白色"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "purple",
+        "cn": "紫色"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "lizard",
+        "cn": "蜥蜴"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "butterfly",
+        "cn": "蝴蝶"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 l 的发音与 lizard 相同？",
+        "options": [
+          "black",
+          "rabbit",
+          "red",
+          "brown"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 r 的发音与 red 相同？",
+        "options": [
+          "yellow",
+          "lizard",
+          "rabbit",
+          "black"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "交际",
+        "q": "同学问你：\"What's your favourite colour?\" 你最喜欢蓝色，你应该说：",
+        "options": [
+          "I'm fine, thank you.",
+          "My favourite colour is blue.",
+          "It's a blue cat.",
+          "I can see a bird."
+        ],
+        "answer": 1
+      },
+      {
+        "type": "交际",
+        "q": "你想告诉同桌树上有一只棕色的松鼠，你应该说：",
+        "options": [
+          "It's a squirrel.",
+          "I like brown.",
+          "There's a brown squirrel in the tree.",
+          "There's a brown rabbit in the tree."
+        ],
+        "answer": 2
+      }
+    ],
+    "6": [
+      {
+        "type": "单词",
+        "q": "\"kitchen\" 的中文意思是？",
+        "options": [
+          "客厅",
+          "卧室",
+          "厨房",
+          "浴室"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"bathroom\" 的中文意思是？",
+        "options": [
+          "浴室",
+          "厨房",
+          "书房",
+          "花园"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“客厅” 是哪个单词？",
+        "options": [
+          "bedroom",
+          "kitchen",
+          "study",
+          "living room"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"bedroom\" 的中文意思是？",
+        "options": [
+          "厨房",
+          "卧室",
+          "浴室",
+          "客厅"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“餐厅” 是哪个单词？",
+        "options": [
+          "dining room",
+          "living room",
+          "bathroom",
+          "study"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"study\" 的中文意思是？",
+        "options": [
+          "客厅",
+          "厨房",
+          "书房",
+          "卧室"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“沙发” 是哪个单词？",
+        "options": [
+          "chair",
+          "sofa",
+          "desk",
+          "bed"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"garden\" 的中文意思是？",
+        "options": [
+          "窗户",
+          "船",
+          "玩具",
+          "花园"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“船” 是哪个单词？",
+        "options": [
+          "home",
+          "boat",
+          "house",
+          "window"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"window\" 的中文意思是？",
+        "options": [
+          "窗户",
+          "门",
+          "墙",
+          "屋顶"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "“家” 是哪个单词？",
+        "options": [
+          "house",
+          "room",
+          "boat",
+          "home"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"desk\" 的中文意思是？",
+        "options": [
+          "椅子",
+          "沙发",
+          "书桌",
+          "床"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "“椅子” 是哪个单词？",
+        "options": [
+          "desk",
+          "sofa",
+          "chair",
+          "table"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"toy\" 的中文意思是？",
+        "options": [
+          "熊",
+          "玩具",
+          "照片",
+          "窗户"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "There ____ a garden in front of my bedroom. I like looking out ____ the window.",
+        "options": [
+          "is; of",
+          "are; of",
+          "is; at",
+          "are; at"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "What's ____ your room? There's a bed and a desk ____ it.",
+        "options": [
+          "on; in",
+          "in; on",
+          "at; in",
+          "in; in"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "I can't wait ____ show you my new home! Welcome ____ my home.",
+        "options": [
+          "for; to",
+          "to; to",
+          "to; at",
+          "for; at"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "My bedroom is small. There's a teddy bear ____ my bed. It's my favourite ____.",
+        "options": [
+          "on; book",
+          "in; toy",
+          "on; toy",
+          "under; bear"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "____ is your home like? — ____ a boat. It's fun.",
+        "options": [
+          "Where; It's",
+          "What; Its",
+          "How; It's",
+          "What; It's"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "There ____ some toys on my bed. I sleep with ____ at night.",
+        "options": [
+          "are; them",
+          "is; them",
+          "are; it",
+          "is; it"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Thank you ____ your photos. Here ____ some photos of my home.",
+        "options": [
+          "for; is",
+          "to; are",
+          "for; are",
+          "of; is"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "My home is ____ of snow, but it's warm. We move ____ place to place.",
+        "options": [
+          "make; from",
+          "made; from",
+          "made; to",
+          "make; to"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "kitchen",
+        "cn": "厨房"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "bedroom",
+        "cn": "卧室"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "bathroom",
+        "cn": "浴室"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "garden",
+        "cn": "花园"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 f 的发音与 father 相同？",
+        "options": [
+          "of",
+          "over",
+          "lovely",
+          "sofa"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 v 的发音与 five 相同？",
+        "options": [
+          "live",
+          "kitchen",
+          "window",
+          "home"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学问你：What's in your bedroom? 你可以回答：",
+        "options": [
+          "It's a boat.",
+          "My home is big.",
+          "There's a bed and a desk in it.",
+          "I like reading."
+        ],
+        "answer": 2
+      },
+      {
+        "type": "交际",
+        "q": "你想告诉网友你的家在水边，可以说：",
+        "options": [
+          "My home is made of snow.",
+          "We move from place to place.",
+          "There are some rooms in my home.",
+          "My home is by the water."
+        ],
+        "answer": 3
+      }
+    ],
+    "7": [
+      {
+        "type": "单词",
+        "q": "\"classroom\" 的中文意思是？",
+        "options": [
+          "教室",
+          "黑板",
+          "图书馆",
+          "办公室"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"library\" 的中文意思是？",
+        "options": [
+          "操场",
+          "图书馆",
+          "厕所",
+          "花园"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"computer room\" 的中文意思是？",
+        "options": [
+          "美术室",
+          "音乐教室",
+          "计算机房",
+          "体育馆"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"toilet\" 的中文意思是？",
+        "options": [
+          "浴室",
+          "教室",
+          "厨房",
+          "厕所"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"sports ground\" 的中文意思是？",
+        "options": [
+          "操场",
+          "游泳池",
+          "花园",
+          "图书馆"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"office\" 的中文意思是？",
+        "options": [
+          "教室",
+          "办公室",
+          "厕所",
+          "花园"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"art room\" 的中文意思是？",
+        "options": [
+          "音乐室",
+          "电脑室",
+          "美术室",
+          "实验室"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"swimming pool\" 的中文意思是？",
+        "options": [
+          "操场",
+          "花园",
+          "体育馆",
+          "游泳池"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"blackboard\" 的中文意思是？",
+        "options": [
+          "黑板",
+          "书包",
+          "铅笔",
+          "钢笔"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"schoolbag\" 的中文意思是？",
+        "options": [
+          "铅笔",
+          "书包",
+          "钢笔",
+          "尺子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"garden\" 的中文意思是？",
+        "options": [
+          "操场",
+          "公园",
+          "花园",
+          "图书馆"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"school\" 的中文意思是？",
+        "options": [
+          "商店",
+          "书包",
+          "花园",
+          "学校"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“图书馆” 是哪个单词？",
+        "options": [
+          "classroom",
+          "library",
+          "office",
+          "garden"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“电脑室” 是哪个单词？",
+        "options": [
+          "art room",
+          "toilet",
+          "computer room",
+          "office"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "____ there a swimming pool in our school? — No, there ____. (两空)",
+        "options": [
+          "Is;isn't",
+          "Is;is",
+          "Are;aren't",
+          "Are;isn't"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "____ there a big library in your school? — Yes, there ____. (两空)",
+        "options": [
+          "Are;are",
+          "Is;are",
+          "Is;is",
+          "Are;is"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "____ there any computer rooms in your school? — Yes, there ____. (两空)",
+        "options": [
+          "Is;is",
+          "Are;are",
+          "Is;are",
+          "Are;is"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "____ there gardens in your school? — No, there ____. (两空)",
+        "options": [
+          "Are;aren't",
+          "Is;isn't",
+          "Are;isn't",
+          "Is;aren't"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "Welcome ____ my school! Come ____ me! (两空)",
+        "options": [
+          "to;with",
+          "at;for",
+          "to;for",
+          "in;with"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "I like ____ in the art room! Let's ____ together! (两空)",
+        "options": [
+          "paint;painting",
+          "painting;paint",
+          "paints;paint",
+          "painting;painting"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "____ is my picture. I like playing basketball and ____. (两空)",
+        "options": [
+          "These;swim",
+          "This;swimming",
+          "This;swim",
+          "These;swimming"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "Come and play basketball ____ us tomorrow. There's a sports ____ in our school. (两空)",
+        "options": [
+          "with;pool",
+          "and;ground",
+          "with;ground",
+          "for;ground"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "____ is it about? — It's ____ a girl in her new school. (两空)",
+        "options": [
+          "What;about",
+          "Where;about",
+          "What;for",
+          "Who;about"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "There ____ new books in this box. ____ a library in our school too? (两空)",
+        "options": [
+          "is;Is there",
+          "are;Is there",
+          "are;Are there",
+          "is;Are there"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "library",
+        "cn": "图书馆"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "classroom",
+        "cn": "教室"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "toilet",
+        "cn": "厕所"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "schoolbag",
+        "cn": "书包"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 s 的发音与 see 相同？",
+        "options": [
+          "zero",
+          "is",
+          "sports",
+          "has"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 z 的发音与 zero 相同？",
+        "options": [
+          "sun",
+          "see",
+          "sports",
+          "zoo"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "交际",
+        "q": "你想知道新学校里有没有图书馆，应该问：",
+        "options": [
+          "Is there a library in our school?",
+          "I like the library.",
+          "The library is big.",
+          "Where is my schoolbag?"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "同学对你说 \"Welcome to my school!\"，你应该回应：",
+        "options": [
+          "You're welcome.",
+          "Thank you!",
+          "Goodbye!",
+          "No, there isn't."
+        ],
+        "answer": 1
+      }
+    ],
+    "8": [
+      {
+        "type": "单词",
+        "q": "\"beach\" 的中文意思是？",
+        "options": [
+          "海滩",
+          "电影院",
+          "博物馆",
+          "公园"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"cinema\" 的中文意思是？",
+        "options": [
+          "动物园",
+          "电影院",
+          "海滩",
+          "教室"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"museum\" 的中文意思是？",
+        "options": [
+          "公园",
+          "商店",
+          "博物馆",
+          "动物园"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"zoo\" 的中文意思是？",
+        "options": [
+          "动物园",
+          "公园",
+          "花园",
+          "海滩"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"film\" 的中文意思是？",
+        "options": [
+          "书本",
+          "电影",
+          "照片",
+          "游戏"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "\"elephant\" 的中文意思是？",
+        "options": [
+          "老虎",
+          "猴子",
+          "熊猫",
+          "大象"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"hat\" 的中文意思是？",
+        "options": [
+          "帽子",
+          "裙子",
+          "鞋子",
+          "书包"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "\"football\" 的中文意思是？",
+        "options": [
+          "篮球",
+          "乒乓球",
+          "足球",
+          "网球"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"storybook\" 的中文意思是？",
+        "options": [
+          "作业本",
+          "图画书",
+          "练习本",
+          "故事书"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"survey\" 的中文意思是？",
+        "options": [
+          "庆祝",
+          "派对",
+          "礼物",
+          "调查"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "\"classmate\" 的中文意思是？",
+        "options": [
+          "老师",
+          "兄弟",
+          "同班同学",
+          "朋友"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "\"boat\" 的中文意思是？",
+        "options": [
+          "汽车",
+          "火车",
+          "飞机",
+          "船"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "“披萨” 是哪个单词？",
+        "options": [
+          "cake",
+          "pizza",
+          "bread",
+          "rice"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "“公园” 是哪个单词？",
+        "options": [
+          "zoo",
+          "park",
+          "beach",
+          "museum"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "— What do you do on Children's Day?\n— I ____ to the zoo with my family.",
+        "options": [
+          "go",
+          "goes",
+          "going",
+          "to go"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "— Do you like ____ your new hat?\n— Yes, I do. I love it so much.",
+        "options": [
+          "wear",
+          "wears",
+          "wearing",
+          "to wearing"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "My family ____ to the zoo. I love elephants.",
+        "options": [
+          "goes",
+          "go",
+          "going",
+          "to go"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "What ____ you do on Children's Day?",
+        "options": [
+          "does",
+          "is",
+          "are",
+          "do"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "I go to the science museum. ____ fun!",
+        "options": [
+          "It",
+          "It's",
+          "Its",
+          "Is it"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "句型",
+        "q": "There ____ no classes on Children's Day.",
+        "options": [
+          "am",
+          "is",
+          "be",
+          "are"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "句型",
+        "q": "After the film, we go to a pizza ____.",
+        "options": [
+          "shop",
+          "shopping",
+          "shops",
+          "shoping"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "In Japan, there are two ____ Days: one for girls and one for boys.",
+        "options": [
+          "Children's",
+          "Childrens'",
+          "Childrens",
+          "Childs"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "句型",
+        "q": "— What do you ____ on Children's Day?\n— I ____ to the cinema with my mum and dad.",
+        "options": [
+          "do; goes",
+          "does; go",
+          "do; go",
+          "does; goes"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "句型",
+        "q": "We ____ football until it ____ dark!",
+        "options": [
+          "play; gets",
+          "plays; get",
+          "playing; gets",
+          "play; getting"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "beach",
+        "cn": "海滩"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "cinema",
+        "cn": "电影院"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "museum",
+        "cn": "博物馆"
+      },
+      {
+        "type": "听写",
+        "q": "仔细听单词，拼写出它的英文",
+        "word": "elephant",
+        "cn": "大象"
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 h 的发音与 hat 相同？",
+        "options": [
+          "hour",
+          "what",
+          "happy",
+          "school"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "语音",
+        "q": "下列哪个单词中字母 h 的发音与 happy 相同？",
+        "options": [
+          "chair",
+          "hand",
+          "who",
+          "white"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "交际",
+        "q": "同学问你 “What do you do on Children's Day?”，你儿童节去了动物园，应该说：",
+        "options": [
+          "I go to the zoo.",
+          "Yes, I do.",
+          "It's a zoo.",
+          "I like the zoo."
+        ],
+        "answer": 0
+      },
+      {
+        "type": "交际",
+        "q": "你想知道好朋友在儿童节做什么，应该问：",
+        "options": [
+          "Where is Children's Day?",
+          "What do you do on Children's Day?",
+          "Do you like Children's Day?",
+          "When is your birthday?"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}
