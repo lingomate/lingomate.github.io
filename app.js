@@ -156,9 +156,10 @@ let enVoices = [];   // 全部英文音色池（跟读时按角色分配）
 let _voiceTimer = null;
 let _voiceWarnShown = false;  // 无英文 voice 的提示只弹一次
 
-// 华为/鸿蒙：系统 WebView（Chromium 内核）常不向页面暴露英文 TTS 引擎，
-// 且 pause/resume 续命会掐断朗读，故单独标记以走兜底路径。
-const _isHuawei = /Huawei|HUAWEI|HarmonyOS|HarmonyOS/i.test(navigator.userAgent || '');
+// 华为/鸿蒙/安卓系统 TTS 引擎常不向页面暴露英文引擎、无法绑定具体 voice 对象
+// （绑定后整句无声），且 pause/resume 续命会掐断朗读，故这类设备走安全路径：
+// 不指定 voice、rate 用 1.0、跳过 keepalive。
+const _isHuawei = /Huawei|HUAWEI|HarmonyOS|Android/i.test(navigator.userAgent || '');
 
 // 无可用英文语音包时，非阻塞提示一次（不打断学习流）
 function showVoiceWarn() {
@@ -207,9 +208,16 @@ function extractEn(text) {
 function makeUtterance(en, voice, rate) {
   const u = new SpeechSynthesisUtterance(en);
   u.lang = 'en-US';
-  if (voice) u.voice = voice;
-  else if (enVoice) u.voice = enVoice;
-  u.rate = rate || 0.85;  // 稍慢，适合孩子听
+  // 华为/鸿蒙：系统 TTS 引擎常无法绑定具体 voice 对象（绑定后整句无声），
+  // 且多数只接受 rate=1.0，故这类设备不指定 voice、用默认 rate。
+  if (_isHuawei) {
+    u.voice = null;
+    u.rate = 1.0;
+  } else {
+    if (voice) u.voice = voice;
+    else if (enVoice) u.voice = enVoice;
+    u.rate = rate || 0.85;  // 稍慢，适合孩子听
+  }
   return u;
 }
 
