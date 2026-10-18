@@ -131,6 +131,42 @@ function maybeShowDisclaimer() {
   if (!acked) openDisclaimer('ack');
 }
 
+// 反馈与建议：用 mailto 预填环境信息，方便定位问题（不打扰，且不上传任何数据）
+function openFeedback() {
+  const ua = navigator.userAgent || 'unknown';
+  let ctx = '';
+  try {
+    if (typeof BOOK !== 'undefined' && BOOK) {
+      ctx += '当前课本：' + (BOOK.title || '?') + '\n';
+      if (typeof state !== 'undefined' && state && state.currentUnit) {
+        const u = BOOK.units[state.currentUnit - 1];
+        ctx += '当前单元：' + (u ? u.name : '?') + '\n';
+      }
+    }
+  } catch (e) {}
+  const subject = encodeURIComponent('LingoMate 反馈与建议');
+  const body = encodeURIComponent(
+    '【反馈内容】\n\n（请在此描述您的问题或建议）\n\n\n---- 环境信息（可删除）----\n' +
+    '设备/浏览器 UA：' + ua + '\n' +
+    '是否支持语音朗读：' + ('speechSynthesis' in window ? '是' : '否') + '\n' +
+    ctx +
+    'LingoMate 版本：GitHub Pages 在线版'
+  );
+  // 优先尝试打开邮件客户端；失败则复制到剪贴板并提示
+  const mail = 'mailto:xiegengcai@foxmail.com?subject=' + subject + '&body=' + body;
+  const w = window.open(mail, '_blank');
+  if (!w) {
+    try {
+      navigator.clipboard.writeText('xiegengcai@foxmail.com').then(
+        () => alert('未能自动唤起邮件客户端。已将邮箱地址复制到剪贴板：\nxiegengcai@foxmail.com\n请手动发邮件，并把上面的环境信息一并附上，谢谢！'),
+        () => alert('请手动发送邮件至：xiegengcai@foxmail.com\n（当前环境不允许自动打开邮件客户端或复制剪贴板）')
+      );
+    } catch (e) {
+      alert('请手动发送邮件至：xiegengcai@foxmail.com');
+    }
+  }
+}
+
 
 let BOOK = null;      // 当前课本数据 {id,title,subtitle,units,questions}
 let books = [];       // 课本清单（books.json）
@@ -302,11 +338,13 @@ function normalizeWord(s) {
 function speakCorrectAnswer(q, onend) {
   let raw;
   if (q.type === '听写') raw = q.word;
+  else if (q.type === '听音辨词') raw = q.word;                                  // 听音辨词：读正确答案对应的单词
   else if (isCloze(q)) raw = fillCloze(q);
   else {
     const opt = String(q.options[q.answer] || '');
     if (q.type === '单词' && /[A-Za-z]/.test(opt)) raw = opt;                                  // 中译英：读正确的英文词
     else if (q.type === '语音') raw = opt.replace(/[^A-Za-z]/g, '').length >= 2 ? opt : q.q;   // 辨音题读例词，辨词题读正确单词
+    else if (q.type === '读音') raw = q.word || opt;                                          // 读音题：自动朗读读字母，否则读正确选项字母
     else if (/[A-Za-z]/.test(opt)) raw = opt;                                                  // 一般题：读正确选项
     else raw = q.q;                                                                            // 正确选项纯中文：回退读题干英文
   }
@@ -599,13 +637,18 @@ function openUnit(unitNum) {
   const vocabCount = (unit.vocab || []).length;
   const readCount = (unit.read || []).length;
   const recCount = readDictRecords().filter(r => r.unit === unitNum).length;
+  // 本单元实际出题的题型（用于模式卡片说明 & 决定“单词听写”是否显示）
+  const unitQs = (BOOK.questions && BOOK.questions[String(unitNum)]) || [];
+  const typesInUnit = [...new Set(unitQs.map(q => q.type))];
+  const hasDictation = typesInUnit.includes('听写');
+  const typeDesc = typesInUnit.length ? typesInUnit.join(' · ') : '本单元暂无题目';
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">${unit.icon} ${unit.name} · ${unit.title}</div>
       <div class="quiz-count"><button class="auto-toggle" onclick="renderMap()">← 返回</button></div>
     </div>
-    <div class="mode-grid mode-grid-3">
+    <div class="mode-grid ${hasDictation ? 'mode-grid-3' : ''}">
       <div class="mode-card ${readCount ? '' : 'disabled'}" onclick="${readCount ? `startRead(${unitNum})` : ''}">
         <span class="mode-icon">🗣️</span>
         <div class="mode-name">课文跟读</div>
@@ -614,13 +657,13 @@ function openUnit(unitNum) {
       <div class="mode-card" onclick="startQuiz(${unitNum})">
         <span class="mode-icon">🎯</span>
         <div class="mode-name">闯关练习</div>
-        <div class="mode-desc">随机 ${DRAW_COUNT} 题<br>单词 · 句型 · 听写<br>语音 · 交际</div>
+        <div class="mode-desc">随机 ${DRAW_COUNT} 题<br>${typeDesc}</div>
       </div>
-      <div class="mode-card ${vocabCount ? '' : 'disabled'}" onclick="${vocabCount ? `startDictation(${unitNum})` : ''}">
+      ${hasDictation ? `<div class="mode-card ${vocabCount ? '' : 'disabled'}" onclick="${vocabCount ? `startDictation(${unitNum})` : ''}">
         <span class="mode-icon">✏️</span>
         <div class="mode-name">单词听写</div>
         <div class="mode-desc">${vocabCount ? `全单元 ${vocabCount} 个词汇<br>纸笔听写<br>每词读三遍` : '本单元暂无词汇表'}</div>
-      </div>
+      </div>` : ''}
     </div>
     ${recCount ? `<div class="mode-foot">本单元已有 ${recCount} 次听写记录 · <a href="javascript:void(0)" onclick="renderDictRecords()">查看记录</a></div>` : ''}
   `;
@@ -1245,13 +1288,14 @@ function renderQuiz() {
   const btnText = isDict && !state.answered ? '✏️ 检查答案'
     : (state.currentQ === qs.length - 1 ? '提交答案' : '下一题');
 
-  // 🔊 题目朗读按钮：听写题=听/再听单词；完形填空（含___）不出按钮（避免提前播放）；其余题干含英文时显示
-  const qSpeak = isDict
-    ? `<span class="speak-btn" data-speak="${encodeURIComponent(q.word)}" title="再听一次">🔊</span>`
+  // 🔊 题目朗读按钮：听写/听音辨词/读音 题=听单词或字母；完形填空（含___）不出按钮（避免提前播放）；其余题干含英文时显示
+  const isWordType = q.type === '听音辨词' || q.type === '读音';
+  const qSpeak = (isDict || (isWordType && q.word))
+    ? `<span class="speak-btn" data-speak="${encodeURIComponent(q.word || '')}" title="再听一次">🔊</span>`
     : (!isCloze(q) && /[A-Za-z]/.test(q.q)
       ? `<span class="speak-btn" data-speak="${encodeURIComponent(q.q)}" title="朗读英文">🔊</span>` : '');
 
-  const typeColor = { '单词':'#4caf50', '听写':'#ff9800', '句型':'#4facfe', '课文':'#9c27b0', '语音':'#e91e63', '交际':'#00bcd4', '拓展':'#795548' };
+  const typeColor = { '单词':'#4caf50', '听写':'#ff9800', '句型':'#4facfe', '课文':'#9c27b0', '语音':'#e91e63', '交际':'#00bcd4', '拓展':'#795548', '听音辨词':'#ff7043', '读音':'#26a69a' };
 
   // 听写题：输入框（答后显示结果）；选择题：选项列表（选项上不再有朗读按钮）
   const body = isDict ? `
@@ -1302,7 +1346,8 @@ function renderQuiz() {
   if (state.autoSpeak && state.lastSpoken !== key) {
     state.lastSpoken = key;
     setTimeout(() => {
-      if (q.type === '听写') speakText(encodeURIComponent(q.word));
+      if (isDict) speakText(encodeURIComponent(q.word));
+      else if (isWordType && q.word) speakText(encodeURIComponent(q.word));
       else if (!isCloze(q)) speakSequence([q.q]);
     }, 200);
   }

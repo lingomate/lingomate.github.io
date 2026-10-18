@@ -1,4 +1,4 @@
----
+﻿---
 name: textbook-to-quiz
 description: 把 PDF 英语电子教材自动转换为"英语伴学"网页的题库数据文件（data/<id>.json：闯关题目+单元词汇表+课文跟读）。当用户给出教材 PDF 并要求"转录/转换/生成题库/新增教材"时使用。适用于沪教版等图片版或文字版教材，产出与现有 4B/5A 格式完全一致并自动注册到 books.json。
 ---
@@ -22,7 +22,8 @@ description: 把 PDF 英语电子教材自动转换为"英语伴学"网页的题
   "questions": { "1": [ … ] }
 }
 ```
-- 题目 type 白名单：**单词/句型/听写/语音/交际**（禁止 课文/拓展）
+- 题目 type 白名单（三~六年级）：**单词/句型/听写/语音/交际**（禁止 课文/拓展）
+- **一二年级特例**：只做 **单词(中英互译) / 听音辨词 / 读音** 三类，**完全去掉听写**；难度整体下调（详见下方"一二年级特例"）。app.js 已为 听音辨词/读音 配 🔊 自动朗读（进入即播，m02125 批准）。
 - 听写题 q 固定：`仔细听单词，拼写出它的英文`
 - 完形填空归"句型"：题干含 `____`；多空题答案按空序以 `; ` 分隔（如 `"hard work; good luck"`），每空各出现一次 `____`
 
@@ -36,6 +37,19 @@ description: 把 PDF 英语电子教材自动转换为"英语伴学"网页的题
 7. **合并**：跑下方校验脚本生成 `data/<id>.json`；`data/books.json` 追加 `{ "id": "<id>", "file": "data/<id>.json" }`（引擎自动按年级排序，位置随意）。
 8. **校验**：JSON 结构/配额/去重全过 → 每单元 shuffle 抽 15 题×1000 次模拟 → HTTP 冒烟（起 serve_qr.py，fetch `/`、`/data/books.json`、`/data/<id>.json`、`/app.js` 全 200）→ 停服清端口（`Get-NetTCPConnection -LocalPort 8000` 查占用者逐个 Stop-Process，批量命令内 Stop-Process 可能静默失败，须单独复查）→ 删除 `_pages/`、bank/read/vocab 中间文件、临时脚本。
 9. **汇报**：每单元题型数量表、vocab 总词数、read 总句数（主课文+拓展）、校验清单、books.json 注册结果。
+
+
+## 一二年级特例（沪教版 1A/1B/2A/2B）
+- **题型只做三类**，难度下调：**单词(中英互译)** / **听音辨词** / **读音**；**听写整类删除**（m02093）。单元模式的"单词听写"卡片在无听写题时由 app.js 自动隐藏（openUnit 隐藏当 !hasDictation）。
+- 单词题=中英互译，不加听写/拼写；听音辨词=给读音选词（app.js 自动朗读题干）；读音=字母/字母组合读音（如 U1 Aa ant 等）。
+- **read[] 必含三小节**（顺序：课本歌谣 → 故事 → 字母），用 st 字段切换子标题：
+  - 课本歌谣：st="歌曲 · 课本歌谣"（Part A/B/C 对话/歌谣句，逐句拆分，en 照抄，cn 可空）
+  - 故事：st="故事 · <课题>"、sp="p.x-y"（如 Grandma's magic pot / On the farm / In the garden / In the park）。图文版教材故事为卡通连环画，文字层为空，**须用 OCR（rapidocr_onnxruntime，已装）扫描印刷页提取**，长气泡句易粘连（如 Someorangejuice→Some orange juice、You'rewelcome→You're welcome）需人工校对，**严禁编造**。U5/U6 故事起始页在 Story 标题页（p.36/p.44），不要漏扫。
+  - 字母：st="字母 · <字母段>"、sp="p.x"（如 U1 Aa-Dd）。字母 chant 文本取自《课本文本》权威 PDF（Aa ant, Bb bear. / A for ant. B for bear. 等），不要 OCR 缺失页。
+  - 三类新句 cn 可不填（教材该板块只给英文，补中文属编造），en 照抄原文保留句末标点；对话句保留 Speaker: 前缀供 app.js parseSpeaker 剥离成角色标签。
+- **字母分配**：每单元 4–6 个字母；U1 Aa-Dd、U2 Ee-Hh、U3 Ii-Ll、U4 Mm-Pp、U5 Qq-Tt、U6 Uu-Zz（故 U6 读音/字母项更多）。
+- **无 Listen 音频**：一年级教材无音频文本，绝不伪造听音音频文件；听音辨词靠 app.js Web Speech 实时朗读。
+- 校验：每单元三小节齐全、read[] 句数上限放宽（歌谣 ~15 + 故事 8–18 + 字母 2–6），题目零听写、类型仅限三类。
 
 ## 已知坑
 - 图片版 PDF get_text() 只有水印；词表以书末 Words List 为准
