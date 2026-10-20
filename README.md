@@ -6,8 +6,6 @@
 
 A **zero-dependency, pure-frontend, locally served** companion app for primary-school English.
 
-**中文** · [English → README-en.md](README-en.md)
-
 ⚠️ 本项目仅供个人 / 家庭学习参考，**不提供任何担保**，且不含教材内容的任何授权。使用前请先阅读 [免责声明](#disclaimer)。
 
 </div>
@@ -35,7 +33,7 @@ A **zero-dependency, pure-frontend, locally served** companion app for primary-s
 - **判分细节**：听写忽略大小写与多余空格；多空完形按空序以 `;` 分隔答案并整句补全后朗读。
 - **面包屑导航**：首页 › 课本 › 单元 › 当前模式，任意层级一键回退。
 - **听写记录**：保留最近 200 次，含逐词掌握数据（`items`），可按单元查看次数 / 平均分 / 最近分。
-- **免责声明内置**：首次打开（或条款版本升级后）弹窗确认，底部常驻「📜 免责声明与版权说明」可随时查看；条款全文同时写在 [本文件末尾](#disclaimer)、[README-en.md](README-en.md#disclaimer)、[`app.js`](app.js) 与 [`serve_qr.py`](serve_qr.py) 头部注释里。
+- **免责声明内置**：首次打开（或条款版本升级后）弹窗确认，底部常驻「📜 免责声明与版权说明」可随时查看；条款统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护（改后跑 `python sync_disclaimer.py`），同步到 [本文件末尾](#disclaimer) 与 [`app.js`](app.js) 内嵌弹窗；[`serve_qr.py`](serve_qr.py) 头部注释另有要点提示。
 
 ## 快速开始
 
@@ -86,8 +84,7 @@ LingoMate/
 ├── 停止服务.bat              一键关停（按 8000 端口找 serve_qr.py 进程）
 ├── stop_server.ps1           被上面那个 bat 调用的脚本
 ├── LICENSE                   MIT（仅覆盖源代码，不含 data/ 题库与 英语/ 教材）
-├── README.md               本文件（中文，主 README）
-├── README-en.md              英文版 README
+├── README.md               本文件（主 README）
 ├── 教材转题库-技能提示词.md   把 PDF 教材转成题库的完整提示词 / 校验脚本
 ├── .claude/skills/textbook-to-quiz/   同一套转换流程的 skill 封装
 └── 英语/                   教材 PDF 与知识点汇总 md（约 697 MB，已被 .gitignore 忽略）
@@ -218,7 +215,7 @@ data/*.json, 英语/       ← 第三方教材内容，版权归原出版社，�
 
 ## 版本管理与换行符
 
-> 📝 免责声明统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护：修改后运行 `python sync_disclaimer.py` 同步到本 README 与 app.js 内嵌弹窗（`python sync_disclaimer.py --check` 只校验一致性，可用于提交前自检）。README-en.md 的免责声明为人工翻译，需人工对照更新。
+> 📝 免责声明统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护：修改后运行 `python sync_disclaimer.py` 同步到本 README 与 app.js 内嵌弹窗（`python sync_disclaimer.py --check` 只校验一致性，可用于提交前自检）。
 
 - 本仓库带 [`.gitattributes`](.gitattributes)：`*.bat` / `*.cmd` 强制以 **CRLF** 签出，源码与文档（含 `*.ps1`）强制 LF。
 - **不要删除该文件**，否则 clone 到 macOS / Linux（或 `core.autocrlf=false` 的 Windows 机器）会得到 LF 版 `.bat`；cmd.exe 解析 `rem` 行时错位、把注释当命令执行，表现为**双击启动脚本一闪而过、启动不了**。
@@ -259,7 +256,7 @@ Safari（iOS 14+，推荐）、Chrome / Edge 桌面与移动端。需要 `speech
 
 ### 4. 代码许可：MIT（教材内容除外）
 
-本项目**原创的源代码与文档**（`app.js` / `index.html` / `serve_qr.py` / `stop_server.ps1` / 两个 `.bat` / `README.md` / `README-en.md` / `教材转题库-技能提示词.md` / `.claude/`）采用 [MIT 许可证](LICENSE) 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。
+本项目**原创的源代码与文档**（`app.js` / `index.html` / `serve_qr.py` / `stop_server.ps1` / 两个 `.bat` / `README.md` / `DISCLAIMER.md` / `sync_disclaimer.py` / `教材转题库-技能提示词.md` / `.claude/`）采用 [MIT 许可证](LICENSE) 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。
 
 **但 MIT 许可证明确不覆盖任何教材内容**：`data/*.json` 题库（课文句、词表、释义均照抄自上海教育出版社出版的教材）与 `英语/` 目录内的 PDF 及笔记，其著作权归原出版社及相应权利人所有，本项目**不授予你使用这些内容的任何许可**。LICENSE 中的排除**跟随内容而非文件名**——把题库句子复制进别处，它仍是出版社的作品。请照第 3 节处理：不要公开、分发、售卖或改编发布题库与教材。
 

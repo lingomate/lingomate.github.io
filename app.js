@@ -20,7 +20,7 @@
 // ----------------------------------------------------------------------------
 // 法律提示 / Legal notice
 //   本文件是「英语伴学 LingoMate」的一部分。免责声明与版权说明全文见
-//   README.md / README-en.md 的「免责声明」章节，页面内亦可通过底部「📜 免责声明」
+//   README.md 的「免责声明」章节（由 DISCLAIMER.md 单一来源同步），页面内亦可通过底部「📜 免责声明」
 //   入口查看（渲染本文件下方的 DISCLAIMER_HTML）。要点：
 //     · 仅供个人 / 家庭学习参考；按「现状」提供，不含任何明示或默示担保。
 //     · 题库中照抄教材的词表、课文句与释义，著作权归原出版社及权利人所有；
@@ -62,7 +62,7 @@ const DISCLAIMER_HTML = `
   <li>请确保你持有的教材副本本身来源合法。</li>
   </ul>
   <h4>4. 代码许可：MIT（教材内容除外）</h4>
-  <p>本项目<b>原创的源代码与文档</b>（<code>app.js</code> / <code>index.html</code> / <code>serve_qr.py</code> / <code>stop_server.ps1</code> / 两个 <code>.bat</code> / <code>README.md</code> / <code>README-en.md</code> / <code>教材转题库-技能提示词.md</code> / <code>.claude/</code>）采用 MIT 许可证 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。</p>
+  <p>本项目<b>原创的源代码与文档</b>（<code>app.js</code> / <code>index.html</code> / <code>serve_qr.py</code> / <code>stop_server.ps1</code> / 两个 <code>.bat</code> / <code>README.md</code> / <code>DISCLAIMER.md</code> / <code>sync_disclaimer.py</code> / <code>教材转题库-技能提示词.md</code> / <code>.claude/</code>）采用 MIT 许可证 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。</p>
   <p><b>但 MIT 许可证明确不覆盖任何教材内容</b>：<code>data/*.json</code> 题库（课文句、词表、释义均照抄自上海教育出版社出版的教材）与 <code>英语/</code> 目录内的 PDF 及笔记，其著作权归原出版社及相应权利人所有，本项目<b>不授予你使用这些内容的任何许可</b>。LICENSE 中的排除<b>跟随内容而非文件名</b>——把题库句子复制进别处，它仍是出版社的作品。请照第 3 节处理：不要公开、分发、售卖或改编发布题库与教材。</p>
   <ul>
   <li>你可以在<b>删除或替换全部 <code>data/</code> 与 <code>英语/</code> 内容</b>后，将纯代码以 MIT 条件自由复用与再分发，这完全合规。</li>

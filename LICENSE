@@ -6,8 +6,8 @@ SCOPE OF THIS LICENSE — READ FIRST / 本许可证的适用范围（请先阅�
 ------------------------------------------------------------------------
 This license applies ONLY to the original work authored in this repository:
 
-    app.js  index.html  serve_qr.py  stop_server.ps1
-    启动手机伴学.bat  停止服务.bat  README.md  README-en.md
+    app.js  index.html  serve_qr.py  stop_server.ps1  sync_disclaimer.py
+    启动手机伴学.bat  停止服务.bat  README.md  DISCLAIMER.md
     教材转题库-技能提示词.md  .claude/  this LICENSE
 
 It does NOT apply to, and grants NO rights in, any third-party copyrighted
