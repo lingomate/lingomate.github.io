@@ -1,0 +1,3744 @@
+{
+  "id": "1B",
+  "title": "一年级下册",
+  "subtitle": "上海教育出版社 · 沪教版",
+  "icon": "📙",
+  "units": [
+    {
+      "name": "Unit 1",
+      "title": "食物",
+      "icon": "🍜",
+      "color": "#ff7043",
+      "en": "What food do you like?",
+      "vocab": [
+        {
+          "en": "noodles",
+          "cn": "（复数）面条"
+        },
+        {
+          "en": "baozi",
+          "cn": "包子"
+        },
+        {
+          "en": "rice",
+          "cn": "米饭"
+        },
+        {
+          "en": "carrot",
+          "cn": "胡萝卜"
+        },
+        {
+          "en": "tomato",
+          "cn": "西红柿"
+        },
+        {
+          "en": "bread",
+          "cn": "面包"
+        },
+        {
+          "en": "egg",
+          "cn": "鸡蛋"
+        },
+        {
+          "en": "milk",
+          "cn": "牛奶"
+        },
+        {
+          "en": "garden",
+          "cn": "花园"
+        },
+        {
+          "en": "lovely",
+          "cn": "可爱的"
+        },
+        {
+          "en": "bug",
+          "cn": "小虫子"
+        },
+        {
+          "en": "spider",
+          "cn": "蜘蛛"
+        },
+        {
+          "en": "honey",
+          "cn": "蜂蜜"
+        },
+        {
+          "en": "plum",
+          "cn": "李子"
+        },
+        {
+          "en": "look for",
+          "cn": "寻找"
+        },
+        {
+          "en": "meet",
+          "cn": "遇见"
+        },
+        {
+          "en": "love",
+          "cn": "爱"
+        },
+        {
+          "en": "get out",
+          "cn": "出去"
+        },
+        {
+          "en": "row a boat",
+          "cn": "划船"
+        },
+        {
+          "en": "have a picnic",
+          "cn": "野餐"
+        },
+        {
+          "en": "parents",
+          "cn": "父母"
+        }
+      ],
+      "read": [
+        {
+          "en": "noodles",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "baozi",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "rice",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "carrots",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "tomatoes",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "bread",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "eggs",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "milk",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "I eat ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "Look at the garden, Laura.",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "It's lovely. But where's Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "I don't know.",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Look! It's Blue Clue!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Leon is hungry!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "What food does Leon like?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "I don't know. But I have an idea.",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Tomatoes! Do you like tomatoes, Andy?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Yes, I do!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Do you like tomatoes, Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Apples! Do you like apples, Laura?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Do you like apples, Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Carrots! Do you like carrots, Andy?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "No, I don't.",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "But do you like carrots, Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Look! Bugs!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Eww! Let's go!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Bugs? Yum!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Here's Leon!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Leon likes bugs!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Aww!",
+          "cn": "",
+          "st": "故事 · Leon in the garden",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Aa",
+          "cn": "",
+          "st": "字母 · Aa-Dd",
+          "sp": "p.9"
+        },
+        {
+          "en": "Bb",
+          "cn": "",
+          "st": "字母 · Aa-Dd",
+          "sp": "p.9"
+        },
+        {
+          "en": "Cc",
+          "cn": "",
+          "st": "字母 · Aa-Dd",
+          "sp": "p.9"
+        },
+        {
+          "en": "Dd",
+          "cn": "",
+          "st": "字母 · Aa-Dd",
+          "sp": "p.9"
+        }
+      ]
+    },
+    {
+      "name": "Unit 2",
+      "title": "教室",
+      "icon": "🏫",
+      "color": "#4facfe",
+      "en": "What do we do in the classroom?",
+      "vocab": [
+        {
+          "en": "window",
+          "cn": "窗户"
+        },
+        {
+          "en": "blackboard",
+          "cn": "黑板"
+        },
+        {
+          "en": "door",
+          "cn": "门"
+        },
+        {
+          "en": "desk",
+          "cn": "书桌"
+        },
+        {
+          "en": "chair",
+          "cn": "椅子"
+        },
+        {
+          "en": "schoolbag",
+          "cn": "书包"
+        },
+        {
+          "en": "draw",
+          "cn": "画"
+        },
+        {
+          "en": "eraser",
+          "cn": "橡皮；黑板擦"
+        },
+        {
+          "en": "picture",
+          "cn": "图片"
+        },
+        {
+          "en": "pack",
+          "cn": "收拾"
+        },
+        {
+          "en": "turn off",
+          "cn": "关闭（电视机、电灯等）"
+        },
+        {
+          "en": "light",
+          "cn": "灯"
+        }
+      ],
+      "read": [
+        {
+          "en": "window",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "blackboard",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "door",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "schoolbag",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "desk",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "chair",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "Where's Leon, Ted?",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Let's find him, Emily.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Close the door, please.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Look at this schoolbag.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Is Leon in it?",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "No. Put the schoolbag in the desk.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "OK.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Hey, Ted. It's Leon.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Yes, but it's a picture.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Clean the blackboard, please.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "OK.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Oh, no! It's my picture.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Oh, sorry! But don't draw on the blackboard, please.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Look! Blue Clue!",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Find a tree.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "A tree? Here?",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Look! A tree! I have an idea.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Give me an eraser, please.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Here you are.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Thanks.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "It's Leon.",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Aww!",
+          "cn": "",
+          "st": "故事 · Leon in the classroom",
+          "sp": "p.12-13"
+        },
+        {
+          "en": "Ee",
+          "cn": "",
+          "st": "字母 · Ee-Hh",
+          "sp": "p.17"
+        },
+        {
+          "en": "Ff",
+          "cn": "",
+          "st": "字母 · Ee-Hh",
+          "sp": "p.17"
+        },
+        {
+          "en": "Gg",
+          "cn": "",
+          "st": "字母 · Ee-Hh",
+          "sp": "p.17"
+        },
+        {
+          "en": "Hh",
+          "cn": "",
+          "st": "字母 · Ee-Hh",
+          "sp": "p.17"
+        }
+      ]
+    },
+    {
+      "name": "Unit 3",
+      "title": "玩法",
+      "icon": "🛴",
+      "color": "#66bb6a",
+      "en": "How do we play?",
+      "vocab": [
+        {
+          "en": "ride a bike",
+          "cn": "骑自行车"
+        },
+        {
+          "en": "ride a scooter",
+          "cn": "骑滑板车"
+        },
+        {
+          "en": "rollerblade",
+          "cn": "滑轮滑"
+        },
+        {
+          "en": "play football",
+          "cn": "踢足球"
+        },
+        {
+          "en": "skateboard",
+          "cn": "滑滑板"
+        },
+        {
+          "en": "tired",
+          "cn": "累的"
+        },
+        {
+          "en": "goal",
+          "cn": "进球"
+        },
+        {
+          "en": "weekend",
+          "cn": "周末"
+        }
+      ],
+      "read": [
+        {
+          "en": "ride a bike",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "ride a scooter",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "rollerblade",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "play football",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "skateboard",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "It's a park!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Where's Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "I don't know, Grace.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Hey! It's Leon.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Can you ride a bike, Tim?",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "No, I can't.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "But I can run.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Come on!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "OK.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "I'm tired.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Me too!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Look! We can rollerblade!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Hello! Is that Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Leon? No, it isn't.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "This is my teddy.",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Look! Blue Clue!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Play football!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "I can play football!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Me too!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "GOAL!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Look! There's Leon!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Aww!",
+          "cn": "",
+          "st": "故事 · Leon in the park",
+          "sp": "p.20-21"
+        },
+        {
+          "en": "Ii",
+          "cn": "",
+          "st": "字母 · Ii-Ll",
+          "sp": "p.25"
+        },
+        {
+          "en": "Jj",
+          "cn": "",
+          "st": "字母 · Ii-Ll",
+          "sp": "p.25"
+        },
+        {
+          "en": "Kk",
+          "cn": "",
+          "st": "字母 · Ii-Ll",
+          "sp": "p.25"
+        },
+        {
+          "en": "Ll",
+          "cn": "",
+          "st": "字母 · Ii-Ll",
+          "sp": "p.25"
+        }
+      ]
+    },
+    {
+      "name": "Unit 4",
+      "title": "季节",
+      "icon": "🍂",
+      "color": "#ab47bc",
+      "en": "Which season do you like?",
+      "vocab": [
+        {
+          "en": "spring",
+          "cn": "春天"
+        },
+        {
+          "en": "warm",
+          "cn": "暖和的"
+        },
+        {
+          "en": "summer",
+          "cn": "夏天"
+        },
+        {
+          "en": "hot",
+          "cn": "炎热的"
+        },
+        {
+          "en": "autumn",
+          "cn": "秋天"
+        },
+        {
+          "en": "cool",
+          "cn": "凉爽的"
+        },
+        {
+          "en": "winter",
+          "cn": "冬天"
+        },
+        {
+          "en": "cold",
+          "cn": "寒冷的"
+        },
+        {
+          "en": "beautiful",
+          "cn": "美丽的"
+        },
+        {
+          "en": "flower",
+          "cn": "花"
+        },
+        {
+          "en": "butterfly",
+          "cn": "蝴蝶"
+        },
+        {
+          "en": "snowman",
+          "cn": "雪人"
+        }
+      ],
+      "read": [
+        {
+          "en": "spring",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "warm",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "summer",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "hot",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "autumn",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "cool",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "winter",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "cold",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "Do you like summer?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.32"
+        },
+        {
+          "en": "Summer is here. It is hot.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.32"
+        },
+        {
+          "en": "Do you like it?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.32"
+        },
+        {
+          "en": "I feel hot all day.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.32"
+        },
+        {
+          "en": "But I can go out and play!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.32"
+        },
+        {
+          "en": "Sophie, let's try this.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "OK. But where's Leon, Oliver?",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "What season is it?",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "It's spring. It's warm.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "I like spring. Look! Beautiful flowers! But where's Leon?",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Look! It's a butterfly.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "And ... hey, this is MY NOSE!",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Look! Blue Clue!",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Winter.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "What season is it now?",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "It's summer. It's hot.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "It's autumn.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "It's cool.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "It's winter. It's cold.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "I don't like winter.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "I like winter. It's fun!",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Look! A snowman.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "And Leon! He looks so cold.",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Aww!",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "That's fun! One more time!",
+          "cn": "",
+          "st": "故事 · Leon in the game",
+          "sp": "p.28-29"
+        },
+        {
+          "en": "Mm",
+          "cn": "",
+          "st": "字母 · Mm-Pp",
+          "sp": "p.33"
+        },
+        {
+          "en": "Nn",
+          "cn": "",
+          "st": "字母 · Mm-Pp",
+          "sp": "p.33"
+        },
+        {
+          "en": "Oo",
+          "cn": "",
+          "st": "字母 · Mm-Pp",
+          "sp": "p.33"
+        },
+        {
+          "en": "Pp",
+          "cn": "",
+          "st": "字母 · Mm-Pp",
+          "sp": "p.33"
+        }
+      ]
+    },
+    {
+      "name": "Unit 5",
+      "title": "水果",
+      "icon": "🍉",
+      "color": "#ffca28",
+      "en": "What do you know about fruit?",
+      "vocab": [
+        {
+          "en": "lemon",
+          "cn": "柠檬"
+        },
+        {
+          "en": "banana",
+          "cn": "香蕉"
+        },
+        {
+          "en": "apple",
+          "cn": "苹果"
+        },
+        {
+          "en": "watermelon",
+          "cn": "西瓜"
+        },
+        {
+          "en": "pear",
+          "cn": "梨"
+        },
+        {
+          "en": "pineapple",
+          "cn": "菠萝"
+        },
+        {
+          "en": "peach",
+          "cn": "桃子"
+        },
+        {
+          "en": "orange",
+          "cn": "橙子；柑橘"
+        },
+        {
+          "en": "sour",
+          "cn": "酸的"
+        },
+        {
+          "en": "sweet",
+          "cn": "甜的"
+        },
+        {
+          "en": "juicy",
+          "cn": "多汁的"
+        },
+        {
+          "en": "heavy",
+          "cn": "重的"
+        }
+      ],
+      "read": [
+        {
+          "en": "lemon",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "banana",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "apple",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "watermelon",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "pear",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "pineapple",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "peach",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "orange",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "Hello, John!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Hi, Uncle Dan!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "I can't find Leon.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "What are those?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "They're lemons.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Do you like lemons?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "No, I don't. They're sour.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Let's play a game.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "OK. But where's Leon?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Look! Blue Clue!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Watermelon!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Close your eyes.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "What are these?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "I think they're pears.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Do you like pears?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Yes, I do. They're sweet and juicy.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "They're so HEAVY!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Look out!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "It's Leon.",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "Aww!",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.36-37"
+        },
+        {
+          "en": "What's your favourite fruit?",
+          "cn": "",
+          "st": "故事 · Leon on the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Qq",
+          "cn": "",
+          "st": "字母 · Qq-Tt",
+          "sp": "p.41"
+        },
+        {
+          "en": "Rr",
+          "cn": "",
+          "st": "字母 · Qq-Tt",
+          "sp": "p.41"
+        },
+        {
+          "en": "Ss",
+          "cn": "",
+          "st": "字母 · Qq-Tt",
+          "sp": "p.41"
+        },
+        {
+          "en": "Tt",
+          "cn": "",
+          "st": "字母 · Qq-Tt",
+          "sp": "p.41"
+        }
+      ]
+    },
+    {
+      "name": "Unit 6",
+      "title": "动物成长",
+      "icon": "🐸",
+      "color": "#26a69a",
+      "en": "How do animals grow?",
+      "vocab": [
+        {
+          "en": "tadpole",
+          "cn": "蝌蚪"
+        },
+        {
+          "en": "frog",
+          "cn": "青蛙"
+        },
+        {
+          "en": "butterfly",
+          "cn": "蝴蝶"
+        },
+        {
+          "en": "goldfish",
+          "cn": "金鱼"
+        },
+        {
+          "en": "duck",
+          "cn": "鸭子"
+        },
+        {
+          "en": "tortoise",
+          "cn": "龟"
+        },
+        {
+          "en": "fly",
+          "cn": "苍蝇"
+        },
+        {
+          "en": "flies",
+          "cn": "（复数）苍蝇"
+        },
+        {
+          "en": "catch flies",
+          "cn": "抓苍蝇"
+        },
+        {
+          "en": "miss",
+          "cn": "想念"
+        },
+        {
+          "en": "caterpillar",
+          "cn": "毛虫；幼虫"
+        },
+        {
+          "en": "cocoon",
+          "cn": "茧"
+        },
+        {
+          "en": "inside",
+          "cn": "里面"
+        }
+      ],
+      "read": [
+        {
+          "en": "butterfly",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "tortoise",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "duck",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "goldfish",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "frog",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "tadpoles",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "Now it is spring. The eggs are tadpoles.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "I'm an egg. I'm small and black.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "Little Tadpole can't find his mummy.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "A butterfly is coming.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "Mummy! Mummy! I'm Little Tadpole.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "I'm not your mummy. Your mummy has big eyes.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "A goldfish is coming.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "Mummy! Mummy!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.44"
+        },
+        {
+          "en": "I'm not your mummy. Your mummy has a big mouth.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "Oh, I'm sorry!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "Now Little Tadpole has two legs.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "A duck is coming.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "Mummy! Mummy!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "I'm not your mummy. Your mummy has a green body.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "Oh, I'm sorry!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.45"
+        },
+        {
+          "en": "Now Little Tadpole has four legs.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "A tortoise is coming.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Oh! Mummy! Mummy!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "I'm not your mummy. Your mummy can jump, but I can't.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Oh, I'm sorry!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Now Little Tadpole has no tail.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "A frog is coming.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Big eyes, a big mouth and a green body! And she can jump. Mummy! Mummy!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Oh, my baby! I miss you!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Let's catch flies.",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "OK!",
+          "cn": "",
+          "st": "故事 · Little Tadpole",
+          "sp": "p.46"
+        },
+        {
+          "en": "Uu",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        },
+        {
+          "en": "Vv",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        },
+        {
+          "en": "Ww",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        },
+        {
+          "en": "Xx",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        },
+        {
+          "en": "Yy",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        },
+        {
+          "en": "Zz",
+          "cn": "",
+          "st": "字母 · Uu-Zz",
+          "sp": "p.49"
+        }
+      ]
+    }
+  ],
+  "questions": {
+    "1": [
+      {
+        "type": "单词",
+        "q": "面条",
+        "options": [
+          "noodles",
+          "rice",
+          "bread",
+          "milk"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "包子",
+        "options": [
+          "rice",
+          "baozi",
+          "noodles",
+          "bread"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "米饭",
+        "options": [
+          "noodles",
+          "bread",
+          "rice",
+          "baozi"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "面包",
+        "options": [
+          "milk",
+          "egg",
+          "noodles",
+          "bread"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "鸡蛋",
+        "options": [
+          "egg",
+          "milk",
+          "bread",
+          "rice"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "牛奶",
+        "options": [
+          "bread",
+          "milk",
+          "egg",
+          "rice"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "胡萝卜",
+        "options": [
+          "tomato",
+          "plum",
+          "carrot",
+          "spider"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "西红柿",
+        "options": [
+          "carrot",
+          "plum",
+          "honey",
+          "tomato"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "花园",
+        "options": [
+          "garden",
+          "spider",
+          "bug",
+          "plum"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "小虫子",
+        "options": [
+          "spider",
+          "bug",
+          "honey",
+          "garden"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "蜂蜜",
+        "options": [
+          "plum",
+          "spider",
+          "honey",
+          "bug"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "李子",
+        "options": [
+          "honey",
+          "spider",
+          "bug",
+          "plum"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "寻找",
+        "options": [
+          "look for",
+          "meet",
+          "love",
+          "get out"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "划船",
+        "options": [
+          "get out",
+          "row a boat",
+          "have a picnic",
+          "look for"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "野餐",
+        "options": [
+          "row a boat",
+          "meet",
+          "have a picnic",
+          "love"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "出去",
+        "options": [
+          "look for",
+          "meet",
+          "love",
+          "get out"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "lovely",
+        "options": [
+          "可爱的",
+          "花园",
+          "小虫子",
+          "爱"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "parents",
+        "options": [
+          "朋友",
+          "父母",
+          "老师",
+          "同学"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "meet",
+        "options": [
+          "寻找",
+          "爱",
+          "遇见",
+          "出去"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "love",
+        "options": [
+          "遇见",
+          "可爱的",
+          "出去",
+          "爱"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "spider",
+        "options": [
+          "蜘蛛",
+          "小虫子",
+          "花园",
+          "蜂蜜"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "noodles",
+        "options": [
+          "米饭",
+          "面条",
+          "面包",
+          "包子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "honey",
+        "options": [
+          "牛奶",
+          "李子",
+          "蜂蜜",
+          "鸡蛋"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "look for",
+        "options": [
+          "遇见",
+          "爱",
+          "出去",
+          "寻找"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "garden",
+        "options": [
+          "花园",
+          "菜地",
+          "果园",
+          "公园"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "parents",
+        "options": [
+          "同学",
+          "老师",
+          "朋友",
+          "父母"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "A",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "B",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "C",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "D",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Aa 的后面",
+        "word": "",
+        "options": [
+          "Dd",
+          "Bb",
+          "Cc",
+          "Aa"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Dd 的前面",
+        "word": "",
+        "options": [
+          "Cc",
+          "Bb",
+          "Aa",
+          "Dd"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "Aa, Bb, （　）, Dd",
+        "word": "",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Aa, （　）, Cc, Dd",
+        "word": "",
+        "options": [
+          "Aa",
+          "Bb",
+          "Cc",
+          "Dd"
+        ],
+        "answer": 1
+      }
+    ],
+    "2": [
+      {
+        "type": "单词",
+        "q": "窗户",
+        "options": [
+          "door",
+          "window",
+          "chair",
+          "desk"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "黑板",
+        "options": [
+          "blackboard",
+          "schoolbag",
+          "window",
+          "door"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "门",
+        "options": [
+          "desk",
+          "chair",
+          "door",
+          "light"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "书桌",
+        "options": [
+          "picture",
+          "eraser",
+          "blackboard",
+          "desk"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "椅子",
+        "options": [
+          "light",
+          "chair",
+          "desk",
+          "schoolbag"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "书包",
+        "options": [
+          "schoolbag",
+          "chair",
+          "window",
+          "light"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "橡皮",
+        "options": [
+          "blackboard",
+          "picture",
+          "door",
+          "eraser"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "blackboard",
+        "options": [
+          "门",
+          "窗户",
+          "黑板",
+          "书桌"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "chair",
+        "options": [
+          "椅子",
+          "书桌",
+          "灯",
+          "门"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "draw",
+        "options": [
+          "关闭",
+          "画",
+          "收拾",
+          "图片"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "pack",
+        "options": [
+          "收拾",
+          "画",
+          "关闭",
+          "灯"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "turn off",
+        "options": [
+          "打开",
+          "收拾",
+          "画",
+          "关闭"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "picture",
+        "options": [
+          "黑板擦",
+          "书桌",
+          "窗户",
+          "图片"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "schoolbag",
+        "options": [
+          "橡皮",
+          "书包",
+          "椅子",
+          "黑板"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "E",
+        "options": [
+          "Ee",
+          "Ff",
+          "Gg",
+          "Hh"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "G",
+        "options": [
+          "Hh",
+          "Gg",
+          "Ff",
+          "Ee"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "H",
+        "options": [
+          "Ff",
+          "Ee",
+          "Hh",
+          "Gg"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "F",
+        "options": [
+          "Gg",
+          "Hh",
+          "Ee",
+          "Ff"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　） for egg",
+        "word": "",
+        "options": [
+          "Ff",
+          "Hh",
+          "Ee",
+          "Gg"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "（　） for fish",
+        "word": "",
+        "options": [
+          "Gg",
+          "Ff",
+          "Hh",
+          "Ee"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　） for gift",
+        "word": "",
+        "options": [
+          "Hh",
+          "Ee",
+          "Gg",
+          "Ff"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "（　） for hen",
+        "word": "",
+        "options": [
+          "Gg",
+          "Ee",
+          "Ff",
+          "Hh"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "desk",
+        "options": [
+          "书桌",
+          "书包",
+          "椅子",
+          "门"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "window",
+        "options": [
+          "灯",
+          "窗户",
+          "门",
+          "椅子"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "eraser",
+        "options": [
+          "图片",
+          "黑板",
+          "橡皮",
+          "书桌"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "schoolbag",
+        "options": [
+          "书包",
+          "椅子",
+          "窗户",
+          "灯"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "chair",
+        "options": [
+          "书桌",
+          "门",
+          "灯",
+          "椅子"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "blackboard",
+        "options": [
+          "门",
+          "画",
+          "图片",
+          "黑板"
+        ],
+        "answer": 3
+      }
+    ],
+    "3": [
+      {
+        "type": "单词",
+        "q": "踢足球",
+        "options": [
+          "play football",
+          "ride a bike",
+          "skateboard",
+          "rollerblade"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "骑自行车",
+        "options": [
+          "ride a scooter",
+          "ride a bike",
+          "play football",
+          "skateboard"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "滑轮滑",
+        "options": [
+          "skateboard",
+          "ride a bike",
+          "rollerblade",
+          "ride a scooter"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "骑滑板车",
+        "options": [
+          "rollerblade",
+          "skateboard",
+          "ride a bike",
+          "ride a scooter"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "滑滑板",
+        "options": [
+          "skateboard",
+          "ride a scooter",
+          "rollerblade",
+          "play football"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "tired",
+        "options": [
+          "周末",
+          "累的",
+          "进球",
+          "滑滑板"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "goal",
+        "options": [
+          "累的",
+          "周末",
+          "进球",
+          "骑自行车"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "weekend",
+        "options": [
+          "进球",
+          "累的",
+          "周末",
+          "滑轮滑"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "ride a scooter",
+        "options": [
+          "骑滑板车",
+          "骑自行车",
+          "滑滑板",
+          "踢足球"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "rollerblade",
+        "options": [
+          "滑滑板",
+          "滑轮滑",
+          "骑滑板车",
+          "累的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "周末",
+        "options": [
+          "goal",
+          "tired",
+          "weekend",
+          "skateboard"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "进球",
+        "options": [
+          "tired",
+          "weekend",
+          "play football",
+          "goal"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "skateboard",
+        "options": [
+          "滑滑板",
+          "滑轮滑",
+          "骑滑板车",
+          "骑自行车"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "tired",
+        "options": [
+          "周末",
+          "累的",
+          "进球",
+          "滑滑板"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "ride a bike",
+        "options": [
+          "骑滑板车",
+          "踢足球",
+          "骑自行车",
+          "滑轮滑"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "play football",
+        "options": [
+          "踢足球",
+          "滑滑板",
+          "骑自行车",
+          "周末"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "weekend",
+        "options": [
+          "周末",
+          "进球",
+          "累的",
+          "骑滑板车"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "rollerblade",
+        "options": [
+          "滑滑板",
+          "滑轮滑",
+          "踢足球",
+          "累的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "K",
+        "options": [
+          "Ii",
+          "Jj",
+          "Kk",
+          "Ll"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "J",
+        "options": [
+          "Ii",
+          "Jj",
+          "Kk",
+          "Ll"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "L",
+        "options": [
+          "Ii",
+          "Jj",
+          "Kk",
+          "Ll"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "I",
+        "options": [
+          "Ii",
+          "Jj",
+          "Kk",
+          "Ll"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Jj 的后面",
+        "word": "",
+        "options": [
+          "Ii",
+          "Jj",
+          "Kk",
+          "Ll"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Ll 的前面",
+        "word": "",
+        "options": [
+          "Ll",
+          "Kk",
+          "Jj",
+          "Ii"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "Ii, （　）, Kk, Ll",
+        "word": "",
+        "options": [
+          "Jj",
+          "Kk",
+          "Ii",
+          "Ll"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "Ii, Jj, （　）, Ll",
+        "word": "",
+        "options": [
+          "Jj",
+          "Ii",
+          "Ll",
+          "Kk"
+        ],
+        "answer": 3
+      }
+    ],
+    "4": [
+      {
+        "type": "单词",
+        "q": "春天",
+        "options": [
+          "spring",
+          "summer",
+          "autumn",
+          "winter"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "夏天",
+        "options": [
+          "winter",
+          "summer",
+          "spring",
+          "autumn"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "秋天",
+        "options": [
+          "spring",
+          "summer",
+          "winter",
+          "autumn"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "冬天",
+        "options": [
+          "summer",
+          "autumn",
+          "spring",
+          "winter"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "暖和的",
+        "options": [
+          "hot",
+          "cool",
+          "warm",
+          "cold"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "炎热的",
+        "options": [
+          "cold",
+          "hot",
+          "warm",
+          "cool"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "凉爽的",
+        "options": [
+          "cool",
+          "warm",
+          "hot",
+          "cold"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "寒冷的",
+        "options": [
+          "cool",
+          "warm",
+          "hot",
+          "cold"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "花",
+        "options": [
+          "butterfly",
+          "snowman",
+          "flower",
+          "beautiful"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "蝴蝶",
+        "options": [
+          "snowman",
+          "butterfly",
+          "flower",
+          "beautiful"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "雪人",
+        "options": [
+          "flower",
+          "snowman",
+          "butterfly",
+          "beautiful"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "美丽的",
+        "options": [
+          "flower",
+          "butterfly",
+          "beautiful",
+          "snowman"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "warm",
+        "options": [
+          "炎热的",
+          "寒冷的",
+          "凉爽的",
+          "暖和的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "butterfly",
+        "options": [
+          "蝴蝶",
+          "花",
+          "雪人",
+          "美丽的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "beautiful",
+        "options": [
+          "美丽的",
+          "暖和的",
+          "凉爽的",
+          "寒冷的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "snowman",
+        "options": [
+          "花",
+          "蝴蝶",
+          "美丽的",
+          "雪人"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "spring",
+        "options": [
+          "春天",
+          "夏天",
+          "秋天",
+          "冬天"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "autumn",
+        "options": [
+          "冬天",
+          "秋天",
+          "夏天",
+          "春天"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "warm",
+        "options": [
+          "寒冷的",
+          "炎热的",
+          "暖和的",
+          "凉爽的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "cold",
+        "options": [
+          "凉爽的",
+          "暖和的",
+          "炎热的",
+          "寒冷的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "butterfly",
+        "options": [
+          "花",
+          "蝴蝶",
+          "雪人",
+          "美丽的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "beautiful",
+        "options": [
+          "暖和的",
+          "美丽的",
+          "寒冷的",
+          "凉爽的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "M",
+        "options": [
+          "Mm",
+          "Nn",
+          "Oo",
+          "Pp"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "N",
+        "options": [
+          "Mm",
+          "Nn",
+          "Oo",
+          "Pp"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "O",
+        "options": [
+          "Mm",
+          "Pp",
+          "Oo",
+          "Nn"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "P",
+        "options": [
+          "Pp",
+          "Oo",
+          "Mm",
+          "Nn"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　） for pig",
+        "word": "",
+        "options": [
+          "Pp",
+          "Nn",
+          "Oo",
+          "Mm"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　） for panda",
+        "word": "",
+        "options": [
+          "Nn",
+          "Mm",
+          "Oo",
+          "Pp"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Mm 的后面。",
+        "word": "",
+        "options": [
+          "Oo",
+          "Nn",
+          "Pp",
+          "Mm"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Oo 的后面。",
+        "word": "",
+        "options": [
+          "Mm",
+          "Nn",
+          "Oo",
+          "Pp"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Nn 的前面。",
+        "word": "",
+        "options": [
+          "Mm",
+          "Oo",
+          "Pp",
+          "Nn"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　）排在 Pp 的前面。",
+        "word": "",
+        "options": [
+          "Nn",
+          "Mm",
+          "Pp",
+          "Oo"
+        ],
+        "answer": 3
+      }
+    ],
+    "5": [
+      {
+        "type": "单词",
+        "q": "西瓜",
+        "options": [
+          "pear",
+          "peach",
+          "watermelon",
+          "pineapple"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "菠萝",
+        "options": [
+          "pineapple",
+          "pear",
+          "lemon",
+          "apple"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "柠檬",
+        "options": [
+          "peach",
+          "lemon",
+          "orange",
+          "banana"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "梨",
+        "options": [
+          "peach",
+          "apple",
+          "orange",
+          "pear"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "苹果",
+        "options": [
+          "banana",
+          "orange",
+          "apple",
+          "peach"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "桃子",
+        "options": [
+          "pineapple",
+          "peach",
+          "lemon",
+          "watermelon"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "橙子；柑橘",
+        "options": [
+          "orange",
+          "pear",
+          "banana",
+          "apple"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "sour",
+        "options": [
+          "甜的",
+          "酸的",
+          "重的",
+          "多汁的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "sweet",
+        "options": [
+          "甜的",
+          "酸的",
+          "重的",
+          "多汁的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "juicy",
+        "options": [
+          "重的",
+          "甜的",
+          "酸的",
+          "多汁的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "heavy",
+        "options": [
+          "甜的",
+          "酸的",
+          "重的",
+          "多汁的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "watermelon",
+        "options": [
+          "西瓜",
+          "梨",
+          "桃子",
+          "菠萝"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "lemon",
+        "options": [
+          "橙子；柑橘",
+          "苹果",
+          "香蕉",
+          "柠檬"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "peach",
+        "options": [
+          "苹果",
+          "桃子",
+          "梨",
+          "橙子；柑橘"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "banana",
+        "options": [
+          "苹果",
+          "橙子；柑橘",
+          "香蕉",
+          "桃子"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "orange",
+        "options": [
+          "梨",
+          "西瓜",
+          "菠萝",
+          "橙子；柑橘"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "pear",
+        "options": [
+          "梨",
+          "桃子",
+          "柠檬",
+          "苹果"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "peach",
+        "options": [
+          "梨",
+          "桃子",
+          "柠檬",
+          "苹果"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "sour",
+        "options": [
+          "酸的",
+          "甜的",
+          "重的",
+          "多汁的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "watermelon",
+        "options": [
+          "西瓜",
+          "香蕉",
+          "橙子；柑橘",
+          "菠萝"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "orange",
+        "options": [
+          "西瓜",
+          "香蕉",
+          "橙子；柑橘",
+          "菠萝"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "apple",
+        "options": [
+          "梨",
+          "桃子",
+          "柠檬",
+          "苹果"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "Q",
+        "options": [
+          "Qq",
+          "Rr",
+          "Ss",
+          "Tt"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "R",
+        "options": [
+          "Qq",
+          "Ss",
+          "Tt",
+          "Rr"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "S",
+        "options": [
+          "Qq",
+          "Ss",
+          "Tt",
+          "Rr"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "T",
+        "options": [
+          "Tt",
+          "Qq",
+          "Rr",
+          "Ss"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　） for queen",
+        "word": "",
+        "options": [
+          "Qq",
+          "Rr",
+          "Tt",
+          "Ss"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "（　） for snake",
+        "word": "",
+        "options": [
+          "Rr",
+          "Qq",
+          "Tt",
+          "Ss"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　） for rabbit",
+        "word": "",
+        "options": [
+          "Tt",
+          "Rr",
+          "Qq",
+          "Ss"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　） for tiger",
+        "word": "",
+        "options": [
+          "Rr",
+          "Ss",
+          "Qq",
+          "Tt"
+        ],
+        "answer": 2
+      }
+    ],
+    "6": [
+      {
+        "type": "单词",
+        "q": "蝌蚪",
+        "options": [
+          "frog",
+          "tadpole",
+          "duck",
+          "tortoise"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "蝴蝶",
+        "options": [
+          "butterfly",
+          "goldfish",
+          "frog",
+          "duck"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "青蛙",
+        "options": [
+          "duck",
+          "tortoise",
+          "frog",
+          "goldfish"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "金鱼",
+        "options": [
+          "goldfish",
+          "tadpole",
+          "fly",
+          "duck"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "鸭子",
+        "options": [
+          "tortoise",
+          "duck",
+          "frog",
+          "butterfly"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "龟",
+        "options": [
+          "tadpole",
+          "butterfly",
+          "tortoise",
+          "goldfish"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "想念",
+        "options": [
+          "inside",
+          "miss",
+          "fly",
+          "frog"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "cocoon",
+        "options": [
+          "茧",
+          "毛虫；幼虫",
+          "里面",
+          "想念"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "caterpillar",
+        "options": [
+          "里面",
+          "茧",
+          "毛虫；幼虫",
+          "苍蝇"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "inside",
+        "options": [
+          "蝴蝶",
+          "鸭子",
+          "青蛙",
+          "里面"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "tadpole",
+        "options": [
+          "蝴蝶",
+          "茧",
+          "鸭子",
+          "蝌蚪"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "catch flies",
+        "options": [
+          "毛虫；幼虫",
+          "里面",
+          "抓苍蝇",
+          "想念"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "butterfly",
+        "options": [
+          "茧",
+          "毛虫；幼虫",
+          "蝴蝶",
+          "金鱼"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "duck",
+        "options": [
+          "龟",
+          "鸭子",
+          "青蛙",
+          "苍蝇"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "miss",
+        "options": [
+          "里面",
+          "蝴蝶",
+          "龟",
+          "想念"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "flies",
+        "options": [
+          "（复数）苍蝇",
+          "毛虫；幼虫",
+          "茧",
+          "鸭子"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "goldfish",
+        "options": [
+          "金鱼",
+          "鸭子",
+          "龟",
+          "青蛙"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "frog",
+        "options": [
+          "蝴蝶",
+          "青蛙",
+          "蝌蚪",
+          "苍蝇"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "tortoise",
+        "options": [
+          "青蛙",
+          "蝌蚪",
+          "龟",
+          "蝴蝶"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "butterfly",
+        "options": [
+          "茧",
+          "青蛙",
+          "蝌蚪",
+          "蝴蝶"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "tadpole",
+        "options": [
+          "青蛙",
+          "蝌蚪",
+          "金鱼",
+          "苍蝇"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "duck",
+        "options": [
+          "鸭子",
+          "龟",
+          "蝴蝶",
+          "茧"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "W",
+        "options": [
+          "Uu",
+          "Vv",
+          "Ww",
+          "Xx"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "Z",
+        "options": [
+          "Zz",
+          "Yy",
+          "Ww",
+          "Vv"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "Y",
+        "options": [
+          "Uu",
+          "Yy",
+          "Xx",
+          "Ww"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "V",
+        "options": [
+          "Uu",
+          "Ww",
+          "Zz",
+          "Vv"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "X",
+        "options": [
+          "Xx",
+          "Yy",
+          "Zz",
+          "Ww"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的字母",
+        "word": "U",
+        "options": [
+          "Xx",
+          "Uu",
+          "Vv",
+          "Zz"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　） for umbrella",
+        "word": "",
+        "options": [
+          "Vv",
+          "Uu",
+          "Ww",
+          "Zz"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　） for van",
+        "word": "",
+        "options": [
+          "Yy",
+          "Uu",
+          "Ww",
+          "Vv"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　） for window",
+        "word": "",
+        "options": [
+          "Yy",
+          "Zz",
+          "Ww",
+          "Uu"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "（　） for box",
+        "word": "",
+        "options": [
+          "Uu",
+          "Vv",
+          "Zz",
+          "Xx"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "（　） for yo-yo",
+        "word": "",
+        "options": [
+          "Ww",
+          "Yy",
+          "Xx",
+          "Zz"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "（　） for zebra",
+        "word": "",
+        "options": [
+          "Uu",
+          "Zz",
+          "Vv",
+          "Yy"
+        ],
+        "answer": 1
+      }
+    ]
+  }
+}
