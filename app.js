@@ -928,6 +928,7 @@ function buildReadShell() {
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
       <div class="quiz-count">第 <b id="readCur">1</b> / ${n} 句</div>
     </div>
+    ${rateSliderHTML()}
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
     <div class="read-subs" id="readSubs">${subs}</div>
     <div class="read-tip" id="readTip">点击任意句子可跳读 · 听一句，大声跟读一句 🗣️</div>
@@ -944,7 +945,6 @@ function buildReadShell() {
         <button data-ms="15000" onclick="pickAutoInterval(this)">15秒</button>
       </div>
     </div>
-    ${rateSliderHTML()}
   `;
   rd._built = true;
   rd._prevRow = null;
@@ -1073,6 +1073,7 @@ function startDictation(unitNum) {
     <div class="question-box">
       <div class="question-text">准备好纸和笔 📝<br>共 ${vocab.length} 个单词/短语，顺序随机，每个播放三遍；全部放完后按播放顺序对照自检。</div>
     </div>
+    <div class="rate-setup">${rateSliderHTML()}</div>
     <div class="dict-setup-label">每遍之间 / 换词前的间隔：</div>
     <div class="interval-row">
       <button class="interval-btn" data-sec="5" onclick="pickInterval(this)">5 秒</button>
@@ -1080,7 +1081,6 @@ function startDictation(unitNum) {
       <button class="interval-btn" data-sec="15" onclick="pickInterval(this)">15 秒</button>
     </div>
     <button class="btn btn-primary" onclick="beginDictation(${unitNum})">▶️ 开始听写</button>
-    ${rateSliderHTML()}
   `;
   setCrumb([
     { t: '🏠 首页', go: 'renderBookSelect()' },
@@ -1122,6 +1122,7 @@ function renderDictStage() {
       <div class="quiz-title">✏️ ${unit.name} · 听写中</div>
       <div class="quiz-count"><button class="auto-toggle" onclick="stopDictation()">⏹ 结束播放</button></div>
     </div>
+    <div class="rate-setup">${rateSliderHTML()}</div>
     <div class="question-box dict-stage">
       <div class="dict-progress">第 <b id="dictCur">${cur}</b> / ${n} 词</div>
       <div class="dict-tip">仔细听，写纸上 🔉<br><span id="dictRep" class="dict-rep">第 1 遍…</span></div>
@@ -1132,7 +1133,6 @@ function renderDictStage() {
       </div>
     </div>
     <div class="dict-note">播放中不显示单词内容；可随时点"结束播放"提前进入自检。</div>
-    ${rateSliderHTML()}
   `;
   setCrumb([
     { t: '🏠 首页', go: 'renderBookSelect()' },
@@ -1390,13 +1390,13 @@ function renderQuiz() {
       <div class="quiz-title">${unit.icon} ${unit.name} · ${unit.title}${unit.en ? `<div class="quiz-unit-en">${unit.en}</div>` : ''}</div>
       <div class="quiz-count">${state.currentQ + 1} / ${qs.length} · 得分 ${state.score}<button class="auto-toggle ${state.autoSpeak ? 'on' : ''}" onclick="toggleAutoSpeak()">${state.autoSpeak ? '🔊 自动朗读' : '🔇 朗读关'}</button></div>
     </div>
+    <div class="rate-setup">${rateSliderHTML()}</div>
     <div class="question-box">
       <span class="question-type" style="background:${typeColor[q.type] || '#4facfe'}">${q.type}</span>
       <div class="question-text">${q.q}${qSpeak}</div>
     </div>
     ${body}
     <button class="btn btn-next" onclick="nextQuestion()" ${btnDisabled}>${btnText}</button>
-    ${rateSliderHTML()}
   `;
 
   content.innerHTML = html;
