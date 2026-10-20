@@ -128,7 +128,7 @@ button,.option,.card{touch-action:manipulation}
 .crumb-item.cur{background:rgba(255,255,255,.92);color:#1976d2;cursor:default}
 .crumb-sep{color:rgba(255,255,255,.7);font-weight:700}
 /* 跟读自动模式 */
-.read-auto-row{display:flex;align-items:center;gap:8px;margin-top:10px;flex-wrap:wrap;justify-content:center}
+.read-auto-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
 .read-auto-label{font-size:12px;color:#666}
 .auto-seg{display:flex;border:2px solid #e0e3ff;border-radius:12px;overflow:hidden}
 .auto-seg button{border:none;background:#fff;color:#666;font-size:12px;font-weight:600;padding:7px 10px;cursor:pointer}
@@ -192,7 +192,7 @@ button,.option,.card{touch-action:manipulation}
 .option.selected{border-color:#4facfe;background:#e3f2fd}
 .option.correct{border-color:#4caf50;background:#e8f5e9}
 .option.wrong{border-color:#f44336;background:#ffebee}
-.btn{display:block;width:100%;padding:14px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;margin-top:15px}
+.btn{display:block;width:100%;padding:8px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;margin-top:15px}
 .btn-next{background:linear-gradient(135deg,#4facfe,#00f2fe);color:#fff}
 .btn-next:hover{opacity:.9}
 .btn-next:disabled{opacity:.5;cursor:not-allowed}
@@ -230,6 +230,66 @@ button,.option,.card{touch-action:manipulation}
 .dlg-foot{padding:10px 18px 16px;flex:0 0 auto;background:#fff}
 .dlg-foot .btn{margin-top:0}
 .dlg-alt{display:block;width:100%;margin-top:6px;background:transparent;border:none;color:#999;font-size:12px;padding:8px;cursor:pointer}
+/* ===================== 平板适配（优先 iPad mini 744×1133） =====================
+   用 pointer:coarse（触屏、无鼠标）区分平板与电脑：电脑端外观完全不变，
+   iPad / 安卓平板获得更大的卡片、字号与触控目标 */
+@media (min-width: 600px) and (pointer: coarse) {
+  body{padding:28px}
+  #app{max-width:640px;border-radius:24px}
+  .header{padding:24px 24px 18px}
+  .header h1{font-size:24px}
+  .header .sub{font-size:13px}
+  .main{padding:24px 26px}
+  /* 关卡地图：3 列（6 本书=2行 / 8 单元=3行） */
+  .grid{grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .card{padding:18px 14px}
+  .card .icon{font-size:40px}
+  .card .name{font-size:14px}
+  .map-title{font-size:18px}
+  /* 单元模式选择 */
+  .mode-grid{gap:14px}
+  .mode-card{padding:26px 14px}
+  .mode-icon{font-size:42px}
+  .mode-name{font-size:16px}
+  .mode-desc{font-size:12px}
+  .mode-grid-3 .mode-card{padding:20px 8px}
+  .mode-grid-3 .mode-icon{font-size:32px}
+  .mode-grid-3 .mode-name{font-size:14px}
+  .mode-grid-3 .mode-desc{font-size:11px}
+  /* 答题 / 跟读 / 听写：字号与触控目标整体放大 */
+  .quiz-title{font-size:17px}
+  .question-box{padding:22px}
+  .question-text{font-size:19px}
+  .option{font-size:16px;padding:14px 16px;border-radius:14px}
+  .btn{font-size:17px;padding:12px;border-radius:14px}
+  .speak-btn{width:36px;height:36px;line-height:34px;font-size:16px}
+  .auto-toggle{font-size:12px;padding:5px 12px}
+  .read-subs{max-height:52vh;padding:14px 16px}
+  .sub-line{font-size:16px}
+  .sub-cn{font-size:12.5px}
+  .sub-head{font-size:13px}
+  .read-en{font-size:19px}
+  .read-cn{font-size:14px}
+  .read-ctrl{font-size:15px;padding:13px 4px}
+  .auto-seg button{font-size:13px;padding:8px 12px}
+  .rate-row{padding:11px 16px}
+  .rate-range{max-width:220px}
+  .dict-input{font-size:18px;padding:14px 16px}
+  .dict-progress{font-size:24px}
+  .dict-progress b{font-size:30px}
+  .dict-tip{font-size:15px}
+  .interval-btn{max-width:130px;font-size:15px;padding:12px}
+  .check-en,.check-cn{font-size:14px}
+  .crumb-wrap{font-size:13px;padding:10px 16px}
+  .dlg{max-width:640px}
+  .dlg-body{font-size:13.5px}
+}
+/* iPad mini 横屏（1133×744）及更大平板：版心加宽，地图 4 列（8 单元=2行） */
+@media (min-width: 1000px) and (pointer: coarse) {
+  #app{max-width:780px}
+  .grid{grid-template-columns:repeat(4,1fr)}
+  .read-subs{max-height:56vh}
+}
 </style>
 </head>
 <body>

@@ -259,15 +259,15 @@ function makeUtterance(en, voice, rate) {
 }
 
 // ===================== 全局语速设置（滑条·4挡） =====================
-// 挡位：慢0.7 / 稍慢0.85 / 正常1.0 / 稍快1.2；持久化在 localStorage
+// 挡位：慢0.7 / 稍慢0.85 / 正常1.0 / 稍快1.2；持久化在 localStorage，默认「正常」
 const RATE_STEPS = [0.7, 0.85, 1.0, 1.2];
 const RATE_NAMES = ['慢', '稍慢', '正常', '稍快'];
 
 function speakRateMul() {
-  let v = 1;
-  try { v = parseFloat(localStorage.getItem('lingomate_rate')); } catch (e) {}
-  if (!(v > 0)) return 1;
-  // 归到最近的挡位（兼容旧存值）
+  let v = 0;
+  try { v = parseFloat(localStorage.getItem('lingomate_rate')) || 0; } catch (e) {}
+  if (!(v > 0)) return 1.0; // 未设置/无效 → 默认「正常」
+  // 归到最近挡位（兼容旧存值）
   let best = RATE_STEPS[0];
   for (const s of RATE_STEPS) if (Math.abs(s - v) < Math.abs(best - v)) best = s;
   return best;
@@ -1582,8 +1582,10 @@ function initQR() {
   const mini = document.getElementById('qrMini');
   const url = window.location.href;
 
-  // 手机端（含微信/移动浏览器 UA）本身就在手机上，无需显示二维码，整体隐藏
-  const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|Mobile|MicroMessenger/i.test(navigator.userAgent);
+  // 手机/平板端本身就在移动设备上（平板屏幕够大，无需扫码跨设备），整体隐藏。
+  // 注意 iPadOS 13+ 桌面模式 UA 是 "Macintosh"，需用多点触控特征识别。
+  const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|Mobile|MicroMessenger/i.test(navigator.userAgent)
+    || (navigator.maxTouchPoints > 1 && /Macintosh/i.test(navigator.userAgent)); // iPadOS 桌面模式
   if (isMobile) {
     if (mini) mini.style.display = 'none';
     const pop = document.getElementById('qrPop');
