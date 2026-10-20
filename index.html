@@ -27,6 +27,12 @@
 <meta name="format-detection" content="telephone=no">
 <meta name="apple-mobile-web-app-title" content="英语伴学">
 <title>英语伴学</title>
+<!-- 分享卡片（Open Graph）：微信/QQ 等抓取时展示标题与缩略图（未认证域名下微信可能仍显示纯链接，属平台限制）。
+     share.png 为 1200×630 分享卡，仅公网部署时 share() 功能可用，见 app.js initShare -->
+<meta property="og:title" content="英语伴学 LingoMate">
+<meta property="og:description" content="课文跟读 · 单词跟读 · 闯关练习 · 听写 —— 零依赖纯前端，数据不出设备">
+<meta property="og:image" content="/share.png">
+<meta property="og:type" content="website">
 <style>
 /* 手机扫码访问（右上角 github-corner 斜切风：默认切半成三角形，hover/聚焦/点击展开完整二维码） */
 .qr-mini{position:fixed;top:10px;right:10px;z-index:180;width:60px;height:60px;background:#fff;border-radius:13px;padding:9px;cursor:pointer;filter:drop-shadow(0 5px 14px rgba(0,0,0,.3));clip-path:polygon(0 0,100% 0,100% 100%);transition:clip-path .18s ease,transform .18s ease,filter .18s ease}
@@ -217,6 +223,13 @@ button,.option,.card{touch-action:manipulation}
 /* 常驻法律信息入口 */
 .legal-line{padding:0 20px 14px;text-align:center;font-size:11px;color:#aaa;line-height:1.6;border-top:1px solid #f2f2f6}
 .legal-line a{color:#8a94c6;text-decoration:none;border-bottom:1px dotted #b9c0e0;padding-bottom:1px}
+/* 分享入口（initShare 注入） */
+.share-link{color:#4facfe;border-bottom:1px dotted #8fd3ff}
+/* 分享提示弹层 */
+.share-dlg-body p{margin:0 0 8px}
+.share-dlg-body ol{padding-left:20px;margin:6px 0}
+.share-dlg-body ol li{margin:4px 0}
+.share-dlg-body .share-url{background:#f0f7ff;border:1px dashed #b9d8ff;border-radius:8px;padding:8px 10px;font-size:12px;color:#1976d2;word-break:break-all;user-select:all;text-align:center}
 /* 免责声明弹窗 */
 .dlg-mask{position:fixed;top:0;right:0;bottom:0;left:0;background:rgba(15,20,40,.62);z-index:200;display:none;justify-content:center;align-items:center;padding:18px}
 .dlg-mask.show{display:flex}
@@ -323,8 +336,8 @@ button,.option,.card{touch-action:manipulation}
 
   <!-- 底部 -->
   <div class="footer" id="footerText"></div>
-  <!-- 常驻法律信息入口 -->
-  <div class="legal-line" id="legalLine">仅供个人 / 家庭学习参考 · 按「现状」提供，无任何担保<br><a href="javascript:void(0)" onclick="openDisclaimer()">📜 免责声明与版权说明</a> · <a href="javascript:void(0)" onclick="openFeedback()">💬 反馈与建议</a></div>
+  <!-- 常驻法律信息入口 + 分享（分享按钮由 app.js initShare 按环境注入/隐藏） -->
+  <div class="legal-line" id="legalLine">仅供个人 / 家庭学习参考 · 按「现状」提供，无任何担保<br><a href="javascript:void(0)" onclick="openDisclaimer()">📜 免责声明与版权说明</a> · <a href="javascript:void(0)" onclick="openFeedback()">💬 反馈与建议</a><span id="shareEntry"></span></div>
 </div>
 
 <!-- 免责声明弹窗（内容由 app.js 的 DISCLAIMER_HTML 渲染） -->
