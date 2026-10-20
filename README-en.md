@@ -373,21 +373,26 @@ redistribute, sell, or release adaptations of the banks or the textbooks.
 ### 5. Data and privacy
 
 - The app has **no account system, makes no network calls to any application endpoint, and uploads
-  nothing**. Quiz progress and dictation history are stored as plain text in the browser's
+  no learning data**. Quiz progress and dictation history are stored as plain text in the browser's
   `localStorage` under the keys `english_quiz_progress_<bookId>` and
   `english_quiz_dict_records_<bookId>`; a third key, `english_quiz_disclaimer_ack_<version>`,
   records only whether you acknowledged these terms (it contains no personal information).
 - Consequently: **clearing browser data, switching device, switching browser, or using private
   mode erases all progress and history permanently.** Save screenshots or export the storage
   yourself if a record matters.
-- ⚠️ **Fully zero external calls**: the QR code is generated **offline in the browser** by the vendored
-  [`qr.js`](qr.js) (qrcode-generator, MIT) — it encodes the page's actual access URL, makes no network
-  call, and sends nothing to any third party. [`serve_qr.py`](serve_qr.py) only serves static files
-  locally and makes no outbound request. If you prefer not to expose your LAN address at all, run
-  `python -m http.server` and type the URL into the phone manually.
-- Apart from that, a running page makes no outbound requests at all: vocabulary, questions and
-  course-book sentences all come from the local `data/*.json` files, and the speech is synthesised
-  on the fly by the browser / OS TTS — no online audio is ever downloaded.
+- **Access analytics (public deployment only)**: when the page is reached via a public domain
+  (e.g. GitHub Pages), a Baidu Analytics script (`hm.baidu.com`) is loaded to record anonymous
+  page views and referrers. **No learning content, progress, or input is ever collected.** The
+  script is not loaded for local / LAN / offline access. To opt out, block `hm.baidu.com` in your
+  blocker or use a local deployment.
+- ⚠️ **Zero external calls when run locally**: the QR code is generated **offline in the browser** by
+  the vendored [`qr.js`](qr.js) (qrcode-generator, MIT) — it encodes the page's actual access URL,
+  makes no network call, and sends nothing to any third party. [`serve_qr.py`](serve_qr.py) only
+  serves static files locally and makes no outbound request. If you prefer not to expose your LAN
+  address at all, run `python -m http.server` and type the URL into the phone manually.
+- Apart from the analytics above, a running page makes no outbound requests: vocabulary, questions
+  and course-book sentences all come from the local `data/*.json` files, and the speech is
+  synthesised on the fly by the browser / OS TTS — no online audio is ever downloaded.
 
 ### 6. Usage and safety notes
 

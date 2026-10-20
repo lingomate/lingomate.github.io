@@ -27,9 +27,10 @@
 //       本项目不授予任何使用许可，请勿分发、公开、售卖或改编发布这些内容。
 //     · 源代码采用 MIT 许可证授权（见仓库根目录 LICENSE）；该许可证明确不覆盖
 //       data/*.json 题库与 英语/ 教材内容——删除或替换数据后可自由复用本代码。
-//     · 应用不上传数据；进度与听写记录仅存于浏览器 localStorage，清缓存即永久丢失。
+//     · 应用不上传学习数据；进度与听写记录仅存于浏览器 localStorage，清缓存即永久丢失。
 //     · 本文件自身不发起任何网络请求；语音由浏览器 / 系统内置 TTS 现场合成。
-//       （唯一的第三方请求出现在 serve_qr.py 的在线二维码图片服务，见该文件说明。）
+//       公网部署时 index.html 会按需加载百度统计（本地 / 局域网 / 离线不加载），
+//       其余唯一的第三方请求出现在 serve_qr.py 的在线二维码图片服务，见该文件说明。
 // ----------------------------------------------------------------------------
 
 // ===================== 免责声明（页面内展示） =====================
@@ -37,7 +38,7 @@
 // 文案与 README 的「免责声明」章节保持一致，改动请同步两处。
 // 重要：条款文案有任何实质改动时，请把 DISCLAIMER_VERSION 递增，
 // 已确认过的用户会重新看到一次确认（旧版本键不影响新版本判定）。
-const DISCLAIMER_VERSION = '2';                 // 文案版本：升级后老用户会重新看到一次确认
+const DISCLAIMER_VERSION = '3';                 // 文案版本：升级后老用户会重新看到一次确认
 const DISCLAIMER_KEY = 'english_quiz_disclaimer_ack_';   // + 版本号
 const DISCLAIMER_HTML = `
   <div class="warn">⚠️ 请务必完整阅读本节，尤其是打算把本项目分享给他人或公开部署时。</div>
@@ -67,10 +68,11 @@ const DISCLAIMER_HTML = `
 
   <h4>5. 数据与隐私</h4>
   <ul>
-    <li>本应用<b>没有账号系统、不上传任何数据</b>。闯关进度与听写记录只以明文保存在浏览器的 localStorage 中（键名 english_quiz_progress_课本id、english_quiz_dict_records_课本id）。</li>
+    <li>本应用<b>没有账号系统、不上传任何学习数据</b>。闯关进度与听写记录只以明文保存在浏览器的 localStorage 中（键名 english_quiz_progress_课本id、english_quiz_dict_records_课本id）。</li>
     <li>因此：<b>清理浏览器缓存、换设备、换浏览器或使用无痕模式，进度与记录都会丢失且无法找回</b>。重要成绩请自行截图或导出保存。</li>
     <li>本项目<b>不收集、也无法查看</b>任何使用者的学习数据；不存在云端同步、排行榜、老师端之类的功能。</li>
-    <li class="warn" style="list-style:none;margin-left:-18px">⚠️ <b>完全零外联</b>：二维码由页面内 qr.js（vendored qrcode-generator，MIT）纯前端离线生成，直接编码浏览器当前实际访问地址，全程不依赖任何第三方图片 / 二维码服务，也不会把你的地址发往外部；serve_qr.py 也仅在本地起静态服务，不发起任何出网请求。若你仍不想暴露局域网地址，可只用 <code>python -m http.server 8000</code> 并手动在手机输入网址。</li>
+    <li><b>访问统计（仅公网部署时）</b>：当页面通过公网域名（如 GitHub Pages）访问时，会加载百度统计脚本（hm.baidu.com）记录<b>匿名的页面访问量与访问来源</b>，用于了解部署情况；不采集任何学习内容、进度或输入。本地 / 局域网 / 离线访问时该脚本<b>不会加载</b>，全程零外联。如不愿被统计，可用浏览器屏蔽 hm.baidu.com，或改用本地部署。</li>
+    <li class="warn" style="list-style:none;margin-left:-18px">⚠️ <b>本地运行零外联</b>：二维码由页面内 qr.js（vendored qrcode-generator，MIT）纯前端离线生成，直接编码浏览器当前实际访问地址，全程不依赖任何第三方图片 / 二维码服务，也不会把你的地址发往外部；serve_qr.py 也仅在本地起静态服务，不发起任何出网请求。若你仍不想暴露局域网地址，可只用 <code>python -m http.server 8000</code> 并手动在手机输入网址。</li>
   </ul>
 
   <h4>6. 使用与安全注意事项</h4>

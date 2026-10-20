@@ -337,6 +337,21 @@ button,.option,.card{touch-action:manipulation}
 
 <div class="feedback" id="feedback"></div>
 
+<!-- 访问统计（百度统计）：仅公网部署时加载，本地 / 局域网 / 离线完全零外联 -->
+<script>
+(function () {
+  try {
+    var h = location.hostname;
+    var isPublic = h && !/^(localhost|127\.|10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(h) && h !== '[::1]';
+    if (!isPublic) return;           // 本地 / 局域网访问：不加载统计，保持零外联
+    window._hmt = window._hmt || [];
+    var hm = document.createElement('script');
+    hm.src = 'https://hm.baidu.com/hm.js?1ae59dca1151fd53db3f4ee8f2c96b88';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(hm, s);
+  } catch (e) { /* 统计失败不影响应用 */ }
+})();
+</script>
 <script src="qr.js"></script>
 <script src="app.js"></script>
 </body>
