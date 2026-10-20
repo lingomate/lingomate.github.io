@@ -128,14 +128,21 @@ button,.option,.card{touch-action:manipulation}
 .crumb-item:hover{background:rgba(255,255,255,.18)}
 .crumb-item.cur{background:rgba(255,255,255,.92);color:#1976d2;cursor:default}
 .crumb-sep{color:rgba(255,255,255,.7);font-weight:700}
-/* 跟读自动模式 */
-.read-auto-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:center}
-.read-auto-label{font-size:12px;color:#666}
-.auto-seg{display:flex;border:2px solid #e0e3ff;border-radius:12px;overflow:hidden}
-.auto-seg button{border:none;background:#fff;color:#666;font-size:12px;font-weight:600;padding:7px 10px;cursor:pointer}
-.auto-seg button.on{background:#4facfe;color:#fff}
-.auto-state{font-size:12px;color:#4facfe;font-weight:700;min-width:52px;text-align:center}
-.read-auto-btn{width:auto;flex:0 0 auto;margin-top:0;padding:8px 16px;font-size:13px}
+/* 跟读自动模式（滑动开关 + 停顿滑条，同一行） */
+.read-auto-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:4px}
+.auto-switch{display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none;-webkit-tap-highlight-color:transparent}
+.auto-switch input{display:none}
+.auto-track{position:relative;width:46px;height:26px;border-radius:13px;background:#d5d9ee;transition:background .25s;flex:0 0 auto}
+.auto-track::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.25);transition:left .25s}
+.auto-switch input:checked+.auto-track{background:linear-gradient(135deg,#4facfe,#00f2fe)}
+.auto-switch input:checked+.auto-track::after{left:23px}
+.auto-sw-label{font-size:13px;font-weight:700;color:#666}
+.auto-switch input:checked~.auto-sw-label{color:#1976d2}
+.auto-int{display:flex;align-items:center;gap:8px}
+.auto-int-label{font-size:12px;font-weight:700;color:#666;flex:0 0 auto}
+.auto-int-range{width:96px;height:5px;accent-color:#4facfe;cursor:pointer}
+.auto-int-val{font-size:12px;font-weight:700;color:#4facfe;min-width:34px;text-align:center;flex:0 0 auto}
+.auto-int-range:disabled{opacity:.4;cursor:not-allowed}
 /* 语速滑条（跟读/听写/闯关等有朗读的界面通用） */
 .rate-setup{margin:10px 0 2px}
 .rate-row{display:flex;align-items:center;gap:10px;justify-content:center;margin-bottom:14px;}
@@ -272,7 +279,8 @@ button,.option,.card{touch-action:manipulation}
   .read-en{font-size:19px}
   .read-cn{font-size:14px}
   .read-ctrl{font-size:15px;padding:13px 4px}
-  .auto-seg button{font-size:13px;padding:8px 12px}
+  .auto-int-range{width:140px}
+  .auto-sw-label,.auto-int-label,.auto-int-val{font-size:13px}
   .rate-row{padding:11px 16px}
   .rate-range{max-width:220px}
   .dict-input{font-size:18px;padding:14px 16px}

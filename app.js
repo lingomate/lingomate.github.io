@@ -832,7 +832,7 @@ function beginRead(unitNum, list, mode) {
   if (!list.length) return;
   stopSpeech();
   setHeader('read');
-  rd = { unitNum, list, idx: 0, auto: false, interval: 10000, timer: null, mode: mode || '课文跟读' };
+  rd = { unitNum, list, idx: 0, auto: false, interval: 5000, timer: null, mode: mode || '课文跟读' };
   rdToken++;
   ensureVoices();
   buildVoicePool();
@@ -858,6 +858,14 @@ function speakReadCurrent() {
   speakText(encodeURIComponent(text), onend, voiceForSpeaker(speaker), speaker ? 0.92 : 0.85);
 }
 
+// 自动模式停顿挡位：滑条 0/1/2 → 5/10/15 秒（默认 5 秒）
+const AUTO_INTERVALS = [5000, 10000, 15000];
+function autoIntervalIdx() {
+  let i = 0;
+  for (let k = 0; k < AUTO_INTERVALS.length; k++) if (Math.abs(AUTO_INTERVALS[k] - rd.interval) < Math.abs(AUTO_INTERVALS[i] - rd.interval)) i = k;
+  return i;
+}
+
 function setAuto(on) {
   if (!rd) return;
   rd.auto = on;
@@ -872,11 +880,11 @@ function setAuto(on) {
   }
 }
 
-function pickAutoInterval(btn) {
+function pickAutoInterval(el) {
   if (!rd) return;
-  document.querySelectorAll('.auto-seg [data-ms]').forEach(b => b.classList.remove('on'));
-  btn.classList.add('on');
-  rd.interval = Number(btn.getAttribute('data-ms'));
+  rd.interval = AUTO_INTERVALS[Number(el.value)] || 5000;
+  const val = document.getElementById('readAutoVal');
+  if (val) val.textContent = rd.interval / 1000 + '秒';
 }
 
 // 面包屑：固定顶部导航（首页=选课本 → 课本=关卡地图 → 单元=模式选择 → 类别=当前模式）
@@ -947,11 +955,15 @@ function buildReadShell() {
       <button class="btn btn-primary read-ctrl" id="readNextBtn" onclick="nextRead()">下一句 ➡</button>
     </div>
     <div class="read-auto-row">
-      <button class="btn btn-primary read-auto-btn" id="readAutoBtn" onclick="setAuto(!rd.auto)">▶️ 自动模式</button>
-      <div class="auto-seg">
-        <button data-ms="5000" onclick="pickAutoInterval(this)">5秒</button>
-        <button data-ms="10000" class="on" onclick="pickAutoInterval(this)">10秒</button>
-        <button data-ms="15000" onclick="pickAutoInterval(this)">15秒</button>
+      <label class="auto-switch">
+        <input type="checkbox" id="readAutoSw" ${rd.auto ? 'checked' : ''} onchange="setAuto(this.checked)">
+        <span class="auto-track"></span>
+        <span class="auto-sw-label">自动模式</span>
+      </label>
+      <div class="auto-int">
+        <span class="auto-int-label">⏱ 停顿</span>
+        <input type="range" class="auto-int-range" id="readAutoRange" min="0" max="2" step="1" value="${autoIntervalIdx()}" oninput="pickAutoInterval(this)" ${rd.auto ? '' : 'disabled'}>
+        <span class="auto-int-val" id="readAutoVal">${rd.interval / 1000}秒</span>
       </div>
     </div>
   `;
@@ -993,14 +1005,19 @@ function updateReadUI() {
   const prevBtn = document.getElementById('readPrevBtn');
   const nextBtn = document.getElementById('readNextBtn');
   const tip = document.getElementById('readTip');
-  const autoBtn = document.getElementById('readAutoBtn');
+  const autoSw = document.getElementById('readAutoSw');
+  const autoRange = document.getElementById('readAutoRange');
+  const autoVal = document.getElementById('readAutoVal');
   if (prevBtn) prevBtn.disabled = rd.idx === 0;
   if (nextBtn) nextBtn.textContent = rd.idx === n - 1 ? '✅ 完成' : '下一句 ➡';
   if (tip) tip.textContent = rd.auto ? '⏳ 自动模式：读完本句后休息，进入下一句…' : '点击任意句子可跳读 · 听一句，大声跟读一句 🗣️';
-  if (autoBtn) {
-    autoBtn.textContent = rd.auto ? '⏸ 暂停自动' : '▶️ 自动模式';
-    autoBtn.className = 'btn read-auto-btn ' + (rd.auto ? 'btn-next' : 'btn-primary');
+  // 开关与停顿滑条状态同步（骨架只建一次，这里增量刷新）
+  if (autoSw) autoSw.checked = rd.auto;
+  if (autoRange) {
+    autoRange.disabled = !rd.auto;
+    autoRange.value = autoIntervalIdx();
   }
+  if (autoVal) autoVal.textContent = rd.interval / 1000 + '秒';
 }
 
 function replayRead() {
