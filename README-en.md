@@ -110,6 +110,8 @@ LingoMate/
 │   ├── 4B.json             Grade 4 Vol.2 · 8 units
 │   └── 5A.json             Grade 5 Vol.1 · 8 units
 ├── serve_qr.py             Local HTTP server + LAN IP detection (QR now generated offline by qr.js)
+├── sync_disclaimer.py      Disclaimer sync: DISCLAIMER.md → app.js dialog + README.md section
+├── DISCLAIMER.md           Single source of truth for the disclaimer (edit it, then run sync_disclaimer.py)
 ├── 启动手机伴学.bat          One-click start (runs: py serve_qr.py)
 ├── 停止服务.bat              One-click stop (kills the serve_qr.py listener on port 8000)
 ├── stop_server.ps1           Script called by the .bat above

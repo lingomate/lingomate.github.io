@@ -80,6 +80,8 @@ LingoMate/
 │   ├── 4B.json             四年级下册 · 8 单元
 │   └── 5A.json             五年级上册 · 8 单元
 ├── serve_qr.py             本地 HTTP 服务 + 局域网 IP 探测（二维码改由页面内 qr.js 离线生成）
+├── sync_disclaimer.py      免责声明同步：DISCLAIMER.md → app.js 内嵌弹窗 + 本 README 章节
+├── DISCLAIMER.md           免责声明唯一来源（改这里，再跑 sync_disclaimer.py）
 ├── 启动手机伴学.bat          一键启动（调用 py serve_qr.py）
 ├── 停止服务.bat              一键关停（按 8000 端口找 serve_qr.py 进程）
 ├── stop_server.ps1           被上面那个 bat 调用的脚本
@@ -216,6 +218,8 @@ data/*.json, 英语/       ← 第三方教材内容，版权归原出版社，�
 
 ## 版本管理与换行符
 
+> 📝 免责声明统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护：修改后运行 `python sync_disclaimer.py` 同步到本 README 与 app.js 内嵌弹窗（`python sync_disclaimer.py --check` 只校验一致性，可用于提交前自检）。README-en.md 的免责声明为人工翻译，需人工对照更新。
+
 - 本仓库带 [`.gitattributes`](.gitattributes)：`*.bat` / `*.cmd` 强制以 **CRLF** 签出，源码与文档（含 `*.ps1`）强制 LF。
 - **不要删除该文件**，否则 clone 到 macOS / Linux（或 `core.autocrlf=false` 的 Windows 机器）会得到 LF 版 `.bat`；cmd.exe 解析 `rem` 行时错位、把注释当命令执行，表现为**双击启动脚本一闪而过、启动不了**。
 - `.bat` 里的注释请用纯 ASCII 的 `rem` 行；中文在 `chcp 65001` 生效前按 OEM 代码页解析，容易出问题。
@@ -227,6 +231,7 @@ data/*.json, 英语/       ← 第三方教材内容，版权归原出版社，�
 Safari（iOS 14+，推荐）、Chrome / Edge 桌面与移动端。需要 `speechSynthesis` 与 `localStorage`；不支持该 API 的浏览器会提示改用 Safari 或 Chrome，其余功能（除朗读外）仍可用。
 
 <a id="disclaimer"></a>
+<!-- DISCLAIMER-BEGIN（由 sync_disclaimer.py 从 DISCLAIMER.md 生成，勿手改） -->
 ## 免责声明
 
 > 请务必在使用（尤其是分发给他人或公开部署）之前完整阅读本节。
@@ -272,7 +277,7 @@ Safari（iOS 14+，推荐）、Chrome / Edge 桌面与移动端。需要 `speech
 
 ### 6. 使用与安全注意事项
 
-- **局域网暴露**：`serve_qr.py` 监听 `0.0.0.0:8000`，且它是**静态文件服务**——同一局域网内的其他设备不仅能访问页面，**还能按路径下载本目录下的任意文件**（包括 `英语/` 里的教材 PDF、`data/*.json` 题库；只有目录列表做了 html-only 过滤，直接给路径照样能取到）。请勿在机场、咖啡厅等公共或不受信网络下开启；不需要时及时关闭窗口或双击 [`停止服务.bat`](停止服务.bat)。若本机装有第三方同步 / 内网穿透工具，风险同样适用。
+- **局域网暴露**：`serve_qr.py` 监听 `0.0.0.0:8000` 且为静态文件服务——同一局域网内的其他设备不仅能访问页面，**还能按路径下载本目录下的任意文件**（包括 `英语/` 里的教材 PDF、`data/*.json` 题库；只有目录列表做了 html-only 过滤，直接给路径照样能取到）。请勿在机场、咖啡厅等公共或不受信网络下开启；不需要时及时关闭窗口或双击 [`停止服务.bat`](停止服务.bat)。若本机装有第三方同步 / 内网穿透工具，风险同样适用。
 - **二维码零外联**：手机扫码地址由页面内 [`qr.js`](qr.js) 直接编码当前访问地址生成，全程不依赖任何第三方图片 / 二维码服务，也不会把你的地址发往外部。
 - **题库按本地可信内容处理**：引擎只对少数动态字符串做了转义，`data/*.json` 中的文本会被当作 HTML 渲染。请**不要加载来源不明的题库文件**，也不要在其中写入不可信内容。
 - **儿童使用需家长陪同**：本应用面向小学阶段学生，请家长控制屏幕使用时间；设备上的系统语音、浏览器权限与网络设置也建议由家长代为管理。
@@ -283,3 +288,4 @@ Safari（iOS 14+，推荐）、Chrome / Edge 桌面与移动端。需要 `speech
 - 界面文案（标签、提示、评语）为中文且硬编码在 [`app.js`](app.js) 中；数据格式本身与界面语言无关。
 - 题库如与最新纸质课本有出入，以课本为准，欢迎自行修正 JSON 后继续使用。
 - 本项目仍在按家庭使用需求迭代，数据结构可能调整；重大变更以仓库当前内容为准，不承诺向后兼容。
+<!-- DISCLAIMER-END -->
