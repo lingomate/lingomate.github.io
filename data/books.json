@@ -5,5 +5,7 @@
   { "id": "4B", "file": "data/4B.json" },
   { "id": "5A", "file": "data/5A.json" },
   { "id": "1A", "file": "data/1A.json" },
-  { "id": "1B", "file": "data/1B.json" }
+  { "id": "1B", "file": "data/1B.json" },
+  { "id": "2A", "file": "data/2A.json" },
+  { "id": "2B", "file": "data/2B.json" }
 ]

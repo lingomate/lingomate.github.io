@@ -1,0 +1,4128 @@
+{
+  "id": "2B",
+  "title": "二年级下册",
+  "subtitle": "上海教育出版社 · 沪教版",
+  "icon": "📖",
+  "units": [
+    {
+      "name": "Unit 1",
+      "title": "食物",
+      "icon": "🍚",
+      "color": "#ff7043",
+      "en": "What is fun about food?",
+      "vocab": [
+        {
+          "en": "rice",
+          "cn": "米饭"
+        },
+        {
+          "en": "fish ball",
+          "cn": "鱼丸"
+        },
+        {
+          "en": "congee",
+          "cn": "粥"
+        },
+        {
+          "en": "cake",
+          "cn": "蛋糕"
+        },
+        {
+          "en": "bread",
+          "cn": "面包"
+        },
+        {
+          "en": "baozi",
+          "cn": "包子"
+        },
+        {
+          "en": "dim sum",
+          "cn": "点心"
+        },
+        {
+          "en": "lots of",
+          "cn": "许多"
+        },
+        {
+          "en": "a piece of",
+          "cn": "一块（片）"
+        },
+        {
+          "en": "best",
+          "cn": "最；最好的"
+        },
+        {
+          "en": "test",
+          "cn": "测试"
+        },
+        {
+          "en": "dish",
+          "cn": "菜肴"
+        },
+        {
+          "en": "next",
+          "cn": "接着；下一个"
+        },
+        {
+          "en": "clue",
+          "cn": "线索"
+        },
+        {
+          "en": "ours",
+          "cn": "我们的"
+        },
+        {
+          "en": "easy",
+          "cn": "容易的；简单的"
+        },
+        {
+          "en": "Pen Cai",
+          "cn": "盆菜"
+        },
+        {
+          "en": "Dragon Boat Festival",
+          "cn": "端午节"
+        },
+        {
+          "en": "Mid-Autumn Festival",
+          "cn": "中秋节"
+        },
+        {
+          "en": "Thanksgiving",
+          "cn": "感恩节"
+        },
+        {
+          "en": "Christmas",
+          "cn": "圣诞节"
+        },
+        {
+          "en": "zongzi",
+          "cn": "粽子"
+        },
+        {
+          "en": "mooncake",
+          "cn": "月饼"
+        },
+        {
+          "en": "pumpkin pie",
+          "cn": "南瓜派"
+        },
+        {
+          "en": "gingerbread",
+          "cn": "姜饼"
+        }
+      ],
+      "read": [
+        {
+          "en": "rice",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "fish ball",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "congee",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "cake",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "bread",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "baozi",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "dim sum",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "I have congee and baozi.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "Look. There's lots of food.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.2"
+        },
+        {
+          "en": "There's rice. There are fish balls.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.2"
+        },
+        {
+          "en": "There's congee. There's a piece of cake.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.2"
+        },
+        {
+          "en": "I see bread. I see baozi. I see dim sum.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.2"
+        },
+        {
+          "en": "A food festival! I'm hungry!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Me too.",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Let's try it!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What is it, Amy?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Oh! It's congee! I like it!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What is it, Jenny?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Hmm ... noodles!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What's next?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Oh! There isn't any food!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Wait! Here's a clue!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What's over there?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Aha! That's ours.",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Here you are!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Oh! That's easy! It's Pen Cai.",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What would you like?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "Winners! Choose a dish!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "I'd like some dim sum.",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "I'd like some baozi! Yum!",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.4-6"
+        },
+        {
+          "en": "What dish do you like?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.5"
+        },
+        {
+          "en": "Congratulations, Amy and Jenny! You're the winners. What would you like, Amy?",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.6"
+        },
+        {
+          "en": "I'd like some baozi.",
+          "cn": "",
+          "st": "故事 · A tasting test",
+          "sp": "p.6"
+        },
+        {
+          "en": "Here is a dog.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "There is a frog.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "The frog is on the log.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "The dog looks at the frog.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "Penny loves to hop.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "Hop! Hop! Hop!",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "She hops to the shop.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        },
+        {
+          "en": "She buys a new mop.",
+          "cn": "",
+          "st": "拼读 · -og/-op",
+          "sp": "p.9"
+        }
+      ]
+    },
+    {
+      "name": "Unit 2",
+      "title": "卫生",
+      "icon": "🧼",
+      "color": "#4facfe",
+      "en": "How can we keep clean?",
+      "vocab": [
+        {
+          "en": "wash my hands",
+          "cn": "洗手"
+        },
+        {
+          "en": "brush my teeth",
+          "cn": "刷牙"
+        },
+        {
+          "en": "wash my face",
+          "cn": "洗脸"
+        },
+        {
+          "en": "keep",
+          "cn": "保持"
+        },
+        {
+          "en": "clean",
+          "cn": "清洁的，干净的"
+        },
+        {
+          "en": "every day",
+          "cn": "每天"
+        },
+        {
+          "en": "way",
+          "cn": "方法"
+        },
+        {
+          "en": "early",
+          "cn": "早早地"
+        },
+        {
+          "en": "morning",
+          "cn": "早上；上午"
+        },
+        {
+          "en": "pet",
+          "cn": "宠物"
+        },
+        {
+          "en": "take good care of",
+          "cn": "好好照顾"
+        },
+        {
+          "en": "dirty",
+          "cn": "脏的"
+        },
+        {
+          "en": "paw",
+          "cn": "爪子"
+        },
+        {
+          "en": "bedtime",
+          "cn": "睡觉时间"
+        },
+        {
+          "en": "about",
+          "cn": "关于"
+        },
+        {
+          "en": "after",
+          "cn": "在……以后"
+        },
+        {
+          "en": "before",
+          "cn": "在……以前"
+        },
+        {
+          "en": "soapy",
+          "cn": "涂着肥皂的"
+        },
+        {
+          "en": "rub",
+          "cn": "揉搓"
+        },
+        {
+          "en": "dry",
+          "cn": "擦干"
+        },
+        {
+          "en": "yet",
+          "cn": "还；仍然"
+        }
+      ],
+      "read": [
+        {
+          "en": "wash my hands",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "brush my teeth",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "wash my face",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "Wash your hands",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Wash, wash, wash your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "After you play, wash your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Before meals, wash your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Rub, rub, rub your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Are they soapy?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Rub, rub, rub your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Are they clean?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Dry, dry, dry your hands.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Are they dry yet?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Now you're done.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "Let's have fun.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.16"
+        },
+        {
+          "en": "A new family member",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Leo, guess, who is coming?",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Is that Sam?",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Yes. Welcome your new pet.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Woof!",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Take good care of Sam.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Come, Sam.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "OK, Mum.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.12"
+        },
+        {
+          "en": "Sam, your paws are dirty. Let's go and wash.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "Let me wash your paws.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "It's bedtime. Let's brush our teeth.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "I brush my teeth every day.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "Now your teeth are clean.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "Sam, we need to keep clean every day.",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "This is a story about a dog ...",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "What do you do before bedtime?",
+          "cn": "",
+          "st": "故事 · A new family member",
+          "sp": "p.13"
+        },
+        {
+          "en": "Mum cooks soup in a pot.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "The soup is hot.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "Don't touch the pot.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "It's too hot!",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "Sam eats a bun.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "He goes for a run.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "He says hello to the sun.",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        },
+        {
+          "en": "Running is so much fun!",
+          "cn": "",
+          "st": "拼读 · -ot/-un",
+          "sp": "p.17"
+        }
+      ]
+    },
+    {
+      "name": "Unit 3",
+      "title": "社团",
+      "icon": "🎭",
+      "color": "#66bb6a",
+      "en": "What do you do in school clubs?",
+      "vocab": [
+        {
+          "en": "do paper-cutting",
+          "cn": "剪纸"
+        },
+        {
+          "en": "do the lion dance",
+          "cn": "舞狮"
+        },
+        {
+          "en": "kick a shuttlecock",
+          "cn": "踢毽子"
+        },
+        {
+          "en": "club",
+          "cn": "俱乐部；社团"
+        },
+        {
+          "en": "join",
+          "cn": "加入"
+        },
+        {
+          "en": "have a try",
+          "cn": "试一试"
+        },
+        {
+          "en": "enjoy",
+          "cn": "享受"
+        },
+        {
+          "en": "art",
+          "cn": "美术，艺术"
+        },
+        {
+          "en": "secret",
+          "cn": "秘密"
+        },
+        {
+          "en": "drama",
+          "cn": "戏剧"
+        },
+        {
+          "en": "mask",
+          "cn": "面具"
+        },
+        {
+          "en": "clothes",
+          "cn": "衣服"
+        },
+        {
+          "en": "bring",
+          "cn": "带来"
+        },
+        {
+          "en": "good luck",
+          "cn": "好运"
+        }
+      ],
+      "read": [
+        {
+          "en": "What do you do in school clubs?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.18"
+        },
+        {
+          "en": "do paper-cutting",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "do the lion dance",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "kick a shuttlecock",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "the Paper-cutting Club",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "the Shuttlecock Club",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "the Lion Dance Club",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "I kick a shuttlecock in the Shuttlecock Club.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "A secret club",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "Look, Kate. There's a new club.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "Let's go and see, Billy.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "Look! The secret club is in this room!",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "What do you do in the club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "I do paper-cutting.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "Is it a paper-cutting club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "No, it isn't.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.20"
+        },
+        {
+          "en": "Is it a lion dance club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "No, it isn't.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Look!",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Hmm, I have an idea.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Do you kick a shuttlecock in the club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "No, I don't.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Look! Here's a bin.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "What's in it?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Is this a drama club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Yes, it is. Come in!",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "I make masks.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "I put paper-cuts on the clothes.",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Do you like drama? You can join in!",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "Great!",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.21"
+        },
+        {
+          "en": "What can Billy and Kate do in the Drama Club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.22"
+        },
+        {
+          "en": "Welcome to the Drama Club. What do you want to do in the club?",
+          "cn": "",
+          "st": "故事 · A secret club",
+          "sp": "p.22"
+        },
+        {
+          "en": "I drink milk from a mug.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "I find a bug in the mug.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "Ugh! Ugh! Ugh!",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "Mum gives me a hug.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "I'm a little squirrel.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "Welcome to my hut.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "Here's a big nut.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        },
+        {
+          "en": "Let me cut the nut.",
+          "cn": "",
+          "st": "拼读 · -ug/-ut",
+          "sp": "p.25"
+        }
+      ]
+    },
+    {
+      "name": "Unit 4",
+      "title": "动物",
+      "icon": "🐎",
+      "color": "#ab47bc",
+      "en": "How are people and animals different?",
+      "vocab": [
+        {
+          "en": "run",
+          "cn": "跑"
+        },
+        {
+          "en": "climb",
+          "cn": "爬"
+        },
+        {
+          "en": "fly",
+          "cn": "飞"
+        },
+        {
+          "en": "walk",
+          "cn": "步行；走"
+        },
+        {
+          "en": "horse",
+          "cn": "马"
+        },
+        {
+          "en": "cat",
+          "cn": "猫"
+        },
+        {
+          "en": "bird",
+          "cn": "鸟"
+        },
+        {
+          "en": "climb trees",
+          "cn": "爬树"
+        },
+        {
+          "en": "wing",
+          "cn": "翅膀"
+        },
+        {
+          "en": "away",
+          "cn": "离开"
+        },
+        {
+          "en": "strong",
+          "cn": "强壮的"
+        },
+        {
+          "en": "leg",
+          "cn": "腿"
+        },
+        {
+          "en": "fast",
+          "cn": "快速地"
+        },
+        {
+          "en": "footprint",
+          "cn": "脚印"
+        },
+        {
+          "en": "chameleon",
+          "cn": "变色龙"
+        },
+        {
+          "en": "change",
+          "cn": "改变；变化"
+        },
+        {
+          "en": "wait",
+          "cn": "等；等待"
+        },
+        {
+          "en": "wake up",
+          "cn": "醒来"
+        },
+        {
+          "en": "bat",
+          "cn": "蝙蝠"
+        },
+        {
+          "en": "squirrel",
+          "cn": "松鼠"
+        },
+        {
+          "en": "giraffe",
+          "cn": "长颈鹿"
+        },
+        {
+          "en": "about",
+          "cn": "大约"
+        },
+        {
+          "en": "hour",
+          "cn": "小时"
+        }
+      ],
+      "read": [
+        {
+          "en": "run",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "climb",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "fly",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "walk",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "Emily and Charlie are in the jungle.",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.28"
+        },
+        {
+          "en": "Where's Leon?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.28"
+        },
+        {
+          "en": "I don't know, Emily!",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.28"
+        },
+        {
+          "en": "Look! Those are Leon's footprints.",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.28"
+        },
+        {
+          "en": "Chameleons can run! Come on!",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.28"
+        },
+        {
+          "en": "Uh-oh! Can chameleons swim?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Yes. But where's Leon?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Can chameleons fly?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "No. They don't have wings!",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "But they can climb. Can you climb?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Yes, I can.",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Chameleons can change colour.",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Hmm ... I can't see Leon.",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Wait! What's that noise?",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Look! He's here. The bananas are green. Leon is green too!",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "Wake up, Leon!",
+          "cn": "",
+          "st": "故事 · In the jungle",
+          "sp": "p.29"
+        },
+        {
+          "en": "My name is Kate.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "Today I am eight.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "Mum bakes me a cake.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "Look! My name is on the cake.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "We are by the sea.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "Mum drinks tea.",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "What do you see?",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        },
+        {
+          "en": "I see a big bee!",
+          "cn": "",
+          "st": "拼读 · -a_e / -ee / -ea",
+          "sp": "p.33"
+        }
+      ]
+    },
+    {
+      "name": "Unit 5",
+      "title": "偶像",
+      "icon": "🦸",
+      "color": "#ffca28",
+      "en": "Who is your hero?",
+      "vocab": [
+        {
+          "en": "helpful",
+          "cn": "乐于助人的"
+        },
+        {
+          "en": "kind",
+          "cn": "友好的；友善的"
+        },
+        {
+          "en": "warm",
+          "cn": "友好的；热心的"
+        },
+        {
+          "en": "Miss",
+          "cn": "小姐"
+        },
+        {
+          "en": "Mrs",
+          "cn": "太太；夫人"
+        },
+        {
+          "en": "teacher",
+          "cn": "教师"
+        },
+        {
+          "en": "give a hand",
+          "cn": "帮助"
+        },
+        {
+          "en": "show",
+          "cn": "显示；表现"
+        },
+        {
+          "en": "care",
+          "cn": "关心；照顾"
+        },
+        {
+          "en": "others",
+          "cn": "别人"
+        },
+        {
+          "en": "hero",
+          "cn": "英雄；偶像"
+        },
+        {
+          "en": "dream",
+          "cn": "梦；梦想"
+        },
+        {
+          "en": "team",
+          "cn": "队，队伍"
+        },
+        {
+          "en": "rainbow",
+          "cn": "彩虹"
+        },
+        {
+          "en": "always",
+          "cn": "总是"
+        },
+        {
+          "en": "water",
+          "cn": "水"
+        },
+        {
+          "en": "worry",
+          "cn": "担心"
+        },
+        {
+          "en": "goal",
+          "cn": "进球"
+        },
+        {
+          "en": "well",
+          "cn": "好"
+        },
+        {
+          "en": "so",
+          "cn": "如此"
+        },
+        {
+          "en": "clever",
+          "cn": "聪明的"
+        },
+        {
+          "en": "doctor",
+          "cn": "医生"
+        },
+        {
+          "en": "workman",
+          "cn": "工人"
+        },
+        {
+          "en": "take care of",
+          "cn": "照顾"
+        },
+        {
+          "en": "fix",
+          "cn": "修理"
+        }
+      ],
+      "read": [
+        {
+          "en": "helpful",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "kind",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "warm",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "This is ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "He's / She's ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "The hero",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Dream Team always wins!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Rainbow Team always wins!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Let's wait and see!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Oh, no!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "We don't have any water.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Don't worry.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "We have some water.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Here you are.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Thanks, Peter.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Goal!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Hooray!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "You're our hero!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Your team plays well.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Thanks. Your team plays well too.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Let me help you.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Thank you, Peter.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "You're welcome.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "You're so nice.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Don't climb the tree!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "My ball is in the tree.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Can you help me?",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "I have an idea.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Let me try.",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Thank you. You're so clever!",
+          "cn": "",
+          "st": "故事 · The hero",
+          "sp": "p.36-p.38"
+        },
+        {
+          "en": "Mike, look at the kite!",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "It's blue and white.",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "Mike, look at the bike!",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "Five people ride the bike.",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "Rose is at home.",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "She talks on the phone.",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "Where is her dog Hope?",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        },
+        {
+          "en": "He plays with a bone.",
+          "cn": "",
+          "st": "拼读 · -i_e / -o_e",
+          "sp": "p.41"
+        }
+      ]
+    },
+    {
+      "name": "Unit 6",
+      "title": "诚实",
+      "icon": "🐺",
+      "color": "#26a69a",
+      "en": "Why should we be honest?",
+      "vocab": [
+        {
+          "en": "farm",
+          "cn": "农场"
+        },
+        {
+          "en": "farmer",
+          "cn": "农民"
+        },
+        {
+          "en": "sleep",
+          "cn": "睡觉"
+        },
+        {
+          "en": "boy",
+          "cn": "男孩"
+        },
+        {
+          "en": "wolf",
+          "cn": "狼"
+        },
+        {
+          "en": "bad",
+          "cn": "坏的"
+        },
+        {
+          "en": "near",
+          "cn": "在……附近"
+        },
+        {
+          "en": "woods",
+          "cn": "树林"
+        },
+        {
+          "en": "tall",
+          "cn": "高的"
+        },
+        {
+          "en": "short",
+          "cn": "矮的"
+        },
+        {
+          "en": "angry",
+          "cn": "生气的"
+        },
+        {
+          "en": "boring",
+          "cn": "无聊的"
+        },
+        {
+          "en": "often",
+          "cn": "常常"
+        },
+        {
+          "en": "sunny",
+          "cn": "阳光充足的"
+        },
+        {
+          "en": "will",
+          "cn": "将，会"
+        },
+        {
+          "en": "happen",
+          "cn": "发生"
+        },
+        {
+          "en": "sit on the grass",
+          "cn": "坐在草地上"
+        },
+        {
+          "en": "watch the sheep",
+          "cn": "放羊"
+        },
+        {
+          "en": "have some fun",
+          "cn": "找点乐子"
+        },
+        {
+          "en": "lie on the grass",
+          "cn": "躺在草地上"
+        },
+        {
+          "en": "meat",
+          "cn": "肉"
+        },
+        {
+          "en": "fool us",
+          "cn": "愚弄我们"
+        },
+        {
+          "en": "trust",
+          "cn": "相信"
+        },
+        {
+          "en": "tell a lie",
+          "cn": "撒谎"
+        }
+      ],
+      "read": [
+        {
+          "en": "farm",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "farmer",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "sleep",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "boy",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "wolf",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "The boy and the wolf",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.44"
+        },
+        {
+          "en": "Narrator: This is a story about a boy.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.44"
+        },
+        {
+          "en": "The boy: I’m sitting on the grass. I’m watching the sheep. How boring! I want to sleep.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.44"
+        },
+        {
+          "en": "Narrator: The boy wants to have some fun.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.44"
+        },
+        {
+          "en": "The boy: Wolf! Wolf! I see a wolf! Help! Help! Wolf! Wolf! I see a wolf! Help! Help!",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.44"
+        },
+        {
+          "en": "Narrator: The farmers come.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "Farmer 1: We can help you.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "Farmer 2: Where’s the wolf?",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "The boy: Ha! Ha! There’s no wolf.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "The boy: I’m lying on the grass. I’m watching the sheep. How boring! I want to sleep.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "The boy: Wolf! Wolf! I see a wolf! Help! Help! Wolf! Wolf! I see a wolf! Help! Help!",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.45"
+        },
+        {
+          "en": "Farmer 1: We can help you.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "Farmer 2: Where’s the wolf?",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "The boy: Ha! Ha! There’s no wolf.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "Narrator: A wolf comes.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "The boy: Wolf! Wolf! I see a wolf! Help! Help! Wolf! Wolf! I see a wolf! Help! Help!",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "Narrator: But no one comes.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "The wolf: Sheep! Sheep! I’m so hungry! It’s time to eat. Sheep! Sheep! I’m so hungry! I see yummy meat.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "The boy: Oh, no! My sheep! My sheep!",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.46"
+        },
+        {
+          "en": "Narrator: The wolf eats the sheep. The boy goes to the farm.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.47"
+        },
+        {
+          "en": "The boy: I see a wolf! But no one comes!",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.47"
+        },
+        {
+          "en": "Farmer 1: You fooled us.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.47"
+        },
+        {
+          "en": "Farmer 2: We don’t trust you.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.47"
+        },
+        {
+          "en": "Narrator: Don’t tell a lie.",
+          "cn": "",
+          "st": "故事 · The boy and the wolf",
+          "sp": "p.47"
+        },
+        {
+          "en": "Review the sounds.",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-og: dog log fog",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-op: mop hop top",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-ot: not hot pot",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-un: run fun sun",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-ug: hug jug mug",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.48"
+        },
+        {
+          "en": "-ut: but hut nut",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-a_e: bake face game",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-ee -ea: tree bee tea",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-i_e: white nine ride",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-o_e: hope bone phone",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        }
+      ]
+    }
+  ],
+  "questions": {
+    "1": [
+      {
+        "type": "单词",
+        "q": "粥",
+        "options": [
+          "congee",
+          "rice",
+          "cake",
+          "bread"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "米饭",
+        "options": [
+          "fish ball",
+          "rice",
+          "bread",
+          "baozi"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "点心",
+        "options": [
+          "baozi",
+          "cake",
+          "dim sum",
+          "fish ball"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "鱼丸",
+        "options": [
+          "rice",
+          "congee",
+          "cake",
+          "fish ball"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "dim sum",
+        "options": [
+          "包子",
+          "点心",
+          "鱼丸",
+          "米饭"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "congee",
+        "options": [
+          "面包",
+          "米饭",
+          "粥",
+          "蛋糕"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "baozi",
+        "options": [
+          "包子",
+          "点心",
+          "米饭",
+          "鱼丸"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "许多",
+        "options": [
+          "a piece of",
+          "so many",
+          "lots of",
+          "look at"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "一块（片）",
+        "options": [
+          "a piece of",
+          "a glass of",
+          "a box of",
+          "a cup of"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "菜肴",
+        "options": [
+          "test",
+          "dish",
+          "clue",
+          "best"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "clue",
+        "options": [
+          "测试",
+          "菜肴",
+          "线索",
+          "我们的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "ours",
+        "options": [
+          "容易的",
+          "下一个",
+          "最；最好的",
+          "我们的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "测试",
+        "options": [
+          "next",
+          "dish",
+          "test",
+          "clue"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "容易的；简单的",
+        "options": [
+          "easy",
+          "next",
+          "best",
+          "dish"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "粽子",
+        "options": [
+          "mooncake",
+          "pumpkin pie",
+          "gingerbread",
+          "zongzi"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "mooncake",
+        "options": [
+          "粽子",
+          "南瓜派",
+          "姜饼",
+          "月饼"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "南瓜派",
+        "options": [
+          "pumpkin pie",
+          "gingerbread",
+          "mooncake",
+          "zongzi"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "姜饼",
+        "options": [
+          "粽子",
+          "姜饼",
+          "点心",
+          "蛋糕"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "mooncake",
+        "options": [
+          "粽子",
+          "月饼",
+          "南瓜派",
+          "姜饼"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "congee",
+        "options": [
+          "粥",
+          "米饭",
+          "面包",
+          "蛋糕"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "dim sum",
+        "options": [
+          "包子",
+          "鱼丸",
+          "点心",
+          "米饭"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "baozi",
+        "options": [
+          "蛋糕",
+          "鱼丸",
+          "米饭",
+          "包子"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "fish ball",
+        "options": [
+          "鱼丸",
+          "米饭",
+          "粥",
+          "面包"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "rice",
+        "options": [
+          "面包",
+          "蛋糕",
+          "米饭",
+          "点心"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "frog",
+        "options": [
+          "dog",
+          "frog",
+          "log",
+          "hop"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "log",
+        "options": [
+          "log",
+          "dog",
+          "shop",
+          "mop"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "shop",
+        "options": [
+          "dog",
+          "log",
+          "shop",
+          "hop"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "mop",
+        "options": [
+          "hop",
+          "shop",
+          "log",
+          "mop"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "The frog is on the ___.",
+        "word": "",
+        "options": [
+          "dog",
+          "log",
+          "shop",
+          "mop"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "The dog ___ at the frog.",
+        "word": "",
+        "options": [
+          "on",
+          "is",
+          "looks",
+          "loves"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Penny loves to ___.",
+        "word": "",
+        "options": [
+          "hop",
+          "mop",
+          "shop",
+          "dog"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "She buys a new ___.",
+        "word": "",
+        "options": [
+          "shop",
+          "log",
+          "dog",
+          "mop"
+        ],
+        "answer": 3
+      }
+    ],
+    "2": [
+      {
+        "type": "单词",
+        "q": "洗手",
+        "options": [
+          "brush my teeth",
+          "wash my hands",
+          "wash my face",
+          "take good care of"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "刷牙",
+        "options": [
+          "wash my hands",
+          "wash my face",
+          "brush my teeth",
+          "take good care of"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "洗脸",
+        "options": [
+          "wash my face",
+          "brush my teeth",
+          "wash my hands",
+          "keep clean"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "宠物",
+        "options": [
+          "paw",
+          "pet",
+          "way",
+          "clean"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "爪子",
+        "options": [
+          "pet",
+          "bedtime",
+          "paw",
+          "morning"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "脏的",
+        "options": [
+          "clean",
+          "dry",
+          "early",
+          "dirty"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "每天",
+        "options": [
+          "every day",
+          "before meals",
+          "after you play",
+          "in the morning"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "睡觉时间",
+        "options": [
+          "morning",
+          "bedtime",
+          "today",
+          "weekend"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "早早地",
+        "options": [
+          "clean",
+          "dirty",
+          "dry",
+          "early"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "keep",
+        "options": [
+          "保持",
+          "清洁的",
+          "关于",
+          "方法"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "clean",
+        "options": [
+          "脏的",
+          "擦干",
+          "清洁的，干净的",
+          "还；仍然"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "way",
+        "options": [
+          "早上；上午",
+          "宠物",
+          "脏的",
+          "方法"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "morning",
+        "options": [
+          "晚上",
+          "下午",
+          "早上；上午",
+          "中午"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "take good care of",
+        "options": [
+          "好好照顾",
+          "洗手",
+          "洗脸",
+          "擦干"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "after",
+        "options": [
+          "在……以前",
+          "在……以后",
+          "关于",
+          "还；仍然"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "before",
+        "options": [
+          "还；仍然",
+          "在……以后",
+          "关于",
+          "在……以前"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "paw",
+        "options": [
+          "爪子",
+          "宠物",
+          "早晨",
+          "方法"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "dirty",
+        "options": [
+          "干净的",
+          "脏的",
+          "干燥的",
+          "早的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "soapy",
+        "options": [
+          "擦干",
+          "揉搓",
+          "脏的",
+          "涂着肥皂的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "rub",
+        "options": [
+          "保持",
+          "照顾",
+          "揉搓",
+          "清洁"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "dry",
+        "options": [
+          "湿的",
+          "脏的",
+          "涂着肥皂的",
+          "擦干"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "yet",
+        "options": [
+          "以前",
+          "以后",
+          "还；仍然",
+          "每天"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pot",
+        "options": [
+          "pot",
+          "hot",
+          "bun",
+          "sun"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hot",
+        "options": [
+          "pot",
+          "hot",
+          "bun",
+          "run"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bun",
+        "options": [
+          "run",
+          "sun",
+          "bun",
+          "fun"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "fun",
+        "options": [
+          "bun",
+          "sun",
+          "run",
+          "fun"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "Mum cooks soup in a ___.",
+        "word": "",
+        "options": [
+          "hot",
+          "pot",
+          "run",
+          "fun"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "The soup is ___.",
+        "word": "",
+        "options": [
+          "hot",
+          "pot",
+          "bun",
+          "sun"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "He goes for a ___.",
+        "word": "",
+        "options": [
+          "sun",
+          "bun",
+          "run",
+          "fun"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "He says hello to the ___.",
+        "word": "",
+        "options": [
+          "fun",
+          "sun",
+          "bun",
+          "pot"
+        ],
+        "answer": 1
+      }
+    ],
+    "3": [
+      {
+        "type": "单词",
+        "q": "踢毽子",
+        "options": [
+          "do paper-cutting",
+          "do the lion dance",
+          "kick a shuttlecock",
+          "have a try"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "舞狮",
+        "options": [
+          "do the lion dance",
+          "do paper-cutting",
+          "kick a shuttlecock",
+          "have a try"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "剪纸",
+        "options": [
+          "have a try",
+          "kick a shuttlecock",
+          "do the lion dance",
+          "do paper-cutting"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "试一试",
+        "options": [
+          "do paper-cutting",
+          "have a try",
+          "good luck",
+          "kick a shuttlecock"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "好运",
+        "options": [
+          "do the lion dance",
+          "kick a shuttlecock",
+          "have a try",
+          "good luck"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "俱乐部；社团",
+        "options": [
+          "art",
+          "club",
+          "mask",
+          "secret"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "秘密",
+        "options": [
+          "drama",
+          "club",
+          "secret",
+          "join"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "join",
+        "options": [
+          "衣服",
+          "加入",
+          "面具",
+          "社团"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "enjoy",
+        "options": [
+          "享受",
+          "带来",
+          "加入",
+          "试一试"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "art",
+        "options": [
+          "戏剧",
+          "秘密",
+          "美术，艺术",
+          "面具"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "drama",
+        "options": [
+          "戏剧",
+          "美术，艺术",
+          "俱乐部；社团",
+          "面具"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "mask",
+        "options": [
+          "衣服",
+          "面具",
+          "戏剧",
+          "社团"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "clothes",
+        "options": [
+          "面具",
+          "社团",
+          "衣服",
+          "美术，艺术"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "bring",
+        "options": [
+          "享受",
+          "加入",
+          "试一试",
+          "带来"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "club",
+        "options": [
+          "俱乐部；社团",
+          "衣服",
+          "面具",
+          "美术，艺术"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "mask",
+        "options": [
+          "社团",
+          "面具",
+          "戏剧",
+          "衣服"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "art",
+        "options": [
+          "秘密",
+          "衣服",
+          "美术，艺术",
+          "面具"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "clothes",
+        "options": [
+          "美术，艺术",
+          "面具",
+          "社团",
+          "衣服"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的短语的中文意思",
+        "word": "good luck",
+        "options": [
+          "享受",
+          "加入",
+          "好运",
+          "试一试"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的短语的中文意思",
+        "word": "have a try",
+        "options": [
+          "试一试",
+          "好运",
+          "带来",
+          "享受"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "mug",
+        "options": [
+          "mug",
+          "bug",
+          "hug",
+          "Mum"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hut",
+        "options": [
+          "nut",
+          "hut",
+          "cut",
+          "mug"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bug",
+        "options": [
+          "mug",
+          "hug",
+          "bug",
+          "nut"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "cut",
+        "options": [
+          "nut",
+          "mug",
+          "hut",
+          "cut"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "I drink milk from a ___.",
+        "word": "",
+        "options": [
+          "mug",
+          "bug",
+          "hug",
+          "hut"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "I find a ___ in the mug.",
+        "word": "",
+        "options": [
+          "hug",
+          "nut",
+          "bug",
+          "hut"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Mum gives me a ___.",
+        "word": "",
+        "options": [
+          "mug",
+          "bug",
+          "hut",
+          "hug"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "Let me ___ the nut.",
+        "word": "",
+        "options": [
+          "cut",
+          "hut",
+          "bug",
+          "mug"
+        ],
+        "answer": 0
+      }
+    ],
+    "4": [
+      {
+        "type": "单词",
+        "q": "变色龙",
+        "options": [
+          "bat",
+          "squirrel",
+          "chameleon",
+          "giraffe"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "爬",
+        "options": [
+          "run",
+          "climb",
+          "fly",
+          "walk"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "footprint",
+        "options": [
+          "翅膀",
+          "脚印",
+          "腿",
+          "变化"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "翅膀",
+        "options": [
+          "leg",
+          "bird",
+          "wing",
+          "horse"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "strong",
+        "options": [
+          "快速地",
+          "强壮的",
+          "大约",
+          "离开"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "长颈鹿",
+        "options": [
+          "giraffe",
+          "squirrel",
+          "bat",
+          "horse"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "等；等待",
+        "options": [
+          "change",
+          "away",
+          "wait",
+          "wake up"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "walk",
+        "options": [
+          "飞",
+          "跑",
+          "爬",
+          "步行；走"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "鸟",
+        "options": [
+          "cat",
+          "horse",
+          "bat",
+          "bird"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "about",
+        "options": [
+          "大约",
+          "小时",
+          "离开",
+          "变化"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "醒来",
+        "options": [
+          "wake up",
+          "climb trees",
+          "run",
+          "wait"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "hour",
+        "options": [
+          "腿",
+          "脚印",
+          "小时",
+          "翅膀"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "快速地",
+        "options": [
+          "away",
+          "fast",
+          "about",
+          "strong"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "squirrel",
+        "options": [
+          "蝙蝠",
+          "松鼠",
+          "马",
+          "猫"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "改变；变化",
+        "options": [
+          "change",
+          "climb",
+          "walk",
+          "wing"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "climb trees",
+        "options": [
+          "爬树",
+          "步行",
+          "等待",
+          "改变"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "腿",
+        "options": [
+          "wing",
+          "footprint",
+          "horse",
+          "leg"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "fly",
+        "options": [
+          "爬",
+          "走",
+          "跑",
+          "飞"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "footprint",
+        "options": [
+          "翅膀",
+          "脚印",
+          "腿",
+          "变化"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "giraffe",
+        "options": [
+          "松鼠",
+          "蝙蝠",
+          "长颈鹿",
+          "变色龙"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "chameleon",
+        "options": [
+          "变色龙",
+          "长颈鹿",
+          "蝙蝠",
+          "松鼠"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "bat",
+        "options": [
+          "猫",
+          "鸟",
+          "马",
+          "蝙蝠"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "hour",
+        "options": [
+          "小时",
+          "大约",
+          "离开",
+          "强壮的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "away",
+        "options": [
+          "快速地",
+          "步行",
+          "改变",
+          "离开"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "cake",
+        "options": [
+          "bakes",
+          "cake",
+          "name",
+          "eight"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "sea",
+        "options": [
+          "tea",
+          "bee",
+          "sea",
+          "see"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bee",
+        "options": [
+          "bee",
+          "tea",
+          "sea",
+          "see"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "eight",
+        "options": [
+          "name",
+          "cake",
+          "bakes",
+          "eight"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "My name is _____.",
+        "word": "",
+        "options": [
+          "Kate",
+          "cake",
+          "eight",
+          "bakes"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "Mum _____ me a cake.",
+        "word": "",
+        "options": [
+          "see",
+          "bakes",
+          "sea",
+          "tea"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "We are by the _____.",
+        "word": "",
+        "options": [
+          "bee",
+          "tea",
+          "sea",
+          "cake"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "I see a big _____.",
+        "word": "",
+        "options": [
+          "cake",
+          "sea",
+          "tea",
+          "bee"
+        ],
+        "answer": 3
+      }
+    ],
+    "5": [
+      {
+        "type": "单词",
+        "q": "乐于助人的",
+        "options": [
+          "kind",
+          "helpful",
+          "warm",
+          "clever"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "友好的；友善的",
+        "options": [
+          "helpful",
+          "warm",
+          "kind",
+          "clever"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "友好的；热心的",
+        "options": [
+          "warm",
+          "kind",
+          "helpful",
+          "clever"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "聪明的",
+        "options": [
+          "helpful",
+          "kind",
+          "warm",
+          "clever"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "英雄；偶像",
+        "options": [
+          "梦；梦想",
+          "英雄；偶像",
+          "队，队伍",
+          "彩虹"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "梦；梦想",
+        "options": [
+          "进球",
+          "水",
+          "梦；梦想",
+          "队，队伍"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "队，队伍",
+        "options": [
+          "医生",
+          "教师",
+          "别人",
+          "队，队伍"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "彩虹",
+        "options": [
+          "彩虹",
+          "梦想",
+          "英雄",
+          "水"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "医生",
+        "options": [
+          "工人",
+          "医生",
+          "教师",
+          "小姐"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "工人",
+        "options": [
+          "医生",
+          "教师",
+          "工人",
+          "小姐"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "别人",
+        "options": [
+          "教师",
+          "关心",
+          "修理",
+          "别人"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "关心；照顾",
+        "options": [
+          "关心；照顾",
+          "显示",
+          "担心",
+          "修理"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "显示；表现",
+        "options": [
+          "照顾",
+          "帮助",
+          "显示；表现",
+          "修理"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "担心",
+        "options": [
+          "梦想",
+          "担心",
+          "进球",
+          "总是"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "帮助",
+        "options": [
+          "照顾",
+          "显示",
+          "修理",
+          "帮助"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "照顾（take care of）",
+        "options": [
+          "照顾",
+          "修理",
+          "帮助",
+          "显示"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "总是",
+        "options": [
+          "如此",
+          "好",
+          "总是",
+          "别人"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "小姐",
+        "options": [
+          "太太；夫人",
+          "小姐",
+          "教师",
+          "医生"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "rainbow",
+        "options": [
+          "梦想",
+          "彩虹",
+          "队伍",
+          "进球"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "hero",
+        "options": [
+          "英雄；偶像",
+          "梦；梦想",
+          "队，队伍",
+          "工人"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "dream",
+        "options": [
+          "彩虹",
+          "水",
+          "梦；梦想",
+          "进球"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "team",
+        "options": [
+          "医生",
+          "别人",
+          "教师",
+          "队，队伍"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "goal",
+        "options": [
+          "进球",
+          "梦想",
+          "水",
+          "担心"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "water",
+        "options": [
+          "担心",
+          "水",
+          "进球",
+          "彩虹"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "kite",
+        "options": [
+          "bike",
+          "kite",
+          "ride",
+          "white"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "five",
+        "options": [
+          "white",
+          "bike",
+          "ride",
+          "five"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "home",
+        "options": [
+          "home",
+          "bone",
+          "hope",
+          "phone"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bone",
+        "options": [
+          "hope",
+          "phone",
+          "bone",
+          "home"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Mike, look at the ____!",
+        "word": "",
+        "options": [
+          "bike",
+          "kite",
+          "white",
+          "five"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "Five people ____ the bike.",
+        "word": "",
+        "options": [
+          "white",
+          "bike",
+          "ride",
+          "kite"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Rose is at ____.",
+        "word": "",
+        "options": [
+          "bone",
+          "phone",
+          "home",
+          "hope"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "She talks on the ____.",
+        "word": "",
+        "options": [
+          "home",
+          "phone",
+          "bone",
+          "hope"
+        ],
+        "answer": 1
+      }
+    ],
+    "6": [
+      {
+        "type": "单词",
+        "q": "撒谎",
+        "options": [
+          "tell a lie",
+          "have some fun",
+          "watch the sheep",
+          "fool us"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "农民",
+        "options": [
+          "boy",
+          "farmer",
+          "wolf",
+          "sheep"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "相信",
+        "options": [
+          "happen",
+          "sleep",
+          "trust",
+          "fool us"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "放羊",
+        "options": [
+          "sit on the grass",
+          "have some fun",
+          "tell a lie",
+          "watch the sheep"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "躺在草地上",
+        "options": [
+          "sit on the grass",
+          "lie on the grass",
+          "watch the sheep",
+          "have some fun"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "坐在草地上",
+        "options": [
+          "sit on the grass",
+          "lie on the grass",
+          "watch the sheep",
+          "tell a lie"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "找点乐子",
+        "options": [
+          "watch the sheep",
+          "lie on the grass",
+          "tell a lie",
+          "have some fun"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "愚弄我们",
+        "options": [
+          "trust us",
+          "help us",
+          "fool us",
+          "see us"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "生气的",
+        "options": [
+          "angry",
+          "boring",
+          "sunny",
+          "bad"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "常常",
+        "options": [
+          "never",
+          "always",
+          "sometimes",
+          "often"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "发生",
+        "options": [
+          "hear",
+          "happen",
+          "hold",
+          "hurt"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "woods",
+        "options": [
+          "农场",
+          "草地",
+          "树林",
+          "村庄"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "tall",
+        "options": [
+          "矮的",
+          "坏的",
+          "生气的",
+          "高的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "short",
+        "options": [
+          "矮的",
+          "高的",
+          "胖的",
+          "瘦的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "meat",
+        "options": [
+          "草",
+          "肉",
+          "奶",
+          "蛋"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "will",
+        "options": [
+          "已经",
+          "正在",
+          "将，会",
+          "曾经"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "farmer",
+        "options": [
+          "农场",
+          "农民",
+          "狼",
+          "男孩"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "wolf",
+        "options": [
+          "男孩",
+          "农民",
+          "狼",
+          "绵羊"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "woods",
+        "options": [
+          "树林",
+          "农场",
+          "草地",
+          "村庄"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "boring",
+        "options": [
+          "生气的",
+          "阳光充足的",
+          "常常",
+          "无聊的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "sit on the grass",
+        "options": [
+          "放羊",
+          "找点乐子",
+          "坐在草地上",
+          "躺在草地上"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "happen",
+        "options": [
+          "相信",
+          "发生",
+          "撒谎",
+          "愚弄"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "dog",
+        "options": [
+          "dog",
+          "log",
+          "fog",
+          "mop"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hop",
+        "options": [
+          "mop",
+          "hop",
+          "top",
+          "log"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pot",
+        "options": [
+          "hot",
+          "not",
+          "pot",
+          "mug"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "sun",
+        "options": [
+          "run",
+          "fun",
+          "hut",
+          "sun"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hug",
+        "options": [
+          "hug",
+          "jug",
+          "mug",
+          "but"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hut",
+        "options": [
+          "nut",
+          "hut",
+          "but",
+          "hug"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bake",
+        "options": [
+          "face",
+          "game",
+          "bake",
+          "nine"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "white",
+        "options": [
+          "tree",
+          "bee",
+          "tea",
+          "white"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "tree",
+        "options": [
+          "tree",
+          "bee",
+          "tea",
+          "ride"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "nine",
+        "options": [
+          "white",
+          "nine",
+          "ride",
+          "hope"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bone",
+        "options": [
+          "hope",
+          "phone",
+          "bone",
+          "bake"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "phone",
+        "options": [
+          "bone",
+          "hope",
+          "face",
+          "phone"
+        ],
+        "answer": 3
+      }
+    ]
+  }
+}

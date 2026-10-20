@@ -1,0 +1,3436 @@
+{
+  "id": "2A",
+  "title": "二年级上册",
+  "subtitle": "上海教育出版社 · 沪教版",
+  "icon": "📚",
+  "units": [
+    {
+      "name": "Unit 1",
+      "title": "五感",
+      "icon": "👀",
+      "color": "#ff7043",
+      "en": "What can you do with your five senses?",
+      "vocab": [
+        {
+          "en": "feel",
+          "cn": "感觉到"
+        },
+        {
+          "en": "see",
+          "cn": "看见"
+        },
+        {
+          "en": "smell",
+          "cn": "闻到"
+        },
+        {
+          "en": "hear",
+          "cn": "听见"
+        },
+        {
+          "en": "taste",
+          "cn": "品尝（味道）"
+        }
+      ],
+      "read": [
+        {
+          "en": "feel",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "see",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "smell",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "hear",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "taste",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "I can see / hear a cat.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.3"
+        },
+        {
+          "en": "I can touch.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can feel.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can touch and feel",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "With my hands and fingers.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can see.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can hear.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can see and hear",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "With my eyes and ears.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can smell.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can taste.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can smell and taste",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "With my nose and tongue.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "What can you see?",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Listen!",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "I can hear a kitten.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Miaow!",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "You're right.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "I can smell flowers.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Here!",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Now feel this.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "It's hard.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "No.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Is it a ball?",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Is it an egg?",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Right!",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Feel this.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Oh, it's soft.",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "Wow! It's a big bird!",
+          "cn": "",
+          "st": "故事 · A magic show",
+          "sp": "p.4-5"
+        },
+        {
+          "en": "I have a little cat.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "It's cute and fat.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "Where is my cat?",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "Oh! It's under my hat.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "A man wears a cap.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "He has a map.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "He takes a nap.",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        },
+        {
+          "en": "Where is his map?",
+          "cn": "",
+          "st": "拼读 · -at/-ap",
+          "sp": "p.9"
+        }
+      ]
+    },
+    {
+      "name": "Unit 2",
+      "title": "家庭",
+      "icon": "👨‍👩‍",
+      "color": "#4facfe",
+      "en": "What do you like about your family?",
+      "vocab": [
+        {
+          "en": "uncle",
+          "cn": "舅父；叔父；伯父；姑父；姨父"
+        },
+        {
+          "en": "aunt",
+          "cn": "姑母；姨母；伯母；婶婶；舅母"
+        },
+        {
+          "en": "cousin",
+          "cn": "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）"
+        },
+        {
+          "en": "old",
+          "cn": "年纪大的"
+        },
+        {
+          "en": "young",
+          "cn": "年轻的"
+        },
+        {
+          "en": "cute",
+          "cn": "可爱的"
+        }
+      ],
+      "read": [
+        {
+          "en": "cute",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "young",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "old",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "aunt",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "cousin",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "uncle",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "This is ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "I'm Mary. This is (my) ... He / She is ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.11"
+        },
+        {
+          "en": "Here's my aunt, Kitty.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "She's young. She's pretty.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Here's my uncle, Paul.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "He's handsome. He's tall.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Here's my cousin, Robert.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "He's small. He's cute.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Here's my grandma, Martina.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "She's old. She's short.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Who is Uncle Bob?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.12"
+        },
+        {
+          "en": "Who is he?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.12"
+        },
+        {
+          "en": "He's my cousin, Henry.",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.12"
+        },
+        {
+          "en": "Is she your sister?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.12"
+        },
+        {
+          "en": "No. She's Henry's sister, Ann.",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.12"
+        },
+        {
+          "en": "Look here! Say \"Cheese!\"",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Cheese!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Is that your uncle?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "No.",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Hi, children!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Aunt Susan! You look great.",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Mum!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Where's Uncle Bob, Henry?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Let's look for him!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Hello, Uncle Bob. This party is great!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Let's have fun.",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Cheese!",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "What is fun about Uncle Bob's party?",
+          "cn": "",
+          "st": "故事 · At Uncle Bob's party",
+          "sp": "p.13"
+        },
+        {
+          "en": "Sam likes jam.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        },
+        {
+          "en": "Sam likes ham.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        },
+        {
+          "en": "Sam eats bread with jam and ham.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        },
+        {
+          "en": "Dan turns on the fan.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        },
+        {
+          "en": "He opens a can of ham.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        },
+        {
+          "en": "He puts the ham in the pan.",
+          "cn": "",
+          "st": "拼读 · -am/-an",
+          "sp": "p.17"
+        }
+      ]
+    },
+    {
+      "name": "Unit 3",
+      "title": "玩具",
+      "icon": "🧸",
+      "color": "#66bb6a",
+      "en": "What is your favourite toy?",
+      "vocab": [
+        {
+          "en": "doll",
+          "cn": "玩具娃娃"
+        },
+        {
+          "en": "toy plane",
+          "cn": "玩具飞机"
+        },
+        {
+          "en": "toy bear",
+          "cn": "玩具熊"
+        },
+        {
+          "en": "ball",
+          "cn": "球"
+        },
+        {
+          "en": "robot",
+          "cn": "机器人"
+        },
+        {
+          "en": "jigsaw puzzle",
+          "cn": "拼图游戏"
+        }
+      ],
+      "read": [
+        {
+          "en": "doll",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "toy plane",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "toy bear",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "ball",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "robot",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "jigsaw puzzle",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "This is / These are ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "It's / They're ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.19"
+        },
+        {
+          "en": "A robot, a doll,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "A toy car.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Can you see a toy bear?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Can you see a toy plane?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "A teddy, a ball,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Jigsaw puzzles.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Can you see the toys?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Let's play a game!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "I can't find my toy.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "It's blue.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "It has no ears.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "It has two eyes.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Don't worry.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "We can help.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "What colour is Bill's toy?",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "That toy is blue!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "It has two ears!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Not that toy.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Look! A blue toy.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "It has three eyes!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Look! This is Bill's toy!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Oh! It's a spider!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Here's your toy, Bill.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "Thank you!",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "What is Bill's favourite toy?",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "I have three eyes.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "I have two ears.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "I have two eyes. I have no ears.",
+          "cn": "",
+          "st": "故事 · Bill's story",
+          "sp": "p.20-p.22"
+        },
+        {
+          "en": "The sun is high and red.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "Ted sleeps in his bed.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "Time for school, Ted!",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "Mum pats his bed.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "Lucy is with her pet.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "She has a butterfly net.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "It's raining! It's raining!",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        },
+        {
+          "en": "Lucy and her pet get wet.",
+          "cn": "",
+          "st": "拼读 · -ed 与 -et",
+          "sp": "p.25"
+        }
+      ]
+    },
+    {
+      "name": "Unit 4",
+      "title": "家园周边",
+      "icon": "🎡",
+      "color": "#ab47bc",
+      "en": "What is around your home?",
+      "vocab": [
+        {
+          "en": "pet shop",
+          "cn": "宠物店"
+        },
+        {
+          "en": "fruit shop",
+          "cn": "水果店"
+        },
+        {
+          "en": "cinema",
+          "cn": "电影院"
+        },
+        {
+          "en": "zoo",
+          "cn": "动物园"
+        },
+        {
+          "en": "park",
+          "cn": "公园"
+        },
+        {
+          "en": "toy shop",
+          "cn": "玩具店"
+        }
+      ],
+      "read": [
+        {
+          "en": "What is around your home?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.26"
+        },
+        {
+          "en": "pet shop",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "fruit shop",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "cinema",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "zoo",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "park",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "toy shop",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "Look! This is a ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "We can ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.27"
+        },
+        {
+          "en": "What's around your home?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "What's around your home?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Hi-ho the–derry-o,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "What's around your home?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "A fruit shop and a park,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "A toy shop and a cinema.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Hi-ho the derry-o,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "Places around my home.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.60"
+        },
+        {
+          "en": "We're near our new home.",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.28"
+        },
+        {
+          "en": "Mum, listen!",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.28"
+        },
+        {
+          "en": "Look! A zoo!",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "That's a fruit shop!",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "Let's buy some apples.",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "That's a cinema.",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "That's a big shopping centre!",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "Here's a toy shop!",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "I want a new doll.",
+          "cn": "",
+          "st": "故事 · Nana's story",
+          "sp": "p.29"
+        },
+        {
+          "en": "Ben, look at the hen.",
+          "cn": "",
+          "st": "拼读 · -en",
+          "sp": "p.33"
+        },
+        {
+          "en": "It writes with a pen!",
+          "cn": "",
+          "st": "拼读 · -en",
+          "sp": "p.33"
+        },
+        {
+          "en": "Look! Look!",
+          "cn": "",
+          "st": "拼读 · -en",
+          "sp": "p.33"
+        },
+        {
+          "en": "The hen can write “ten”.",
+          "cn": "",
+          "st": "拼读 · -en",
+          "sp": "p.33"
+        },
+        {
+          "en": "I can see a pig.",
+          "cn": "",
+          "st": "拼读 · -ig",
+          "sp": "p.33"
+        },
+        {
+          "en": "The pig is very big.",
+          "cn": "",
+          "st": "拼读 · -ig",
+          "sp": "p.33"
+        },
+        {
+          "en": "I can see a hole!",
+          "cn": "",
+          "st": "拼读 · -ig",
+          "sp": "p.33"
+        },
+        {
+          "en": "The pig digs a big hole.",
+          "cn": "",
+          "st": "拼读 · -ig",
+          "sp": "p.33"
+        }
+      ]
+    },
+    {
+      "name": "Unit 5",
+      "title": "农场",
+      "icon": "🐄",
+      "color": "#ffca28",
+      "en": "What do you like about farms?",
+      "vocab": [
+        {
+          "en": "cow",
+          "cn": "奶牛"
+        },
+        {
+          "en": "sheep",
+          "cn": "羊；绵羊"
+        },
+        {
+          "en": "duck",
+          "cn": "鸭"
+        },
+        {
+          "en": "chick",
+          "cn": "小鸡"
+        },
+        {
+          "en": "chicken",
+          "cn": "鸡"
+        },
+        {
+          "en": "pig",
+          "cn": "猪"
+        }
+      ],
+      "read": [
+        {
+          "en": "I like ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "They're ...",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.35"
+        },
+        {
+          "en": "Old MacDonald has a farm,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "E-i-e-i-o.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "On his farm he has five ducks,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "E-i-e-i-o.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "A quack-quack here!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "A quack-quack there!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Here a quack!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "There a quack!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Everywhere a quack-quack!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Old MacDonald has a farm,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "E-i-e-i-o.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Quack-quack!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Moo-moo!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Baa-baa!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Oink-oink!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "Neigh-neigh!",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.40"
+        },
+        {
+          "en": "I love the animals.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "The sheep and the pigs,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "The cows and the ducks,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "The chickens and the chicks,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "They all live on the farm.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "Let's find black and white animals.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.36"
+        },
+        {
+          "en": "Look at the butterfly.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.36"
+        },
+        {
+          "en": "Don't touch it.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.36"
+        },
+        {
+          "en": "Here are some chickens.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "They're red and brown.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Look! Here's a puppy.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "It's brown. It's cute.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Let's give it some water.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "These are white goats.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "I don't like goats.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Look! Cows!",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "They're black and white!",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Yes.",
+          "cn": "",
+          "st": "故事 · On the farm",
+          "sp": "p.37"
+        },
+        {
+          "en": "Martin sees a tin.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "Martin sees a bin.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "He puts the tin in the bin.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "We are on a ship,",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "A big, big ship.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "We eat fish and chips.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        },
+        {
+          "en": "We have a good trip.",
+          "cn": "",
+          "st": "拼读 · -in / -ip",
+          "sp": "p.41"
+        }
+      ]
+    },
+    {
+      "name": "Unit 6",
+      "title": "中秋",
+      "icon": "🏮",
+      "color": "#26a69a",
+      "en": "How do people celebrate the Mid-Autumn Festival?",
+      "vocab": [
+        {
+          "en": "play with lanterns",
+          "cn": "玩灯笼"
+        },
+        {
+          "en": "eat mooncakes",
+          "cn": "吃月饼"
+        },
+        {
+          "en": "solve riddles",
+          "cn": "猜谜语"
+        },
+        {
+          "en": "look at the moon",
+          "cn": "赏月"
+        }
+      ],
+      "read": [
+        {
+          "en": "play with lanterns",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "eat mooncakes",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "solve riddles",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "look at the moon",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "Look at all the lanterns.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "So many lanterns to see.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "I can count the lanterns.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "One, two, three.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "Look at the mooncakes.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "Such sweet mooncakes to eat.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "I can eat the mooncakes.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "One, two, three.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "Look at the full moon.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "It's so bright.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "We enjoy the time together",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "On Mid-Autumn night.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.61"
+        },
+        {
+          "en": "Sometimes it's a \"C\".",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "Sometimes it's an \"O\".",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "Sometimes you can see it,",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "But sometimes you can't.",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "What is it?",
+          "cn": "",
+          "st": "歌曲 · 课本歌谣",
+          "sp": "p.43"
+        },
+        {
+          "en": "The Mid-Autumn Festival is a traditional Chinese festival.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.44"
+        },
+        {
+          "en": "We play with lanterns.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "Families have a big dinner together.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "We eat mooncakes too.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "They taste good.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "At night, we look at the moon.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "It is big and bright.",
+          "cn": "",
+          "st": "故事 · The Mid-Autumn Festival",
+          "sp": "p.45"
+        },
+        {
+          "en": "-at: cat, fat, hat",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-ap: cap, map, nap",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-am: Sam, jam, ham",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-an: fan, can, pan",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-ed: red, Ted, bed",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-et: pet, net, wet",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-en: hen, pen, ten",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-ig: pig, big, dig",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-in: Martin, tin, bin",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        },
+        {
+          "en": "-ip: ship, chip, trip",
+          "cn": "",
+          "st": "拼读 · 复习",
+          "sp": "p.49"
+        }
+      ]
+    }
+  ],
+  "questions": {
+    "1": [
+      {
+        "type": "单词",
+        "q": "看见",
+        "options": [
+          "feel",
+          "see",
+          "smell",
+          "hear"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "闻到",
+        "options": [
+          "smell",
+          "see",
+          "taste",
+          "hear"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "听见",
+        "options": [
+          "feel",
+          "taste",
+          "hear",
+          "see"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "感觉到",
+        "options": [
+          "see",
+          "smell",
+          "taste",
+          "feel"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "品尝（味道）",
+        "options": [
+          "taste",
+          "hear",
+          "smell",
+          "feel"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "feel",
+        "options": [
+          "看见",
+          "感觉到",
+          "闻到",
+          "听见"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "see",
+        "options": [
+          "品尝（味道）",
+          "闻到",
+          "看见",
+          "听见"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "smell",
+        "options": [
+          "闻到",
+          "感觉到",
+          "看见",
+          "听见"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "hear",
+        "options": [
+          "看见",
+          "听见",
+          "感觉到",
+          "闻到"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "taste",
+        "options": [
+          "闻到",
+          "听见",
+          "品尝（味道）",
+          "感觉到"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "smell",
+        "options": [
+          "感觉到",
+          "看见",
+          "闻到",
+          "听见"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "hear",
+        "options": [
+          "闻到",
+          "听见",
+          "看见",
+          "品尝（味道）"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "taste",
+        "options": [
+          "品尝（味道）",
+          "感觉到",
+          "闻到",
+          "看见"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "see",
+        "options": [
+          "听见",
+          "闻到",
+          "品尝（味道）",
+          "看见"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "feel",
+        "options": [
+          "看见",
+          "闻到",
+          "听见",
+          "感觉到"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "cat",
+        "options": [
+          "cap",
+          "cat",
+          "map",
+          "nap"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hat",
+        "options": [
+          "hat",
+          "cat",
+          "fat",
+          "nap"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "nap",
+        "options": [
+          "cap",
+          "map",
+          "cat",
+          "nap"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "I have a little ___. It's cute and fat.",
+        "word": "",
+        "options": [
+          "map",
+          "nap",
+          "cat",
+          "cap"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "It's cute and ___.",
+        "word": "",
+        "options": [
+          "fat",
+          "hat",
+          "cap",
+          "map"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "Oh! It's under my ___.",
+        "word": "",
+        "options": [
+          "cap",
+          "map",
+          "hat",
+          "nap"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "A man wears a ___.",
+        "word": "",
+        "options": [
+          "hat",
+          "cat",
+          "map",
+          "cap"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "He takes a ___.",
+        "word": "",
+        "options": [
+          "map",
+          "nap",
+          "cap",
+          "cat"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "哪个单词和 cat 押韵（-at）？",
+        "word": "",
+        "options": [
+          "cap",
+          "map",
+          "nap",
+          "fat"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "哪个单词和 map 押韵（-ap）？",
+        "word": "",
+        "options": [
+          "cat",
+          "hat",
+          "nap",
+          "fat"
+        ],
+        "answer": 2
+      }
+    ],
+    "2": [
+      {
+        "type": "单词",
+        "q": "年轻的",
+        "options": [
+          "old",
+          "cute",
+          "young",
+          "tall"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "可爱的",
+        "options": [
+          "cute",
+          "old",
+          "young",
+          "tall"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "年纪大的",
+        "options": [
+          "young",
+          "tall",
+          "cute",
+          "old"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "姑母；姨母；伯母；婶婶；舅母",
+        "options": [
+          "uncle",
+          "cousin",
+          "aunt",
+          "boy"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "舅父；叔父；伯父；姑父；姨父",
+        "options": [
+          "aunt",
+          "uncle",
+          "cousin",
+          "girl"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+        "options": [
+          "cousin",
+          "uncle",
+          "aunt",
+          "friend"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "aunt",
+        "options": [
+          "舅父；叔父；伯父；姑父；姨父",
+          "姑母；姨母；伯母；婶婶；舅母",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "可爱的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "uncle",
+        "options": [
+          "姑母；姨母；伯母；婶婶；舅母",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "舅父；叔父；伯父；姑父；姨父",
+          "年轻的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "cousin",
+        "options": [
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "舅父；叔父；伯父；姑父；姨父",
+          "可爱的",
+          "年纪大的"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "old",
+        "options": [
+          "年轻的",
+          "姑母；姨母；伯母；婶婶；舅母",
+          "可爱的",
+          "年纪大的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "young",
+        "options": [
+          "可爱的",
+          "年轻的",
+          "年纪大的",
+          "堂兄（或弟、姐、妹）"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "cute",
+        "options": [
+          "年轻的",
+          "年纪大的",
+          "可爱的",
+          "舅父；叔父；伯父；姑父；姨父"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "uncle",
+        "options": [
+          "姑母；姨母；伯母；婶婶；舅母",
+          "舅父；叔父；伯父；姑父；姨父",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "年纪大的"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "aunt",
+        "options": [
+          "舅父；叔父；伯父；姑父；姨父",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "姑母；姨母；伯母；婶婶；舅母",
+          "可爱的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "cousin",
+        "options": [
+          "年纪大的",
+          "年轻的",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "可爱的"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "old",
+        "options": [
+          "年轻的",
+          "年纪大的",
+          "可爱的",
+          "堂兄（或弟、姐、妹）"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "young",
+        "options": [
+          "可爱的",
+          "年纪大的",
+          "堂兄（或弟、姐、妹）；表兄（或弟、姐、妹）",
+          "年轻的"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "cute",
+        "options": [
+          "可爱的",
+          "年轻的",
+          "年纪大的",
+          "舅父；叔父；伯父；姑父；姨父"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "jam",
+        "options": [
+          "jam",
+          "ham",
+          "fan",
+          "can"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pan",
+        "options": [
+          "ham",
+          "pan",
+          "jam",
+          "fan"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "can",
+        "options": [
+          "fan",
+          "ham",
+          "can",
+          "jam"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "fan",
+        "options": [
+          "jam",
+          "ham",
+          "can",
+          "fan"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "Sam eats bread with jam and ___.",
+        "word": "",
+        "options": [
+          "ham",
+          "jam",
+          "can",
+          "pan"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "He opens a ___ of ham.",
+        "word": "",
+        "options": [
+          "jam",
+          "can",
+          "ham",
+          "pan"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "Dan turns on the ___.",
+        "word": "",
+        "options": [
+          "jam",
+          "ham",
+          "pan",
+          "fan"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "He puts the ham in the ___.",
+        "word": "",
+        "options": [
+          "pan",
+          "fan",
+          "can",
+          "ham"
+        ],
+        "answer": 0
+      }
+    ],
+    "3": [
+      {
+        "type": "单词",
+        "q": "机器人",
+        "options": [
+          "doll",
+          "ball",
+          "robot",
+          "jigsaw puzzle"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "玩具娃娃",
+        "options": [
+          "toy plane",
+          "doll",
+          "toy bear",
+          "ball"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "玩具飞机",
+        "options": [
+          "doll",
+          "ball",
+          "robot",
+          "toy plane"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "球",
+        "options": [
+          "ball",
+          "robot",
+          "doll",
+          "toy bear"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "玩具熊",
+        "options": [
+          "jigsaw puzzle",
+          "toy bear",
+          "ball",
+          "robot"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "拼图游戏",
+        "options": [
+          "robot",
+          "ball",
+          "jigsaw puzzle",
+          "doll"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "doll",
+        "options": [
+          "玩具飞机",
+          "玩具娃娃",
+          "玩具熊",
+          "球"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "toy plane",
+        "options": [
+          "玩具飞机",
+          "拼图游戏",
+          "机器人",
+          "玩具熊"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "toy bear",
+        "options": [
+          "玩具娃娃",
+          "球",
+          "玩具熊",
+          "玩具飞机"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "ball",
+        "options": [
+          "机器人",
+          "玩具飞机",
+          "拼图游戏",
+          "球"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "robot",
+        "options": [
+          "机器人",
+          "玩具娃娃",
+          "球",
+          "拼图游戏"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "jigsaw puzzle",
+        "options": [
+          "玩具熊",
+          "玩具飞机",
+          "机器人",
+          "拼图游戏"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "ball",
+        "options": [
+          "球",
+          "机器人",
+          "玩具娃娃",
+          "拼图游戏"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "doll",
+        "options": [
+          "玩具飞机",
+          "玩具娃娃",
+          "球",
+          "玩具熊"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "robot",
+        "options": [
+          "玩具熊",
+          "拼图游戏",
+          "机器人",
+          "玩具飞机"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "toy plane",
+        "options": [
+          "玩具飞机",
+          "拼图游戏",
+          "玩具熊",
+          "球"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "toy bear",
+        "options": [
+          "玩具娃娃",
+          "球",
+          "玩具熊",
+          "机器人"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "jigsaw puzzle",
+        "options": [
+          "机器人",
+          "玩具飞机",
+          "球",
+          "拼图游戏"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pet",
+        "options": [
+          "get",
+          "wet",
+          "net",
+          "pet"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "net",
+        "options": [
+          "net",
+          "pet",
+          "get",
+          "wet"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "get",
+        "options": [
+          "pet",
+          "get",
+          "wet",
+          "net"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "wet",
+        "options": [
+          "wet",
+          "net",
+          "pet",
+          "get"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "Lucy is with her ___.",
+        "word": "",
+        "options": [
+          "pet",
+          "net",
+          "get",
+          "wet"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "She has a butterfly ___.",
+        "word": "",
+        "options": [
+          "get",
+          "net",
+          "wet",
+          "pet"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "Lucy and her pet ___ wet.",
+        "word": "",
+        "options": [
+          "wet",
+          "pet",
+          "get",
+          "net"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Lucy and her pet get ___.",
+        "word": "",
+        "options": [
+          "net",
+          "get",
+          "wet",
+          "pet"
+        ],
+        "answer": 2
+      }
+    ],
+    "4": [
+      {
+        "type": "单词",
+        "q": "电影院",
+        "options": [
+          "zoo",
+          "park",
+          "cinema",
+          "pet shop"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "宠物店",
+        "options": [
+          "park",
+          "pet shop",
+          "cinema",
+          "fruit shop"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "水果店",
+        "options": [
+          "cinema",
+          "toy shop",
+          "park",
+          "fruit shop"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "动物园",
+        "options": [
+          "zoo",
+          "cinema",
+          "pet shop",
+          "toy shop"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "公园",
+        "options": [
+          "toy shop",
+          "fruit shop",
+          "park",
+          "cinema"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "玩具店",
+        "options": [
+          "zoo",
+          "toy shop",
+          "park",
+          "pet shop"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "pet shop",
+        "options": [
+          "宠物店",
+          "水果店",
+          "电影院",
+          "公园"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "fruit shop",
+        "options": [
+          "玩具店",
+          "水果店",
+          "公园",
+          "动物园"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "cinema",
+        "options": [
+          "动物园",
+          "公园",
+          "宠物店",
+          "电影院"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "zoo",
+        "options": [
+          "电影院",
+          "宠物店",
+          "动物园",
+          "水果店"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "park",
+        "options": [
+          "公园",
+          "动物园",
+          "玩具店",
+          "水果店"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "toy shop",
+        "options": [
+          "宠物店",
+          "玩具店",
+          "水果店",
+          "电影院"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "zoo",
+        "options": [
+          "动物园",
+          "公园",
+          "电影院",
+          "宠物店"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "park",
+        "options": [
+          "动物园",
+          "水果店",
+          "玩具店",
+          "公园"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "cinema",
+        "options": [
+          "公园",
+          "电影院",
+          "宠物店",
+          "水果店"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "pet shop",
+        "options": [
+          "水果店",
+          "电影院",
+          "宠物店",
+          "玩具店"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "fruit shop",
+        "options": [
+          "水果店",
+          "宠物店",
+          "公园",
+          "动物园"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "toy shop",
+        "options": [
+          "水果店",
+          "动物园",
+          "电影院",
+          "玩具店"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "hen",
+        "options": [
+          "Ben",
+          "hen",
+          "pen",
+          "ten"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pen",
+        "options": [
+          "pen",
+          "ten",
+          "hen",
+          "Ben"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pig",
+        "options": [
+          "pig",
+          "big",
+          "digs",
+          "hole"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "big",
+        "options": [
+          "digs",
+          "hole",
+          "big",
+          "pig"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "Ben, look at the ______.",
+        "word": "",
+        "options": [
+          "pen",
+          "hen",
+          "ten",
+          "Ben"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "It writes with a ______!",
+        "word": "",
+        "options": [
+          "Ben",
+          "hen",
+          "pen",
+          "ten"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "The hen can write “______”.",
+        "word": "",
+        "options": [
+          "ten",
+          "Ben",
+          "hen",
+          "pen"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "The pig is very ______.",
+        "word": "",
+        "options": [
+          "pig",
+          "hole",
+          "digs",
+          "big"
+        ],
+        "answer": 3
+      }
+    ],
+    "5": [
+      {
+        "type": "单词",
+        "q": "奶牛",
+        "options": [
+          "cow",
+          "sheep",
+          "pig",
+          "duck"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "羊；绵羊",
+        "options": [
+          "pig",
+          "sheep",
+          "cow",
+          "duck"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "鸭",
+        "options": [
+          "chick",
+          "pig",
+          "duck",
+          "cow"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "小鸡",
+        "options": [
+          "duck",
+          "chicken",
+          "pig",
+          "chick"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "鸡",
+        "options": [
+          "pig",
+          "chicken",
+          "cow",
+          "duck"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "猪",
+        "options": [
+          "duck",
+          "sheep",
+          "pig",
+          "chick"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "cow",
+        "options": [
+          "奶牛",
+          "羊；绵羊",
+          "鸭",
+          "猪"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "sheep",
+        "options": [
+          "鸡",
+          "小鸡",
+          "猪",
+          "羊；绵羊"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "duck",
+        "options": [
+          "奶牛",
+          "鸭",
+          "猪",
+          "鸡"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "chick",
+        "options": [
+          "猪",
+          "鸡",
+          "小鸡",
+          "鸭"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "chicken",
+        "options": [
+          "羊；绵羊",
+          "奶牛",
+          "小鸡",
+          "鸡"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "pig",
+        "options": [
+          "猪",
+          "鸭",
+          "奶牛",
+          "羊；绵羊"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "sheep",
+        "options": [
+          "猪",
+          "奶牛",
+          "羊；绵羊",
+          "小鸡"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "cow",
+        "options": [
+          "奶牛",
+          "鸭",
+          "猪",
+          "鸡"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "duck",
+        "options": [
+          "小鸡",
+          "羊；绵羊",
+          "鸡",
+          "鸭"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "chick",
+        "options": [
+          "鸡",
+          "小鸡",
+          "奶牛",
+          "猪"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "chicken",
+        "options": [
+          "鸭",
+          "猪",
+          "鸡",
+          "奶牛"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "pig",
+        "options": [
+          "猪",
+          "鸡",
+          "羊；绵羊",
+          "鸭"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "tin",
+        "options": [
+          "tin",
+          "bin",
+          "ship",
+          "trip"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "ship",
+        "options": [
+          "bin",
+          "ship",
+          "tin",
+          "trip"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bin",
+        "options": [
+          "trip",
+          "ship",
+          "bin",
+          "tin"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "trip",
+        "options": [
+          "tin",
+          "chips",
+          "ship",
+          "trip"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "chips",
+        "options": [
+          "chips",
+          "bin",
+          "trip",
+          "tin"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "He puts the tin in the ___.",
+        "word": "bin",
+        "options": [
+          "tin",
+          "bin",
+          "ship",
+          "trip"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "We are on a ___,",
+        "word": "ship",
+        "options": [
+          "tin",
+          "bin",
+          "ship",
+          "chips"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "We have a good ___.",
+        "word": "trip",
+        "options": [
+          "tin",
+          "bin",
+          "chips",
+          "trip"
+        ],
+        "answer": 3
+      }
+    ],
+    "6": [
+      {
+        "type": "单词",
+        "q": "赏月",
+        "options": [
+          "look at the moon",
+          "eat mooncakes",
+          "solve riddles",
+          "play with lanterns"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "吃月饼",
+        "options": [
+          "play with lanterns",
+          "eat mooncakes",
+          "look at the moon",
+          "solve riddles"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "猜谜语",
+        "options": [
+          "eat mooncakes",
+          "look at the moon",
+          "solve riddles",
+          "play with lanterns"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "玩灯笼",
+        "options": [
+          "solve riddles",
+          "eat mooncakes",
+          "look at the moon",
+          "play with lanterns"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "单词",
+        "q": "play with lanterns",
+        "options": [
+          "玩灯笼",
+          "吃月饼",
+          "猜谜语",
+          "赏月"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "单词",
+        "q": "eat mooncakes",
+        "options": [
+          "赏月",
+          "吃月饼",
+          "猜谜语",
+          "玩灯笼"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "单词",
+        "q": "solve riddles",
+        "options": [
+          "玩灯笼",
+          "赏月",
+          "猜谜语",
+          "吃月饼"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "单词",
+        "q": "look at the moon",
+        "options": [
+          "猜谜语",
+          "玩灯笼",
+          "吃月饼",
+          "赏月"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "look at the moon",
+        "options": [
+          "赏月",
+          "吃月饼",
+          "玩灯笼",
+          "猜谜语"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "solve riddles",
+        "options": [
+          "赏月",
+          "猜谜语",
+          "玩灯笼",
+          "吃月饼"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "play with lanterns",
+        "options": [
+          "吃月饼",
+          "赏月",
+          "玩灯笼",
+          "猜谜语"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "听音辨词",
+        "q": "🔊 听一听，选出你听到的单词的中文意思",
+        "word": "eat mooncakes",
+        "options": [
+          "猜谜语",
+          "玩灯笼",
+          "赏月",
+          "吃月饼"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "cat",
+        "options": [
+          "cat",
+          "fat",
+          "hat",
+          "cap"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "map",
+        "options": [
+          "cap",
+          "map",
+          "nap",
+          "cat"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "jam",
+        "options": [
+          "ham",
+          "Sam",
+          "jam",
+          "fan"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "pen",
+        "options": [
+          "ten",
+          "hen",
+          "net",
+          "pen"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "bed",
+        "options": [
+          "bed",
+          "red",
+          "Ted",
+          "pen"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "wet",
+        "options": [
+          "net",
+          "wet",
+          "pet",
+          "ten"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "dig",
+        "options": [
+          "big",
+          "pig",
+          "dig",
+          "bin"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "chip",
+        "options": [
+          "ship",
+          "trip",
+          "tin",
+          "chip"
+        ],
+        "answer": 3
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "Sam",
+        "options": [
+          "Sam",
+          "jam",
+          "ham",
+          "map"
+        ],
+        "answer": 0
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "fan",
+        "options": [
+          "can",
+          "fan",
+          "pan",
+          "hen"
+        ],
+        "answer": 1
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "Martin",
+        "options": [
+          "tin",
+          "bin",
+          "Martin",
+          "pig"
+        ],
+        "answer": 2
+      },
+      {
+        "type": "读音",
+        "q": "🔊 听一听，选出你听到的单词",
+        "word": "ship",
+        "options": [
+          "chip",
+          "trip",
+          "pig",
+          "ship"
+        ],
+        "answer": 3
+      }
+    ]
+  }
+}
