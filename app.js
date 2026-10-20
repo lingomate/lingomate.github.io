@@ -252,9 +252,63 @@ function makeUtterance(en, voice, rate) {
   } else {
     if (voice) u.voice = voice;
     else if (enVoice) u.voice = enVoice;
-    u.rate = rate || 0.85;  // 稍慢，适合孩子听
+    // 语速 = 场景基准语速 × 用户语速倍率（滑条，存 localStorage）
+    u.rate = Math.min(2, (rate || 0.85) * speakRateMul());
   }
   return u;
+}
+
+// ===================== 全局语速设置（滑条） =====================
+// 语速倍率 0.5(很慢) ~ 1.6(很快)，默认 1(正常)；持久化在 localStorage
+function speakRateMul() {
+  let v = 1;
+  try { v = parseFloat(localStorage.getItem('lingomate_rate')); } catch (e) {}
+  return (v >= 0.5 && v <= 1.6) ? v : 1;
+}
+
+function rateLabel(v) {
+  if (v <= 0.6) return '很慢';
+  if (v <= 0.8) return '慢';
+  if (v < 1) return '稍慢';
+  if (v <= 1.1) return '正常';
+  if (v <= 1.3) return '稍快';
+  if (v <= 1.45) return '快';
+  return '很快';
+}
+
+// 通用语速滑条片段：在有朗读的界面（跟读/听写/闯关）插入同一份标记
+function rateSliderHTML() {
+  const v = speakRateMul();
+  return `
+    <div class="rate-row">
+      <span class="rate-label">🐢 语速</span>
+      <input type="range" class="rate-range" min="0.5" max="1.6" step="0.1" value="${v}"
+             oninput="onRateInput(this)" onchange="onRateChange()">
+      <span class="rate-val">${rateLabel(v)}</span>
+    </div>`;
+}
+
+// 拖动中：即时保存 + 同步页面上所有滑条和文字（下次朗读即生效）
+function onRateInput(el) {
+  const v = parseFloat(el.value);
+  try { localStorage.setItem('lingomate_rate', String(v)); } catch (e) {}
+  const lbl = rateLabel(v);
+  document.querySelectorAll('.rate-row').forEach(row => {
+    const r = row.querySelector('.rate-range');
+    const s = row.querySelector('.rate-val');
+    if (r && r !== el) r.value = v;
+    if (s) s.textContent = lbl;
+  });
+}
+
+// 松手（change）：跟读模式立即按新语速重读当前句，直观反馈
+function onRateChange() {
+  if (rd) {
+    rdToken++;
+    clearTimeout(rd.timer);
+    renderRead();
+    speakReadCurrent();
+  }
 }
 
 // 朗读一段文本中的英文（传原始文本即可，内部自动提取英文；onend：朗读结束回调；voice/rate：指定音色）
@@ -654,6 +708,11 @@ function openUnit(unitNum) {
         <div class="mode-name">课文跟读</div>
         <div class="mode-desc">${readCount ? `本单元课文 ${readCount} 句<br>播一句跟读一句<br>支持自动模式` : '本单元暂无课文'}</div>
       </div>
+      <div class="mode-card ${vocabCount ? '' : 'disabled'}" onclick="${vocabCount ? `startWordRead(${unitNum})` : ''}">
+        <span class="mode-icon">🔤</span>
+        <div class="mode-name">单词跟读</div>
+        <div class="mode-desc">${vocabCount ? `全单元 ${vocabCount} 个单词<br>听音 + 中文释义<br>逐词跟读` : '本单元暂无词汇表'}</div>
+      </div>
       <div class="mode-card" onclick="startQuiz(${unitNum})">
         <span class="mode-icon">🎯</span>
         <div class="mode-name">闯关练习</div>
@@ -750,11 +809,21 @@ function voiceForSpeaker(sp) {
 
 function startRead(unitNum) {
   const unit = BOOK.units[unitNum - 1];
-  const list = unit.read || [];
+  beginRead(unitNum, unit.read || [], '课文跟读');
+}
+
+// 一年级「单词跟读」：用本单元 vocab（含中文释义）生成跟读列表
+function startWordRead(unitNum) {
+  const unit = BOOK.units[unitNum - 1];
+  const list = (unit.vocab || []).map(v => ({ en: v.en, cn: v.cn, st: '单词' }));
+  beginRead(unitNum, list, '单词跟读');
+}
+
+function beginRead(unitNum, list, mode) {
   if (!list.length) return;
   stopSpeech();
   setHeader('read');
-  rd = { unitNum, list, idx: 0, auto: false, interval: 10000, timer: null };
+  rd = { unitNum, list, idx: 0, auto: false, interval: 10000, timer: null, mode: mode || '课文跟读' };
   rdToken++;
   ensureVoices();
   buildVoicePool();
@@ -856,7 +925,7 @@ function buildReadShell() {
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
-      <div class="quiz-title">🗣️ ${unit.name} · 课文跟读</div>
+      <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
       <div class="quiz-count">第 <b id="readCur">1</b> / ${n} 句</div>
     </div>
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
@@ -875,6 +944,7 @@ function buildReadShell() {
         <button data-ms="15000" onclick="pickAutoInterval(this)">15秒</button>
       </div>
     </div>
+    ${rateSliderHTML()}
   `;
   rd._built = true;
   rd._prevRow = null;
@@ -882,7 +952,7 @@ function buildReadShell() {
     { t: '🏠 首页', go: 'renderBookSelect()' },
     { t: BOOK.title, go: 'renderMap()' },
     { t: unit.name, go: `openUnit(${rd.unitNum})` },
-    { t: '🗣️ 跟读' }
+    { t: '🗣️ ' + (rd.mode || '跟读') }
   ]);
 }
 
@@ -941,6 +1011,8 @@ function nextRead() {
     speakReadCurrent(); // 下一句自动播放
   } else {
     const n = rd.list.length;
+    const done = rd.mode === '单词跟读' ? '词' : '句';
+    const msg = rd.mode === '单词跟读' ? '单词全部跟读完毕，每天读一遍，发音越来越标准！' : '课文全部跟读完毕，坚持每天读一遍，语感越来越好！';
     rd = null;
     rdToken++;
     stopSpeech();
@@ -949,8 +1021,8 @@ function nextRead() {
       <div class="result-box">
         <div class="result-icon">🌟</div>
         <div class="result-title">跟读完成！</div>
-        <div class="result-score">${n} 句</div>
-        <div class="result-msg">课文全部跟读完毕，坚持每天读一遍，语感越来越好！</div>
+        <div class="result-score">${n} ${done}</div>
+        <div class="result-msg">${msg}</div>
         <button class="btn btn-primary" onclick="renderMap()">返回关卡地图</button>
       </div>`;
     setHeader('quiz');
@@ -1008,6 +1080,7 @@ function startDictation(unitNum) {
       <button class="interval-btn" data-sec="15" onclick="pickInterval(this)">15 秒</button>
     </div>
     <button class="btn btn-primary" onclick="beginDictation(${unitNum})">▶️ 开始听写</button>
+    ${rateSliderHTML()}
   `;
   setCrumb([
     { t: '🏠 首页', go: 'renderBookSelect()' },
@@ -1059,6 +1132,7 @@ function renderDictStage() {
       </div>
     </div>
     <div class="dict-note">播放中不显示单词内容；可随时点"结束播放"提前进入自检。</div>
+    ${rateSliderHTML()}
   `;
   setCrumb([
     { t: '🏠 首页', go: 'renderBookSelect()' },
@@ -1322,6 +1396,7 @@ function renderQuiz() {
     </div>
     ${body}
     <button class="btn btn-next" onclick="nextQuestion()" ${btnDisabled}>${btnText}</button>
+    ${rateSliderHTML()}
   `;
 
   content.innerHTML = html;
@@ -1583,4 +1658,7 @@ function toggleQR(force) {
   if (!pop) return;
   const show = typeof force === 'boolean' ? force : !pop.classList.contains('show');
   pop.classList.toggle('show', show);
+  // 弹窗打开时，让右上角小码保持展开（完整二维码）状态
+  const mini = document.getElementById('qrMini');
+  if (mini) mini.classList.toggle('active', show);
 }
