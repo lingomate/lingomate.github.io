@@ -937,8 +937,8 @@ function buildReadShell() {
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
       <div class="quiz-count">第 <b id="readCur">1</b> / ${n} 句</div>
     </div>
-    ${rateSliderHTML()}
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
+    ${rateSliderHTML()}
     <div class="read-subs" id="readSubs">${subs}</div>
     <div class="read-tip" id="readTip">点击任意句子可跳读 · 听一句，大声跟读一句 🗣️</div>
     <div class="read-ctrl-row">
