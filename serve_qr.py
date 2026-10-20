@@ -3,9 +3,13 @@
 # SPDX-FileCopyrightText: 2026 xiegengcai <xiegengcai@foxmail.com>
 # Note: MIT applies to this source file only. Question-bank content under data/ and textbook
 # material under 英语/ are third-party copyrighted and are NOT licensed by this project.
-"""一键启动：在本目录起网页服务，并弹出二维码供 iPhone 扫码打开。
+"""一键启动：在本目录起网页服务，供手机扫码打开。
 双击 启动手机伴学.bat 即可；关闭命令行窗口即停止服务。
 访问 http://IP:8000/ 即为英语伴学页面（根路径直接映射，避免中文文件名编码问题）。
+
+二维码由页面内（index.html + qr.js）纯前端离线生成，编码「浏览器当前实际访问地址」，
+因此无论是局域网 IP 还是公网域名都能正确扫码，且本脚本【零外联】，不向任何第三方
+服务发送地址或数据。
 
 ------------------------------------------------------------------------------
 法律提示 / Legal notice（全文见 README.md、README-en.md 的「免责声明」章节，
@@ -16,19 +20,15 @@
   · 源代码采用 MIT 许可证授权（见仓库根目录 LICENSE）；该许可证明确不覆盖
     data/*.json 题库与 英语/ 教材内容——删除或替换数据后可自由复用本代码。
 
-本脚本的两项已知副作用（请知情使用）：
-  1) 外联：生成二维码时，本机局域网 IP 与访问地址会作为参数发送给第三方图片服务
-     api.qrserver.com（见下方 qr 变量）。要零外联，可注释掉 webbrowser.open(qr)，
-     或改用 `python -m http.server 8000` 并手动在手机输入网址。
-  2) 局域网可读：服务监听 0.0.0.0 且为静态文件服务，同一局域网内其他设备可按路径
-     下载本目录下任意文件（含英语/ 教材 PDF 与 data/*.json）。请勿在公共 / 不受信
-     网络下运行；用完及时关闭窗口或运行 停止服务.bat。
+本脚本的唯一已知副作用（请知情使用）：
+  · 局域网可读：服务监听 0.0.0.0 且为静态文件服务，同一局域网内其他设备可按路径
+    下载本目录下任意文件（含英语/ 教材 PDF 与 data/*.json）。请勿在公共 / 不受信
+    网络下运行；用完及时关闭窗口或运行 停止服务.bat。
 ------------------------------------------------------------------------------
 """
 import os
 import socket
 import threading
-import webbrowser
 from functools import partial
 from html import escape as html_escape
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
@@ -102,7 +102,6 @@ class QuizHandler(SimpleHTTPRequestHandler):
 def main():
     ip = get_lan_ip()
     url = f'http://{ip}:{PORT}/'
-    qr = 'https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=' + url
 
     handler = partial(QuizHandler, directory=DIR)
     server = ThreadingHTTPServer(('0.0.0.0', PORT), handler)
@@ -111,22 +110,20 @@ def main():
     print('=' * 52)
     print('  服务已启动！手机和电脑要连【同一个 WiFi】')
     print('-' * 52)
-    print('  iPhone 用相机扫描下方二维码，或在 Safari 手动输入：')
+    print('  在电脑浏览器打开以下地址，页面右上角会自动显示二维码：')
     print()
     print('    ', url)
     print()
-    print('  二维码已在浏览器中打开（显示二维码图片需要电脑能上网）')
+    print('  用手机相机 / 扫一扫扫描该二维码，即可在手机上继续学习。')
+    print('  （二维码由页面离线生成，本脚本不向任何第三方发送数据）')
     print('  用完后关闭本窗口即停止服务。')
     print('-' * 52)
     print('  ⚠ 法律提示：本项目仅供个人 / 家庭学习参考，按「现状」提供，')
     print('    不含任何担保；教材与题库内容的著作权归原出版社所有，请勿分发。')
     print('    详见 README.md 或页面底部「📜 免责声明」。')
-    print('    浏览器打开二维码图片时，会向 api.qrserver.com 发送本机地址 '
-          f'{ip}（不想外联请注释 webbrowser.open(qr)）。')
     print(f'    服务监听 0.0.0.0:{PORT}，同一局域网内其他设备可按路径读取本目录文件。')
     print('=' * 52)
 
-    webbrowser.open(qr)
     try:
         while True:
             threading.Event().wait(3600)

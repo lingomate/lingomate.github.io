@@ -70,7 +70,7 @@ const DISCLAIMER_HTML = `
     <li>本应用<b>没有账号系统、不上传任何数据</b>。闯关进度与听写记录只以明文保存在浏览器的 localStorage 中（键名 english_quiz_progress_课本id、english_quiz_dict_records_课本id）。</li>
     <li>因此：<b>清理浏览器缓存、换设备、换浏览器或使用无痕模式，进度与记录都会丢失且无法找回</b>。重要成绩请自行截图或导出保存。</li>
     <li>本项目<b>不收集、也无法查看</b>任何使用者的学习数据；不存在云端同步、排行榜、老师端之类的功能。</li>
-    <li class="warn" style="list-style:none;margin-left:-18px">⚠️ <b>唯一的第三方网络请求</b>：本地启动脚本 serve_qr.py 生成二维码时，会把你的<b>本机局域网 IP 与访问地址</b>发送给第三方图片服务 api.qrserver.com。介意请把「启动手机伴学.bat」里 <code>py serve_qr.py</code> 换成 <code>python -m http.server 8000</code>（零外联，手机手动输网址），或注释掉 serve_qr.py 中的 webbrowser.open(qr) 一行。</li>
+    <li class="warn" style="list-style:none;margin-left:-18px">⚠️ <b>完全零外联</b>：二维码由页面内 qr.js（vendored qrcode-generator，MIT）纯前端离线生成，直接编码浏览器当前实际访问地址，全程不依赖任何第三方图片 / 二维码服务，也不会把你的地址发往外部；serve_qr.py 也仅在本地起静态服务，不发起任何出网请求。若你仍不想暴露局域网地址，可只用 <code>python -m http.server 8000</code> 并手动在手机输入网址。</li>
   </ul>
 
   <h4>6. 使用与安全注意事项</h4>
@@ -1494,4 +1494,93 @@ if ('speechSynthesis' in window) {
   speechSynthesis.onvoiceschanged = initVoices;
 }
 boot();
+initQR();               // 右上角“手机访问”二维码（离线生成）
 maybeShowDisclaimer();   // 首次打开（或免责声明文案升级后）弹出确认
+
+// ===================== 手机扫码访问 =====================
+// 纯前端离线生成二维码：直接编码「浏览器当前实际访问的完整地址」，
+// 因此无论是本地局域网 IP、公网域名还是端口，扫码得到的都是真实可达地址。
+function initQR() {
+  const mini = document.getElementById('qrMini');
+  const url = window.location.href;
+
+  // 手机端（含微信/移动浏览器 UA）本身就在手机上，无需显示二维码，整体隐藏
+  const isMobile = /Android|iPhone|iPad|iPod|Windows Phone|Mobile|MicroMessenger/i.test(navigator.userAgent);
+  if (isMobile) {
+    if (mini) mini.style.display = 'none';
+    const pop = document.getElementById('qrPop');
+    if (pop) pop.style.display = 'none';
+    return;
+  }
+
+  if (typeof qrcode !== 'function') {
+    // 库未加载（如离线打开）则隐藏小码，展开时给出手动地址
+    if (mini) mini.style.display = 'none';
+    const w = document.getElementById('qrWarn');
+    if (w) w.textContent = '离线模式：无法生成二维码，请用手机手动输入下方网址。';
+    return;
+  }
+  // file:// 直接双击打开时，地址为本地文件路径，手机无法访问
+  if (url.indexOf('file://') === 0) {
+    if (mini) mini.style.display = 'none';
+    const w = document.getElementById('qrWarn');
+    if (w) w.textContent = '请通过「启动手机伴学」运行后扫码（直接双击打开无法生成可访问地址）。';
+    return;
+  }
+  try {
+    const qr = qrcode(0, 'M');
+    qr.addData(url);
+    qr.make();
+    // 右上角小码
+    if (mini) {
+      const c = document.createElement('canvas');
+      c.className = 'qr-mini-img';
+      drawQR(qr, c, 2);
+      mini.innerHTML = '';
+      mini.appendChild(c);
+    }
+    // 点击放大后的大码
+    drawQR(qr, document.getElementById('qrCanvas'), 6);
+    const u = document.getElementById('qrUrl');
+    if (u) u.textContent = url;
+    // 根据访问地址类型给出差异化提示
+    const tip = document.getElementById('qrTip');
+    if (tip) {
+      const host = (function () { try { return new URL(url).hostname; } catch (e) { return ''; } })();
+      const isLan = /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|127\.)/.test(host) || host === 'localhost';
+      if (isLan) {
+        tip.textContent = '手机与电脑连同一个 WiFi，用相机 / 扫一扫扫描下方二维码，即可在手机上继续学习。';
+      } else {
+        tip.textContent = '用手机相机 / 扫一扫扫描下方二维码，即可在手机上继续学习（此链接已发布到公网）。';
+      }
+    }
+  } catch (e) {
+    if (mini) mini.style.display = 'none';
+    const w = document.getElementById('qrWarn');
+    if (w) w.textContent = '二维码生成失败，请手动在手机输入下方网址。';
+  }
+}
+
+// 在 canvas 上绘制二维码（深色模块黑、留白；自适应缩放保持清晰）
+function drawQR(qr, canvas, scale) {
+  const count = qr.getModuleCount();
+  const size = count * scale;
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, size, size);
+  ctx.fillStyle = '#111';
+  for (let r = 0; r < count; r++) {
+    for (let c = 0; c < count; c++) {
+      if (qr.isDark(r, c)) ctx.fillRect(c * scale, r * scale, scale, scale);
+    }
+  }
+}
+
+function toggleQR(force) {
+  const pop = document.getElementById('qrPop');
+  if (!pop) return;
+  const show = typeof force === 'boolean' ? force : !pop.classList.contains('show');
+  pop.classList.toggle('show', show);
+}

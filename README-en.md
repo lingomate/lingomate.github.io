@@ -63,15 +63,16 @@ on English content regardless.
 ### Option 1 — one click (Windows, recommended)
 
 1. Double-click [`启动手机伴学.bat`](启动手机伴学.bat) ("start phone companion")
-2. A QR-code image opens in your browser and the console prints your LAN address, e.g.
-   `http://192.168.1.23:8000/`
-3. Connect the **phone to the same Wi-Fi**, scan the code with the iPhone camera, or type the address
-   in Safari
+2. The console prints your LAN address, e.g. `http://192.168.1.23:8000/`
+3. Connect the **phone to the same Wi-Fi**, open that address in your computer's browser — a **small
+   QR code appears at the top-right of the page** (generated purely client-side), tap it to enlarge and
+   scan with the iPhone camera; or just type the address into Safari
 4. Close the console window to stop the server; if it won't close, double-click
    [`停止服务.bat`](停止服务.bat) ("stop server")
 
-> Rendering the QR *image* needs internet (it comes from an online QR service); the address itself
-> works with no internet at all.
+> The QR code is generated **offline in the browser** by the vendored [`qr.js`](qr.js)
+> (qrcode-generator, MIT) — it encodes the page's actual access URL, makes no network call, and sends
+> nothing to any third party. On a phone, the code hides itself automatically.
 > Desktop only? Just open `http://localhost:8000/`.
 
 ### Option 2 — start a server manually
@@ -99,13 +100,16 @@ open the URL on the phone.
 LingoMate/
 ├── index.html              Page skeleton + all CSS (mobile-first, safe-area aware)
 ├── app.js                  Engine: book select / level map / quiz & scoring / speech / dictation / read-aloud
+├── qr.js                   Pure-frontend QR library (vendored qrcode-generator, zero-dependency, offline)
 ├── data/
 │   ├── books.json          Book manifest (add one line per book)
+│   ├── 1A.json             Grade 1 Vol.1 · 6 units
 │   ├── 3A.json             Grade 3 Vol.1 · 8 units
+│   ├── 3B.json             Grade 3 Vol.2 · 8 units
 │   ├── 4A.json             Grade 4 Vol.1 · 8 units
 │   ├── 4B.json             Grade 4 Vol.2 · 8 units
 │   └── 5A.json             Grade 5 Vol.1 · 8 units
-├── serve_qr.py             Local HTTP server + LAN IP detection + QR code
+├── serve_qr.py             Local HTTP server + LAN IP detection (QR now generated offline by qr.js)
 ├── 启动手机伴学.bat          One-click start (runs: py serve_qr.py)
 ├── 停止服务.bat              One-click stop (kills the serve_qr.py listener on port 8000)
 ├── stop_server.ps1           Script called by the .bat above
@@ -119,16 +123,19 @@ LingoMate/
 
 ## Bundled books
 
-| id | Book | Units | Words | Read-aloud sentences | Questions |
-|---|---|---|---|---|---|
-| 3A | 📔 Grade 3 Vol.1 | 8 | 144 | 166 | 240 |
-| 4A | 📕 Grade 4 Vol.1 | 8 | 124 | 204 | 246 |
-| 4B | 📘 Grade 4 Vol.2 (2024) | 8 | 301 | 255 | 247 |
-| 5A | 📗 Grade 5 Vol.1 | 8 | 120 | 269 | 347 |
-| **Total** | | **32** | **689** | **894** | **1080** |
+| id | Book | Units | Words | Read-aloud sentences | Questions | Types |
+|---|---|---|---|---|---|---|
+| 1A | 📒 Grade 1 Vol.1 | 6 | 122 | 204 | 210 | vocabulary / listening-discrimination / pronunciation (G1–G2: basics only, no dictation) |
+| 3A | 📔 Grade 3 Vol.1 | 8 | 144 | 166 | 240 | vocabulary / sentence / dictation / phonics / communication |
+| 3B | 📓 Grade 3 Vol.2 | 8 | 146 | 181 | 248 | vocabulary / sentence / dictation / phonics / communication |
+| 4A | 📕 Grade 4 Vol.1 | 8 | 124 | 204 | 246 | vocabulary / sentence / dictation / phonics / communication |
+| 4B | 📘 Grade 4 Vol.2 (2024) | 8 | 301 | 255 | 247 | vocabulary / sentence / dictation / phonics / communication |
+| 5A | 📗 Grade 5 Vol.1 | 8 | 120 | 269 | 347 | vocabulary / sentence / dictation / phonics / communication (+ 17 legacy `拓展` items) |
+| **Total** | | **46** | **957** | **1279** | **1538** | |
 
-Question types across the four books: vocabulary 502 · sentence patterns 313 · dictation 136 ·
-phonics 48 · communication 64 (+ 17 legacy `拓展` items in 5A).
+Question types across Grades 3–5: vocabulary 632 · sentence patterns 387 · dictation 168 ·
+phonics 64 · communication 80 (+ 17 legacy `拓展` items in 5A). Grade 1 (1A) additionally uses
+listening-discrimination 36 · pronunciation 52.
 
 ## Data format
 
@@ -373,13 +380,11 @@ redistribute, sell, or release adaptations of the banks or the textbooks.
 - Consequently: **clearing browser data, switching device, switching browser, or using private
   mode erases all progress and history permanently.** Save screenshots or export the storage
   yourself if a record matters.
-- ⚠️ **The one third-party network request**: when [`serve_qr.py`](serve_qr.py) renders the QR code,
-  it sends your **machine's LAN IP and the access URL** as a parameter to the third-party image
-  service `api.qrserver.com`. The address is a private range (e.g. `http://192.168.x.x:8000/`), but
-  it still reveals that you are using the app and something about your network environment. If that
-  is not acceptable, skip the QR step: read the URL printed in the console and type it into the
-  phone manually, or generate the QR code offline — commenting out the `webbrowser.open(qr)` line in
-  `serve_qr.py` removes the request entirely.
+- ⚠️ **Fully zero external calls**: the QR code is generated **offline in the browser** by the vendored
+  [`qr.js`](qr.js) (qrcode-generator, MIT) — it encodes the page's actual access URL, makes no network
+  call, and sends nothing to any third party. [`serve_qr.py`](serve_qr.py) only serves static files
+  locally and makes no outbound request. If you prefer not to expose your LAN address at all, run
+  `python -m http.server` and type the URL into the phone manually.
 - Apart from that, a running page makes no outbound requests at all: vocabulary, questions and
   course-book sentences all come from the local `data/*.json` files, and the speech is synthesised
   on the fly by the browser / OS TTS — no online audio is ever downloaded.
@@ -393,6 +398,9 @@ redistribute, sell, or release adaptations of the banks or the textbooks.
   it on public or untrusted networks such as airports and cafés, and stop it when you are done by
   closing the console window or running [`停止服务.bat`](停止服务.bat). The same caveat applies if you
   have any sync / tunneling tool on that machine.
+- **QR code is fully offline.** The phone-scan URL is generated by the vendored [`qr.js`](qr.js) in the
+  browser itself, encoding the current access address with no third-party image/QR service involved
+  and nothing sent off-device.
 - **Bank JSON is treated as locally trusted content.** Only a few dynamic strings are escaped; text
   inside `data/*.json` is rendered as HTML. **Do not load bank files from unknown sources**, and do
   not put untrusted content into them.
