@@ -258,45 +258,48 @@ function makeUtterance(en, voice, rate) {
   return u;
 }
 
-// ===================== 全局语速设置（滑条） =====================
-// 语速倍率 0.5(很慢) ~ 1.6(很快)，默认 1(正常)；持久化在 localStorage
+// ===================== 全局语速设置（滑条·4挡） =====================
+// 挡位：慢0.7 / 稍慢0.85 / 正常1.0 / 稍快1.2；持久化在 localStorage
+const RATE_STEPS = [0.7, 0.85, 1.0, 1.2];
+const RATE_NAMES = ['慢', '稍慢', '正常', '稍快'];
+
 function speakRateMul() {
   let v = 1;
   try { v = parseFloat(localStorage.getItem('lingomate_rate')); } catch (e) {}
-  return (v >= 0.5 && v <= 1.6) ? v : 1;
+  if (!(v > 0)) return 1;
+  // 归到最近的挡位（兼容旧存值）
+  let best = RATE_STEPS[0];
+  for (const s of RATE_STEPS) if (Math.abs(s - v) < Math.abs(best - v)) best = s;
+  return best;
 }
 
-function rateLabel(v) {
-  if (v <= 0.6) return '很慢';
-  if (v <= 0.8) return '慢';
-  if (v < 1) return '稍慢';
-  if (v <= 1.1) return '正常';
-  if (v <= 1.3) return '稍快';
-  if (v <= 1.45) return '快';
-  return '很快';
+function rateIdx(v) {
+  let i = 0;
+  for (let k = 0; k < RATE_STEPS.length; k++) if (Math.abs(RATE_STEPS[k] - v) < Math.abs(RATE_STEPS[i] - v)) i = k;
+  return i;
 }
 
 // 通用语速滑条片段：在有朗读的界面（跟读/听写/闯关）插入同一份标记
 function rateSliderHTML() {
-  const v = speakRateMul();
+  const i = rateIdx(speakRateMul());
   return `
     <div class="rate-row">
       <span class="rate-label">🐢 语速</span>
-      <input type="range" class="rate-range" min="0.5" max="1.6" step="0.1" value="${v}"
+      <input type="range" class="rate-range" min="0" max="${RATE_STEPS.length - 1}" step="1" value="${i}"
              oninput="onRateInput(this)" onchange="onRateChange()">
-      <span class="rate-val">${rateLabel(v)}</span>
+      <span class="rate-val">${RATE_NAMES[i]}</span>
     </div>`;
 }
 
 // 拖动中：即时保存 + 同步页面上所有滑条和文字（下次朗读即生效）
 function onRateInput(el) {
-  const v = parseFloat(el.value);
+  const v = RATE_STEPS[Math.round(Number(el.value))] || 1;
   try { localStorage.setItem('lingomate_rate', String(v)); } catch (e) {}
-  const lbl = rateLabel(v);
+  const lbl = RATE_NAMES[rateIdx(v)];
   document.querySelectorAll('.rate-row').forEach(row => {
     const r = row.querySelector('.rate-range');
     const s = row.querySelector('.rate-val');
-    if (r && r !== el) r.value = v;
+    if (r && r !== el) r.value = el.value;
     if (s) s.textContent = lbl;
   });
 }
