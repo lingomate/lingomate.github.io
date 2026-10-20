@@ -949,11 +949,6 @@ function buildReadShell() {
     ${rateSliderHTML()}
     <div class="read-subs" id="readSubs">${subs}</div>
     <div class="read-tip" id="readTip">点击任意句子可跳读 · 听一句，大声跟读一句 🗣️</div>
-    <div class="read-ctrl-row">
-      <button class="btn btn-next read-ctrl" id="readPrevBtn" onclick="gotoRead(Math.max(rd.idx - 1, 0))">⬅ 上一句</button>
-      <button class="btn btn-next read-ctrl" onclick="replayRead()">🔊 重听</button>
-      <button class="btn btn-primary read-ctrl" id="readNextBtn" onclick="nextRead()">下一句 ➡</button>
-    </div>
     <div class="read-auto-row">
       <label class="auto-switch">
         <input type="checkbox" id="readAutoSw" ${rd.auto ? 'checked' : ''} onchange="setAuto(this.checked)">
@@ -965,6 +960,11 @@ function buildReadShell() {
         <input type="range" class="auto-int-range" id="readAutoRange" min="0" max="2" step="1" value="${autoIntervalIdx()}" oninput="pickAutoInterval(this)" ${rd.auto ? '' : 'disabled'}>
         <span class="auto-int-val" id="readAutoVal">${rd.interval / 1000}秒</span>
       </div>
+    </div>
+    <div class="read-ctrl-row">
+      <button class="btn btn-next read-ctrl" id="readPrevBtn" onclick="gotoRead(Math.max(rd.idx - 1, 0))">⬅ 上一句</button>
+      <button class="btn btn-next read-ctrl" onclick="replayRead()">🔊 重听</button>
+      <button class="btn btn-primary read-ctrl" id="readNextBtn" onclick="nextRead()">下一句 ➡</button>
     </div>
   `;
   rd._built = true;
