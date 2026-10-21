@@ -922,33 +922,38 @@ function renderRead() {
 function buildReadShell() {
   const unit = BOOK.units[rd.unitNum - 1];
   const n = rd.list.length;
+  const isWord = rd.mode === '单词跟读';
 
   // 整篇字幕：按句渲染，小节（课文/拓展）变化时插入标题+页码行
   let subs = '';
-  let lastSt = null;
-  rd.list.forEach((s, i) => {
-    if (s.st && s.st !== lastSt) {
-      lastSt = s.st;
-      subs += `<div class="sub-head">${s.st}${s.sp ? ` <span class="sub-page">📖 ${s.sp}</span>` : ''}</div>`;
-    }
-    const { speaker, text } = parseSpeaker(s.en);
-    subs += `
-      <div class="sub-row" id="subRow${i}" onclick="gotoRead(${i})">
-        <div class="sub-line">${speaker ? `<span class="sub-speaker">${speaker}:</span>` : ''}<span class="sub-en">${text}</span></div>
-        <div class="sub-cn">${s.cn}</div>
-      </div>`;
-  });
+  if (!isWord) {
+    let lastSt = null;
+    rd.list.forEach((s, i) => {
+      if (s.st && s.st !== lastSt) {
+        lastSt = s.st;
+        subs += `<div class="sub-head">${s.st}${s.sp ? ` <span class="sub-page">📖 ${s.sp}</span>` : ''}</div>`;
+      }
+      const { speaker, text } = parseSpeaker(s.en);
+      subs += `
+        <div class="sub-row" id="subRow${i}" onclick="gotoRead(${i})">
+          <div class="sub-line">${speaker ? `<span class="sub-speaker">${speaker}:</span>` : ''}<span class="sub-en">${text}</span></div>
+          <div class="sub-cn">${s.cn}</div>
+        </div>`;
+    });
+  }
 
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
-      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} 句</div>
+      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}</div>
     </div>
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
     ${rateSliderHTML()}
-    <div class="read-subs" id="readSubs">${subs}</div>
-    <div class="read-tip" id="readTip">点击任意句子可跳读 · 听一句，大声跟读一句 🗣️</div>
+    ${isWord
+      ? `<div class="word-stage" onclick="replayRead()" title="点击重听"><div class="word-en" id="wordEn"></div><div class="word-cn" id="wordCn"></div></div>`
+      : `<div class="read-subs" id="readSubs">${subs}</div>`}
+    <div class="read-tip" id="readTip">点击任意${isWord ? '卡片可重听 · 听一词，大声跟读一词 🔁' : '句子可跳读 · 听一句，大声跟读一句 🗣️'}</div>
     <div class="read-auto-row">
       <label class="auto-switch">
         <input type="checkbox" id="readAutoSw" ${rd.auto ? 'checked' : ''} onchange="setAuto(this.checked)">
@@ -962,9 +967,9 @@ function buildReadShell() {
       </div>
     </div>
     <div class="read-ctrl-row">
-      <button class="btn btn-next read-ctrl" id="readPrevBtn" onclick="gotoRead(Math.max(rd.idx - 1, 0))">⬅ 上一句</button>
+      <button class="btn btn-next read-ctrl" id="readPrevBtn" onclick="gotoRead(Math.max(rd.idx - 1, 0))">⬅ 上一${isWord ? '词' : '句'}</button>
       <button class="btn btn-next read-ctrl" onclick="replayRead()">🔊 重听</button>
-      <button class="btn btn-primary read-ctrl" id="readNextBtn" onclick="nextRead()">下一句 ➡</button>
+      <button class="btn btn-primary read-ctrl" id="readNextBtn" onclick="nextRead()">下一${isWord ? '词' : '句'} ➡</button>
     </div>
   `;
   rd._built = true;
@@ -979,25 +984,35 @@ function buildReadShell() {
 
 function updateReadUI() {
   const n = rd.list.length;
+  const isWord = rd.mode === '单词跟读';
   const pct = Math.round((rd.idx + 1) / n * 100);
   const cur = document.getElementById('readCur');
   const fill = document.getElementById('readFill');
   if (cur) cur.textContent = rd.idx + 1;
   if (fill) fill.style.width = pct + '%';
 
-  // 高亮迁移：只动两行，不重建列表
-  if (rd._prevRow) rd._prevRow.classList.remove('cur');
-  const row = document.getElementById('subRow' + rd.idx);
-  if (row) {
-    row.classList.add('cur');
-    rd._prevRow = row;
-    // 容器内平滑居中（不触发整页滚动）
-    const subs = document.getElementById('readSubs');
-    if (subs) {
-      subs.scrollTo({
-        top: row.offsetTop - subs.clientHeight / 2 + row.offsetHeight / 2,
-        behavior: 'smooth'
-      });
+  if (isWord) {
+    // 单词跟读：只刷新大卡当前词（上英下中），无字幕列表
+    const we = document.getElementById('wordEn');
+    const wc = document.getElementById('wordCn');
+    const w = rd.list[rd.idx] || {};
+    if (we) we.textContent = w.en || '';
+    if (wc) wc.textContent = w.cn || '';
+  } else {
+    // 高亮迁移：只动两行，不重建列表
+    if (rd._prevRow) rd._prevRow.classList.remove('cur');
+    const row = document.getElementById('subRow' + rd.idx);
+    if (row) {
+      row.classList.add('cur');
+      rd._prevRow = row;
+      // 容器内平滑居中（不触发整页滚动）
+      const subs = document.getElementById('readSubs');
+      if (subs) {
+        subs.scrollTo({
+          top: row.offsetTop - subs.clientHeight / 2 + row.offsetHeight / 2,
+          behavior: 'smooth'
+        });
+      }
     }
   }
 
@@ -1009,8 +1024,10 @@ function updateReadUI() {
   const autoRange = document.getElementById('readAutoRange');
   const autoVal = document.getElementById('readAutoVal');
   if (prevBtn) prevBtn.disabled = rd.idx === 0;
-  if (nextBtn) nextBtn.textContent = rd.idx === n - 1 ? '✅ 完成' : '下一句 ➡';
-  if (tip) tip.textContent = rd.auto ? '⏳ 自动模式：读完本句后休息，进入下一句…' : '点击任意句子可跳读 · 听一句，大声跟读一句 🗣️';
+  if (nextBtn) nextBtn.textContent = rd.idx === n - 1 ? '✅ 完成' : `下一${isWord ? '词' : '句'} ➡`;
+  if (tip) tip.textContent = rd.auto
+    ? '⏳ 自动模式：读完当前' + (isWord ? '词' : '句') + '后休息，进入下一' + (isWord ? '词' : '句') + '…'
+    : (isWord ? '点击卡片可重听 · 听一词，大声跟读一词 🔁' : '点击任意句子可跳读 · 听一句，大声跟读一句 🗣️');
   // 开关与停顿滑条状态同步（骨架只建一次，这里增量刷新）
   if (autoSw) autoSw.checked = rd.auto;
   if (autoRange) {
