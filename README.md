@@ -36,6 +36,7 @@ A **zero-dependency, pure-frontend, locally served** companion app for primary-s
 - **面包屑导航**：首页 › 课本 › 单元 › 当前模式，任意层级一键回退。
 - **听写记录**：保留最近 200 次，含逐词掌握数据（`items`），可按单元查看次数 / 平均分 / 最近分。
 - **平板适配**：触屏设备（优先 iPad mini）自动放大卡片、字号与触控目标，地图竖屏 3 列 / 横屏 4 列；电脑端外观不变。
+- **课本音视频**：单元页出现「📺 课本音视频」卡片（板块音频列表 + 视频），课文跟读每个小节标题带「▶️ 板块朗读」、右上角带「📺 视频」；素材来自 `media/`，入口是否显示完全由 `media/manifest.json` 决定，**没有素材的课本 / 公网部署自动隐藏、回退纯 TTS**，与旧版行为一致。详见「课本音视频」一节。
 - **免责声明内置**：首次打开（或条款版本升级后）弹窗确认，底部常驻「📜 免责声明与版权说明」可随时查看；条款统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护（改后跑 `python sync_disclaimer.py`），同步到 [本文件末尾](#disclaimer) 与 [`app.js`](app.js) 内嵌弹窗；[`serve_qr.py`](serve_qr.py) 头部注释另有要点提示。
 - **反馈与建议**：底部入口用 `mailto` 预填设备 / 浏览器环境信息发给作者，不经过任何服务器、不上传数据。
 
@@ -84,6 +85,11 @@ LingoMate/
 │   ├── 4A.json             四年级上册 · 8 单元
 │   ├── 4B.json             四年级下册 · 8 单元
 │   └── 5A.json             五年级上册 · 8 单元
+├── media/                  教材配套音视频（按课本 id 分目录；含版权，是否入库见「课本音视频」一节）
+│   ├── manifest.json       音视频清单：由 make_media_manifest.py 扫描生成，前端据此显示入口
+│   └── 1A/audio/unitN/…    板块音频（Ready go / Story / Letters / Communicate / Extend / words / 总）
+│   └── 1A/video/…          板块视频（Story / Extend）
+├── make_media_manifest.py  扫描 media/ 归一化生成 manifest.json（新增素材后重跑一次）
 ├── serve_qr.py             本地 HTTP 服务 + 局域网 IP 探测（二维码改由页面内 qr.js 离线生成）
 ├── sync_disclaimer.py      免责声明同步：DISCLAIMER.md → app.js 内嵌弹窗 + 本 README 章节
 ├── DISCLAIMER.md           免责声明唯一来源（改这里，再跑 sync_disclaimer.py）
@@ -180,6 +186,33 @@ LingoMate/
 
 想从 PDF 电子课本自动生成题库（含图片版教材逐页精读、页码偏移实测、词汇表/跟读句/题目配额、合并校验脚本），把 [`教材转题库-技能提示词.md`](教材转题库-技能提示词.md) 全文交给具备读图能力的 AI 代理，并附一句"教材 PDF 在 `<路径>`，生成 `6A` 的题库文件"。
 
+## 课本音视频（media/）
+
+教材配套板块音频与故事 / 选学视频放在 `media/`，App 通过 `media/manifest.json` 探测并展示入口：
+
+```
+media/
+├── manifest.json           清单（勿手改，由脚本扫描生成）
+└── <课本id>/               如 1A
+    ├── audio/unit<N>/      板块音频：Ready go / Story / Letters / Communicate
+    │                       / Extend / words / 总 等 .MP3（文件名大小写、空格、
+    │                       个别拼写笔误都能识别，规则见 make_media_manifest.py）
+    └── video/              板块视频：文件名需含 Unit<N> 与 Story / Extend，如
+                            「一上 Unit1 P4 Story.mp4」
+```
+
+使用流程：
+
+1. 把音频放进 `media/1A/audio/unit1/`、视频放进 `media/1A/video/`（新建课本 id / unitN 目录即可）。
+2. 跑一次 `python make_media_manifest.py` 重新生成清单。
+3. 刷新页面：该单元模式页出现「📺 课本音视频」卡片；课文跟读各小节标题带「▶️ 板块朗读」（歌曲→Ready go、故事→Story、字母/拼读→Letters、拓展→Extend）；跟读页右上角有「📺 视频」弹窗。
+
+设计约定：
+
+- **无素材即无入口**：manifest 缺失、课本 / 单元没有文件、或公网部署（GitHub Pages 不携带 media/）时，音视频入口全部隐藏，朗读自动回退浏览器 TTS——公开站保持零外联、零依赖不变。
+- **播放互斥**：播音频前自动 `stopSpeech()` 停 TTS；再点一次停止；切页即停。
+- ⚠️ **版权**：`media/` 内教材配套音视频与教材本身同性质，著作权归出版社，**仅供本地 / 局域网个人学习使用，不要提交到公开仓库、不要随代码分发**。
+
 ## 技术说明
 
 | 主题 | 实现 |
@@ -189,7 +222,7 @@ LingoMate/
 | iOS 兼容 | ① 音色列表异步加载 → 轮询直到就绪；② iOS Safari 长朗读约 15 秒自动停 → 8 秒 `pause()/resume()` 续命；③ `viewport-fit=cover` + `safe-area-inset` 适配刘海；④ 禁止双击缩放与电话号码识别 |
 | 状态存储 | `localStorage`，键为 `english_quiz_progress_<bookId>`（闯关进度）、`english_quiz_dict_records_<bookId>`（听写记录）、`lingomate_rate`（语速挡位）；换设备或清缓存即丢失 |
 | 渲染 | 单页骨架 + `innerHTML` 增量重渲染；跟读列表只构建一次骨架，换句仅迁移高亮，避免闪动；单词跟读为单卡模式，换词只更新两个文本节点 |
-| 服务端 | `serve_qr.py`：根路径 `/` 映射到 `index.html`（避免中文文件名编码问题）、目录列表只显示 html、静默访问日志 |
+| 服务端 | `serve_qr.py`：根路径 `/` 映射到 `index.html`（避免中文文件名编码问题）、目录列表只显示 html、静默访问日志；音视频文件支持 **HTTP Range（206）**，Safari `<video>` 可流式播放与拖动进度 |
 | 二维码 | 页面内 [`qr.js`](qr.js)（vendored `qrcode-generator`，MIT）**纯前端离线生成**，编码 `window.location.href` 真实访问地址；桌面端右上角小码点击放大，移动端自动隐藏。零外联 |
 | 安全 | 全部数据本地，不发起任何业务网络请求（公网部署时仅按需加载百度统计，本地 / 局域网 / 离线不加载，见免责声明第 5 节）；选本页的课本标题经 `escapeHtml` 转义。题库 JSON 按本地可信内容处理，请勿加载来源不明的题库文件 |
 
@@ -258,16 +291,16 @@ Safari（iOS 14+，推荐）、Chrome / Edge 桌面与移动端。需要 `speech
 
 ### 3. 教材内容的版权归属
 
-`英语/` 目录内的教材 PDF、知识点 md，以及 `data/*.json` 中照抄教材的课文句、词表与释义，其**著作权均属于原出版社及相应权利人**，本项目**不授予你使用这些内容的任何许可**。
+`英语/` 目录内的教材 PDF、知识点 md，`media/` 目录内的教材配套音视频，以及 `data/*.json` 中照抄教材的课文句、词表与释义，其**著作权均属于原出版社及相应权利人**，本项目**不授予你使用这些内容的任何许可**。
 
-- 请勿把教材 PDF、题库 JSON 上传到公开仓库、网盘、社群或任何可被他人获取的地方；请勿二次分发、售卖、改编后发布。
-- 请把 `英语/`（约 697 MB）排除在版本管理之外——本仓库的 `.gitignore` 已包含它。仓库中默认包含的 `data/*.json` 仅供本地学习使用，同样不适合公开。
+- 请勿把教材 PDF、题库 JSON、配套音视频上传到公开仓库、网盘、社群或任何可被他人获取的地方；请勿二次分发、售卖、改编后发布。
+- 请把 `英语/`（约 697 MB）排除在版本管理之外——本仓库的 `.gitignore` 已包含它。`media/` 同性质，是否入库由持有者自担风险。仓库中默认包含的 `data/*.json` 仅供本地学习使用，同样不适合公开。
 - 如权利人认为本项目涉及的内容侵犯了您的权益，请联系作者，将配合删除或更正。
 - 请确保你持有的教材副本本身来源合法。
 
 ### 4. 代码许可：MIT（教材内容除外）
 
-本项目**原创的源代码与文档**（`app.js` / `index.html` / `serve_qr.py` / `stop_server.ps1` / 两个 `.bat` / `README.md` / `DISCLAIMER.md` / `sync_disclaimer.py` / `教材转题库-技能提示词.md` / `.claude/`）采用 [MIT 许可证](LICENSE) 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。
+本项目**原创的源代码与文档**（`app.js` / `index.html` / `serve_qr.py` / `make_media_manifest.py` / `stop_server.ps1` / 两个 `.bat` / `README.md` / `DISCLAIMER.md` / `sync_disclaimer.py` / `教材转题库-技能提示词.md` / `.claude/`）采用 [MIT 许可证](LICENSE) 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。
 
 **但 MIT 许可证明确不覆盖任何教材内容**：`data/*.json` 题库（课文句、词表、释义均照抄自上海教育出版社出版的教材）与 `英语/` 目录内的 PDF 及笔记，其著作权归原出版社及相应权利人所有，本项目**不授予你使用这些内容的任何许可**。LICENSE 中的排除**跟随内容而非文件名**——把题库句子复制进别处，它仍是出版社的作品。请照第 3 节处理：不要公开、分发、售卖或改编发布题库与教材。
 

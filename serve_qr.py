@@ -26,7 +26,10 @@
     网络下运行；用完及时关闭窗口或运行 停止服务.bat。
 ------------------------------------------------------------------------------
 """
+import email.utils
+import mimetypes
 import os
+import re
 import socket
 import threading
 from functools import partial
@@ -54,6 +57,75 @@ def get_lan_ip():
 class QuizHandler(SimpleHTTPRequestHandler):
     def log_message(self, *args):  # 不刷屏
         pass
+
+    # ---- Range 请求支持（media/ 音视频）----
+    # Python 的 http.server 原生不支持 Range：Safari 的 <video> 会先发
+    # bytes=0-1 的探测请求，拿不到 206 就拒绝播放；拖动进度条同样依赖 206。
+    # 这里为音频/视频类文件实现单区间 Range（其余请求走父类原逻辑）。
+    _RANGE_RE = re.compile(r'bytes=(\d*)-(\d*)')
+
+    def send_head(self):
+        rng = self.headers.get('Range')
+        if not rng:
+            return super().send_head()
+        path = self.translate_path(self.path)
+        if not os.path.isfile(path):
+            return super().send_head()
+        ctype = mimetypes.guess_type(path)[0] or 'application/octet-stream'
+        if not ctype.startswith(('audio/', 'video/')):
+            return super().send_head()
+        size = os.path.getsize(path)
+        m = self._RANGE_RE.match(rng.strip())
+        if not m:
+            self.send_error(416, 'Unsupported Range')
+            return None
+        start_s, end_s = m.group(1), m.group(2)
+        try:
+            if start_s == '' and end_s == '':
+                raise ValueError
+            if start_s == '':                      # bytes=-N：末尾 N 字节
+                length = min(int(end_s), size)
+                start, end = size - length, size - 1
+            else:
+                start = int(start_s)
+                end = int(end_s) if end_s else size - 1
+                end = min(end, size - 1)
+        except ValueError:
+            self.send_error(416, 'Bad Range')
+            return None
+        if start > end or start >= size:
+            self.send_error(416, 'Range Not Satisfiable')
+            return None
+        try:
+            f = open(path, 'rb')
+        except OSError:
+            self.send_error(404, 'File not found')
+            return None
+        self.send_response(206)
+        self.send_header('Content-Type', ctype)
+        self.send_header('Accept-Ranges', 'bytes')
+        self.send_header('Content-Range', f'bytes {start}-{end}/{size}')
+        self.send_header('Content-Length', str(end - start + 1))
+        self.send_header('Last-Modified', email.utils.formatdate(
+            os.stat(path).st_mtime, usegmt=True))
+        self.end_headers()
+        f.seek(start)
+        self._range_left = end - start + 1
+        return f
+
+    def copyfile(self, source, outputfile):
+        left = getattr(self, '_range_left', None)
+        if left is None:
+            return super().copyfile(source, outputfile)
+        self._range_left = None
+        remaining = left
+        while remaining > 0:
+            chunk = source.read(min(64 * 1024, remaining))
+            if not chunk:
+                break
+            outputfile.write(chunk)
+            remaining -= len(chunk)
+        source.close()
 
     def translate_path(self, path):
         # 根路径 / 直接指向伴学页面，手机扫码地址无需含中文

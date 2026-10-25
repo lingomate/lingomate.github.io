@@ -7,6 +7,7 @@ SCOPE OF THIS LICENSE — READ FIRST / 本许可证的适用范围（请先阅�
 This license applies ONLY to the original work authored in this repository:
 
     app.js  index.html  serve_qr.py  stop_server.ps1  sync_disclaimer.py
+    make_media_manifest.py
     启动手机伴学.bat  停止服务.bat  README.md  DISCLAIMER.md
     教材转题库-技能提示词.md  .claude/  this LICENSE
 
@@ -17,8 +18,10 @@ appears, including without limitation:
     data/*.json      question banks, unit word lists, textbook sentences and
                      their Chinese definitions, transcribed from textbooks
                      published by Shanghai Education Press (上海教育出版社)
-    英语/            textbook PDFs and study notes (not part of the licensed
+    英语/             textbook PDFs and study notes (not part of the licensed
                      work; should not be committed or redistributed)
+    media/            textbook audio/video materials (same nature as the
+                     textbooks; personal / family local use only)
 
 Put differently: the exclusion follows the CONTENT, not the filename. Any
 sentence, word-list entry or definition copied from a textbook stays with its

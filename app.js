@@ -39,7 +39,7 @@
 // 首次打开应用时以"需确认"模式弹出；之后可随时从底部入口以"查看"模式打开。
 // 重要：条款文案有任何实质改动时，请把 DISCLAIMER_VERSION 递增，
 // 已确认过的用户会重新看到一次确认（旧版本键不影响新版本判定）。
-const DISCLAIMER_VERSION = '3';                 // 文案版本：升级后老用户会重新看到一次确认
+const DISCLAIMER_VERSION = '4';                 // 文案版本：升级后老用户会重新看到一次确认
 const DISCLAIMER_KEY = 'english_quiz_disclaimer_ack_';   // + 版本号
 /* === DISCLAIMER_HTML BEGIN（由 sync_disclaimer.py 从 DISCLAIMER.md 生成，勿手改） === */
 const DISCLAIMER_HTML = `
@@ -54,15 +54,15 @@ const DISCLAIMER_HTML = `
   <li>因使用或无法使用本项目导致的任何直接、间接、附带或后果性损失（含学习成绩、时间投入、数据丢失），作者<b>不承担责任</b>。</li>
   </ul>
   <h4>3. 教材内容的版权归属</h4>
-  <p><code>英语/</code> 目录内的教材 PDF、知识点 md，以及 <code>data/*.json</code> 中照抄教材的课文句、词表与释义，其<b>著作权均属于原出版社及相应权利人</b>，本项目<b>不授予你使用这些内容的任何许可</b>。</p>
+  <p><code>英语/</code> 目录内的教材 PDF、知识点 md，<code>media/</code> 目录内的教材配套音视频，以及 <code>data/*.json</code> 中照抄教材的课文句、词表与释义，其<b>著作权均属于原出版社及相应权利人</b>，本项目<b>不授予你使用这些内容的任何许可</b>。</p>
   <ul>
-  <li>请勿把教材 PDF、题库 JSON 上传到公开仓库、网盘、社群或任何可被他人获取的地方；请勿二次分发、售卖、改编后发布。</li>
-  <li>请把 <code>英语/</code>（约 697 MB）排除在版本管理之外——本仓库的 <code>.gitignore</code> 已包含它。仓库中默认包含的 <code>data/*.json</code> 仅供本地学习使用，同样不适合公开。</li>
+  <li>请勿把教材 PDF、题库 JSON、配套音视频上传到公开仓库、网盘、社群或任何可被他人获取的地方；请勿二次分发、售卖、改编后发布。</li>
+  <li>请把 <code>英语/</code>（约 697 MB）排除在版本管理之外——本仓库的 <code>.gitignore</code> 已包含它。<code>media/</code> 同性质，是否入库由持有者自担风险。仓库中默认包含的 <code>data/*.json</code> 仅供本地学习使用，同样不适合公开。</li>
   <li>如权利人认为本项目涉及的内容侵犯了您的权益，请联系作者，将配合删除或更正。</li>
   <li>请确保你持有的教材副本本身来源合法。</li>
   </ul>
   <h4>4. 代码许可：MIT（教材内容除外）</h4>
-  <p>本项目<b>原创的源代码与文档</b>（<code>app.js</code> / <code>index.html</code> / <code>serve_qr.py</code> / <code>stop_server.ps1</code> / 两个 <code>.bat</code> / <code>README.md</code> / <code>DISCLAIMER.md</code> / <code>sync_disclaimer.py</code> / <code>教材转题库-技能提示词.md</code> / <code>.claude/</code>）采用 MIT 许可证 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。</p>
+  <p>本项目<b>原创的源代码与文档</b>（<code>app.js</code> / <code>index.html</code> / <code>serve_qr.py</code> / <code>make_media_manifest.py</code> / <code>stop_server.ps1</code> / 两个 <code>.bat</code> / <code>README.md</code> / <code>DISCLAIMER.md</code> / <code>sync_disclaimer.py</code> / <code>教材转题库-技能提示词.md</code> / <code>.claude/</code>）采用 MIT 许可证 授权：你可以免费使用、复制、修改、合并、发布、分发、再许可及销售，前提是保留版权与许可声明。</p>
   <p><b>但 MIT 许可证明确不覆盖任何教材内容</b>：<code>data/*.json</code> 题库（课文句、词表、释义均照抄自上海教育出版社出版的教材）与 <code>英语/</code> 目录内的 PDF 及笔记，其著作权归原出版社及相应权利人所有，本项目<b>不授予你使用这些内容的任何许可</b>。LICENSE 中的排除<b>跟随内容而非文件名</b>——把题库句子复制进别处，它仍是出版社的作品。请照第 3 节处理：不要公开、分发、售卖或改编发布题库与教材。</p>
   <ul>
   <li>你可以在<b>删除或替换全部 <code>data/</code> 与 <code>英语/</code> 内容</b>后，将纯代码以 MIT 条件自由复用与再分发，这完全合规。</li>
@@ -175,6 +175,7 @@ function openFeedback() {
 
 
 let BOOK = null;      // 当前课本数据 {id,title,subtitle,units,questions}
+let MEDIA = null;     // media/manifest.json 内容（缺失/离线时为 null，音视频入口自动隐藏）
 let books = [];       // 课本清单（books.json）
 let bookData = {};    // 各课本完整数据缓存 {id: {...}}
 
@@ -383,6 +384,7 @@ function stopKeepAlive() {
 function stopSpeech() {
   if ('speechSynthesis' in window) speechSynthesis.cancel();
   stopKeepAlive();
+  if (_audio && !_audio.paused) { _audio.pause(); resetAudioBtn(); } // 音视频与 TTS 互斥
 }
 
 // 完形填空（题干含 ___）判断
@@ -548,6 +550,11 @@ async function boot() {
     return;
   }
   if (!books.length) { showLoadError(); return; }
+  // 音视频清单（media/manifest.json）：拿不到就静默降级为纯 TTS，不打扰
+  try {
+    const mr = await fetch('media/manifest.json', { cache: 'no-store' });
+    if (mr.ok) MEDIA = await mr.json();
+  } catch (e) { MEDIA = null; }
   // 课本清单排序：按年级升序、上册在前（id 形如 "4A"/"4B"/"5A"；解析失败则保持原顺序）
   const rank = id => {
     const m = /^(\d+)([A-Z])$/i.exec(String(id));
@@ -705,13 +712,23 @@ function openUnit(unitNum) {
   const typesInUnit = [...new Set(unitQs.map(q => q.type))];
   const hasDictation = typesInUnit.includes('听写');
   const typeDesc = typesInUnit.length ? typesInUnit.join(' · ') : '本单元暂无题目';
+  // 本单元音视频素材（media/manifest.json）：音频键列表 + 视频键列表
+  const audKeys = Object.keys(unitAudios(unitNum));
+  const vidKeys = Object.keys(unitVideos(unitNum));
+  const hasMedia = audKeys.length + vidKeys.length > 0;
+  const mediaDesc = [
+    audKeys.length ? `配套音频 ${audKeys.length} 段` : '',
+    vidKeys.length ? `视频 ${vidKeys.length} 段` : ''
+  ].filter(Boolean).join('<br>') || '本单元暂无音视频';
+  // 卡片总数：课文跟读/单词跟读/闯关 恒在，听写、音视频按条件；≥4 张沿用 3 列布局（与既有惯例一致）
+  const gridCls = (hasDictation || hasMedia) ? 'mode-grid-3' : '';
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">${unit.icon} ${unit.name} · ${unit.title}</div>
       <div class="quiz-count"><button class="auto-toggle" onclick="renderMap()">← 返回</button></div>
     </div>
-    <div class="mode-grid ${hasDictation ? 'mode-grid-3' : ''}">
+    <div class="mode-grid ${gridCls}">
       <div class="mode-card ${readCount ? '' : 'disabled'}" onclick="${readCount ? `startRead(${unitNum})` : ''}">
         <span class="mode-icon">🗣️</span>
         <div class="mode-name">课文跟读</div>
@@ -732,6 +749,11 @@ function openUnit(unitNum) {
         <div class="mode-name">单词听写</div>
         <div class="mode-desc">${vocabCount ? `全单元 ${vocabCount} 个词汇<br>纸笔听写<br>每词读三遍` : '本单元暂无词汇表'}</div>
       </div>` : ''}
+      ${hasMedia ? `<div class="mode-card" onclick="renderMedia(${unitNum})">
+        <span class="mode-icon">📺</span>
+        <div class="mode-name">课本音视频</div>
+        <div class="mode-desc">${mediaDesc}</div>
+      </div>` : ''}
     </div>
     ${recCount ? `<div class="mode-foot">本单元已有 ${recCount} 次听写记录 · <a href="javascript:void(0)" onclick="renderDictRecords()">查看记录</a></div>` : ''}
   `;
@@ -739,6 +761,40 @@ function openUnit(unitNum) {
     { t: '🏠 首页', go: 'renderBookSelect()' },
     { t: BOOK.title, go: 'renderMap()' },
     { t: unit.name }
+  ]);
+}
+
+// ===================== 课本音视频页 =====================
+function renderMedia(unitNum) {
+  stopSpeech();
+  setHeader('quiz');
+  const unit = BOOK.units[unitNum - 1];
+  const auds = unitAudios(unitNum), vids = unitVideos(unitNum);
+  const audRows = Object.keys(AUDIO_LABELS).filter(k => auds[k]).map(k => `
+    <div class="media-row">
+      <span class="media-name">🔊 ${AUDIO_LABELS[k]}</span>
+      <button class="btn media-play" onclick="playAudio('${auds[k]}', this)">▶️ 播放</button>
+    </div>`).join('');
+  const vidRows = Object.keys(VIDEO_LABELS).filter(k => vids[k]).map(k => `
+    <div class="video-item">
+      <div class="video-item-title">🎬 ${VIDEO_LABELS[k]}</div>
+      <video controls preload="none" playsinline src="${vids[k]}"></video>
+    </div>`).join('');
+  const content = document.getElementById('content');
+  content.innerHTML = `
+    <div class="quiz-header">
+      <div class="quiz-title">📺 ${unit.name} · 课本音视频</div>
+      <div class="quiz-count"><button class="auto-toggle" onclick="openUnit(${unitNum})">← 返回</button></div>
+    </div>
+    ${audRows ? `<div class="media-list">${audRows}</div>` : ''}
+    ${vidRows}
+    ${!audRows && !vidRows ? '<div class="loading">本单元暂无音视频素材</div>' : ''}
+  `;
+  setCrumb([
+    { t: '🏠 首页', go: 'renderBookSelect()' },
+    { t: BOOK.title, go: 'renderMap()' },
+    { t: unit.name, go: `openUnit(${unitNum})` },
+    { t: '📺 音视频' }
   ]);
 }
 
@@ -927,11 +983,15 @@ function buildReadShell() {
   // 整篇字幕：按句渲染，小节（课文/拓展）变化时插入标题+页码行
   let subs = '';
   if (!isWord) {
+    const auds = unitAudios(rd.unitNum);
     let lastSt = null;
     rd.list.forEach((s, i) => {
       if (s.st && s.st !== lastSt) {
         lastSt = s.st;
-        subs += `<div class="sub-head">${s.st}${s.sp ? ` <span class="sub-page">📖 ${s.sp}</span>` : ''}</div>`;
+        const akey = stToAudioKey(s.st);
+        const playBtn = akey && auds[akey]
+          ? `<button class="btn media-play sub-head-play" onclick="event.stopPropagation();playAudio('${auds[akey]}', this)">▶️ 板块朗读</button>` : '';
+        subs += `<div class="sub-head">${s.st}${s.sp ? ` <span class="sub-page">📖 ${s.sp}</span>` : ''}${playBtn}</div>`;
       }
       const { speaker, text } = parseSpeaker(s.en);
       subs += `
@@ -942,11 +1002,12 @@ function buildReadShell() {
     });
   }
 
+  const hasVid = Object.keys(unitVideos(rd.unitNum)).length > 0;
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
-      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}</div>
+      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}${hasVid ? `<button class="auto-toggle" onclick="openVideoModal(${rd.unitNum})">📺 视频</button>` : ''}</div>
     </div>
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
     ${rateSliderHTML()}
@@ -1614,6 +1675,102 @@ if ('speechSynthesis' in window) {
 boot();
 initQR();               // 右上角“手机访问”二维码（离线生成）
 maybeShowDisclaimer();   // 首次打开（或免责声明文案升级后）弹出确认
+
+// ===================== 音视频（media/manifest.json） =====================
+// 数据形态：MEDIA[bookId].units[单元号].audio = {ready-go,story,letters,communicate,extend,words,full}
+//                                 .video = {story,extend}；值为已 URL 编码的相对路径。
+// 原则：探测不到素材（无 manifest / 公网部署）时所有入口自动隐藏，行为与旧版完全一致。
+const AUDIO_LABELS = {
+  'ready-go': 'Ready? Go! 课文', 'story': '故事 Story', 'letters': '字母 Letters',
+  'communicate': '对话 Communicate', 'extend': '选学 Extend', 'words': '单词表', 'full': '整单元'
+};
+const VIDEO_LABELS = { 'story': '故事视频', 'extend': '选学视频' };
+
+function mediaUnit(unitNum) {
+  const m = MEDIA && MEDIA[BOOK && BOOK.id];
+  return (m && m.units && m.units[String(unitNum)]) || null;
+}
+function unitAudios(unitNum) {
+  const u = mediaUnit(unitNum);
+  return (u && u.audio) || {};
+}
+function unitVideos(unitNum) {
+  const u = mediaUnit(unitNum);
+  return (u && u.video) || {};
+}
+
+// —— 音频播放（单例 <audio>，与 TTS 互斥：播音频前 stopSpeech） ——
+let _audio = null, _audioBtn = null;
+function playAudio(url, btn) {
+  // 再次点击正在播的曲目 → 停止（须在 stopSpeech 重置按钮前判定）
+  if (_audioBtn === btn && _audio && !_audio.paused) { stopSpeech(); return; }
+  stopSpeech();
+  if (!_audio) {
+    _audio = new Audio();
+    _audio.addEventListener('ended', resetAudioBtn);
+    _audio.addEventListener('error', resetAudioBtn);
+  }
+  if (btn) {
+    btn.classList.add('playing');
+    btn.dataset.orig = btn.dataset.orig || btn.textContent;
+    btn.textContent = '⏹';
+    _audioBtn = btn;
+  }
+  _audio.src = url;
+  _audio.play().catch(resetAudioBtn);
+}
+function resetAudioBtn() {
+  if (_audioBtn) {
+    _audioBtn.classList.remove('playing');
+    if (_audioBtn.dataset.orig) _audioBtn.textContent = _audioBtn.dataset.orig;
+    _audioBtn = null;
+  }
+  if (_audio) { _audio.pause(); }
+}
+
+// 跟读页小节标题行上的 ▶️（st 前缀 → 音频键）
+function stToAudioKey(st) {
+  if (!st) return null;
+  if (st.startsWith('歌曲')) return 'ready-go';
+  if (st.startsWith('故事')) return 'story';
+  if (st.startsWith('字母')) return 'letters';
+  if (st.startsWith('拼读')) return 'letters';
+  if (st.startsWith('课文')) return 'ready-go';
+  if (st.startsWith('拓展')) return 'extend';
+  return null;
+}
+
+// —— 视频弹窗 ——
+function openVideoModal(unitNum) {
+  const vids = unitVideos(unitNum);
+  const keys = Object.keys(VIDEO_LABELS).filter(k => vids[k]);
+  if (!keys.length) return;
+  closeVideoModal();
+  const mask = document.createElement('div');
+  mask.className = 'dlg-mask show';
+  mask.id = 'videoMask';
+  mask.innerHTML = `
+    <div class="dlg video-dlg">
+      <div class="dlg-head">📺 ${BOOK.units[unitNum - 1].name} · 课本视频
+        <span class="qr-x" style="float:right;cursor:pointer" onclick="closeVideoModal()">×</span></div>
+      <div class="dlg-body">
+        ${keys.map(k => `
+          <div class="video-item">
+            <div class="video-item-title">${VIDEO_LABELS[k]}</div>
+            <video controls preload="none" playsinline src="${vids[k]}"></video>
+          </div>`).join('')}
+      </div>
+    </div>`;
+  document.body.appendChild(mask);
+  mask.addEventListener('click', e => { if (e.target === mask) closeVideoModal(); });
+}
+function closeVideoModal() {
+  const m = document.getElementById('videoMask');
+  if (m) {
+    m.querySelectorAll('video').forEach(v => v.pause());
+    m.remove();
+  }
+}
 
 // ===================== 手机扫码访问 =====================
 // 纯前端离线生成二维码：直接编码「浏览器当前实际访问的完整地址」，
