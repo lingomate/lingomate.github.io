@@ -36,7 +36,7 @@ A **zero-dependency, pure-frontend, locally served** companion app for primary-s
 - **面包屑导航**：首页 › 课本 › 单元 › 当前模式，任意层级一键回退。
 - **听写记录**：保留最近 200 次，含逐词掌握数据（`items`），可按单元查看次数 / 平均分 / 最近分。
 - **平板适配**：触屏设备（优先 iPad mini）自动放大卡片、字号与触控目标，地图竖屏 3 列 / 横屏 4 列；电脑端外观不变。
-- **课本音视频**：单元页「📺 课本音视频」卡片进入**侧栏播放器**（目录列表 + 播放区 + Whisper 英文字幕逐句高亮 / 点句跳转）；课文跟读小节标题带「▶️ 板块朗读」直达曲目。素材来自 `media/`，入口是否显示完全由 `media/manifest.json` 决定，**没有素材的课本 / 单元自动隐藏、回退纯 TTS**。详见「课本音视频」一节。
+- **课本音视频**：单元页「📺 课本音视频」卡片进入**侧栏播放器**（可收起目录 + 播放区 + Whisper 英文字幕逐句高亮 / 点句跳转）；课文跟读小节标题带「▶️ 板块朗读」直达曲目，且配好 cues 映射后**逐句直接播教材原音片段**（未命中自动回退 TTS）。素材来自 `media/`，入口是否显示完全由 `media/manifest.json` 决定，**没有素材的课本 / 单元自动隐藏、回退纯 TTS**。详见「课本音视频」一节。
 - **免责声明内置**：首次打开（或条款版本升级后）弹窗确认，底部常驻「📜 免责声明与版权说明」可随时查看；条款统一在 [`DISCLAIMER.md`](DISCLAIMER.md) 维护（改后跑 `python sync_disclaimer.py`），同步到 [本文件末尾](#disclaimer) 与 [`app.js`](app.js) 内嵌弹窗；[`serve_qr.py`](serve_qr.py) 头部注释另有要点提示。
 - **反馈与建议**：底部入口用 `mailto` 预填设备 / 浏览器环境信息发给作者，不经过任何服务器、不上传数据。
 
@@ -91,6 +91,7 @@ LingoMate/
 │   └── 1A/video/…          板块视频（Story / Extend）
 ├── make_media_manifest.py  扫描 media/ 归一化生成 manifest.json（新增素材后重跑一次）
 ├── make_media_subtitles.py 本地 Whisper 转写 media/ 音频为英文字幕（faster-whisper，CPU）
+├── make_media_cues.py      跟读句与字幕文本对齐，生成「句子→原音时间段」映射（课文跟读直接播教材原音）
 ├── serve_qr.py             本地 HTTP 服务 + 局域网 IP 探测（二维码改由页面内 qr.js 离线生成）
 ├── sync_disclaimer.py      免责声明同步：DISCLAIMER.md → app.js 内嵌弹窗 + 本 README 章节
 ├── DISCLAIMER.md           免责声明唯一来源（改这里，再跑 sync_disclaimer.py）
@@ -199,6 +200,7 @@ media/
     │                       / Extend / words / 总 等 .MP3（文件名大小写、空格、
     │                       个别拼写笔误都能识别，规则见 make_media_manifest.py）
     ├── subs/               字幕 WebVTT：与音频同名同相对路径（make_media_subtitles.py 生成）
+    ├── cues/               句子→原音时间段映射 unit<N>.json（make_media_cues.py 生成）
     └── video/              板块视频：文件名需含 Unit<N> 与 Story / Extend，如
                             「一上 Unit1 P4 Story.mp4」
 ```
@@ -207,7 +209,8 @@ media/
 
 1. 把音频放进 `media/1A/audio/unit1/`、视频放进 `media/1A/video/`（新建课本 id / unitN 目录即可）。
 2. （可选）跑一次 `python make_media_subtitles.py 1A` 用本地 Whisper（faster-whisper，CPU 即可）把音频转写成英文字幕，脚本会自动重生成清单。转写工具只在**开发机**上需要（`pip install faster-whisper`），不影响 App 本身的零依赖运行；国内网络默认走 hf-mirror 下载模型。
-3. 刷新页面：该单元模式页出现「📺 课本音视频」卡片，进入**侧栏播放器**——左侧目录列出本单元全部音频 / 视频（带 `CC` 标记者有字幕），右侧播放区；音频播放时下方**字幕面板逐句高亮、随进度滚动、点句可跳转定位**。课文跟读各小节标题带「▶️ 板块朗读」（歌曲→Ready go、故事→Story、字母/拼读→Letters、拓展→Extend），直达播放器对应曲目；右上角「📺 视频」跳到播放器。
+3. （可选，推荐）再跑 `python make_media_cues.py 1A`：把 `data/1A.json` 的跟读句与字幕**按文本对齐**，生成「句子 → 原始音频时间段」映射（`media/1A/cues/unitN.json`）。之后**课文跟读播到命中的句子会直接放教材原音对应片段**（真人的语气、连读、拟声词都比 TTS 好），未命中的句子自动回退 TTS；当前句有原音时页头显示「🎧 教材原音」徽标。改了 `data/1A.json` 的句子原文后重跑此脚本即可（映射里带原文校验，改过未重跑的句子自动回退 TTS，不会播错）。
+4. 刷新页面：该单元模式页出现「📺 课本音视频」卡片，进入**侧栏播放器**——左侧目录可点 ◀ 收起成图标窄条（状态记忆），列出本单元全部音频 / 视频（带 `CC` 标记者有字幕），右侧播放区；音频播放时下方**字幕面板逐句高亮、随进度滚动、点句可跳转定位**。课文跟读各小节标题带「▶️ 板块朗读」（歌曲→Ready go、故事→Story、字母/拼读→Letters、拓展→Extend），直达播放器对应曲目；右上角「📺 视频」跳到播放器。
 
 设计约定：
 

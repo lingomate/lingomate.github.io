@@ -145,7 +145,62 @@
           "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit6%20P48%20Extend.mp4"
         }
       }
+    },
+    "cues": {
+      "1": "media/1A/cues/unit1.json",
+      "2": "media/1A/cues/unit2.json",
+      "3": "media/1A/cues/unit3.json",
+      "4": "media/1A/cues/unit4.json",
+      "5": "media/1A/cues/unit5.json",
+      "6": "media/1A/cues/unit6.json"
     }
   },
-  "generated": "2026-10-25T09:52:32Z"
+  "1B": {
+    "units": {
+      "1": {
+        "audio": {
+          "full": "media/1B/Unit%201What%20food%20do%20you%20like.mp3"
+        },
+        "subs": {},
+        "video": {}
+      },
+      "2": {
+        "audio": {
+          "full": "media/1B/Unit%202%20What%20do%20we%20do%20in%20the%20classroom.mp3"
+        },
+        "subs": {},
+        "video": {}
+      },
+      "3": {
+        "audio": {
+          "full": "media/1B/Unit%203%20How%20do%20we%20play.mp3"
+        },
+        "subs": {},
+        "video": {}
+      },
+      "4": {
+        "audio": {
+          "full": "media/1B/Unit%204%20Which%20seasons%20do%20you%20like.mp3"
+        },
+        "subs": {},
+        "video": {}
+      },
+      "5": {
+        "audio": {
+          "full": "media/1B/Unit%205%20What%20do%20you%20know%20about%20fruit.mp3"
+        },
+        "subs": {},
+        "video": {}
+      },
+      "6": {
+        "audio": {
+          "full": "media/1B/Unit%206%20How%20do%20animals%20grow.mp3"
+        },
+        "subs": {},
+        "video": {}
+      }
+    },
+    "cues": {}
+  },
+  "generated": "2026-10-25T14:13:47Z"
 }

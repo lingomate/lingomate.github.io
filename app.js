@@ -384,6 +384,7 @@ function stopKeepAlive() {
 function stopSpeech() {
   if ('speechSynthesis' in window) speechSynthesis.cancel();
   stopKeepAlive();
+  if (_segAudio) { try { _segAudio.pause(); } catch (e) {} _segAudio = null; } // 教材原音片段
   document.querySelectorAll('#mpStage audio, #mpStage video').forEach(m => { try { m.pause(); } catch (e) {} }); // 音视频与 TTS 互斥、切页即停
 }
 
@@ -956,6 +957,53 @@ function mpSeek(i) {
   }
 }
 
+// —— 教材原音片段播放（供课文跟读替代 TTS）——
+// 归一化与 make_media_cues.py 的 norm() 同规则；比对 cue.src 与当前句，
+// 句子后来被人工改过 → 不匹配 → 自动回退 TTS，不会播错音频。
+function normEn(s) {
+  s = String(s).replace(/^\s*[A-Za-z][A-Za-z .'\u2019-]{0,24}?[:：]\s*/, '');
+  s = s.toLowerCase().replace(/[^a-z0-9 ]/g, ' ');
+  return s.replace(/\s+/g, ' ').trim();
+}
+let _segAudio = null;
+function playSegment(unitNum, seg, onend, onfail) {
+  const auds = unitAudios(unitNum);
+  const src = auds[seg.k];
+  if (!src) return false;
+  stopSpeech();
+  const au = new Audio(src);
+  _segAudio = au;
+  let done = false;
+  const finish = () => {
+    if (done) return;
+    done = true;
+    if (_segAudio === au) _segAudio = null;
+    au.pause();
+    if (onend) onend();
+  };
+  // 尚未出声就失败 → 回退 TTS（不静默吞掉本句）
+  const fail = () => {
+    if (done || au.currentTime > 0.1) return;
+    done = true;
+    if (_segAudio === au) _segAudio = null;
+    au.pause();
+    if (onfail) onfail();
+  };
+  au.addEventListener('timeupdate', () => { if (au.currentTime >= seg.e - 0.03) finish(); });
+  au.addEventListener('ended', finish);
+  au.addEventListener('error', fail);
+  const ready = () => {
+    try { au.currentTime = seg.s; } catch (e) { return fail(); }
+    au.play().catch(() => fail());
+  };
+  if (au.readyState >= 1) ready();
+  else {
+    au.addEventListener('loadedmetadata', ready, { once: true });
+    setTimeout(() => { if (!done && au.readyState < 1) fail(); }, 8000); // 网络卡死兜底
+  }
+  return true;
+}
+
 // ===================== 课文跟读模式（播一句 → 跟读 → 下一句；支持自动播放） =====================
 let rd = null;    // 当前跟读会话 {unitNum, list, idx, auto, interval, timer}
 let rdToken = 0;  // 跟读会话令牌：递增即作废当前自动链（防跳句后旧定时器抢跑）
@@ -1046,12 +1094,37 @@ function beginRead(unitNum, list, mode) {
   if (!list.length) return;
   stopSpeech();
   setHeader('read');
-  rd = { unitNum, list, idx: 0, auto: false, interval: 5000, timer: null, mode: mode || '课文跟读' };
+  rd = { unitNum, list, idx: 0, auto: false, interval: 5000, timer: null, mode: mode || '课文跟读', segs: null };
   rdToken++;
   ensureVoices();
   buildVoicePool();
+  loadReadSegments(unitNum, mode); // 异步：教材原音时间段映射（media/<id>/cues/unitN.json）
   renderRead();
   speakReadCurrent(); // 进入第一句自动播放
+}
+
+// 加载「句子 → 教材原音片段」映射；仅课文跟读、且 manifest 声明该课本有 cues 时尝试
+function loadReadSegments(unitNum, mode) {
+  if (mode === '单词跟读' || !MEDIA) return;
+  const m = MEDIA[BOOK.id];
+  if (!m || !m.cues || !m.cues[String(unitNum)]) return;
+  fetch(m.cues[String(unitNum)], { cache: 'no-store' })
+    .then(r => (r.ok ? r.json() : null))
+    .then(arr => {
+      if (arr && rd && rd.unitNum === unitNum && rd.mode !== '单词跟读') {
+        rd.segs = arr;
+        renderRead(); // 刷新小节头的 🎧 标记
+      }
+    })
+    .catch(() => {});
+}
+
+// 当前句可用的原音片段（严格比对原文，改过的句子返回 null 回退 TTS）
+function segForIdx(i) {
+  if (!rd || !rd.segs) return null;
+  const seg = rd.segs[i];
+  if (!seg || !seg.src || normEn(seg.src) !== normEn(rd.list[i] && rd.list[i].en)) return null;
+  return seg;
 }
 
 function speakReadCurrent() {
@@ -1069,7 +1142,23 @@ function speakReadCurrent() {
       else { setAuto(false); } // 末句读完：自动模式关闭，停在完成按钮
     }, rd.interval);
   } : null;
-  speakText(encodeURIComponent(text), onend, voiceForSpeaker(speaker), speaker ? 0.92 : 0.85);
+  // 优先教材原音片段（有 cues 映射且原文未改）；无则 TTS
+  const seg = segForIdx(rd.idx);
+  const idxAtSeg = rd.idx;
+  const tts = () => {
+    rd._viaSegment = false;
+    speakText(encodeURIComponent(text), onend, voiceForSpeaker(speaker), speaker ? 0.92 : 0.85);
+  };
+  if (seg) {
+    const token = rdToken;
+    if (playSegment(rd.unitNum, seg, onend, () => {
+      if (rd && token === rdToken && rd.idx === idxAtSeg) tts(); // 片段加载失败 → 回退 TTS
+    })) {
+      rd._viaSegment = true;
+      return;
+    }
+  }
+  tts();
 }
 
 // 自动模式停顿挡位：滑条 0/1/2 → 5/10/15 秒（默认 5 秒）
@@ -1167,7 +1256,7 @@ function buildReadShell() {
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
-      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}${hasVid ? `<button class="auto-toggle" onclick="renderMedia(${rd.unitNum},'video:${firstVid}',true)">📺 视频</button>` : ''}</div>
+      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}<span class="mp-cc" id="readSrcBadge" style="display:none;margin-left:6px">🎧 教材原音</span>${hasVid ? `<button class="auto-toggle" onclick="renderMedia(${rd.unitNum},'video:${firstVid}',true)">📺 视频</button>` : ''}</div>
     </div>
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
     ${rateSliderHTML()}
@@ -1211,6 +1300,8 @@ function updateReadUI() {
   const fill = document.getElementById('readFill');
   if (cur) cur.textContent = rd.idx + 1;
   if (fill) fill.style.width = pct + '%';
+  const badge = document.getElementById('readSrcBadge');
+  if (badge) badge.style.display = segForIdx(rd.idx) ? '' : 'none';
 
   if (isWord) {
     // 单词跟读：只刷新大卡当前词（上英下中），无字幕列表

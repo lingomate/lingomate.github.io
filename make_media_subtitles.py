@@ -12,6 +12,7 @@
 """
 import argparse
 import os
+import re
 import subprocess
 import sys
 
@@ -88,23 +89,30 @@ def main():
     for book in sorted(os.listdir(MEDIA)):
         if args.book and book != args.book:
             continue
-        adir = os.path.join(MEDIA, book, 'audio')
-        if not os.path.isdir(adir):
+        book_dir = os.path.join(MEDIA, book)
+        if not os.path.isdir(book_dir) or re.match(r'^\.', book):
             continue
-        for d in sorted(os.listdir(adir)):
-            p = os.path.join(adir, d)
-            if not os.path.isdir(p):
+        # 收集候选音频：板块布局 audio/unitN/*.mp3 + 扁平布局（课本根目录 *.mp3）
+        candidates = []
+        adir = os.path.join(book_dir, 'audio')
+        if os.path.isdir(adir):
+            for d in sorted(os.listdir(adir)):
+                p = os.path.join(adir, d)
+                if not os.path.isdir(p):
+                    continue
+                for f in sorted(os.listdir(p)):
+                    if f.lower().endswith(('.mp3', '.m4a', '.aac', '.wav')):
+                        candidates.append(os.path.join(p, f))
+        for f in sorted(os.listdir(book_dir)):
+            if f.lower().endswith(('.mp3', '.m4a', '.aac', '.wav')):
+                candidates.append(os.path.join(book_dir, f))
+        for src in candidates:
+            rel = os.path.relpath(src, book_dir)  # audio/unit1/xxx.MP3 或 xxx.MP3
+            vtt = os.path.join(book_dir, 'subs', os.path.splitext(rel)[0] + '.vtt')
+            if os.path.exists(vtt) and not args.force:
+                print(f'  跳过（已存在）: {book}/subs/{os.path.basename(vtt)}')
                 continue
-            for f in sorted(os.listdir(p)):
-                if not f.lower().endswith(('.mp3', '.m4a', '.aac', '.wav')):
-                    continue
-                src = os.path.join(p, f)
-                rel = os.path.relpath(src, os.path.join(MEDIA, book))  # audio/unit1/xxx.MP3
-                vtt = os.path.join(MEDIA, book, 'subs', os.path.splitext(rel)[0] + '.vtt')
-                if os.path.exists(vtt) and not args.force:
-                    print(f'  跳过（已存在）: {book}/subs/{os.path.basename(vtt)}')
-                    continue
-                jobs.append((book, src, vtt))
+            jobs.append((book, src, vtt))
 
     if not jobs:
         print('没有需要转写的音频')

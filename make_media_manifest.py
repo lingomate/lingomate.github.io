@@ -75,6 +75,17 @@ def url_of(abspath: str) -> str:
 
 def scan_book(book_dir: str, book_id: str):
     units = {}
+    # 扁平布局：课本根目录直接放整单元音频（如「Unit 1 What food do you like.mp3」）→ 记为该单元的 full
+    for f in sorted(os.listdir(book_dir)):
+        p = os.path.join(book_dir, f)
+        if not os.path.isfile(p) or not f.lower().endswith(('.mp3', '.m4a', '.aac', '.wav')):
+            continue
+        m = re.search(r'unit\s*(\d+)', norm(f))
+        if m:
+            slot = units.setdefault(m.group(1), {'audio': {}, 'subs': {}, 'video': {}})
+            slot['audio']['full'] = url_of(p)
+        else:
+            print(f'  ! 课本根目录音频未识别（跳过）: {book_id}/{f}')
     adir = os.path.join(book_dir, 'audio')
     if os.path.isdir(adir):
         for d in sorted(os.listdir(adir)):
@@ -110,7 +121,15 @@ def scan_book(book_dir: str, book_id: str):
             slot['video'][key] = url_of(os.path.join(vdir, f))
     # 丢弃空单元
     units = {u: v for u, v in units.items() if v['audio'] or v['video']}
-    return {'units': units} if units else None
+    # 句子→原音时间段映射（make_media_cues.py 生成）：media/<id>/cues/unitN.json
+    cdir = os.path.join(book_dir, 'cues')
+    cues = {}
+    if os.path.isdir(cdir):
+        for f in sorted(os.listdir(cdir)):
+            m = re.fullmatch(r'unit(\d+)\.json', f)
+            if m and m.group(1) in units:
+                cues[m.group(1)] = url_of(os.path.join(cdir, f))
+    return {'units': units, 'cues': cues} if units else None
 
 
 def main():
