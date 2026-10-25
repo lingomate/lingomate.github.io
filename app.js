@@ -795,13 +795,14 @@ function renderMedia(unitNum, focusKey, autoplay) {
     const i = tracks.findIndex(t => t.kind + ':' + t.key === focusKey);
     if (i >= 0) cur = i;
   }
-  mplayer = { unitNum, tracks, cur: -1, _cues: null, _lastCue: -1 };
+  mplayer = { unitNum, tracks, cur: -1, _cues: null, _lastCue: -1, collapsed: mpSideCollapsedDefault() };
   const list = tracks.map((t, i) => `
-    <div class="mp-item ${i === cur ? 'sel' : ''}" onclick="mpSelect(${i})">
+    <div class="mp-item ${i === cur ? 'sel' : ''}" onclick="mpSelect(${i})" title="${t.name}">
       <span class="mp-ico">${t.kind === 'video' ? '🎬' : '🔊'}</span>
       <span class="mp-name">${t.name}</span>
       ${t.sub ? '<span class="mp-cc">CC</span>' : ''}
     </div>`).join('');
+  const collapsed = mplayer.collapsed;
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
@@ -809,7 +810,11 @@ function renderMedia(unitNum, focusKey, autoplay) {
       <div class="quiz-count"><button class="auto-toggle" onclick="mplayer=null;openUnit(${unitNum})">← 返回</button></div>
     </div>
     <div class="mp-wrap">
-      <div class="mp-side"><div class="mp-side-title">📚 目录</div>${list}</div>
+      <div class="mp-side ${collapsed ? 'collapsed' : ''}" id="mpSide">
+        <div class="mp-side-title"><span class="mp-side-label">📚 目录</span>
+          <button class="mp-collapse" onclick="mpToggleSide()" title="收起 / 展开目录">${collapsed ? '▶' : '◀'}</button>
+        </div>${list}
+      </div>
       <div class="mp-main">
         <div id="mpStage"></div>
         <div class="mp-sub-panel" id="mpSubs"></div>
@@ -823,6 +828,21 @@ function renderMedia(unitNum, focusKey, autoplay) {
     { t: '📺 音视频' }
   ]);
   if (cur >= 0) mpSelect(cur, !!autoplay);
+}
+
+// 侧栏收起状态：存 localStorage（键全局，一次收起处处收起）
+function mpSideCollapsedDefault() {
+  try { return localStorage.getItem('lingomate_mp_collapsed') === '1'; } catch (e) { return false; }
+}
+function mpToggleSide() {
+  if (!mplayer) return;
+  mplayer.collapsed = !mplayer.collapsed;
+  try { localStorage.setItem('lingomate_mp_collapsed', mplayer.collapsed ? '1' : '0'); } catch (e) {}
+  const side = document.getElementById('mpSide');
+  if (!side) return;
+  side.classList.toggle('collapsed', mplayer.collapsed);
+  const btn = side.querySelector('.mp-collapse');
+  if (btn) btn.textContent = mplayer.collapsed ? '▶' : '◀';
 }
 
 function mpSelect(i, autoplay) {

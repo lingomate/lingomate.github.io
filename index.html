@@ -173,14 +173,24 @@ button,.option,.card{touch-action:manipulation}
 .media-play.playing{background:linear-gradient(135deg,#ff9800,#ff5722)}
 /* 侧栏播放器 */
 .mp-wrap{display:flex;gap:12px;align-items:flex-start;margin-top:4px}
-.mp-side{flex:0 0 38%;max-width:190px;border:2px solid #e0e3ff;border-radius:14px;background:#fff;overflow:hidden;max-height:62vh;overflow-y:auto}
-.mp-side-title{font-size:12px;font-weight:700;color:#888;padding:9px 12px;background:#f8f9ff;border-bottom:1px solid #eef1ff;position:sticky;top:0}
+.mp-side{flex:0 0 38%;max-width:190px;border:2px solid #e0e3ff;border-radius:14px;background:#fff;overflow:hidden;max-height:62vh;overflow-y:auto;transition:flex-basis .25s ease}
+.mp-side.collapsed{flex:0 0 46px}
+.mp-side-title{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:#888;padding:9px 12px;background:#f8f9ff;border-bottom:1px solid #eef1ff;position:sticky;top:0}
+.mp-side-label{flex:1;white-space:nowrap;overflow:hidden}
+.mp-collapse{flex:0 0 auto;border:none;background:#eef1ff;color:#8a94c6;border-radius:7px;width:22px;height:22px;font-size:10px;cursor:pointer;line-height:1}
+.mp-collapse:hover{background:#dfe6ff;color:#4facfe}
+.mp-side.collapsed .mp-side-title{justify-content:center;padding:9px 4px}
+.mp-side.collapsed .mp-side-label{display:none}
+.mp-side.collapsed .mp-collapse{transform:rotate(180deg)}
 .mp-item{display:flex;align-items:center;gap:7px;padding:10px 12px;font-size:13px;color:#444;cursor:pointer;border-bottom:1px solid #f5f7ff;transition:background .2s}
 .mp-item:last-child{border-bottom:none}
 .mp-item:hover{background:#f0f7ff}
 .mp-item.sel{background:linear-gradient(135deg,#e3f2fd,#eef9ff);color:#1976d2;font-weight:700;border-left:3px solid #4facfe}
 .mp-ico{flex:0 0 auto}
-.mp-name{flex:1;line-height:1.35}
+.mp-name{flex:1;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mp-side.collapsed .mp-item{justify-content:center;padding:10px 0}
+.mp-side.collapsed .mp-name,.mp-side.collapsed .mp-cc{display:none}
+.mp-side.collapsed .mp-item.sel{border-left-width:2px}
 .mp-cc{flex:0 0 auto;font-size:9px;font-weight:800;color:#2e7d32;background:#e8f5e9;border:1px solid #a5d6a7;border-radius:5px;padding:1px 4px}
 .mp-main{flex:1;min-width:0}
 .mp-audio-card{background:linear-gradient(160deg,#f8f9ff,#eef3ff);border:2px solid #e0e3ff;border-radius:16px;padding:22px 16px;text-align:center}
