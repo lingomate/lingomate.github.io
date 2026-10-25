@@ -84,6 +84,10 @@ def scan_book(book_dir: str, book_id: str):
         if m:
             slot = units.setdefault(m.group(1), {'audio': {}, 'subs': {}, 'video': {}})
             slot['audio']['full'] = url_of(p)
+            # 扁平音频的字幕：media/<id>/subs/<同名>.vtt（与根目录文件同名）
+            vtt = os.path.join(book_dir, 'subs', os.path.splitext(f)[0] + '.vtt')
+            if os.path.isfile(vtt):
+                slot['subs']['full'] = url_of(vtt)
         else:
             print(f'  ! 课本根目录音频未识别（跳过）: {book_id}/{f}')
     adir = os.path.join(book_dir, 'audio')

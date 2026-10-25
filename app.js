@@ -989,11 +989,11 @@ function playSegment(unitNum, seg, onend, onfail) {
     au.pause();
     if (onfail) onfail();
   };
-  au.addEventListener('timeupdate', () => { if (au.currentTime >= seg.e - 0.03) finish(); });
+  au.addEventListener('timeupdate', () => { if (au.currentTime >= seg.e + 0.25) finish(); });
   au.addEventListener('ended', finish);
   au.addEventListener('error', fail);
   const ready = () => {
-    try { au.currentTime = seg.s; } catch (e) { return fail(); }
+    try { au.currentTime = Math.max(0, seg.s - 0.15); } catch (e) { return fail(); }
     au.play().catch(() => fail());
   };
   if (au.readyState >= 1) ready();

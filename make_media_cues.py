@@ -56,8 +56,15 @@ def split_clauses(text):
     return [norm(p) for p in parts if norm(p)]
 
 
+def word_groups(normed, size=4):
+    """把归一化文本切成 size 词一组的滑窗词组（步长 size，不重叠）。"""
+    words = normed.split(' ')
+    return [' '.join(words[i:i + size]) for i in range(0, len(words), size) if words[i].strip()]
+
+
 def parse_vtt(path):
-    """返回片段级时间轴流：[(start, end, normed_clause), …]。"""
+    """返回词组级时间轴流：[(start, end, normed_phrase), …]。
+    每条 cue 先按句读切；无标点的长条按固定词数组切；时间按字符数比例近似分配。"""
     stream = []
     text = open(path, encoding='utf-8').read().replace('\r', '')
     for block in re.split(r'\n{2,}', text):
@@ -69,29 +76,26 @@ def parse_vtt(path):
         end = int(g[4]) * 3600 + int(g[5]) * 60 + int(g[6]) + int(g[7]) / 1000
         lines = [l for l in block.split('\n') if l.strip() and '-->' not in l and not l.strip().isdigit()]
         raw = ' '.join(lines)
-        t = norm(raw)
-        if not t:
+        parts = split_clauses(raw)
+        if len(parts) <= 1:
+            # 无句读可切（whisper 长条）：按 4 词一组滑窗
+            parts = word_groups(norm(raw))
+        parts = [p for p in parts if p]
+        if not parts:
             continue
-        clauses = split_clauses(raw)
-        if not clauses:
-            continue
-        if len(clauses) == 1:
-            stream.append((start, end, clauses[0]))
-        else:
-            # 多片段共享该 cue 时长：按字符数比例分配起止时间（近似）
-            total_chars = sum(len(c) for c in clauses) or 1
-            cur = start
-            for ci, c in enumerate(clauses):
-                span = (end - start) * len(c) / total_chars
-                e = end if ci == len(clauses) - 1 else cur + span
-                stream.append((cur, e, c))
-                cur = e
+        total_chars = sum(len(p) for p in parts) or 1
+        cur = start
+        for pi, p in enumerate(parts):
+            span = (end - start) * len(p) / total_chars
+            e = end if pi == len(parts) - 1 else cur + span
+            stream.append((cur, e, p))
+            cur = e
     return stream
 
 
-def align(sentences, stream, threshold=0.5, window=10, max_merge=3, detail=False):
+def align(sentences, stream, threshold=0.5, window=24, max_merge=6, detail=False):
     """单调指针 + 片段合并匹配：一句 JSON 可对应流中 1..max_merge 个连续片段。
-    未命中不推进指针（允许后续句继续在同一区域找），命中则推进到命中末尾。"""
+    未命中不推进指针，命中则推进到命中末尾。"""
     out = []
     p = 0
     for sent in sentences:
@@ -107,7 +111,7 @@ def align(sentences, stream, threshold=0.5, window=10, max_merge=3, detail=False
                 r = difflib.SequenceMatcher(None, s, acc).ratio()
                 if best is None or r > best[0]:
                     best = (r, j, k)
-        if best and best[0] >= threshold:
+        if best and best[0] >= (0.95 if len(s) <= 3 else threshold):
             r, j, k = best
             out.append((stream[j][0], stream[k][1]))
             p = k + 1
