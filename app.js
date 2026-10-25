@@ -845,6 +845,36 @@ function mpToggleSide() {
   if (btn) btn.textContent = mplayer.collapsed ? '▶' : '◀';
 }
 
+// 视频全屏并尽力锁定横屏：
+//  · Android Chrome/Edge、桌面：requestFullscreen + screen.orientation.lock('landscape')
+//  · iOS Safari：元素全屏 API 受限，video 原生控件自带全屏（自动横屏）；
+//    这里退而求其次用 webkitEnterFullscreen，再不行提示用播放器自带按钮
+function mpGoFullscreen() {
+  const v = document.getElementById('mpVideo');
+  if (!v) return;
+  const done = () => {
+    // 全屏成功后尝试锁横屏；不支持 lock 的环境静默忽略（多数移动端进全屏即自动横屏）
+    try {
+      const so = screen.orientation;
+      if (so && so.lock) so.lock('landscape').catch(() => {});
+    } catch (e) {}
+  };
+  if (v.requestFullscreen) {
+    v.requestFullscreen().then(done).catch(() => fallback());
+  } else if (v.webkitRequestFullscreen) {
+    try { v.webkitRequestFullscreen(); done(); } catch (e) { fallback(); }
+  } else {
+    fallback();
+  }
+  function fallback() {
+    try {
+      if (v.webkitEnterFullscreen) { v.webkitEnterFullscreen(); return; } // iOS 原生路径
+    } catch (e) {}
+    v.controls = true;
+    alert('当前浏览器不支持网页直接全屏，请点击视频播放器右下角的 ⛶ 按钮全屏（会自动横屏）。');
+  }
+}
+
 function mpSelect(i, autoplay) {
   if (!mplayer) return;
   stopSpeech();
@@ -856,7 +886,12 @@ function mpSelect(i, autoplay) {
   const stage = document.getElementById('mpStage');
   const subs = document.getElementById('mpSubs');
   if (t.kind === 'video') {
-    stage.innerHTML = `<video controls playsinline ${autoplay ? 'autoplay' : ''} src="${t.src}" style="width:100%;border-radius:12px;background:#000;max-height:52vh"></video>`;
+    stage.innerHTML = `
+      <div class="mp-video-bar">
+        <span class="mp-video-name">🎬 ${t.name}</span>
+        <button class="mp-fs" onclick="mpGoFullscreen()">⛶ 全屏横屏</button>
+      </div>
+      <video id="mpVideo" controls playsinline ${autoplay ? 'autoplay' : ''} src="${t.src}" style="width:100%;border-radius:12px;background:#000;max-height:52vh"></video>`;
     subs.innerHTML = '';
   } else {
     stage.innerHTML = `<div class="mp-audio-card">
