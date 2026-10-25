@@ -1,6 +1,78 @@
 {
   "1A": {
     "units": {
+      "1": {
+        "audio": {
+          "communicate": "media/1A/audio/Unit1/U1%20Communicate.MP3",
+          "extend": "media/1A/audio/Unit1/U1%20Extend.MP3",
+          "letters": "media/1A/audio/Unit1/U1%20Letters.MP3",
+          "ready-go": "media/1A/audio/Unit1/U1%20Ready%20go.MP3",
+          "story": "media/1A/audio/Unit1/U1%20Story.MP3",
+          "full": "media/1A/audio/Unit1/U1%E6%80%BB.MP3",
+          "words": "media/1A/audio/Unit1/u1%20words.MP3"
+        },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit1/U1%20Communicate.vtt",
+          "extend": "media/1A/subs/audio/Unit1/U1%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit1/U1%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit1/U1%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit1/U1%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit1/U1%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit1/u1%20words.vtt"
+        },
+        "video": {
+          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit1%20P4%20Story.mp4",
+          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit1%20P8%20Extend.mp4"
+        }
+      },
+      "2": {
+        "audio": {
+          "communicate": "media/1A/audio/Unit2/U2%20Communicate.MP3",
+          "extend": "media/1A/audio/Unit2/U2%20Extend.MP3",
+          "letters": "media/1A/audio/Unit2/U2%20Letters.MP3",
+          "ready-go": "media/1A/audio/Unit2/U2%20Ready%20go.MP3",
+          "story": "media/1A/audio/Unit2/U2%20Story.MP3",
+          "full": "media/1A/audio/Unit2/U2%E6%80%BB.MP3",
+          "words": "media/1A/audio/Unit2/u2%20words.MP3"
+        },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit2/U2%20Communicate.vtt",
+          "extend": "media/1A/subs/audio/Unit2/U2%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit2/U2%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit2/U2%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit2/U2%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit2/U2%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit2/u2%20words.vtt"
+        },
+        "video": {
+          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit2%20P12%20Story.mp4",
+          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit2%20P16%20Extend.mp4"
+        }
+      },
+      "3": {
+        "audio": {
+          "communicate": "media/1A/audio/Unit3/U3%20Commumicate.MP3",
+          "extend": "media/1A/audio/Unit3/U3%20Extend.MP3",
+          "letters": "media/1A/audio/Unit3/U3%20Letters.MP3",
+          "ready-go": "media/1A/audio/Unit3/U3%20Ready%20go.MP3",
+          "story": "media/1A/audio/Unit3/U3%20Story.MP3",
+          "full": "media/1A/audio/Unit3/U3%E6%80%BB.MP3",
+          "words": "media/1A/audio/Unit3/u3%20words.MP3"
+        },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit3/U3%20Commumicate.vtt",
+          "extend": "media/1A/subs/audio/Unit3/U3%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit3/U3%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit3/U3%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit3/U3%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit3/U3%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit3/u3%20words.vtt"
+        },
+        "video": {
+          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit3%20P20%20Story.mp4",
+          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit3%20P24%20Extend.mp4"
+        }
+      },
       "4": {
         "audio": {
           "communicate": "media/1A/audio/Unit4/U4%20Commumicate.MP3",
@@ -10,6 +82,15 @@
           "story": "media/1A/audio/Unit4/U4%20Story.MP3",
           "full": "media/1A/audio/Unit4/U4%E6%80%BB.MP3",
           "words": "media/1A/audio/Unit4/u4%20words.MP3"
+        },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit4/U4%20Commumicate.vtt",
+          "extend": "media/1A/subs/audio/Unit4/U4%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit4/U4%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit4/U4%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit4/U4%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit4/U4%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit4/u4%20words.vtt"
         },
         "video": {
           "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit4%20P28%20Story.mp4",
@@ -26,6 +107,15 @@
           "full": "media/1A/audio/Unit5/U5%E6%80%BB.MP3",
           "words": "media/1A/audio/Unit5/u5%20words.MP3"
         },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit5/U5%20Communicate.vtt",
+          "extend": "media/1A/subs/audio/Unit5/U5%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit5/U5%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit5/U5%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit5/U5%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit5/U5%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit5/u5%20words.vtt"
+        },
         "video": {
           "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit5%20P36%20Story.mp4",
           "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit5%20P40%20Extend.mp4"
@@ -41,57 +131,21 @@
           "full": "media/1A/audio/Unit6/U6%E6%80%BB.MP3",
           "words": "media/1A/audio/Unit6/u6%20words.MP3"
         },
+        "subs": {
+          "communicate": "media/1A/subs/audio/Unit6/U6%20Communicate.vtt",
+          "extend": "media/1A/subs/audio/Unit6/U6%20Extend.vtt",
+          "letters": "media/1A/subs/audio/Unit6/U6%20Letters.vtt",
+          "ready-go": "media/1A/subs/audio/Unit6/U6%20Ready%20go.vtt",
+          "story": "media/1A/subs/audio/Unit6/U6%20Story.vtt",
+          "full": "media/1A/subs/audio/Unit6/U6%E6%80%BB.vtt",
+          "words": "media/1A/subs/audio/Unit6/u6%20words.vtt"
+        },
         "video": {
           "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit6%20P44%20Story.mp4",
           "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit6%20P48%20Extend.mp4"
         }
-      },
-      "1": {
-        "audio": {
-          "communicate": "media/1A/audio/unit1/U1%20Communicate.MP3",
-          "extend": "media/1A/audio/unit1/U1%20Extend.MP3",
-          "letters": "media/1A/audio/unit1/U1%20Letters.MP3",
-          "ready-go": "media/1A/audio/unit1/U1%20Ready%20go.MP3",
-          "story": "media/1A/audio/unit1/U1%20Story.MP3",
-          "full": "media/1A/audio/unit1/U1%E6%80%BB.MP3",
-          "words": "media/1A/audio/unit1/u1%20words.MP3"
-        },
-        "video": {
-          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit1%20P4%20Story.mp4",
-          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit1%20P8%20Extend.mp4"
-        }
-      },
-      "2": {
-        "audio": {
-          "communicate": "media/1A/audio/unit2/U2%20Communicate.MP3",
-          "extend": "media/1A/audio/unit2/U2%20Extend.MP3",
-          "letters": "media/1A/audio/unit2/U2%20Letters.MP3",
-          "ready-go": "media/1A/audio/unit2/U2%20Ready%20go.MP3",
-          "story": "media/1A/audio/unit2/U2%20Story.MP3",
-          "full": "media/1A/audio/unit2/U2%E6%80%BB.MP3",
-          "words": "media/1A/audio/unit2/u2%20words.MP3"
-        },
-        "video": {
-          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit2%20P12%20Story.mp4",
-          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit2%20P16%20Extend.mp4"
-        }
-      },
-      "3": {
-        "audio": {
-          "communicate": "media/1A/audio/unit3/U3%20Commumicate.MP3",
-          "extend": "media/1A/audio/unit3/U3%20Extend.MP3",
-          "letters": "media/1A/audio/unit3/U3%20Letters.MP3",
-          "ready-go": "media/1A/audio/unit3/U3%20Ready%20go.MP3",
-          "story": "media/1A/audio/unit3/U3%20Story.MP3",
-          "full": "media/1A/audio/unit3/U3%E6%80%BB.MP3",
-          "words": "media/1A/audio/unit3/u3%20words.MP3"
-        },
-        "video": {
-          "story": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit3%20P20%20Story.mp4",
-          "extend": "media/1A/video/%E4%B8%80%E4%B8%8A%20Unit3%20P24%20Extend.mp4"
-        }
       }
     }
   },
-  "generated": "2026-10-25T06:41:52Z"
+  "generated": "2026-10-25T09:52:32Z"
 }

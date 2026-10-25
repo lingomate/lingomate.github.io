@@ -384,7 +384,7 @@ function stopKeepAlive() {
 function stopSpeech() {
   if ('speechSynthesis' in window) speechSynthesis.cancel();
   stopKeepAlive();
-  if (_audio && !_audio.paused) { _audio.pause(); resetAudioBtn(); } // 音视频与 TTS 互斥
+  document.querySelectorAll('#mpStage audio, #mpStage video').forEach(m => { try { m.pause(); } catch (e) {} }); // 音视频与 TTS 互斥、切页即停
 }
 
 // 完形填空（题干含 ___）判断
@@ -712,13 +712,15 @@ function openUnit(unitNum) {
   const typesInUnit = [...new Set(unitQs.map(q => q.type))];
   const hasDictation = typesInUnit.includes('听写');
   const typeDesc = typesInUnit.length ? typesInUnit.join(' · ') : '本单元暂无题目';
-  // 本单元音视频素材（media/manifest.json）：音频键列表 + 视频键列表
+  // 本单元音视频素材（media/manifest.json）：音频键列表 + 视频键列表 + 字幕数
   const audKeys = Object.keys(unitAudios(unitNum));
   const vidKeys = Object.keys(unitVideos(unitNum));
+  const subCount = Object.keys(unitSubs(unitNum)).length;
   const hasMedia = audKeys.length + vidKeys.length > 0;
   const mediaDesc = [
     audKeys.length ? `配套音频 ${audKeys.length} 段` : '',
-    vidKeys.length ? `视频 ${vidKeys.length} 段` : ''
+    vidKeys.length ? `视频 ${vidKeys.length} 段` : '',
+    subCount ? `字幕 ${subCount} 段` : ''
   ].filter(Boolean).join('<br>') || '本单元暂无音视频';
   // 卡片总数：课文跟读/单词跟读/闯关 恒在，听写、音视频按条件；≥4 张沿用 3 列布局（与既有惯例一致）
   const gridCls = (hasDictation || hasMedia) ? 'mode-grid-3' : '';
@@ -764,31 +766,55 @@ function openUnit(unitNum) {
   ]);
 }
 
-// ===================== 课本音视频页 =====================
-function renderMedia(unitNum) {
+// ===================== 课本音视频页（侧栏目录 + 主播放区 + 字幕） =====================
+// focusKey 形如 'audio:story' / 'video:story'：进入即选中该曲目；autoplay=1 时自动开播
+let mplayer = null;   // {unitNum, tracks, cur, _cues, _lastCue}
+function unitSubs(unitNum) {
+  const u = mediaUnit(unitNum);
+  return (u && u.subs) || {};
+}
+function buildTracks(unitNum) {
+  const auds = unitAudios(unitNum), subs = unitSubs(unitNum), vids = unitVideos(unitNum);
+  const t = [];
+  for (const k of Object.keys(AUDIO_LABELS)) {
+    if (auds[k]) t.push({ kind: 'audio', key: k, name: AUDIO_LABELS[k], src: auds[k], sub: subs[k] || null });
+  }
+  for (const k of Object.keys(VIDEO_LABELS)) {
+    if (vids[k]) t.push({ kind: 'video', key: k, name: VIDEO_LABELS[k], src: vids[k], sub: null });
+  }
+  return t;
+}
+function renderMedia(unitNum, focusKey, autoplay) {
   stopSpeech();
   setHeader('quiz');
   const unit = BOOK.units[unitNum - 1];
-  const auds = unitAudios(unitNum), vids = unitVideos(unitNum);
-  const audRows = Object.keys(AUDIO_LABELS).filter(k => auds[k]).map(k => `
-    <div class="media-row">
-      <span class="media-name">🔊 ${AUDIO_LABELS[k]}</span>
-      <button class="btn media-play" onclick="playAudio('${auds[k]}', this)">▶️ 播放</button>
-    </div>`).join('');
-  const vidRows = Object.keys(VIDEO_LABELS).filter(k => vids[k]).map(k => `
-    <div class="video-item">
-      <div class="video-item-title">🎬 ${VIDEO_LABELS[k]}</div>
-      <video controls preload="none" playsinline src="${vids[k]}"></video>
+  const tracks = buildTracks(unitNum);
+  if (!tracks.length) { openUnit(unitNum); return; }
+  let cur = 0;
+  if (focusKey) {
+    const i = tracks.findIndex(t => t.kind + ':' + t.key === focusKey);
+    if (i >= 0) cur = i;
+  }
+  mplayer = { unitNum, tracks, cur: -1, _cues: null, _lastCue: -1 };
+  const list = tracks.map((t, i) => `
+    <div class="mp-item ${i === cur ? 'sel' : ''}" onclick="mpSelect(${i})">
+      <span class="mp-ico">${t.kind === 'video' ? '🎬' : '🔊'}</span>
+      <span class="mp-name">${t.name}</span>
+      ${t.sub ? '<span class="mp-cc">CC</span>' : ''}
     </div>`).join('');
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">📺 ${unit.name} · 课本音视频</div>
-      <div class="quiz-count"><button class="auto-toggle" onclick="openUnit(${unitNum})">← 返回</button></div>
+      <div class="quiz-count"><button class="auto-toggle" onclick="mplayer=null;openUnit(${unitNum})">← 返回</button></div>
     </div>
-    ${audRows ? `<div class="media-list">${audRows}</div>` : ''}
-    ${vidRows}
-    ${!audRows && !vidRows ? '<div class="loading">本单元暂无音视频素材</div>' : ''}
+    <div class="mp-wrap">
+      <div class="mp-side"><div class="mp-side-title">📚 目录</div>${list}</div>
+      <div class="mp-main">
+        <div id="mpStage"></div>
+        <div class="mp-sub-panel" id="mpSubs"></div>
+      </div>
+    </div>
   `;
   setCrumb([
     { t: '🏠 首页', go: 'renderBookSelect()' },
@@ -796,6 +822,83 @@ function renderMedia(unitNum) {
     { t: unit.name, go: `openUnit(${unitNum})` },
     { t: '📺 音视频' }
   ]);
+  if (cur >= 0) mpSelect(cur, !!autoplay);
+}
+
+function mpSelect(i, autoplay) {
+  if (!mplayer) return;
+  stopSpeech();
+  mplayer.cur = i;
+  mplayer._cues = null;
+  mplayer._lastCue = -1;
+  const t = mplayer.tracks[i];
+  document.querySelectorAll('.mp-item').forEach((el, k) => el.classList.toggle('sel', k === i));
+  const stage = document.getElementById('mpStage');
+  const subs = document.getElementById('mpSubs');
+  if (t.kind === 'video') {
+    stage.innerHTML = `<video controls playsinline ${autoplay ? 'autoplay' : ''} src="${t.src}" style="width:100%;border-radius:12px;background:#000;max-height:52vh"></video>`;
+    subs.innerHTML = '';
+  } else {
+    stage.innerHTML = `<div class="mp-audio-card">
+        <div class="mp-audio-name">🔊 ${t.name}</div>
+        <audio controls ${autoplay ? 'autoplay' : ''} src="${t.src}"></audio>
+      </div>`;
+    if (t.sub) loadCues(t, subs);
+    else subs.innerHTML = '<div class="mp-sub-empty">该音频暂无字幕 · 可在「课文跟读」逐句练习</div>';
+  }
+}
+
+// —— WebVTT 解析与逐句高亮 ——
+function vttSec(s) {
+  const [h, mi, rest] = s.split(':');
+  return (+h) * 3600 + (+mi) * 60 + parseFloat(rest.replace(',', '.'));
+}
+function parseVtt(text) {
+  const cues = [];
+  for (const block of text.replace(/\r/g, '').split(/\n{2,}/)) {
+    const m = /(\d{2}:\d{2}:\d{2}[.,]\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2}[.,]\d{3})/.exec(block);
+    if (!m) continue;
+    const txt = block.split('\n').filter(l => l.trim() && !l.includes('-->')).join(' ').trim();
+    if (!txt) continue;
+    cues.push({ start: vttSec(m[1]), end: vttSec(m[2]), text: txt });
+  }
+  return cues;
+}
+async function loadCues(track, panel) {
+  panel.innerHTML = '<div class="mp-sub-empty">字幕加载中…</div>';
+  try {
+    const r = await fetch(track.sub, { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    const cues = parseVtt(await r.text());
+    if (!cues.length) throw new Error('empty');
+    panel.innerHTML = cues.map((c, i) =>
+      `<div class="mp-cue" onclick="mpSeek(${i})">${c.text}</div>`).join('');
+    mplayer._cues = cues;
+    const au = document.querySelector('#mpStage audio');
+    if (au) au.addEventListener('timeupdate', () => mpHighlight(au));
+  } catch (e) {
+    panel.innerHTML = '<div class="mp-sub-empty">字幕加载失败</div>';
+  }
+}
+function mpHighlight(au) {
+  if (!mplayer || !mplayer._cues) return;
+  const t = au.currentTime;
+  const idx = mplayer._cues.findIndex(c => t >= c.start && t < c.end);
+  const panel = document.getElementById('mpSubs');
+  if (!panel) return;
+  const els = panel.querySelectorAll('.mp-cue');
+  els.forEach((el, i) => el.classList.toggle('cur', i === idx));
+  if (idx >= 0 && idx !== mplayer._lastCue) {
+    mplayer._lastCue = idx;
+    if (els[idx]) els[idx].scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }
+}
+function mpSeek(i) {
+  const au = document.querySelector('#mpStage audio');
+  if (au && mplayer && mplayer._cues && mplayer._cues[i]) {
+    au.currentTime = mplayer._cues[i].start;
+    au.play();
+  }
 }
 
 // ===================== 课文跟读模式（播一句 → 跟读 → 下一句；支持自动播放） =====================
@@ -990,7 +1093,7 @@ function buildReadShell() {
         lastSt = s.st;
         const akey = stToAudioKey(s.st);
         const playBtn = akey && auds[akey]
-          ? `<button class="btn media-play sub-head-play" onclick="event.stopPropagation();playAudio('${auds[akey]}', this)">▶️ 板块朗读</button>` : '';
+          ? `<button class="btn media-play sub-head-play" onclick="event.stopPropagation();renderMedia(${rd.unitNum},'audio:${akey}',true)">▶️ 板块朗读</button>` : '';
         subs += `<div class="sub-head">${s.st}${s.sp ? ` <span class="sub-page">📖 ${s.sp}</span>` : ''}${playBtn}</div>`;
       }
       const { speaker, text } = parseSpeaker(s.en);
@@ -1002,12 +1105,14 @@ function buildReadShell() {
     });
   }
 
-  const hasVid = Object.keys(unitVideos(rd.unitNum)).length > 0;
+  const vids = unitVideos(rd.unitNum);
+  const firstVid = Object.keys(VIDEO_LABELS).find(k => vids[k]);
+  const hasVid = !!firstVid;
   const content = document.getElementById('content');
   content.innerHTML = `
     <div class="quiz-header">
       <div class="quiz-title">🗣️ ${unit.name} · ${rd.mode || '课文跟读'}</div>
-      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}${hasVid ? `<button class="auto-toggle" onclick="openVideoModal(${rd.unitNum})">📺 视频</button>` : ''}</div>
+      <div class="quiz-count">第 <b id="readCur">1</b> / ${n} ${isWord ? '词' : '句'}${hasVid ? `<button class="auto-toggle" onclick="renderMedia(${rd.unitNum},'video:${firstVid}',true)">📺 视频</button>` : ''}</div>
     </div>
     <div class="read-progress-bar"><div class="read-progress-fill" id="readFill" style="width:${Math.round(1 / n * 100)}%"></div></div>
     ${rateSliderHTML()}
@@ -1699,34 +1804,8 @@ function unitVideos(unitNum) {
   return (u && u.video) || {};
 }
 
-// —— 音频播放（单例 <audio>，与 TTS 互斥：播音频前 stopSpeech） ——
-let _audio = null, _audioBtn = null;
-function playAudio(url, btn) {
-  // 再次点击正在播的曲目 → 停止（须在 stopSpeech 重置按钮前判定）
-  if (_audioBtn === btn && _audio && !_audio.paused) { stopSpeech(); return; }
-  stopSpeech();
-  if (!_audio) {
-    _audio = new Audio();
-    _audio.addEventListener('ended', resetAudioBtn);
-    _audio.addEventListener('error', resetAudioBtn);
-  }
-  if (btn) {
-    btn.classList.add('playing');
-    btn.dataset.orig = btn.dataset.orig || btn.textContent;
-    btn.textContent = '⏹';
-    _audioBtn = btn;
-  }
-  _audio.src = url;
-  _audio.play().catch(resetAudioBtn);
-}
-function resetAudioBtn() {
-  if (_audioBtn) {
-    _audioBtn.classList.remove('playing');
-    if (_audioBtn.dataset.orig) _audioBtn.textContent = _audioBtn.dataset.orig;
-    _audioBtn = null;
-  }
-  if (_audio) { _audio.pause(); }
-}
+// —— 音频播放统一走侧栏播放器 renderMedia（<audio controls>）；
+//    与 TTS 互斥由 stopSpeech() 负责，切页时 mplayer=null 即释放。——
 
 // 跟读页小节标题行上的 ▶️（st 前缀 → 音频键）
 function stToAudioKey(st) {
@@ -1740,37 +1819,7 @@ function stToAudioKey(st) {
   return null;
 }
 
-// —— 视频弹窗 ——
-function openVideoModal(unitNum) {
-  const vids = unitVideos(unitNum);
-  const keys = Object.keys(VIDEO_LABELS).filter(k => vids[k]);
-  if (!keys.length) return;
-  closeVideoModal();
-  const mask = document.createElement('div');
-  mask.className = 'dlg-mask show';
-  mask.id = 'videoMask';
-  mask.innerHTML = `
-    <div class="dlg video-dlg">
-      <div class="dlg-head">📺 ${BOOK.units[unitNum - 1].name} · 课本视频
-        <span class="qr-x" style="float:right;cursor:pointer" onclick="closeVideoModal()">×</span></div>
-      <div class="dlg-body">
-        ${keys.map(k => `
-          <div class="video-item">
-            <div class="video-item-title">${VIDEO_LABELS[k]}</div>
-            <video controls preload="none" playsinline src="${vids[k]}"></video>
-          </div>`).join('')}
-      </div>
-    </div>`;
-  document.body.appendChild(mask);
-  mask.addEventListener('click', e => { if (e.target === mask) closeVideoModal(); });
-}
-function closeVideoModal() {
-  const m = document.getElementById('videoMask');
-  if (m) {
-    m.querySelectorAll('video').forEach(v => v.pause());
-    m.remove();
-  }
-}
+// —— 视频改在 renderMedia 侧栏播放器中播放（openVideoModal 已废弃移除） ——
 
 // ===================== 手机扫码访问 =====================
 // 纯前端离线生成二维码：直接编码「浏览器当前实际访问的完整地址」，

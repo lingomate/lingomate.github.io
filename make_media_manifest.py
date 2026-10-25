@@ -18,9 +18,16 @@ manifest 结构（路径相对站点根，已 URL 编码，可直接喂给 <audi
 import json
 import os
 import re
+import sys
 import unicodedata
 from datetime import datetime, timezone
 from urllib.parse import quote
+
+# Windows GBK 控制台打不出 ✓/中文等字符：统一切 UTF-8 输出
+try:
+    sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+except Exception:
+    pass
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 MEDIA = os.path.join(ROOT, 'media')
@@ -75,13 +82,18 @@ def scan_book(book_dir: str, book_id: str):
             u = unit_num(d) if os.path.isdir(p) else None
             if u is None:
                 continue
-            slot = units.setdefault(str(u), {'audio': {}, 'video': {}})
+            slot = units.setdefault(str(u), {'audio': {}, 'subs': {}, 'video': {}})
             for f in sorted(os.listdir(p)):
                 if not f.lower().endswith(('.mp3', '.m4a', '.aac', '.wav')):
                     continue
                 key = classify(f, AUDIO_RULES)
                 if key:
                     slot['audio'][key] = url_of(os.path.join(p, f))
+                    # 字幕：media/<book>/subs/audio/<unit>/<name>.vtt（与音频相对路径同名）
+                    rel_noext = os.path.splitext(os.path.relpath(os.path.join(p, f), book_dir))[0]
+                    vtt = os.path.join(book_dir, 'subs', rel_noext + '.vtt')
+                    if os.path.isfile(vtt):
+                        slot['subs'][key] = url_of(vtt)
                 else:
                     print(f'  ! 未识别音频（跳过）: {book_id}/{d}/{f}')
     vdir = os.path.join(book_dir, 'video')
